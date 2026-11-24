@@ -92,6 +92,12 @@ label{display:block;font-size:.85rem;color:var(--mut);margin:10px 0 4px}
 .tabs button.on{background:var(--ac);color:var(--acx);border-color:var(--ac);font-weight:700}
 .hide-fa .fa{display:none!important}
 .badge{display:inline-block;padding:2px 10px;border-radius:10px;background:var(--sf);font-size:.8rem;color:var(--mut);margin-right:6px}
+.gchip{display:inline-block;background:color-mix(in srgb,var(--ac) 14%,var(--card));color:var(--ac);font-weight:700;font-size:.78rem;border-radius:8px;padding:1px 8px;margin-inline-end:4px;vertical-align:middle}
+.exwrap{margin-top:4px}
+.exbtn{background:none;border:0;padding:2px 6px;color:var(--mut);font:inherit;font-size:.8rem;cursor:pointer;border-bottom:1px dashed var(--bd)}
+.exwrap.show .exbtn{color:var(--ac)}
+.exhide{display:none}
+.exwrap.show .ex{display:block}
 </style>
 </head>
 <body>
@@ -175,7 +181,7 @@ const findCard=(w,exId)=>cards.find(x=>x.id!==exId&&x.w.toLowerCase()===norm(w).
 
 function normSenses(list){
  return (list||[]).map(s=>({
-   pos:npos(s.pos), d:norm(s.d), e:norm(s.e), p:norm(s.p),
+   pos:npos(s.pos), d:norm(s.d), e:norm(s.e), p:norm(s.p), g:norm(s.g),
    syn:arr(s.syn), ant:arr(s.ant), prep:arr(s.prep)
  })).filter(s=>s.d);
 }
@@ -248,7 +254,7 @@ const prepRow=a=>a&&a.length?'<div class="pr" dir="rtl"><b>حرف اضافه:</b
 function gh(ss,chk){
  return group(ss).map(([p,a])=>'<div class="pg" style="--c:'+pcol(p)+'"><div class="ph"><b>'+fa(p)+'</b><span class="cnt">'+p+' · '+a.length+' معنی</span></div>'+(sumP(a)?'<div class="ps">'+esc(sumP(a))+'</div>':'')+
   a.map(({s,i},k)=>{
-   const body='<div class="sb"><div class="df">'+esc(s.d)+'</div>'+(s.e?'<div class="ex">'+esc(s.e)+'</div>':'')+(s.p?'<div class="fa">'+esc(s.p)+'</div>':'')+prepRow(s.prep)+tagRow('s1','هم‌معنی',s.syn)+tagRow('s2','متضاد',s.ant)+'</div>';
+   const body='<div class="sb"><div class="df">'+(s.g?'<span class="gchip" dir="ltr">'+esc(s.g)+'</span> ':'')+esc(s.d)+'</div>'+(s.e?'<div class="exwrap"><button class="exbtn" type="button">💬 مثال ▸</button><div class="ex exhide">'+esc(s.e)+'</div></div>':'')+(s.p?'<div class="fa">'+esc(s.p)+'</div>':'')+prepRow(s.prep)+tagRow('s1','هم‌معنی',s.syn)+tagRow('s2','متضاد',s.ant)+'</div>';
    return chk?'<label class="sn"><input type="checkbox" data-i="'+i+'"'+(s.on?' checked':'')+'><span class="nm">'+(k+1)+'</span>'+body+'</label>':'<div class="sn"><span class="nm">'+(k+1)+'</span>'+body+'</div>';
   }).join('')+'</div>').join('');
 }
@@ -332,11 +338,30 @@ async function wikiDict(w){
  });
  return {ipa:'',list:list.slice(0,10)};
 }
+async function enrichSynAnt(w,list){
+ try{
+  const j=await fetchJSON('https://api.dictionaryapi.dev/api/v2/entries/en/'+encodeURIComponent(w));
+  const m={};
+  j.forEach(en=>(en.meanings||[]).forEach(mm=>{
+   const pk=String(mm.partOfSpeech||'').toLowerCase();
+   if(!m[pk])m[pk]={syn:[],ant:[]};
+   (mm.synonyms||[]).forEach(x=>{if(!m[pk].syn.includes(x))m[pk].syn.push(x)});
+   (mm.antonyms||[]).forEach(x=>{if(!m[pk].ant.includes(x))m[pk].ant.push(x)});
+   (mm.definitions||[]).forEach(d=>{
+    (d.synonyms||[]).forEach(x=>{if(!m[pk].syn.includes(x))m[pk].syn.push(x)});
+    (d.antonyms||[]).forEach(x=>{if(!m[pk].ant.includes(x))m[pk].ant.push(x)});
+   });
+  }));
+  list.forEach(sg=>{const ee=m[sg.pos];if(ee){if(!sg.syn.length)sg.syn=ee.syn.slice(0,4);if(!sg.ant.length)sg.ant=ee.ant.slice(0,3)}});
+ }catch(e){}
+}
 async function askChainFree(w,onStatus){
+ if(onStatus)onStatus('📘 Longman…');
+ try{const r0=await longmanFetch(w);if(r0.list.length){if(onStatus)onStatus('🔄 ترجمهٔ فارسی…');await addPersian(r0.list);await enrichSynAnt(w,r0.list);return {res:r0,used:'Longman',failed:[]}}}catch(e){}
  if(onStatus)onStatus('📖 دیکشنری رایگان…');
  try{const r=await freeDict(w);if(r.list.length){if(onStatus)onStatus('🔄 ترجمهٔ فارسی…');await addPersian(r.list);return {res:r,used:'دیکشنری رایگان',failed:[]}}}catch(e){}
   if(onStatus)onStatus('📖 Wiktionary…');
- try{const r2=await wikiDict(w);if(r2.list.length){if(onStatus)onStatus('🔄 ترجمهٔ فارسی…');await addPersian(r2.list);return {res:r2,used:'Wiktionary',failed:[]}}}catch(e){}
+ try{const r2=await wikiDict(w);if(r2.list.length){if(onStatus)onStatus('🔄 ترجمهٔ فارسی…');await addPersian(r2.list);await enrichSynAnt(w,r2.list);return {res:r2,used:'Wiktionary',failed:[]}}}catch(e){}
  return null;
 }
 async function askChain(prompt,onStatus){
@@ -381,7 +406,9 @@ function longmanDom(doc){
    sg.querySelectorAll(':scope>.EXAMPLE, :scope>.GramExa>.EXAMPLE').forEach(x=>{if(!e)e=norm(x.textContent)});
    const prep=[];
    sg.querySelectorAll('.PROPFORMPREP').forEach(x=>{const t=norm(x.textContent);if(t&&!prep.includes(t))prep.push(t)});
-   res.list.push({pos,d,e,syn:[],ant:[],prep});
+   const fw=norm((sg.querySelector(':scope>.FIELD')||{}).textContent).toUpperCase();
+   const av=norm((sg.querySelector(':scope>.ACTIV')||{}).textContent).toUpperCase();
+   res.list.push({pos,d,e,g:(av||fw),syn:[],ant:[],prep});
   });
  });
  const seen=new Set();
@@ -908,6 +935,26 @@ function list(){
  $('#imp').onclick=importSheet;
 }
 
+async function wordStore(){
+ sheet('<h3>📦 مخزن کلمات</h3><div id="wsl"><div class="hint">در حال دریافت فهرست…</div></div><div class="row"><button class="btn" id="cl">بستن</button></div><div class="hint">فایل‌های JSON خودتان را در پوشهٔ packs/ مخزن GitHub بگذارید و نامشان را به packs/index.json اضافه کنید؛ اینجا ظاهر می‌شوند.</div>');
+ $('#cl').onclick=close;
+ let idx=null;
+ try{idx=await fetchJSON('packs/index.json')}catch(e){}
+ const box=$('#wsl');
+ if(!idx||!Array.isArray(idx)||!idx.length){box.innerHTML='<div class="mut">فهرست بسته‌ها پیدا نشد (پوشهٔ packs/ یا index.json را بررسی کنید)</div>';return}
+ box.innerHTML=idx.map((pk,k)=>'<div class="fm"><span><b>'+esc(pk.name)+'</b>'+(pk.count?' <span class="mut">'+esc(pk.count)+' لغت</span>':'')+'</span><button class="btn" data-wsp="'+k+'">📥 وارد</button></div>').join('');
+ box.querySelectorAll('[data-wsp]').forEach(b=>b.onclick=async()=>{
+  const pk=idx[+b.dataset.wsp];b.disabled=true;b.textContent='…';
+  try{
+   const j=await fetchJSON(pk.file);
+   const n=importText(JSON.stringify(j));
+   b.disabled=false;b.textContent='📥 وارد';
+   toast(n+' معنی از «'+pk.name+'» وارد شد ✓',3500);
+   render();
+  }catch(e){b.disabled=false;b.textContent='📥 وارد';toast('دریافت بسته ناموفق بود',3000)}
+ });
+}
+
 function keyDialog(){
  const configured=PROV.filter(p=>keyGet(p.id));
  sheet('<h3>کلیدهای هوش مصنوعی</h3>'+
@@ -944,12 +991,14 @@ function menu(){
   '<button class="btn" id="m2" style="width:100%;margin-top:8px">🔗 اشتراک‌گذاری برنامه</button>'+
   '<button class="btn" id="m3" style="width:100%;margin-top:8px">💾 پشتیبان کارت‌ها</button>'+
   '<button class="btn" id="m4" style="width:100%;margin-top:8px">📥 وارد کردن کارت‌ها</button>'+
+  '<button class="btn" id="m5" style="width:100%;margin-top:8px">📦 مخزن کلمات</button>'+
   '<div class="hint">برای نصب روی گوشی: منوی مرورگر → Install app. بعد از اولین باز شدن، آفلاین هم کار می‌کند.</div>'+
   '<div class="row"><button class="btn" id="cl">بستن</button></div>');
  $('#m1').onclick=keyDialog;
  $('#m2').onclick=()=>out(APP_URL,'فلش‌کارت لغات انگلیسی');
  $('#m3').onclick=()=>{if(!cards.length)return toast('کارتی نیست');out(backupJSON(),'flashcards')};
  $('#m4').onclick=importSheet;
+ $('#m5').onclick=wordStore;
  $('#cl').onclick=close;
 }
 $('#mn').onclick=menu;
@@ -969,6 +1018,7 @@ load();
 if(!location.hash)location.replace('#study');
 route();
 
+document.addEventListener('click',e=>{const b=e.target.closest('.exbtn');if(!b)return;e.preventDefault();e.stopPropagation();const w=b.parentElement;w.classList.toggle('show');b.textContent=w.classList.contains('show')?'💬 مثال ◂':'💬 مثال ▸'});
 const olchip=()=>{const c=$('#olchip');if(c)c.hidden=navigator.onLine};
 addEventListener('online',()=>{olchip();toast('آنلاین شدید ✓')});
 addEventListener('offline',()=>{olchip();toast('آفلاین؛ کارت‌ها و مرور کار می‌کنند',3200)});
