@@ -287,12 +287,12 @@ function pj(t){
 async function askAI(p,k,prompt){
  let r;
  if(p.anthropic){
-  r=await fetch(p.url,{method:'POST',headers:{'Content-Type':'application/json','x-api-key':k,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},body:JSON.stringify({model:p.model,max_tokens:1500,messages:[{role:'user',content:prompt}]})});
+  r=await fetchTO(p.url,{method:'POST',headers:{'Content-Type':'application/json','x-api-key':k,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},body:JSON.stringify({model:p.model,max_tokens:1500,messages:[{role:'user',content:prompt}]})});
   if(!r.ok){const t=await r.text().catch(()=> '');throw new Error(p.name+' '+r.status+' '+t.slice(0,80))}
   const j=await r.json();
   return (j.content||[]).filter(x=>x.type==='text').map(x=>x.text).join('');
  }
- r=await fetch(p.url,{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+k},body:JSON.stringify({model:p.model,messages:[{role:'user',content:prompt}],stream:false})});
+ r=await fetchTO(p.url,{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+k},body:JSON.stringify({model:p.model,messages:[{role:'user',content:prompt}],stream:false})});
  if(!r.ok){const t=await r.text().catch(()=> '');throw new Error(p.name+' '+r.status+' '+t.slice(0,80))}
  const j=await r.json();
  return ((j.choices||[])[0]||{}).message?.content||'';
@@ -305,9 +305,13 @@ const DCAP=250;
 const dcKey=k=>'fc_dc_'+btoa(unescape(encodeURIComponent(k)));
 const dcGet=k=>{try{return JSON.parse(localStorage.getItem(dcKey(k))||'null')}catch(e){return null}};
 const dcSet=(k,v)=>{try{localStorage.setItem(dcKey(k),JSON.stringify(v));const ik='fc_dc_idx';const i=JSON.parse(localStorage.getItem(ik)||'[]').filter(x=>x!==dcKey(k));i.push(dcKey(k));while(i.length>DCAP)localStorage.removeItem(i.shift());localStorage.setItem(ik,JSON.stringify(i))}catch(e){}};
+async function fetchTO(u,o,ms){
+ const c=new AbortController();const t=setTimeout(()=>c.abort(),ms||12000);
+ try{return await fetch(u,Object.assign({},o||{},{signal:c.signal}))}finally{clearTimeout(t)}
+}
 async function fetchJSON(url){
  const c=dcGet(url);
- try{const r=await fetch(url);if(!r.ok)throw 0;const j=await r.json();dcSet(url,j);return j}catch(e){if(c)return c;throw e}
+ try{const r=await fetchTO(url);if(!r.ok)throw 0;const j=await r.json();dcSet(url,j);return j}catch(e){if(c)return c;throw e}
 }
 const isFa=t=>/[\u0600-\u06FF]/.test(t);
 async function faTr(t){
@@ -423,7 +427,7 @@ async function longmanFetch(w){
  const url='https://www.ldoceonline.com/dictionary/'+encodeURIComponent(norm(w).toLowerCase().replace(/\s+/g,'-'));
  const ck='lm:'+url;const c=dcGet(ck);
  let html='';
- try{const r=await fetch(url);if(!r.ok)throw 0;html=await r.text()}
+ try{const r=await fetchTO(url,null,15000);if(!r.ok)throw 0;html=await r.text()}
  catch(e){if(c)return c;throw e}
  const res=longmanDom(new DOMParser().parseFromString(html,'text/html'));
  if(res.list.length)dcSet(ck,res);
@@ -686,14 +690,16 @@ async function lookup(){
  const w=norm($('#w').value);if(!w)return toast('لغت را بنویسید');
  const b=$('#sg');b.disabled=true;
 
- const r=await askChain(PROMPT(w),m=>{b.textContent=m});
+ let r;
+ try{r=await askChain(PROMPT(w),m=>{b.textContent=m})}
+ catch(e){r={res:null,used:'',failed:['\u062e\u0637\u0627\u06cc \u062f\u0627\u062e\u0644\u06cc: '+String((e&&e.message)||e).slice(0,60)]}}
  b.disabled=false;b.textContent='✨ معانی را بیاور';
 
  if(!r.res||!r.res.list.length){
   sugg=[];toast('هیچ منبعی جواب نداد؛ اتصال اینترنت را بررسی کنید'+(r.failed.length?' ('+r.failed.join('، ')+')':''),4500);
   res();return;
  }
- sw=wq;sipa=r.res.ipa||'';sfam=normFam(r.res.fam);
+ sw=w;sipa=r.res.ipa||'';sfam=normFam(r.res.fam);
  sugg=normSenses(r.res.list.slice(0,12).map(s=>({pos:s.pos,d:s.d,e:s.e,p:'',syn:s.syn,ant:s.ant,prep:s.prep}))).map(s=>Object.assign(s,{on:true}));
  toast('منبع: '+r.used+(r.failed.length?' — ناموفق: '+r.failed.join('، '):''),3500);
  res();
