@@ -1,154 +1,49 @@
 [
  {
-  "w": "give up",
+  "w": "account for",
   "ipa": "",
   "senses": [
    {
-    "pos": "phrasal verb",
-    "d": "to stop trying to do something",
-    "e": "Don't give up — try again tomorrow.",
-    "ep": "تسلیم نشو — فردا دوباره امتحان کن.",
-    "p": "تسلیم شدن، رها کردن",
+    "pos": "verb",
+    "d": "to explain the reason for something; to be a part of a total",
+    "e": "Students account for forty percent of the audience.",
     "syn": [],
     "ant": [],
-    "prep": [
-     "give up on sb/sth"
-    ]
+    "p": "موضع‌شناسی کردن؛ سهم بودن",
+    "prep": [],
+    "ep": ""
    }
   ]
  },
  {
-  "w": "put off",
+  "w": "approve of",
   "ipa": "",
   "senses": [
    {
-    "pos": "phrasal verb",
-    "d": "to delay doing something to a later time",
-    "e": "Never put off until tomorrow what you can do today.",
-    "ep": "کار امروز را به فردا نینداز.",
-    "p": "به تعویق انداختن",
+    "pos": "verb",
+    "d": "to think that someone or something is good or right",
+    "e": "Her parents do not approve of her new friends.",
     "syn": [],
     "ant": [],
-    "prep": [
-     "put off doing sth"
-    ]
+    "p": "تأیید کردن",
+    "prep": [],
+    "ep": ""
    }
   ]
  },
  {
-  "w": "carry on",
+  "w": "back up",
   "ipa": "",
   "senses": [
    {
-    "pos": "phrasal verb",
-    "d": "to continue doing something",
-    "e": "Carry on with your work while I'm away.",
-    "ep": "کاری را در غیاب من ادامه بده.",
-    "p": "ادامه دادن",
+    "pos": "verb",
+    "d": "To move backwards, especially for a vehicle to do so",
+    "e": "That beeping sound indicates that the truck is backing up",
     "syn": [],
     "ant": [],
-    "prep": [
-     "carry on with sth",
-     "carry on doing sth"
-    ]
-   }
-  ]
- },
- {
-  "w": "turn down",
-  "ipa": "",
-  "senses": [
-   {
-    "pos": "phrasal verb",
-    "d": "to refuse an offer or request",
-    "e": "She turned down the job offer.",
-    "ep": "پیشنهاد شغل را رد کرد.",
-    "p": "رد کردن",
-    "syn": [],
-    "ant": [],
-    "prep": []
-   }
-  ]
- },
- {
-  "w": "look after",
-  "ipa": "",
-  "senses": [
-   {
-    "pos": "phrasal verb",
-    "d": "to take care of someone or something",
-    "e": "Who looks after the children while you're at work?",
-    "ep": "وقتی سر کار هستی چه کسی از بچه‌ها مراقبت می‌کند؟",
-    "p": "مراقبت کردن",
-    "syn": [],
-    "ant": [],
-    "prep": []
-   }
-  ]
- },
- {
-  "w": "run out of",
-  "ipa": "",
-  "senses": [
-   {
-    "pos": "phrasal verb",
-    "d": "to have no more of something left",
-    "e": "We've run out of milk.",
-    "ep": "شیرمان تمام شده است.",
-    "p": "تمام شدن (چیزی)",
-    "syn": [],
-    "ant": [],
-    "prep": [
-     "run out of sth"
-    ]
-   }
-  ]
- },
- {
-  "w": "come across",
-  "ipa": "",
-  "senses": [
-   {
-    "pos": "phrasal verb",
-    "d": "to meet or find something by chance",
-    "e": "I came across an old photo album.",
-    "ep": "اتفاقی یک آلبوم عکس قدیمی پیدا کردم.",
-    "p": "اتفاقی پیدا کردن",
-    "syn": [],
-    "ant": [],
-    "prep": []
-   }
-  ]
- },
- {
-  "w": "set up",
-  "ipa": "",
-  "senses": [
-   {
-    "pos": "phrasal verb",
-    "d": "to create or arrange something",
-    "e": "They set up a new company last year.",
-    "ep": "پارسال یک شرکت جدید راه‌اندازی کردند.",
-    "p": "راه‌اندازی کردن",
-    "syn": [],
-    "ant": [],
-    "prep": []
-   }
-  ]
- },
- {
-  "w": "take up",
-  "ipa": "",
-  "senses": [
-   {
-    "pos": "phrasal verb",
-    "d": "to start a new hobby or activity",
-    "e": "He took up painting after retirement.",
-    "ep": "بعد از بازنشستگی نقاشی را شروع کرد.",
-    "p": "شروع کردن (سرگرمی)",
-    "syn": [],
-    "ant": [],
-    "prep": []
+    "p": "پشتیبانی کردن؛ نسخه پشتیبان گرفتن",
+    "prep": [],
+    "ep": ""
    }
   ]
  },
@@ -157,14 +52,46 @@
   "ipa": "",
   "senses": [
    {
-    "pos": "phrasal verb",
-    "d": "to stop working (for a machine)",
-    "e": "The car broke down on the motorway.",
-    "ep": "ماشین در اتوبان از کار افتاد.",
-    "p": "از کار افتادن",
+    "pos": "verb",
+    "d": "To fail, to cease to function",
+    "e": "I am afraid my computer will break down if I try to run it at too high a speed",
     "syn": [],
     "ant": [],
-    "prep": []
+    "p": "از کار افتادن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "break in",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To enter a place by force or illicit means",
+    "e": "Someone broke in and stole his radio",
+    "syn": [],
+    "ant": [],
+    "p": "خوردن به خانه",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "break up",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To break or separate into pieces; to disintegrate or come apart",
+    "e": "It broke up when it hit the ground",
+    "syn": [],
+    "ant": [],
+    "p": "جدا شدن؛ از هم پاشیدن",
+    "prep": [],
+    "ep": ""
    }
   ]
  },
@@ -173,14 +100,16 @@
   "ipa": "",
   "senses": [
    {
-    "pos": "phrasal verb",
-    "d": "to mention a subject, or raise a child",
-    "e": "She brought up an interesting point.",
-    "ep": "او نکتهٔ جالبی را پیش کشید.",
-    "p": "پیش کشیدن؛ بزرگ کردن",
-    "syn": [],
+    "pos": "verb",
+    "d": "To mention",
+    "e": "Don't bring up politics if you want to have a quiet conversation with that guy",
+    "syn": [
+     "bring back"
+    ],
     "ant": [],
-    "prep": []
+    "p": "پیش کشیدن؛ بزرگ کردن",
+    "prep": [],
+    "ep": ""
    }
   ]
  },
@@ -189,14 +118,1629 @@
   "ipa": "",
   "senses": [
    {
-    "pos": "phrasal verb",
-    "d": "to cancel something",
-    "e": "The match was called off because of rain.",
-    "ep": "مسابقه به‌خاطر باران لغو شد.",
+    "pos": "verb",
+    "d": "To recall; to cancel or call a halt to",
+    "e": "After four months, the police called off the search for the missing boy",
+    "syn": [
+     "cancel",
+     "withcall"
+    ],
+    "ant": [],
     "p": "لغو کردن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "call on",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To visit a person ; to pay a call to",
+    "e": "I really should call on my aunt more often",
+    "syn": [
+     "pay a visit",
+     "visit",
+     "wait on"
+    ],
+    "ant": [],
+    "p": "درخواست کمک از",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "calm down",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to become quiet and relaxed after being angry or excited",
+    "e": "Calm down and tell me what happened.",
     "syn": [],
     "ant": [],
-    "prep": []
+    "p": "آرام گرفتن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "carry on",
+  "ipa": "/ˈkæɹi ˈɑn/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To continue or proceed as before",
+    "e": "I'll be gone for a few days, but I hope you will carry on in my absence",
+    "syn": [
+     "misbehave"
+    ],
+    "ant": [],
+    "p": "ادامه دادن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "carry out",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To hold while moving it out",
+    "e": "We’ll have to carry the piano out of the shop",
+    "syn": [],
+    "ant": [],
+    "p": "انجام دادن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "catch up",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To entangle",
+    "e": "The speaker wires have got caught up with the wires from the lights",
+    "syn": [],
+    "ant": [],
+    "p": "رساندن به جمع",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "check in",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to report your arrival at a hotel or airport",
+    "e": "Passengers should check in two hours before the flight.",
+    "syn": [],
+    "ant": [],
+    "p": "ثبت‌نام کردن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "check out",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to pay your bill and leave a hotel; to examine something",
+    "e": "We checked out of the hotel at noon.",
+    "syn": [],
+    "ant": [
+     "check in"
+    ],
+    "p": "تخلیه کردن (هتل)",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "cheer up",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To become happy",
+    "e": "I cheered up after seeing the results",
+    "syn": [],
+    "ant": [],
+    "p": "شاد کردن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "come across",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to find something or meet someone by chance",
+    "e": "I came across an old photo while tidying my desk.",
+    "syn": [],
+    "ant": [],
+    "p": "اتفاقی پدید آمدن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "come back",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To return to one's possession, especially of memories",
+    "e": "Suddenly it all came back to him, the tea, the petite madeleines, his mother",
+    "syn": [],
+    "ant": [],
+    "p": "برگشتن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "come up with",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To invent, create, or think of",
+    "e": "How can you come up with such brilliant ideas?",
+    "syn": [],
+    "ant": [],
+    "p": "ابداع کردن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "count on",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To rely on, trust, or expect",
+    "e": "Can we count on you to help out?",
+    "syn": [
+     "bank on",
+     "hang one's hat on"
+    ],
+    "ant": [],
+    "p": "حساب کردن روی",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "cut down",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To bring down by cutting",
+    "e": "They want to cut down several trees to make room for the parking lot",
+    "syn": [],
+    "ant": [],
+    "p": "کاهش دادن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "cut off",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To stop providing funds to someone",
+    "e": "His parents cut him off to encourage him to find a job",
+    "syn": [
+     "prune",
+     "trim"
+    ],
+    "ant": [],
+    "p": "قطع کردن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "deal with",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to take action about a problem or task",
+    "e": "The manager will deal with your complaint today.",
+    "syn": [],
+    "ant": [],
+    "p": "رسیدگی کردن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "drop off",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to take someone or something somewhere by car and leave them there; to fall asleep",
+    "e": "I can drop you off at the station.",
+    "syn": [
+     "set down",
+     "doze off",
+     "sack out"
+    ],
+    "ant": [],
+    "p": "پیاده کردن؛ افت کردن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "drop out",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To leave school, a race, etc. prematurely and voluntarily",
+    "e": "Nothing went well in high school, so he dropped out",
+    "syn": [],
+    "ant": [],
+    "p": "کناره‌گیری کردن از تحصیل",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "fall apart",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To disintegrate, to break into pieces",
+    "e": "My old briefcase is falling apart. I'll have to buy a new one",
+    "syn": [
+     "crack up",
+     "break",
+     "break apart",
+     "break up"
+    ],
+    "ant": [],
+    "p": "از هم گسیختن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "fall behind",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To be late for a regular event",
+    "e": "You're falling behind with the rent",
+    "syn": [],
+    "ant": [],
+    "p": "عقب ماندن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "fall out",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to argue with someone and stop being friendly",
+    "e": "The two brothers fell out over the family land.",
+    "syn": [],
+    "ant": [],
+    "p": "قهر کردن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "figure out",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to finally understand something or find the answer after thinking",
+    "e": "She could not figure out why the engine stopped.",
+    "syn": [],
+    "ant": [],
+    "p": "سر در آوردن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "fill in",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To fill; to replace material that is absent or has been removed",
+    "e": "After you're done laying the pipe, fill in the trench",
+    "syn": [
+     "fill out"
+    ],
+    "ant": [],
+    "p": "جای کسی را پر کردن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "find out",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To discover, as by asking or investigating",
+    "e": "I don't know who the twenty-first president of the United States was, but it should be very easy to find out",
+    "syn": [],
+    "ant": [],
+    "p": "کشف کردن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "get along",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "often followed by with To interact or coexist well, without argument or trouble",
+    "e": "I wish the kids would get along better",
+    "syn": [],
+    "ant": [],
+    "p": "کنار آمدن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "get away",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To move away from",
+    "e": "Get away from me!",
+    "syn": [],
+    "ant": [],
+    "p": "فرار کردن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "get back",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "Return to where one came from",
+    "e": "",
+    "syn": [],
+    "ant": [],
+    "p": "بازگشتن؛ پس گرفتن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "get by",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to manage to live or do things with the little you have",
+    "e": "They get by on one small salary.",
+    "syn": [
+     "get along",
+     "make do",
+     "make ends meet"
+    ],
+    "ant": [],
+    "p": "در سطح کفاف سیر کردن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "get over",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to feel better after an illness or a problem",
+    "e": "It took her months to get over the flu.",
+    "syn": [],
+    "ant": [],
+    "p": "عبور کردن از غم و شکست",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "get through",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To overcome; to endure",
+    "e": "Military training was hard, but I got through it",
+    "syn": [],
+    "ant": [],
+    "p": "نجات یافتن؛ تماس گرفتن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "get up",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To move in an upward direction; to ascend or climb",
+    "e": "I'm having difficulty getting up the stairs",
+    "syn": [
+     "alley oop",
+     "amound",
+     "hoard",
+     "berate"
+    ],
+    "ant": [
+     "go to bed",
+     "sit down"
+    ],
+    "p": "بلند شدن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "give away",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To make a gift of something",
+    "e": "I didn't like that book, so I gave it away",
+    "syn": [],
+    "ant": [],
+    "p": "هدیه دادن؛ لو دادن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "give in",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To collapse or fall",
+    "e": "The roof gave in under the weight of the snow",
+    "syn": [],
+    "ant": [],
+    "p": "تسلیم شدن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "give up",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To surrender someone or something",
+    "e": "He was surrounded, so gave himself up",
+    "syn": [
+     "surrender",
+     "yield"
+    ],
+    "ant": [],
+    "p": "تسلیم شدن؛ رها کردن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "go ahead",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To proceed; to begin",
+    "e": "Go ahead and eat without me. I expect to be very late",
+    "syn": [],
+    "ant": [],
+    "p": "پیش رفتن؛ اجازه دادن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "go over",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To look at carefully; to scrutinize; to analyze",
+    "e": "Please go over the reports to make sure we haven't missed anything",
+    "syn": [],
+    "ant": [],
+    "p": "بازبینی کردن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "grow up",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To mature and become an adult",
+    "e": "What do you want to be when you grow up?",
+    "syn": [
+     "age",
+     "upgrow",
+     "blossom",
+     "prosper"
+    ],
+    "ant": [],
+    "p": "بزرگ شدن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "hand in",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To give something to a responsible person",
+    "e": "I found a wallet on the street, so I handed it in to the police",
+    "syn": [
+     "turn in"
+    ],
+    "ant": [],
+    "p": "تحویل دادن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "hand out",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To distribute",
+    "e": "",
+    "syn": [],
+    "ant": [],
+    "p": "پخش کردن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "hang out",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To spend time doing nothing in particular",
+    "e": "After the film, do you want to go hang out?",
+    "syn": [
+     "lepak",
+     "relax"
+    ],
+    "ant": [],
+    "p": "وقت گذراندن با دوستان",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "hang up",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To put up to hang",
+    "e": "I hung up my wash on the line",
+    "syn": [
+     "release"
+    ],
+    "ant": [],
+    "p": "قطع کردن تلفن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "hold on",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To grasp or grip firmly",
+    "e": "Hold on tightly to the railing",
+    "syn": [
+     "belock",
+     "hold tight",
+     "go on",
+     "last"
+    ],
+    "ant": [],
+    "p": "صبر کردن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "hurry up",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To hurry; to increase the speed of doing something",
+    "e": "",
+    "syn": [],
+    "ant": [],
+    "p": "شتاب کردن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "keep on",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to continue doing something without stopping",
+    "e": "She kept on working after midnight.",
+    "syn": [],
+    "ant": [],
+    "p": "بی‌وقفه ادامه دادن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "keep up",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To maintain; to preserve; to prevent from deteriorating or falling",
+    "e": "",
+    "syn": [],
+    "ant": [],
+    "p": "هم قدم ماندن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "let down",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To allow to descend",
+    "e": "They let down the rope and I fastened it to the basket",
+    "syn": [],
+    "ant": [],
+    "p": "ناامید کردن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "look after",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To care for; to keep safe",
+    "e": "He asked me to look after his daughter while he was away",
+    "syn": [],
+    "ant": [],
+    "p": "مراقبت کردن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "look down on",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to think someone or something is not important or good enough",
+    "e": "He looks down on people who have less education.",
+    "syn": [
+     "look down one's nose"
+    ],
+    "ant": [
+     "look up to"
+    ],
+    "p": "تحقیر کردن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "look for",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To search for; to seek",
+    "e": "He spent his life looking for the truth",
+    "syn": [
+     "look after"
+    ],
+    "ant": [],
+    "p": "جست‌وجو کردن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "look forward to",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To anticipate, expect, or wait for, especially with a feeling of approval or pleasure. To be excited or eager to",
+    "e": "",
+    "syn": [],
+    "ant": [],
+    "p": "مشتاقانه منتظر بودن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "look out",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "idiomat to be vigilant and aware",
+    "e": "While you're in the city center, look out for the dodgy street vendors",
+    "syn": [
+     "watch out"
+    ],
+    "ant": [],
+    "p": "مواظب بودن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "look up",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To have better prospects",
+    "e": "Things started looking up after Jim moved back in with his parents",
+    "syn": [
+     "get better",
+     "improve"
+    ],
+    "ant": [],
+    "p": "جست‌وجو کردن در مرجع",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "make out",
+  "ipa": "/meɪk æɔt/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to see, hear, or understand something with difficulty",
+    "e": "I could not make out what he said on the phone.",
+    "syn": [
+     "make do",
+     "descry",
+     "detect",
+     "hug"
+    ],
+    "ant": [],
+    "p": "درک کردن با دقت",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "make up",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To build or complete",
+    "e": "",
+    "syn": [],
+    "ant": [],
+    "p": "آشتی کردن؛ ساختگی بودن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "pass away",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To die",
+    "e": "After a long battle with cancer, the professor passed away yesterday",
+    "syn": [],
+    "ant": [],
+    "p": "وفات یافتن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "pass out",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To faint; to become unconscious",
+    "e": "I pass out at the sight of blood",
+    "syn": [],
+    "ant": [],
+    "p": "غش کردن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "pay back",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To pay a debt or the lender so as to provide the entire amount of money owed",
+    "e": "",
+    "syn": [],
+    "ant": [],
+    "p": "پس دادن (پول)",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "pick out",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To remove by picking",
+    "e": "",
+    "syn": [],
+    "ant": [],
+    "p": "گزیدن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "pick up",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To lift; to grasp and raise",
+    "e": "When you pick up the bag, make sure to support the bottom",
+    "syn": [
+     "hit on",
+     "learn"
+    ],
+    "ant": [
+     "put down"
+    ],
+    "p": "برداشتن؛ ترساندن با ماشین",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "point out",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To identify among a group of similar subjects, or in a scene where the subject might not be readily seen or noticed, with a gesture of the body",
+    "e": "He pointed out the little brown bird in the tree",
+    "syn": [],
+    "ant": [],
+    "p": "خاطر نشان کردن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "pull over",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to drive to the side of the road and stop",
+    "e": "The police asked the driver to pull over.",
+    "syn": [
+     "pull up"
+    ],
+    "ant": [],
+    "p": "توقف کردن در حاشیه",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "put down",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To insult, belittle, or demean",
+    "e": "They frequently put down their little sister for walking slowly",
+    "syn": [
+     "register",
+     "touch down",
+     "eliminate",
+     "end"
+    ],
+    "ant": [
+     "compliment",
+     "talk up"
+    ],
+    "p": "بلند نشاندن؛ پایین گذاشتن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "put off",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To procrastinate",
+    "e": "Don't put it off to the last minute",
+    "syn": [],
+    "ant": [],
+    "p": "به تعویق انداختن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "put on",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To don clothing, equipment or the like",
+    "e": "Why don't you put on your jacket. It's cold",
+    "syn": [
+     "beclothe",
+     "hoodwink",
+     "put down",
+     "hasten"
+    ],
+    "ant": [
+     "doff",
+     "take off",
+     "take off"
+    ],
+    "p": "پوشیدن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "put up with",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to accept or tolerate an unpleasant person or situation",
+    "e": "I will not put up with this noise any longer.",
+    "syn": [],
+    "ant": [],
+    "p": "تحمل کردن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "run away",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To flee by running",
+    "e": "The crowd had to run away from the burning structure with only the clothes on their backs",
+    "syn": [],
+    "ant": [],
+    "p": "فرار کردن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "run into",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To enter by running",
+    "e": "He ran into the building",
+    "syn": [],
+    "ant": [],
+    "p": "اتفاقی دیدن کسی",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "run out of",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to have no more of something left",
+    "e": "We ran out of milk, so I walked to the shop.",
+    "syn": [],
+    "ant": [],
+    "p": "تمام شدن (چیزی)",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "set off",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To leave; to begin a journey or trip",
+    "e": "He set off in search of better opportunities",
+    "syn": [],
+    "ant": [],
+    "p": "روی شدن؛ فعال کردن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "set up",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To ready something for use",
+    "e": "We set up the sprinkler",
+    "syn": [
+     "assemble",
+     "configure",
+     "install",
+     "prepare"
+    ],
+    "ant": [],
+    "p": "راه‌اندازی کردن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "show off",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To exhibit the best attributes of something",
+    "e": "Grocery stores show off their produce by placing the most attractive specimens in front",
+    "syn": [],
+    "ant": [],
+    "p": "خودنمایی کردن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "show up",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To appear, arrive, or attend, especially suddenly or erratically",
+    "e": "No matter how many I throw away, more copies always show up",
+    "syn": [
+     "turn up"
+    ],
+    "ant": [],
+    "p": "حاضر شدن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "shut down",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to stop a machine or business from operating",
+    "e": "The factory shut down for the holidays.",
+    "syn": [],
+    "ant": [],
+    "p": "خاموش کردن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "sort out",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To clarify by reviewing mentally",
+    "e": "It's a bit confused at the moment, I'll try to sort it out later",
+    "syn": [],
+    "ant": [],
+    "p": "مرتب کردن و حل کردن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "stand for",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to be a short way of saying or representing something",
+    "e": "The letters BBC stand for British Broadcasting Corporation.",
+    "syn": [],
+    "ant": [],
+    "p": "نماد بودن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "stand out",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to be very easy to notice because of being better or different",
+    "e": "Her red coat stood out in the grey crowd.",
+    "syn": [],
+    "ant": [],
+    "p": "متمایز بودن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "take after",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to look or behave like an older member of your family",
+    "e": "Everyone says she takes after her grandmother.",
+    "syn": [],
+    "ant": [],
+    "p": "به کسی رفتن (شباهت)",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "take apart",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To soundly defeat someone, or a team",
+    "e": "",
+    "syn": [
+     "tear apart"
+    ],
+    "ant": [],
+    "p": "باز کردن قطعه قطعه",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "take back",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To retract/withdraw an earlier statement",
+    "e": "No, you are not fat; I take it all back",
+    "syn": [
+     "recant",
+     "unsay"
+    ],
+    "ant": [],
+    "p": "پس گرفتن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "take off",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To remove",
+    "e": "He took off his shoes",
+    "syn": [
+     "bloom",
+     "blossom",
+     "flourish",
+     "grow"
+    ],
+    "ant": [
+     "land",
+     "land",
+     "touch down"
+    ],
+    "p": "آفدادن لباس؛ برخاستن هواپیما",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "take on",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To acquire, bring in, or introduce",
+    "e": "The ship took on cargo in Norfolk yesterday",
+    "syn": [],
+    "ant": [],
+    "p": "قبول مسئولیت کردن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "take over",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To adopt a further responsibility or duty",
+    "e": "He will take over the job permanently when the accountant retires",
+    "syn": [
+     "overtake",
+     "surpass"
+    ],
+    "ant": [],
+    "p": "کنترل را در دست گرفتن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "throw away",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To discard trash, garbage, or the like , to toss out, to put in the trash, to dispose of",
+    "e": "Don't throw the newspaper away, it goes in the recycle bin!",
+    "syn": [],
+    "ant": [],
+    "p": "دور انداختن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "try on",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To test the look or fit of a garment by wearing it",
+    "e": "",
+    "syn": [],
+    "ant": [],
+    "p": "پرو کردن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "turn down",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To refuse, decline, or deny",
+    "e": "He turned down all our offers of help",
+    "syn": [],
+    "ant": [
+     "turn up",
+     "accept"
+    ],
+    "p": "رد کردن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "turn off",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To power down, to switch off, to put out of operation, to deactivate an appliance, light, mechanism, functionality etc",
+    "e": "Turn off the machine and unplug it when you leave",
+    "syn": [
+     "shut off",
+     "cut",
+     "cut off",
+     "deactivate"
+    ],
+    "ant": [
+     "turn on"
+    ],
+    "p": "خاموش کردن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "turn on",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To set a flow of fluid or gas running by rotating a tap or valve",
+    "e": "Turn on the tap",
+    "syn": [],
+    "ant": [
+     "turn off"
+    ],
+    "p": "روشن کردن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "turn up",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To show up; to appear suddenly or unexpectedly",
+    "e": "I don't like people turning up without an appointment",
+    "syn": [],
+    "ant": [
+     "turn down"
+    ],
+    "p": "ظاهر شدن؛ بلند کردن صدا",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "use up",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "of a resource to consume, deplete or exhaust",
+    "e": "",
+    "syn": [],
+    "ant": [],
+    "p": "مصرف کردن کامل",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "wake up",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To stop sleeping; to awake",
+    "e": "",
+    "syn": [],
+    "ant": [],
+    "p": "بیدار شدن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "watch out",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To be aware or conscious; to look closely or carefully; to use caution. Often used in the imperative",
+    "e": "",
+    "syn": [],
+    "ant": [],
+    "p": "حواس‌جمع بودن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "wear out",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To cause something to become damaged, useless, or ineffective through continued use, especially hard, heavy, or careless use",
+    "e": "He wears a pair of tennis shoes out every summer",
+    "syn": [
+     "outwear"
+    ],
+    "ant": [],
+    "p": "کهنه کردن",
+    "prep": [],
+    "ep": ""
+   }
+  ]
+ },
+ {
+  "w": "work out",
+  "ipa": "/ˌwəːk ˈaʊt/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "with object after out To calculate",
+    "e": "Can you work out 250 × 12 in your head for me?",
+    "syn": [
+     "figure out",
+     "train"
+    ],
+    "ant": [],
+    "p": "ورزش کردن؛ سرانجام خوب شدن",
+    "prep": [],
+    "ep": ""
    }
   ]
  }
