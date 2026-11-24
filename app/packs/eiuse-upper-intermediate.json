@@ -1,0 +1,273 @@
+[
+ {
+  "w": "assume",
+  "ipa": "/əˈsjuːm/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to believe something is true without having proof",
+    "e": "I assumed he was coming, but he never arrived.",
+    "ep": "فرض کردم می‌آید، اما هرگز نرسید.",
+    "p": "فرض کردن، پنداشتن",
+    "syn": [
+     "presume",
+     "suppose"
+    ],
+    "ant": [],
+    "prep": [
+     "assume (that)..."
+    ]
+   }
+  ]
+ },
+ {
+  "w": "intend",
+  "ipa": "/ɪnˈtend/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to plan or want to do something",
+    "e": "We intend to extend the house next year.",
+    "ep": "قصد داریم سال بعد خانه را بزرگ‌تر کنیم.",
+    "p": "قصد داشتن",
+    "syn": [
+     "plan",
+     "mean"
+    ],
+    "ant": [],
+    "prep": [
+     "intend to do sth"
+    ]
+   }
+  ]
+ },
+ {
+  "w": "reliable",
+  "ipa": "/rɪˈlaɪəbl/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "able to be trusted to work well or behave well",
+    "e": "She is a very reliable colleague.",
+    "ep": "او همکاری بسیار قابل اعتماد است.",
+    "p": "قابل اعتماد",
+    "syn": [
+     "dependable",
+     "trustworthy"
+    ],
+    "ant": [
+     "unreliable"
+    ],
+    "prep": []
+   }
+  ]
+ },
+ {
+  "w": "significant",
+  "ipa": "/sɪɡˈnɪfɪkənt/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "large or important enough to have an effect",
+    "e": "There was a significant change in her mood.",
+    "ep": "تغییر قابل توجهی در حالِ او بود.",
+    "p": "قابل توجه، مهم",
+    "syn": [
+     "considerable",
+     "notable"
+    ],
+    "ant": [
+     "insignificant",
+     "negligible"
+    ],
+    "prep": [
+     "significant for/to sb"
+    ]
+   }
+  ]
+ },
+ {
+  "w": "temporary",
+  "ipa": "/ˈtemprəri/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "lasting for only a short time",
+    "e": "This is only a temporary solution.",
+    "ep": "این فقط یک راه‌حل موقت است.",
+    "p": "موقت",
+    "syn": [
+     "short-term",
+     "transient"
+    ],
+    "ant": [
+     "permanent"
+    ],
+    "prep": []
+   }
+  ]
+ },
+ {
+  "w": "benefit",
+  "ipa": "/ˈbenɪfɪt/",
+  "senses": [
+   {
+    "pos": "noun",
+    "d": "an advantage that something gives you",
+    "e": "Regular exercise has many health benefits.",
+    "ep": "ورزش منظم فواید سلامتی زیادی دارد.",
+    "p": "مزیت، فایده",
+    "syn": [
+     "advantage",
+     "gain"
+    ],
+    "ant": [
+     "drawback",
+     "disadvantage"
+    ],
+    "prep": [
+     "benefit of sth",
+     "benefit from sth"
+    ]
+   }
+  ]
+ },
+ {
+  "w": "demonstrate",
+  "ipa": "/ˈdemənstreɪt/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to show clearly that something is true or how something works",
+    "e": "The teacher demonstrated the experiment.",
+    "ep": "معلم آزمایش را نشان داد.",
+    "p": "نشان دادن",
+    "syn": [
+     "show",
+     "illustrate",
+     "display"
+    ],
+    "ant": [
+     "obscure"
+    ],
+    "prep": [
+     "demonstrate sth to sb"
+    ]
+   }
+  ]
+ },
+ {
+  "w": "emphasize",
+  "ipa": "/ˈemfəsaɪz/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to give special importance or attention to something",
+    "e": "She emphasized the need for regular practice.",
+    "ep": "بر نیاز به تمرین منظم تأکید کرد.",
+    "p": "تأکید کردن",
+    "syn": [
+     "stress",
+     "highlight",
+     "underline"
+    ],
+    "ant": [
+     "downplay"
+    ],
+    "prep": [
+     "emphasize sth to sb"
+    ]
+   }
+  ]
+ },
+ {
+  "w": "maintain",
+  "ipa": "/meɪnˈteɪn/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to keep something in good condition or keep it going",
+    "e": "He maintains his car regularly.",
+    "ep": "ماشینش را مرتب نگه‌داری می‌کند.",
+    "p": "نگه داشتن، حفظ کردن",
+    "syn": [
+     "preserve",
+     "uphold",
+     "keep up"
+    ],
+    "ant": [
+     "neglect"
+    ],
+    "prep": []
+   }
+  ]
+ },
+ {
+  "w": "obtain",
+  "ipa": "/əbˈteɪn/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to get something you want, especially with effort",
+    "e": "You must obtain permission before entering.",
+    "ep": "قبل از ورود باید اجازه بگیری.",
+    "p": "به دست آوردن",
+    "syn": [
+     "acquire",
+     "gain"
+    ],
+    "ant": [
+     "lose"
+    ],
+    "prep": [
+     "obtain sth from sb"
+    ]
+   }
+  ]
+ },
+ {
+  "w": "restrict",
+  "ipa": "/rɪˈstrɪkt/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to limit the size, amount, or range of something",
+    "e": "The new law restricts the sale of cigarettes.",
+    "ep": "قانون جدید فروش سیگار را محدود می‌کند.",
+    "p": "محدود کردن",
+    "syn": [
+     "limit",
+     "curtail"
+    ],
+    "ant": [
+     "expand"
+    ],
+    "prep": [
+     "restrict sth to sth"
+    ]
+   }
+  ]
+ },
+ {
+  "w": "arise",
+  "ipa": "/əˈraɪz/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to happen or start to exist",
+    "e": "Problems may arise during the project.",
+    "ep": "شاید در طول پروژه مشکلاتی پیش بیاید.",
+    "p": "پدیدار شدن، بروز کردن",
+    "syn": [
+     "occur",
+     "emerge",
+     "crop up"
+    ],
+    "ant": [],
+    "prep": [
+     "arise from/out of sth"
+    ]
+   }
+  ]
+ }
+]

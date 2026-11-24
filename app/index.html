@@ -93,11 +93,9 @@ label{display:block;font-size:.85rem;color:var(--mut);margin:10px 0 4px}
 .hide-fa .fa{display:none!important}
 .badge{display:inline-block;padding:2px 10px;border-radius:10px;background:var(--sf);font-size:.8rem;color:var(--mut);margin-right:6px}
 .gchip{display:inline-block;background:color-mix(in srgb,var(--ac) 14%,var(--card));color:var(--ac);font-weight:700;font-size:.78rem;border-radius:8px;padding:1px 8px;margin-inline-end:4px;vertical-align:middle}
-.exwrap{margin-top:4px}
-.exbtn{background:none;border:0;padding:2px 6px;color:var(--mut);font:inherit;font-size:.8rem;cursor:pointer;border-bottom:1px dashed var(--bd)}
-.exwrap.show .exbtn{color:var(--ac)}
-.exhide{display:none}
-.exwrap.show .ex{display:block}
+.trbtn{background:none;border:0;padding:2px 6px;color:var(--mut);font:inherit;font-size:.8rem;cursor:pointer;border-bottom:1px dashed var(--bd)}
+.trbtn:disabled{color:var(--mut);border-bottom-color:transparent}
+.tr{direction:rtl;text-align:right;color:var(--ok);font-size:.9rem;margin-top:2px}
 </style>
 </head>
 <body>
@@ -173,7 +171,9 @@ let sp=null;
 let dr=null;
 let wv='',sugg=[],sw='',sipa='',sfam=[];
 let listTab='all';
+let packFilter='';
 let toastT;
+const pcards=()=>packFilter?cards.filter(c=>c.src===packFilter):cards;
 
 function toast(m,ms){const t=$('#toast');t.textContent=m;t.hidden=false;clearTimeout(toastT);toastT=setTimeout(()=>t.hidden=true,ms||2200)}
 function save(){try{localStorage.setItem(KEY,JSON.stringify(cards))}catch(e){}}
@@ -181,17 +181,17 @@ const findCard=(w,exId)=>cards.find(x=>x.id!==exId&&x.w.toLowerCase()===norm(w).
 
 function normSenses(list){
  return (list||[]).map(s=>({
-   pos:npos(s.pos), d:norm(s.d), e:norm(s.e), p:norm(s.p), g:norm(s.g),
+   pos:npos(s.pos), d:norm(s.d), e:norm(s.e), p:norm(s.p), g:norm(s.g), ep:norm(s.ep),
    syn:arr(s.syn), ant:arr(s.ant), prep:arr(s.prep)
  })).filter(s=>s.d);
 }
 function blankCard(w){
- return { id:uid(), w:norm(w), t:Date.now(), ipa:'', reps:0, interval:1, ease:2.5, due:today0(), last:null, fam:[], senses:[] };
+ return { id:uid(), w:norm(w), t:Date.now(), ipa:'', reps:0, interval:1, ease:2.5, due:today0(), last:null, fam:[], senses:[], src:'' };
 }
 
-function addSenses(w,list,ipa,fam,sm2){
+function addSenses(w,list,ipa,fam,sm2,src){
  let c=findCard(w),n=0;
- if(!c){c=blankCard(w);if(sm2){c.reps=sm2.reps||0;c.interval=sm2.interval||1;c.ease=sm2.ease||2.5;c.due=sm2.due||today0();c.last=sm2.last||null}cards.push(c)}
+ if(!c){c=blankCard(w);if(src)c.src=src;if(sm2){c.reps=sm2.reps||0;c.interval=sm2.interval||1;c.ease=sm2.ease||2.5;c.due=sm2.due||today0();c.last=sm2.last||null}cards.push(c)}
  if(ipa&&!c.ipa)c.ipa=norm(ipa);
  if(fam&&fam.length&&!(c.fam||[]).length)c.fam=normFam(fam).filter(f=>f.w.toLowerCase()!==c.w.toLowerCase());
  normSenses(list).forEach(s=>{if(!c.senses.some(x=>x.d===s.d)){c.senses.push(s);n++}});
@@ -227,7 +227,7 @@ function load(){
   const card={
     id:c.id||uid(), w:norm(c.w), t, ipa:c.ipa||'',
     reps: reps||0, interval: +c.interval||1, ease: +c.ease||2.5, due: +c.due||today0(), last: c.last||null,
-    fam:normFam(c.fam), senses:normSenses(list)
+    fam:normFam(c.fam), senses:normSenses(list), src:String(c.src||'')
   };
   const ex=cards.find(x=>x.w.toLowerCase()===card.w.toLowerCase());
   if(ex){
@@ -237,6 +237,7 @@ function load(){
     ex.due=Math.min(ex.due,card.due);
     if(!(ex.fam||[]).length)ex.fam=card.fam;
     if(!ex.ipa)ex.ipa=card.ipa;
+    if(!ex.src)ex.src=card.src;
   } else cards.push(card);
  });
  if(!raw)save();
@@ -254,20 +255,22 @@ const prepRow=a=>a&&a.length?'<div class="pr" dir="rtl"><b>حرف اضافه:</b
 function gh(ss,chk){
  return group(ss).map(([p,a])=>'<div class="pg" style="--c:'+pcol(p)+'"><div class="ph"><b>'+fa(p)+'</b><span class="cnt">'+p+' · '+a.length+' معنی</span></div>'+(sumP(a)?'<div class="ps">'+esc(sumP(a))+'</div>':'')+
   a.map(({s,i},k)=>{
-   const body='<div class="sb"><div class="df">'+(s.g?'<span class="gchip" dir="ltr">'+esc(s.g)+'</span> ':'')+esc(s.d)+'</div>'+(s.e?'<div class="exwrap"><button class="exbtn" type="button">💬 مثال ▸</button><div class="ex exhide">'+esc(s.e)+'</div></div>':'')+(s.p?'<div class="fa">'+esc(s.p)+'</div>':'')+prepRow(s.prep)+tagRow('s1','هم‌معنی',s.syn)+tagRow('s2','متضاد',s.ant)+'</div>';
+   const body='<div class="sb"><div class="df">'+(s.g?'<span class="gchip" dir="ltr">'+esc(s.g)+'</span> ':'')+esc(s.d)+'</div>'+(s.e?'<div class="ex">'+esc(s.e)+'</div><button class="trbtn" type="button" data-src="'+esc(s.e)+'">🌐 ترجمهٔ مثال ▸</button><div class="tr" hidden>'+(s.ep?esc(s.ep):'')+'</div>':'')+(s.p?'<div class="fa">'+esc(s.p)+'</div>':'')+prepRow(s.prep)+tagRow('s1','هم‌معنی',s.syn)+tagRow('s2','متضاد',s.ant)+'</div>';
    return chk?'<label class="sn"><input type="checkbox" data-i="'+i+'"'+(s.on?' checked':'')+'><span class="nm">'+(k+1)+'</span>'+body+'</label>':'<div class="sn"><span class="nm">'+(k+1)+'</span>'+body+'</div>';
   }).join('')+'</div>').join('');
 }
 function days(){
- if(!cards.length)return [];
- const base=Math.min(...cards.map(c=>dayStart(c.t))),m={};
- cards.forEach(c=>{const n=Math.round((dayStart(c.t)-base)/DAY)+1;(m[n]=m[n]||[]).push(c)});
+ const P=pcards();
+ if(!P.length)return [];
+ const base=Math.min(...P.map(c=>dayStart(c.t))),m={};
+ P.forEach(c=>{const n=Math.round((dayStart(c.t)-base)/DAY)+1;(m[n]=m[n]||[]).push(c)});
  return Object.keys(m).map(Number).sort((a,b)=>a-b).map(n=>{const cs=m[n].sort((a,b)=>a.t-b.t);return{n,cs,ts:dayStart(cs[0].t)}});
 }
 
 function speak(w){
- if(!('speechSynthesis' in window))return toast('صدا پشتیبانی نمی‌شود');
- try{const u=new SpeechSynthesisUtterance(w);u.lang='en-US';u.rate=.85;speechSynthesis.cancel();speechSynthesis.speak(u)}catch(e){}
+ try{if(window.AndroidTTS&&window.AndroidTTS.speak){window.AndroidTTS.speak(String(w));return}}catch(e){}
+ if(!('speechSynthesis' in window))return toast('صدا روی این دستگاه پشتیبانی نمی‌شود');
+ try{const u=new SpeechSynthesisUtterance(w);u.lang='en-US';u.rate=.85;speechSynthesis.cancel();speechSynthesis.speak(u)}catch(e){toast('صدا پخش نشد')}
 }
 
 const PROMPT=w=>'Give the meanings of the English word or phrase "'+w+'" in the style of a learner dictionary such as the Longman Dictionary of Contemporary English. Write every definition and example yourself in simple English; do not copy any dictionary text. Return ONLY a JSON object: {"ipa":"IPA pronunciation of the whole input","family":[{"w":"another word from the same word family","pos":"its part of speech"}],"senses":[{"pos":"one of: noun, verb, adjective, adverb, phrasal verb, phrase, idiom, preposition, conjunction, pronoun, determiner, exclamation","d":"definition","e":"one example sentence","syn":["up to 4 synonyms"],"ant":["up to 3 antonyms, or empty array"],"prep":["patterns showing the preposition that must follow this word, e.g. depend on sb/sth, interested in doing sth; empty array if none"]}]}. Give up to 12 senses across all parts of speech. In family give up to 6 other members of the word family (for example decide, decision, decisive, decisively), or an empty array. No markdown.';
@@ -538,24 +541,27 @@ const chipHTML=g=>'<span class="chip" style="color:'+pcol(g[0])+';border-color:'
 function wordRows(k,cs){return cs.map((c,i)=>'<button class="wi" data-s="'+k+':'+i+'"><span><b>'+esc(c.w)+'</b> <span class="mut">'+esc(summ(c))+'</span></span><span class="mut">🔁 '+(c.reps||0)+'</span></button>').join('')}
 
 function studyHome(v){
- const dueCards=cards.filter(isDue);
+ let dueCards=pcards().filter(isDue);
  const hero=dueCards.length
    ?'<div class="hero"><div>مرور امروز</div><div class="big">'+dueCards.length+' کارت</div><button class="btn" id="stoday">▶ شروع مرور</button></div>'
-   :'<div class="hero empty"><div>🎉 همه مرور شده!</div><div class="mut" style="color:#fff;opacity:.8;margin-top:4px">'+cards.length+' کارت ذخیره‌شده</div></div>';
+   :'<div class="hero empty"><div>🎉 همه مرور شده!</div><div class="mut" style="color:#fff;opacity:.8;margin-top:4px">'+pcards().length+' کارت ذخیره‌شده</div></div>';
+ const srcs=[...new Set(cards.map(c=>c.src).filter(Boolean))];
+ let pf=srcs.length?'<div class="tabs">'+[''].concat(srcs).map(x=>'<button class="'+(packFilter===x?'on':'')+'" data-pf="'+esc(x)+'">'+(x?'📖 '+esc(x):'همه')+'</button>').join('')+'</div>':'';
 
  const modes=[['days','📅 روزها'],['all','📚 همه'],['rev','🔁 تعداد مرور']];
  let groups=[];
  if(smode==='days')groups=days().map(d=>({k:d.n,title:dayName(d.n),cs:d.cs}));
  else if(smode==='all')groups=[{k:0,title:'همهٔ لغت‌ها',cs:grp(0).cs,open:true}];
  else{
-  const m={};cards.forEach(c=>{const r=c.reps||0;(m[r]=m[r]||[]).push(c)});
+  const m={};pcards().forEach(c=>{const r=c.reps||0;(m[r]=m[r]||[]).push(c)});
   groups=Object.keys(m).map(Number).sort((a,b)=>a-b).map(r=>({k:1000+r,title:revName(r),cs:m[r]}));
  }
 
- v.innerHTML=hero+
+ v.innerHTML=hero+pf+
   '<div class="tabs">'+modes.map(m=>'<button class="'+(smode===m[0]?'on':'')+'" data-sm="'+m[0]+'">'+m[1]+'</button>').join('')+'</div>'+
   groups.map(g=>{const o=g.open||openD.has(g.k);return '<div class="box day"><div class="dh" data-tg="'+g.k+'"><b>'+esc(g.title)+'</b><span class="mut">'+g.cs.length+' لغت '+(g.open?'':(o?'▴':'▾'))+'</span></div>'+(o?'<div class="dw"><button class="btn p" data-s="'+g.k+':0" style="width:100%">▶ شروع از اول</button>'+wordRows(g.k,g.cs)+'</div>':'')+'</div>'}).join('');
 
+ v.querySelectorAll('[data-pf]').forEach(b=>b.onclick=()=>{packFilter=b.dataset.pf;day=null;openD=new Set();sessKey=null;study();scrollTo(0,0)});
  if($('#stoday'))$('#stoday').onclick=()=>go('today');
  v.querySelectorAll('[data-sm]').forEach(b=>b.onclick=()=>{smode=b.dataset.sm;study()});
  v.querySelectorAll('[data-tg]').forEach(e=>e.onclick=()=>{const n=+e.dataset.tg;openD.has(n)?openD.delete(n):openD.add(n);study()});
@@ -570,7 +576,7 @@ function study(){
  if(day==='today'){
    if(sessKey!=='today'){
      sessKey='today';
-     sessIds=cards.filter(isDue).sort((a,b)=>(a.due||0)-(b.due||0)).map(c=>c.id);
+     sessIds=pcards().filter(isDue).sort((a,b)=>(a.due||0)-(b.due||0)).map(c=>c.id);
      sessRated={};idx=0;flip=false;
    }
    cs=sessIds.map(id=>cards.find(c=>c.id===id)).filter(Boolean);
@@ -869,19 +875,19 @@ function csvRows(t){const rows=[];let row=[],f='',q=false;for(let i=0;i<t.length
 
 function backupJSON(){
  return JSON.stringify(cards.map(c=>({
-  w:c.w, ipa:c.ipa, fam:c.fam||[], senses:c.senses,
+  w:c.w, ipa:c.ipa, fam:c.fam||[], senses:c.senses, src:c.src||'',
   reps:c.reps||0, interval:c.interval||1, ease:c.ease||2.5, due:c.due, last:c.last
  })));
 }
 
-function importText(t){
+function importText(t,src){
  let n=0;
  if(t[0]==='['||t[0]==='{'){
   const a=JSON.parse(t);
   (Array.isArray(a)?a:[a]).forEach(c=>{
    if(!c||!c.w)return;
    const sm2={reps:c.reps||0, interval:c.interval||1, ease:c.ease||2.5, due:c.due, last:c.last};
-   n+=addSenses(String(c.w),Array.isArray(c.senses)?c.senses:[c],c.ipa,c.fam,sm2);
+   n+=addSenses(String(c.w),Array.isArray(c.senses)?c.senses:[c],c.ipa,c.fam,sm2,src);
   });
   return n;
  }
@@ -896,7 +902,7 @@ function importText(t){
    ant:(r[6]||'').split(';').map(x=>x.trim()).filter(Boolean),
    prep:(r[7]||'').split(';').map(x=>x.trim()).filter(Boolean)});
  });
- order.forEach(w=>{n+=addSenses(w,g[w])});
+ order.forEach(w=>{n+=addSenses(w,g[w],null,null,null,src)});
  return n;
 }
 
@@ -947,7 +953,7 @@ async function wordStore(){
   const pk=idx[+b.dataset.wsp];b.disabled=true;b.textContent='…';
   try{
    const j=await fetchJSON(pk.file);
-   const n=importText(JSON.stringify(j));
+   const n=importText(JSON.stringify(j), pk.short||pk.name);
    b.disabled=false;b.textContent='📥 وارد';
    toast(n+' معنی از «'+pk.name+'» وارد شد ✓',3500);
    render();
@@ -1018,7 +1024,19 @@ load();
 if(!location.hash)location.replace('#study');
 route();
 
-document.addEventListener('click',e=>{const b=e.target.closest('.exbtn');if(!b)return;e.preventDefault();e.stopPropagation();const w=b.parentElement;w.classList.toggle('show');b.textContent=w.classList.contains('show')?'💬 مثال ◂':'💬 مثال ▸'});
+document.addEventListener('click',e=>{const b=e.target.closest('.trbtn');if(!b)return;e.preventDefault();e.stopPropagation();
+ const tr=b.nextElementSibling;
+ if(tr&&tr.textContent){tr.hidden=!tr.hidden;b.textContent=tr.hidden?'🌐 ترجمهٔ مثال ▸':'🌐 ترجمهٔ مثال ◂';return}
+ if(!tr)return;const sent=norm(b.dataset.src||'');if(!sent)return;
+ b.textContent='⏳ ترجمه…';
+ faTr(sent).then(t=>{
+  if(t){tr.textContent=t;
+   cards.forEach(c=>c.senses.forEach(sg=>{if(sg.e===sent&&!sg.ep)sg.ep=t}));
+   sugg.forEach(sg=>{if(sg.e===sent&&!sg.ep)sg.ep=t});
+   save();tr.hidden=false;b.textContent='🌐 ترجمهٔ مثال ◂';
+  }else{tr.remove();b.textContent='🌐 ترجمه در دسترس نبود';b.disabled=true}
+ });
+});
 const olchip=()=>{const c=$('#olchip');if(c)c.hidden=navigator.onLine};
 addEventListener('online',()=>{olchip();toast('آنلاین شدید ✓')});
 addEventListener('offline',()=>{olchip();toast('آفلاین؛ کارت‌ها و مرور کار می‌کنند',3200)});

@@ -1,0 +1,264 @@
+[
+ {
+  "w": "advice",
+  "ipa": "/ədˈvaɪs/",
+  "senses": [
+   {
+    "pos": "noun",
+    "d": "a suggestion about what someone should do",
+    "e": "Let me give you some advice.",
+    "ep": "بگذار یک توصیه به تو بدهم.",
+    "p": "توصیه، نصیحت",
+    "syn": [
+     "suggestion",
+     "guidance",
+     "tip"
+    ],
+    "ant": [],
+    "prep": [
+     "advice on sth"
+    ]
+   }
+  ]
+ },
+ {
+  "w": "borrow",
+  "ipa": "/ˈbɒrəʊ/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to take and use something that belongs to someone else and return it later",
+    "e": "Can I borrow your pen?",
+    "ep": "می‌توانم خودکارت را قرض بگیرم؟",
+    "p": "قرض گرفتن",
+    "syn": [],
+    "ant": [
+     "lend"
+    ],
+    "prep": [
+     "borrow sth from sb"
+    ]
+   }
+  ]
+ },
+ {
+  "w": "lend",
+  "ipa": "/lend/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to give something to someone for a short time, expecting it back",
+    "e": "She lent me her umbrella.",
+    "ep": "او چترش را به من قرض داد.",
+    "p": "قرض دادن",
+    "syn": [
+     "loan"
+    ],
+    "ant": [
+     "borrow"
+    ],
+    "prep": [
+     "lend sth to sb"
+    ]
+   }
+  ]
+ },
+ {
+  "w": "afford",
+  "ipa": "/əˈfɔːd/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to have enough money to buy or do something",
+    "e": "We can't afford a new car.",
+    "ep": "از پسِ هزینهٔ ماشین نو برنمی‌آییم.",
+    "p": "از پسِ هزینه برآمدن",
+    "syn": [
+     "manage"
+    ],
+    "ant": [],
+    "prep": [
+     "afford to do sth"
+    ]
+   }
+  ]
+ },
+ {
+  "w": "convenient",
+  "ipa": "/kənˈviːniənt/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "useful and easy for you, causing no difficulty",
+    "e": "Is Tuesday convenient for you?",
+    "ep": "سه‌شنبه برای تو مناسب است؟",
+    "p": "مقرر، مناسب",
+    "syn": [
+     "suitable",
+     "handy"
+    ],
+    "ant": [
+     "inconvenient"
+    ],
+    "prep": [
+     "convenient for sb"
+    ]
+   }
+  ]
+ },
+ {
+  "w": "suitable",
+  "ipa": "/ˈsuːtəbl/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "right for a particular person, purpose, or situation",
+    "e": "This film is not suitable for children.",
+    "ep": "این فیلم برای بچه‌ها مناسب نیست.",
+    "p": "مناسب",
+    "syn": [
+     "appropriate",
+     "fitting"
+    ],
+    "ant": [
+     "unsuitable"
+    ],
+    "prep": [
+     "suitable for sth/sb"
+    ]
+   }
+  ]
+ },
+ {
+  "w": "apologize",
+  "ipa": "/əˈpɒlədʒaɪz/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to tell someone you are sorry for having done something wrong",
+    "e": "He apologized for being late.",
+    "ep": "به‌خاطر دیر آمدن عذرخواهی کرد.",
+    "p": "عذرخواهی کردن",
+    "syn": [
+     "say sorry"
+    ],
+    "ant": [],
+    "prep": [
+     "apologize to sb for sth"
+    ]
+   }
+  ]
+ },
+ {
+  "w": "complain",
+  "ipa": "/kəmˈpleɪn/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to say that you are not satisfied with something",
+    "e": "She complained about the noise.",
+    "ep": "از سر و صدا شکایت کرد.",
+    "p": "شکایت کردن",
+    "syn": [
+     "grumble",
+     "protest"
+    ],
+    "ant": [
+     "praise"
+    ],
+    "prep": [
+     "complain to sb about sth"
+    ]
+   }
+  ]
+ },
+ {
+  "w": "accept",
+  "ipa": "/əkˈsept/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to agree to take something that is offered",
+    "e": "I accepted the invitation with pleasure.",
+    "ep": "دعوت را با کمال میل پذیرفتم.",
+    "p": "پذیرفتن",
+    "syn": [
+     "take",
+     "agree to"
+    ],
+    "ant": [
+     "refuse",
+     "reject"
+    ],
+    "prep": [
+     "accept sth from sb"
+    ]
+   }
+  ]
+ },
+ {
+  "w": "refuse",
+  "ipa": "/rɪˈfjuːz/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to say that you will not do or accept something",
+    "e": "She refused to answer the question.",
+    "ep": "از پاسخ دادن به سؤال امتناع کرد.",
+    "p": "رد کردن، امتناع کردن",
+    "syn": [
+     "decline",
+     "reject"
+    ],
+    "ant": [
+     "accept"
+    ],
+    "prep": [
+     "refuse to do sth"
+    ]
+   }
+  ]
+ },
+ {
+  "w": "offer",
+  "ipa": "/ˈɒfə/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to say you will give someone something or do something for them",
+    "e": "He offered to help me with the boxes.",
+    "ep": "پیشنهاد داد با جعبه‌ها کمکم کند.",
+    "p": "پیشنهاد دادن",
+    "syn": [
+     "propose",
+     "volunteer"
+    ],
+    "ant": [],
+    "prep": [
+     "offer sth to sb"
+    ]
+   }
+  ]
+ },
+ {
+  "w": "remind",
+  "ipa": "/rɪˈmaɪnd/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to make someone remember something they must do",
+    "e": "Please remind me to call my mother.",
+    "ep": "لطفاً یادم بیندازد به مادرم زنگ بزنم.",
+    "p": "یادآوری کردن",
+    "syn": [
+     "prompt"
+    ],
+    "ant": [],
+    "prep": [
+     "remind sb to do sth",
+     "remind sb about sth"
+    ]
+   }
+  ]
+ }
+]

@@ -1,0 +1,274 @@
+[
+ {
+  "w": "ubiquitous",
+  "ipa": "/juːˈbɪkwɪtəs/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "present or found everywhere",
+    "e": "Smartphones are now ubiquitous.",
+    "ep": "گوشی‌های هوشمند امروز همه‌جا حضرند.",
+    "p": "همه‌جا حاضر",
+    "syn": [
+     "omnipresent",
+     "pervasive"
+    ],
+    "ant": [
+     "rare",
+     "scarce"
+    ],
+    "prep": []
+   }
+  ]
+ },
+ {
+  "w": "detrimental",
+  "ipa": "/ˌdetrɪˈmentl/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "causing harm or damage",
+    "e": "Smoking is detrimental to your health.",
+    "ep": "سیگار کشیدن برای سلامتی مضر است.",
+    "p": "مضر، زیان‌بار",
+    "syn": [
+     "harmful",
+     "damaging"
+    ],
+    "ant": [
+     "beneficial"
+    ],
+    "prep": [
+     "detrimental to sth"
+    ]
+   }
+  ]
+ },
+ {
+  "w": "feasible",
+  "ipa": "/ˈfiːzəbl/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "possible and practical to do",
+    "e": "Is the plan financially feasible?",
+    "ep": "آیا این طرح از نظر مالی شدنی است؟",
+    "p": "شدنی، امکان‌پذیر",
+    "syn": [
+     "viable",
+     "practicable"
+    ],
+    "ant": [
+     "impractical"
+    ],
+    "prep": []
+   }
+  ]
+ },
+ {
+  "w": "inevitable",
+  "ipa": "/ɪnˈevɪtəbl/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "certain to happen and impossible to avoid",
+    "e": "Change is inevitable in any organization.",
+    "ep": "تغییر در هر سازمانی ناگزیر است.",
+    "p": "ناگزیر",
+    "syn": [
+     "unavoidable",
+     "certain"
+    ],
+    "ant": [
+     "avoidable"
+    ],
+    "prep": []
+   }
+  ]
+ },
+ {
+  "w": "compelling",
+  "ipa": "/kəmˈpelɪŋ/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "so strong that it forces belief or attention",
+    "e": "She made a compelling argument for reform.",
+    "ep": "استدلال قانع‌کننده‌ای برای اصلاح مطرح کرد.",
+    "p": "قانع‌کننده، جلب‌توجه‌کننده",
+    "syn": [
+     "persuasive",
+     "convincing"
+    ],
+    "ant": [
+     "unconvincing",
+     "weak"
+    ],
+    "prep": []
+   }
+  ]
+ },
+ {
+  "w": "entail",
+  "ipa": "/ɪnˈteɪl/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to make something necessary; to involve",
+    "e": "The job entails a lot of travel.",
+    "ep": "این کار سفرهای زیادی در پی دارد.",
+    "p": "دربرداشتن، ضرورت داشتن",
+    "syn": [
+     "involve",
+     "necessitate"
+    ],
+    "ant": [],
+    "prep": [
+     "entail doing sth"
+    ]
+   }
+  ]
+ },
+ {
+  "w": "meticulous",
+  "ipa": "/məˈtɪkjʊləs/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "giving careful attention to every detail",
+    "e": "He is meticulous about keeping records.",
+    "ep": "در ثبت اسناد بسیار دقیق است.",
+    "p": "بسیار دقیق",
+    "syn": [
+     "thorough",
+     "painstaking",
+     "scrupulous"
+    ],
+    "ant": [
+     "careless"
+    ],
+    "prep": [
+     "meticulous about/in sth"
+    ]
+   }
+  ]
+ },
+ {
+  "w": "profound",
+  "ipa": "/prəˈfaʊnd/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "very deep, great, or intense",
+    "e": "The war had a profound effect on the country.",
+    "ep": "جنگ تأثیر ژرفی بر کشور گذاشت.",
+    "p": "ژرف، عمیق",
+    "syn": [
+     "deep",
+     "far-reaching"
+    ],
+    "ant": [
+     "shallow",
+     "slight"
+    ],
+    "prep": [
+     "profound impact on sth"
+    ]
+   }
+  ]
+ },
+ {
+  "w": "ambiguous",
+  "ipa": "/æmˈbɪɡjuəs/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "having more than one possible meaning; unclear",
+    "e": "His answer was deliberately ambiguous.",
+    "ep": "پاسخ او عامدانه مبهم بود.",
+    "p": "مبهم، دوپهلو",
+    "syn": [
+     "unclear",
+     "equivocal",
+     "vague"
+    ],
+    "ant": [
+     "unambiguous",
+     "clear"
+    ],
+    "prep": []
+   }
+  ]
+ },
+ {
+  "w": "comprehensive",
+  "ipa": "/ˌkɒmprɪˈhensɪv/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "including all or nearly all elements",
+    "e": "The report gives a comprehensive overview of the situation.",
+    "ep": "گزارش تصویری جامع از وضعیت می‌دهد.",
+    "p": "جامع",
+    "syn": [
+     "thorough",
+     "extensive",
+     "complete"
+    ],
+    "ant": [
+     "incomplete",
+     "partial"
+    ],
+    "prep": []
+   }
+  ]
+ },
+ {
+  "w": "substantiate",
+  "ipa": "/səbˈstænʃieɪt/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to provide evidence that proves something is true",
+    "e": "Can you substantiate your claim with documents?",
+    "ep": "می‌توانی ادعایت را با سند اثبات کنی؟",
+    "p": "اثبات کردن، مستند کردن",
+    "syn": [
+     "verify",
+     "corroborate",
+     "validate"
+    ],
+    "ant": [
+     "refute",
+     "disprove"
+    ],
+    "prep": [
+     "substantiate a claim with sth"
+    ]
+   }
+  ]
+ },
+ {
+  "w": "exacerbate",
+  "ipa": "/ɪɡˈzæsəbeɪt/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to make a bad situation worse",
+    "e": "High winds exacerbated the fire.",
+    "ep": "بادهای شدید آتش را تشدید کرد.",
+    "p": "شدیدتر کردن، تشدید کردن",
+    "syn": [
+     "worsen",
+     "aggravate",
+     "intensify"
+    ],
+    "ant": [
+     "alleviate",
+     "mitigate"
+    ],
+    "prep": []
+   }
+  ]
+ }
+]

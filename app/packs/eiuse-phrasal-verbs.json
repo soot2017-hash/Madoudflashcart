@@ -1,0 +1,203 @@
+[
+ {
+  "w": "give up",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to stop trying to do something",
+    "e": "Don't give up — try again tomorrow.",
+    "ep": "تسلیم نشو — فردا دوباره امتحان کن.",
+    "p": "تسلیم شدن، رها کردن",
+    "syn": [],
+    "ant": [],
+    "prep": [
+     "give up on sb/sth"
+    ]
+   }
+  ]
+ },
+ {
+  "w": "put off",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to delay doing something to a later time",
+    "e": "Never put off until tomorrow what you can do today.",
+    "ep": "کار امروز را به فردا نینداز.",
+    "p": "به تعویق انداختن",
+    "syn": [],
+    "ant": [],
+    "prep": [
+     "put off doing sth"
+    ]
+   }
+  ]
+ },
+ {
+  "w": "carry on",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to continue doing something",
+    "e": "Carry on with your work while I'm away.",
+    "ep": "کاری را در غیاب من ادامه بده.",
+    "p": "ادامه دادن",
+    "syn": [],
+    "ant": [],
+    "prep": [
+     "carry on with sth",
+     "carry on doing sth"
+    ]
+   }
+  ]
+ },
+ {
+  "w": "turn down",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to refuse an offer or request",
+    "e": "She turned down the job offer.",
+    "ep": "پیشنهاد شغل را رد کرد.",
+    "p": "رد کردن",
+    "syn": [],
+    "ant": [],
+    "prep": []
+   }
+  ]
+ },
+ {
+  "w": "look after",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to take care of someone or something",
+    "e": "Who looks after the children while you're at work?",
+    "ep": "وقتی سر کار هستی چه کسی از بچه‌ها مراقبت می‌کند؟",
+    "p": "مراقبت کردن",
+    "syn": [],
+    "ant": [],
+    "prep": []
+   }
+  ]
+ },
+ {
+  "w": "run out of",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to have no more of something left",
+    "e": "We've run out of milk.",
+    "ep": "شیرمان تمام شده است.",
+    "p": "تمام شدن (چیزی)",
+    "syn": [],
+    "ant": [],
+    "prep": [
+     "run out of sth"
+    ]
+   }
+  ]
+ },
+ {
+  "w": "come across",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to meet or find something by chance",
+    "e": "I came across an old photo album.",
+    "ep": "اتفاقی یک آلبوم عکس قدیمی پیدا کردم.",
+    "p": "اتفاقی پیدا کردن",
+    "syn": [],
+    "ant": [],
+    "prep": []
+   }
+  ]
+ },
+ {
+  "w": "set up",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to create or arrange something",
+    "e": "They set up a new company last year.",
+    "ep": "پارسال یک شرکت جدید راه‌اندازی کردند.",
+    "p": "راه‌اندازی کردن",
+    "syn": [],
+    "ant": [],
+    "prep": []
+   }
+  ]
+ },
+ {
+  "w": "take up",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to start a new hobby or activity",
+    "e": "He took up painting after retirement.",
+    "ep": "بعد از بازنشستگی نقاشی را شروع کرد.",
+    "p": "شروع کردن (سرگرمی)",
+    "syn": [],
+    "ant": [],
+    "prep": []
+   }
+  ]
+ },
+ {
+  "w": "break down",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to stop working (for a machine)",
+    "e": "The car broke down on the motorway.",
+    "ep": "ماشین در اتوبان از کار افتاد.",
+    "p": "از کار افتادن",
+    "syn": [],
+    "ant": [],
+    "prep": []
+   }
+  ]
+ },
+ {
+  "w": "bring up",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to mention a subject, or raise a child",
+    "e": "She brought up an interesting point.",
+    "ep": "او نکتهٔ جالبی را پیش کشید.",
+    "p": "پیش کشیدن؛ بزرگ کردن",
+    "syn": [],
+    "ant": [],
+    "prep": []
+   }
+  ]
+ },
+ {
+  "w": "call off",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to cancel something",
+    "e": "The match was called off because of rain.",
+    "ep": "مسابقه به‌خاطر باران لغو شد.",
+    "p": "لغو کردن",
+    "syn": [],
+    "ant": [],
+    "prep": []
+   }
+  ]
+ }
+]
