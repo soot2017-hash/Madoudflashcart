@@ -320,9 +320,23 @@ async function freeDict(w){
  });
  return {ipa,list};
 }
+async function wikiDict(w){
+ const j=await fetchJSON('https://en.wiktionary.org/api/rest_v1/page/definition/'+encodeURIComponent(norm(w).toLowerCase()));
+ const list=[];
+ (j&&j.en?j.en:[]).forEach(m=>{
+  const pos=String(m.partOfSpeech||'').toLowerCase();
+  (m.definitions||[]).slice(0,4).forEach(d=>{
+   const txt=norm(String(d.definition||'').replace(/<[^>]*>/g,''));
+   if(txt)list.push({pos,d:txt,e:'',syn:[],ant:[],prep:[]});
+  });
+ });
+ return {ipa:'',list:list.slice(0,10)};
+}
 async function askChainFree(w,onStatus){
  if(onStatus)onStatus('📖 دیکشنری رایگان…');
  try{const r=await freeDict(w);if(r.list.length){if(onStatus)onStatus('🔄 ترجمهٔ فارسی…');await addPersian(r.list);return {res:r,used:'دیکشنری رایگان',failed:[]}}}catch(e){}
+  if(onStatus)onStatus('📖 Wiktionary…');
+ try{const r2=await wikiDict(w);if(r2.list.length){if(onStatus)onStatus('🔄 ترجمهٔ فارسی…');await addPersian(r2.list);return {res:r2,used:'Wiktionary',failed:[]}}}catch(e){}
  return null;
 }
 async function askChain(prompt,onStatus){
@@ -352,6 +366,91 @@ async function askChain(prompt,onStatus){
   }
  }
  return {res:null,used:'',failed};
+}
+
+function longmanDom(doc){
+ const res={ipa:'',list:[]};
+ doc.querySelectorAll('.ldoceEntry').forEach(en=>{
+  const pron=(en.querySelector('.PRON')||{}).textContent||'';
+  if(pron&&!res.ipa){const p=norm(pron).replace(/^\/|\/$/g,'').trim();if(p)res.ipa='/'+p+'/'}
+  const pos=norm((en.querySelector('.POS')||{}).textContent).toLowerCase();
+  en.querySelectorAll('.Sense').forEach(sg=>{
+   const dEl=sg.querySelector(':scope>.DEF');if(!dEl)return;
+   const d=norm(dEl.textContent);if(!d)return;
+   let e='';
+   sg.querySelectorAll(':scope>.EXAMPLE, :scope>.GramExa>.EXAMPLE').forEach(x=>{if(!e)e=norm(x.textContent)});
+   const prep=[];
+   sg.querySelectorAll('.PROPFORMPREP').forEach(x=>{const t=norm(x.textContent);if(t&&!prep.includes(t))prep.push(t)});
+   res.list.push({pos,d,e,syn:[],ant:[],prep});
+  });
+ });
+ const seen=new Set();
+ res.list=res.list.filter(s=>!seen.has(s.d)&&seen.add(s.d));
+ return res;
+}
+async function longmanFetch(w){
+ const url='https://www.ldoceonline.com/dictionary/'+encodeURIComponent(norm(w).toLowerCase().replace(/\s+/g,'-'));
+ const ck='lm:'+url;const c=dcGet(ck);
+ let html='';
+ try{const r=await fetch(url);if(!r.ok)throw 0;html=await r.text()}
+ catch(e){if(c)return c;throw e}
+ const res=longmanDom(new DOMParser().parseFromString(html,'text/html'));
+ if(res.list.length)dcSet(ck,res);
+ return res;
+}
+const POSES='noun|verb|adjective|adverb|phrasal verb|phrase|idiom|preposition|conjunction|pronoun|determiner|exclamation';
+function parseLmText(t,w){
+ t=String(t||'');const cut=t.search(/\bword of the day\b/i);if(cut>0)t=t.slice(0,cut);if(!t.trim())return {ipa:'',list:[]};
+ const ipaM=t.match(/\/[^/\n]{1,60}\//);
+ const lines=t.split(/\n/).map(x=>x.replace(/\u00a0/g,' ').replace(/\s+/g,' ').trim()).filter(Boolean);
+ const list=[];let pos='';
+ const tailRx=w?new RegExp(w.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'\\s*(of|for|to|with|away|on|from|in|about|between|upon|doing|sb|sth|that|whether|up|down|out|off|over|against|into|through)?\\s*$','i'):null;
+ lines.forEach(L=>{
+  if(/iaw\.|cmd\.push|googletag|window\.|function|THESAURUS|thesaurus/.test(L))return;
+  L=L.replace(/^[\u2192\u25ba]/,'');
+  if(/^(From Longman|Related topics|Word family|Explore|More results|Quizzes|Vocabulary|Topics|advertisement|Picture|Contents|Synonyms|see thesaurus|View thesaurus|collocations|Exercises|Advertisements|Copyright|About|Browse|Grammar|Click on the pictures|Verb table)/i.test(L))return;
+  const pm=L.match(new RegExp('('+POSES+')\\s*$','i'));
+  if(pm&&(L.length<60||L.includes('/')))pos=pm[1].toLowerCase();
+  if(L.includes('\u25cf')||L.length<4)return;
+  if(/[\u2192\u25ba]/.test(L))return;
+  const num=L.match(/^(\d{1,2})\s*([[.,)\]]?)\s*(.*)$/);
+  let work=(num&&num[3])?num[3]:L;
+  if(tailRx&&tailRx.test(work)&&work.length<34&&work.toLowerCase().slice(0,w.length).toLowerCase()===w.toLowerCase()){
+   const last=list[list.length-1];const tp=work.toLowerCase();
+   if(last&&!last.prep.includes(tp))last.prep.push(tp.charAt(0).toUpperCase()+tp.slice(1));
+   return;
+  }
+  if(/\.$/.test(work)&&work.length>25){
+   let e=(tailRx?work.replace(tailRx,''):work).replace(/[.;]+$/,'').trim();
+   e=e.split(/Grammar |Click on the pictures|Verb table/)[0].trim();
+   const last=list[list.length-1];
+   if(last){if(!last.e)last.e=e;else if(e.length>last.e.length&&e.length>40)last.e=e}
+   return;
+  }
+  if(/Grammar|Click on the pictures|Verb table/.test(work))return;
+  let d=(tailRx?work.replace(tailRx,''):work).replace(/[[\]()]/g,' ').replace(/\b[A-Z]{2,}\b/g,' ').replace(/\u25cf/g,' ').replace(/\d+/g,' ').replace(/\s+/g,' ').trim().replace(/^[^a-zA-Z]+/,'');
+  let g=/(countable|uncountable|singular|plural|usually passive|no passive|not usually before noun|transitive|intransitive|spoken|written|intransitive|especially)[,\s]*/i;
+  d=d.replace(g,'').replace(g,'').trim();
+  if(d.length>220||/Grammar|Click on the pictures/.test(d))return;
+  if(pos&&d.length>18&&/\s/.test(d)&&/^[a-z]/.test(d))list.push({pos,d,e:'',syn:[],ant:[],prep:[]});
+ });
+ const seen=new Set();
+ return {ipa:ipaM?ipaM[0]:'',list:list.filter(s=>!seen.has(s.d)&&seen.add(s.d))};
+}
+async function longmanLookup(){
+ const w=norm($('#w').value);if(!w)return toast('لغت را بنویسید');
+ const b=$('#lg');b.disabled=true;b.textContent='📘 در حال خواندن…';
+ let r=null;
+ try{r=await longmanFetch(w)}catch(e){}
+ b.disabled=false;b.textContent='📘 خود Longman';
+ if(!r||!r.list.length)return toast('خواندن مستقیم Longman ممکن نشد؛ این حالت فقط داخل اپ اندروید کار می‌کند',4000);
+ sw=w;sipa=r.ipa||'';sfam=[];
+ sugg=normSenses(r.list.slice(0,12)).map(s=>Object.assign(s,{on:true}));
+ b.textContent='🔄 ترجمهٔ فارسی…';
+ await addPersian(sugg);
+ b.textContent='📘 خود Longman';
+ toast('مستقیم از Longman ✓',3000);
+ res();
 }
 
 const go=h=>{if(location.hash.slice(1)!==h)location.hash=h;else route()};
@@ -523,11 +622,11 @@ function add(){
  '<div class="box">'+
   '<label>لغت یا عبارت</label>'+
   '<input id="w" class="en" placeholder="e.g. give up" autocomplete="off" autocapitalize="off" enterkeyhint="search" value="'+esc(wv)+'">'+
-  '<div class="row"><button class="btn p" id="sg">✨ معانی را بیاور</button><a class="btn" id="lk" target="_blank" rel="noopener noreferrer">Longman ↗</a><a class="btn" id="ww" target="_blank" rel="noopener noreferrer">WordWeb ↗</a></div>'+
+  '<div class="row"><button class="btn p" id="sg">✨ معانی را بیاور</button><button class="btn" id="lg">📘 خود Longman</button><a class="btn" id="lk" target="_blank" rel="noopener noreferrer">Longman ↗</a><a class="btn" id="ww" target="_blank" rel="noopener noreferrer">WordWeb ↗</a></div>'+
   '<div class="hint">بدون هیچ کلیدی کار می‌کند: دیکشنری رایگان + ترجمهٔ فارسی. کلیدهای AI (اختیاری) فقط وقتی به‌کار می‌روند که دیکشنری رایگان جواب ندهد.</div>'+
   '<div id="dup"></div>'+
  '</div>'+
- '<div class="box"><label>یا متن Longman را کپی کنید</label><textarea id="pt" class="en" placeholder="تعریف و مثال‌ها را از صفحهٔ Longman کپی کنید"></textarea><button class="btn p" id="pc" style="width:100%;margin-top:8px">🤖 تبدیل متن به کارت</button></div>'+
+ '<div class="box"><label>یا متن Longman را کپی کنید</label><textarea id="pt" class="en" placeholder="فقط ورودی همان لغت را از صفحهٔ Longman انتخاب و کپی کنید"></textarea><button class="btn p" id="pc" style="width:100%;margin-top:8px">🤖 تبدیل متن به کارت</button></div>'+
  '<div id="res"></div>'+
  '<button class="btn" id="man" style="width:100%">✍️ افزودن دستی</button>';
 
@@ -543,6 +642,7 @@ function add(){
  w.oninput=upd;upd();
  w.onkeydown=e=>{if(e.key==='Enter')lookup()};
  $('#sg').onclick=lookup;
+ $('#lg').onclick=longmanLookup;
  $('#pc').onclick=pasteAI;
  $('#man').onclick=()=>edit(null,norm(wv));
  res();
@@ -559,7 +659,7 @@ async function lookup(){
   sugg=[];toast('هیچ منبعی جواب نداد؛ اتصال اینترنت را بررسی کنید'+(r.failed.length?' ('+r.failed.join('، ')+')':''),4500);
   res();return;
  }
- sw=w;sipa=r.res.ipa||'';sfam=normFam(r.res.fam);
+ sw=wq;sipa=r.res.ipa||'';sfam=normFam(r.res.fam);
  sugg=normSenses(r.res.list.slice(0,12).map(s=>({pos:s.pos,d:s.d,e:s.e,p:'',syn:s.syn,ant:s.ant,prep:s.prep}))).map(s=>Object.assign(s,{on:true}));
  toast('منبع: '+r.used+(r.failed.length?' — ناموفق: '+r.failed.join('، '):''),3500);
  res();
@@ -567,9 +667,17 @@ async function lookup(){
 
 async function pasteAI(){
  const t=$('#pt').value.trim();if(!t)return toast('متن را بچسبانید');
- const w=norm(wv)||'word';
+ const w=norm(wv);
+ const lp=parseLmText(t,w);
+ if(lp.list.length){
+  sw=w||'word';sipa=lp.ipa||'';sfam=[];
+  sugg=normSenses(lp.list.slice(0,12)).map(s=>Object.assign(s,{on:true}));
+  toast('تبدیل محلی ✓ (بدون AI)',3000);
+  res();return;
+ }
+ const wq=w||'word';
  const b=$('#pc');b.disabled=true;
- const r=await askChain(PASTEQ(w,t),m=>{b.textContent=m});
+ const r=await askChain(PASTEQ(wq,t),m=>{b.textContent=m});
  b.disabled=false;b.textContent='🤖 تبدیل متن به کارت';
  if(!r.res||!r.res.list.length)return toast('تبدیل ناموفق بود'+(r.failed.length?' ('+r.failed.join('، ')+')':''),4000);
  sw=w;sipa=r.res.ipa||'';sfam=normFam(r.res.fam);
