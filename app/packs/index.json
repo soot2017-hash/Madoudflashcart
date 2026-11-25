@@ -1,38 +1,44 @@
 [
- {
-  "name": "English in Use — Intermediate",
-  "short": "Intermediate",
-  "file": "packs/eiuse-intermediate.json",
-  "count": 100
- },
- {
-  "name": "English in Use — Upper-Intermediate",
-  "short": "Upper-Intermediate",
-  "file": "packs/eiuse-upper-intermediate.json",
-  "count": 100
- },
- {
-  "name": "English in Use — Advanced",
-  "short": "Advanced",
-  "file": "packs/eiuse-advanced.json",
-  "count": 101
- },
- {
-  "name": "English in Use — Phrasal Verbs",
-  "short": "Phrasal Verbs",
-  "file": "packs/eiuse-phrasal-verbs.json",
-  "count": 100
- },
- {
-  "name": "افعال پرکاربرد (Essential Verbs)",
-  "short": "Essential Verbs",
-  "file": "packs/essential-verbs.json",
-  "count": 10
- },
- {
-  "name": "صفت‌های پرکاربرد (Common Adjectives)",
-  "short": "Common Adjectives",
-  "file": "packs/common-adjectives.json",
-  "count": 10
- }
+  {
+    "name": "English in Use — Intermediate",
+    "short": "Intermediate",
+    "file": "packs/eiuse-intermediate.json",
+    "count": 100
+  },
+  {
+    "name": "English in Use — Upper-Intermediate",
+    "short": "Upper-Intermediate",
+    "file": "packs/eiuse-upper-intermediate.json",
+    "count": 100
+  },
+  {
+    "name": "English in Use — Advanced",
+    "short": "Advanced",
+    "file": "packs/eiuse-advanced.json",
+    "count": 101
+  },
+  {
+    "name": "English in Use — Phrasal Verbs",
+    "short": "Phrasal Verbs",
+    "file": "packs/eiuse-phrasal-verbs.json",
+    "count": 100
+  },
+  {
+    "name": "افعال پرکاربرد (Essential Verbs)",
+    "short": "Essential Verbs",
+    "file": "packs/essential-verbs.json",
+    "count": 10
+  },
+  {
+    "name": "صفت‌های پرکاربرد (Common Adjectives)",
+    "short": "Common Adjectives",
+    "file": "packs/common-adjectives.json",
+    "count": 10
+  },
+  {
+    "name": "افعال عبارتی آکادمیک (فهرست کاربر)",
+    "short": "Phrasal Verbs+",
+    "file": "packs/phrasal-verbs-user.json",
+    "count": 174
+  }
 ]

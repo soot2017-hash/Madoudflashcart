@@ -1,0 +1,2106 @@
+[
+  {
+    "phrasal_verb": "lead to sth",
+    "definition": "to cause something to happen",
+    "synonyms": [
+      "cause",
+      "result in",
+      "bring about"
+    ],
+    "antonyms": [
+      "prevent",
+      "hinder"
+    ]
+  },
+  {
+    "phrasal_verb": "result in sth",
+    "definition": "to make something happen",
+    "synonyms": [
+      "cause",
+      "lead to",
+      "bring about"
+    ],
+    "antonyms": [
+      "prevent",
+      "avoid"
+    ]
+  },
+  {
+    "phrasal_verb": "stem from sth",
+    "definition": "to develop as a result of something else",
+    "synonyms": [
+      "arise from",
+      "originate from",
+      "derive from"
+    ],
+    "antonyms": [
+      "result in",
+      "lead to"
+    ]
+  },
+  {
+    "phrasal_verb": "contribute to sth",
+    "definition": "to help to cause something to happen",
+    "synonyms": [
+      "lead to",
+      "promote",
+      "add to"
+    ],
+    "antonyms": [
+      "hinder",
+      "impede"
+    ]
+  },
+  {
+    "phrasal_verb": "bring about sth / bring sth about",
+    "definition": "to make something happen",
+    "synonyms": [
+      "cause",
+      "produce",
+      "generate"
+    ],
+    "antonyms": [
+      "prevent",
+      "stop"
+    ]
+  },
+  {
+    "phrasal_verb": "come about",
+    "definition": "to happen, especially in a way that is not planned",
+    "synonyms": [
+      "happen",
+      "occur",
+      "take place"
+    ],
+    "antonyms": [
+      "cease",
+      "stop"
+    ]
+  },
+  {
+    "phrasal_verb": "account for sth",
+    "definition": "to be the reason why something happens; to form a particular amount or part of something",
+    "synonyms": [
+      "explain",
+      "constitute",
+      "make up"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "put sth down to sth",
+    "definition": "to think that something is caused by a particular thing",
+    "synonyms": [
+      "attribute to",
+      "ascribe to",
+      "blame on"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "attribute sth to sth",
+    "definition": "to say or believe that something is the result of a particular thing",
+    "synonyms": [
+      "put down to",
+      "ascribe to",
+      "credit with"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "impact on sth/sb",
+    "definition": "to have an important or noticeable effect on someone or something",
+    "synonyms": [
+      "affect",
+      "influence",
+      "have an effect on"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "be rooted in sth",
+    "definition": "to be based on something or caused by something",
+    "synonyms": [
+      "originate in",
+      "stem from",
+      "be based on"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "end up",
+    "definition": "to finally be in a particular place or situation, especially when you did not plan it",
+    "synonyms": [
+      "finish up",
+      "wind up",
+      "land up"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "add up to sth",
+    "definition": "to have a particular result or total, especially when this is surprising",
+    "synonyms": [
+      "amount to",
+      "total",
+      "constitute"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "amount to sth",
+    "definition": "to be the same as something, or to have the same effect as something",
+    "synonyms": [
+      "add up to",
+      "constitute",
+      "be equivalent to"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "go up",
+    "definition": "to increase in price, amount, or level",
+    "synonyms": [
+      "rise",
+      "increase",
+      "climb"
+    ],
+    "antonyms": [
+      "go down",
+      "fall",
+      "decrease"
+    ]
+  },
+  {
+    "phrasal_verb": "go down",
+    "definition": "to decrease in price, amount, or level",
+    "synonyms": [
+      "fall",
+      "decrease",
+      "drop"
+    ],
+    "antonyms": [
+      "go up",
+      "rise",
+      "increase"
+    ]
+  },
+  {
+    "phrasal_verb": "pick up",
+    "definition": "to start to improve or increase after a bad period",
+    "synonyms": [
+      "improve",
+      "recover",
+      "rally"
+    ],
+    "antonyms": [
+      "decline",
+      "worsen"
+    ]
+  },
+  {
+    "phrasal_verb": "level off/out",
+    "definition": "to stop increasing or decreasing and stay at a steady level",
+    "synonyms": [
+      "stabilize",
+      "plateau",
+      "flatten out"
+    ],
+    "antonyms": [
+      "rise",
+      "fall"
+    ]
+  },
+  {
+    "phrasal_verb": "drop off",
+    "definition": "to decrease, especially by a noticeable amount",
+    "synonyms": [
+      "decline",
+      "fall off",
+      "slip"
+    ],
+    "antonyms": [
+      "increase",
+      "rise"
+    ]
+  },
+  {
+    "phrasal_verb": "tail off",
+    "definition": "to decrease gradually and become smaller or less",
+    "synonyms": [
+      "diminish",
+      "dwindle",
+      "fall away"
+    ],
+    "antonyms": [
+      "increase",
+      "grow"
+    ]
+  },
+  {
+    "phrasal_verb": "build up (sth) / build (sth) up",
+    "definition": "to increase or make something increase gradually",
+    "synonyms": [
+      "accumulate",
+      "grow",
+      "expand"
+    ],
+    "antonyms": [
+      "reduce",
+      "decrease"
+    ]
+  },
+  {
+    "phrasal_verb": "cut back (sth) / cut (sth) back",
+    "definition": "to reduce something such as spending or the amount you use",
+    "synonyms": [
+      "reduce",
+      "cut down",
+      "trim"
+    ],
+    "antonyms": [
+      "increase",
+      "expand"
+    ]
+  },
+  {
+    "phrasal_verb": "average out at sth",
+    "definition": "to have a particular average amount or level",
+    "synonyms": [
+      "average",
+      "come to an average of"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "slow down (sth/sb) / slow down",
+    "definition": "to become slower or make something become slower",
+    "synonyms": [
+      "decelerate",
+      "slacken",
+      "retard"
+    ],
+    "antonyms": [
+      "speed up",
+      "accelerate"
+    ]
+  },
+  {
+    "phrasal_verb": "die out",
+    "definition": "to gradually become less common and finally disappear completely",
+    "synonyms": [
+      "become extinct",
+      "vanish",
+      "disappear"
+    ],
+    "antonyms": [
+      "flourish",
+      "thrive"
+    ]
+  },
+  {
+    "phrasal_verb": "run out",
+    "definition": "to use all of something and not have any left",
+    "synonyms": [
+      "be used up",
+      "be exhausted",
+      "dry up"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "use up sth / use sth up",
+    "definition": "to use all of something until there is none left",
+    "synonyms": [
+      "consume",
+      "exhaust",
+      "deplete"
+    ],
+    "antonyms": [
+      "save",
+      "conserve"
+    ]
+  },
+  {
+    "phrasal_verb": "deal with sth",
+    "definition": "to take the necessary action, especially in order to solve a problem",
+    "synonyms": [
+      "handle",
+      "manage",
+      "cope with"
+    ],
+    "antonyms": [
+      "ignore",
+      "neglect"
+    ]
+  },
+  {
+    "phrasal_verb": "cope with sth",
+    "definition": "to succeed in dealing with a difficult problem or situation",
+    "synonyms": [
+      "manage",
+      "deal with",
+      "handle"
+    ],
+    "antonyms": [
+      "fail",
+      "struggle"
+    ]
+  },
+  {
+    "phrasal_verb": "sort out sth / sort sth out",
+    "definition": "to solve a problem or deal with a difficult situation",
+    "synonyms": [
+      "resolve",
+      "solve",
+      "fix"
+    ],
+    "antonyms": [
+      "ignore",
+      "neglect"
+    ]
+  },
+  {
+    "phrasal_verb": "work out sth / work sth out",
+    "definition": "to think about a problem or situation carefully in order to understand it or find a solution",
+    "synonyms": [
+      "figure out",
+      "solve",
+      "understand"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "come up with sth",
+    "definition": "to produce an idea, plan, or solution",
+    "synonyms": [
+      "produce",
+      "devise",
+      "think of"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "think through sth / think sth through",
+    "definition": "to consider all the possible results or effects of something carefully",
+    "synonyms": [
+      "consider",
+      "ponder",
+      "evaluate"
+    ],
+    "antonyms": [
+      "ignore",
+      "overlook"
+    ]
+  },
+  {
+    "phrasal_verb": "iron out sth / iron sth out",
+    "definition": "to remove small problems or difficulties, especially by discussing them",
+    "synonyms": [
+      "resolve",
+      "settle",
+      "smooth out"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "crack down",
+    "definition": "to become more strict in dealing with a problem and punishing the people involved",
+    "synonyms": [
+      "clamp down",
+      "get tough",
+      "crack down on"
+    ],
+    "antonyms": [
+      "relax",
+      "loosen"
+    ]
+  },
+  {
+    "phrasal_verb": "clamp down",
+    "definition": "to take strict action to stop something happening",
+    "synonyms": [
+      "crack down",
+      "crack down on",
+      "clamp down on"
+    ],
+    "antonyms": [
+      "relax",
+      "ease up"
+    ]
+  },
+  {
+    "phrasal_verb": "stamp out sth / stamp sth out",
+    "definition": "to completely stop something bad from continuing",
+    "synonyms": [
+      "eliminate",
+      "eradicate",
+      "wipe out"
+    ],
+    "antonyms": [
+      "encourage",
+      "promote"
+    ]
+  },
+  {
+    "phrasal_verb": "root out sth/sb / root sth/sb out",
+    "definition": "to find and get rid of a problem or someone who is causing trouble",
+    "synonyms": [
+      "eliminate",
+      "eradicate",
+      "weed out"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "rule out sth/sb / rule sth/sb out",
+    "definition": "to decide that something is not possible or suitable",
+    "synonyms": [
+      "exclude",
+      "eliminate",
+      "dismiss"
+    ],
+    "antonyms": [
+      "consider",
+      "include"
+    ]
+  },
+  {
+    "phrasal_verb": "wipe out sth / wipe sth out",
+    "definition": "to completely destroy or get rid of something",
+    "synonyms": [
+      "destroy",
+      "eradicate",
+      "annihilate"
+    ],
+    "antonyms": [
+      "create",
+      "preserve"
+    ]
+  },
+  {
+    "phrasal_verb": "phase out sth / phase sth out",
+    "definition": "to gradually stop using or providing something",
+    "synonyms": [
+      "eliminate",
+      "discontinue",
+      "wind down"
+    ],
+    "antonyms": [
+      "introduce",
+      "phase in"
+    ]
+  },
+  {
+    "phrasal_verb": "clear up sth / clear sth up",
+    "definition": "to solve a problem or explain something that was confusing",
+    "synonyms": [
+      "resolve",
+      "clarify",
+      "settle"
+    ],
+    "antonyms": [
+      "confuse",
+      "complicate"
+    ]
+  },
+  {
+    "phrasal_verb": "make up for sth",
+    "definition": "to make a bad situation better, or replace something that has been lost",
+    "synonyms": [
+      "compensate for",
+      "atone for",
+      "offset"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "fall back on sth",
+    "definition": "to use something as a way of dealing with a problem, especially because there is no other choice",
+    "synonyms": [
+      "resort to",
+      "turn to",
+      "rely on"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "resort to sth/doing sth",
+    "definition": "to do something bad or unpleasant because you cannot think of any other way to achieve something",
+    "synonyms": [
+      "fall back on",
+      "turn to",
+      "stoop to"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "put up with sb/sth",
+    "definition": "to accept an unpleasant situation or person without complaining",
+    "synonyms": [
+      "tolerate",
+      "endure",
+      "bear"
+    ],
+    "antonyms": [
+      "reject",
+      "oppose"
+    ]
+  },
+  {
+    "phrasal_verb": "get by",
+    "definition": "to have just enough money or knowledge to survive or do what you need",
+    "synonyms": [
+      "manage",
+      "survive",
+      "cope"
+    ],
+    "antonyms": [
+      "fail",
+      "struggle"
+    ]
+  },
+  {
+    "phrasal_verb": "cut down",
+    "definition": "to reduce the amount you eat, drink, or use",
+    "synonyms": [
+      "reduce",
+      "cut back",
+      "trim"
+    ],
+    "antonyms": [
+      "increase",
+      "expand"
+    ]
+  },
+  {
+    "phrasal_verb": "cut down sth / cut sth down",
+    "definition": "to reduce the amount or quantity of something",
+    "synonyms": [
+      "reduce",
+      "cut back",
+      "decrease"
+    ],
+    "antonyms": [
+      "increase",
+      "raise"
+    ]
+  },
+  {
+    "phrasal_verb": "give up (sth/doing sth) / give (sth) up",
+    "definition": "to stop doing or having something",
+    "synonyms": [
+      "quit",
+      "stop",
+      "abandon"
+    ],
+    "antonyms": [
+      "continue",
+      "persist"
+    ]
+  },
+  {
+    "phrasal_verb": "break down",
+    "definition": "if a machine or vehicle breaks down, it stops working; if a system or discussion breaks down, it fails",
+    "synonyms": [
+      "fail",
+      "collapse",
+      "stop working"
+    ],
+    "antonyms": [
+      "work",
+      "function"
+    ]
+  },
+  {
+    "phrasal_verb": "fall apart",
+    "definition": "to become broken or start failing completely",
+    "synonyms": [
+      "disintegrate",
+      "collapse",
+      "break up"
+    ],
+    "antonyms": [
+      "hold together",
+      "succeed"
+    ]
+  },
+  {
+    "phrasal_verb": "fall through",
+    "definition": "if a plan or agreement falls through, it fails to happen",
+    "synonyms": [
+      "fail",
+      "collapse",
+      "be abandoned"
+    ],
+    "antonyms": [
+      "succeed",
+      "go ahead"
+    ]
+  },
+  {
+    "phrasal_verb": "miss out",
+    "definition": "to not get the benefit or pleasure of something because you are not there or do not do it",
+    "synonyms": [
+      "lose out",
+      "forfeit",
+      "skip"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "face up to sth",
+    "definition": "to accept and deal with an unpleasant fact or situation",
+    "synonyms": [
+      "confront",
+      "acknowledge",
+      "accept"
+    ],
+    "antonyms": [
+      "avoid",
+      "evade"
+    ]
+  },
+  {
+    "phrasal_verb": "come up against sth/sb",
+    "definition": "to have to deal with a problem or difficulty",
+    "synonyms": [
+      "encounter",
+      "confront",
+      "run into"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "point out sth / point sth out",
+    "definition": "to tell someone something that they did not already know or had not thought about",
+    "synonyms": [
+      "indicate",
+      "mention",
+      "draw attention to"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "bring up sth / bring sth up",
+    "definition": "to mention a subject or start to talk about it",
+    "synonyms": [
+      "raise",
+      "mention",
+      "introduce"
+    ],
+    "antonyms": [
+      "suppress",
+      "conceal"
+    ]
+  },
+  {
+    "phrasal_verb": "put forward sth / put sth forward",
+    "definition": "to suggest an idea, plan, or opinion for other people to consider",
+    "synonyms": [
+      "propose",
+      "suggest",
+      "submit"
+    ],
+    "antonyms": [
+      "withdraw",
+      "retract"
+    ]
+  },
+  {
+    "phrasal_verb": "sum up (sth/sb) / sum up",
+    "definition": "to give the main facts or ideas about something in a short, clear way",
+    "synonyms": [
+      "summarize",
+      "recap",
+      "outline"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "touch on sth",
+    "definition": "to mention a subject briefly when you are talking or writing about something else",
+    "synonyms": [
+      "mention",
+      "refer to",
+      "allude to"
+    ],
+    "antonyms": [
+      "elaborate",
+      "expand on"
+    ]
+  },
+  {
+    "phrasal_verb": "look into sth",
+    "definition": "to try to find out the truth about a problem, crime, etc.",
+    "synonyms": [
+      "investigate",
+      "examine",
+      "explore"
+    ],
+    "antonyms": [
+      "ignore",
+      "overlook"
+    ]
+  },
+  {
+    "phrasal_verb": "find out (sth) / find (sth) out",
+    "definition": "to get information, especially by asking or searching",
+    "synonyms": [
+      "discover",
+      "learn",
+      "determine"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "carry out sth / carry sth out",
+    "definition": "to do something that you have planned or been told to do",
+    "synonyms": [
+      "conduct",
+      "perform",
+      "execute"
+    ],
+    "antonyms": [
+      "abandon",
+      "neglect"
+    ]
+  },
+  {
+    "phrasal_verb": "speak up",
+    "definition": "to talk louder; to express your opinion openly",
+    "synonyms": [
+      "speak out",
+      "voice",
+      "assert oneself"
+    ],
+    "antonyms": [
+      "be quiet",
+      "keep silent"
+    ]
+  },
+  {
+    "phrasal_verb": "speak out",
+    "definition": "to publicly speak in support of or against something",
+    "synonyms": [
+      "speak up",
+      "protest",
+      "object"
+    ],
+    "antonyms": [
+      "remain silent",
+      "keep quiet"
+    ]
+  },
+  {
+    "phrasal_verb": "stand up for sth/sb",
+    "definition": "to support or defend someone or something",
+    "synonyms": [
+      "defend",
+      "support",
+      "champion"
+    ],
+    "antonyms": [
+      "oppose",
+      "attack"
+    ]
+  },
+  {
+    "phrasal_verb": "stand for sth",
+    "definition": "to represent a word, phrase, or idea; to support a particular set of beliefs",
+    "synonyms": [
+      "represent",
+      "symbolize",
+      "mean"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "agree to",
+    "definition": "to accept a plan, suggestion, or request",
+    "synonyms": [
+      "accept",
+      "consent to",
+      "approve"
+    ],
+    "antonyms": [
+      "refuse",
+      "reject"
+    ]
+  },
+  {
+    "phrasal_verb": "go along with sth/sb",
+    "definition": "to agree with or support someone or something",
+    "synonyms": [
+      "agree to",
+      "support",
+      "cooperate with"
+    ],
+    "antonyms": [
+      "oppose",
+      "resist"
+    ]
+  },
+  {
+    "phrasal_verb": "give in",
+    "definition": "to finally agree to do something you were refusing to do",
+    "synonyms": [
+      "surrender",
+      "yield",
+      "concede"
+    ],
+    "antonyms": [
+      "resist",
+      "hold out"
+    ]
+  },
+  {
+    "phrasal_verb": "back down",
+    "definition": "to admit that you are wrong or that you cannot win an argument",
+    "synonyms": [
+      "retreat",
+      "give in",
+      "concede"
+    ],
+    "antonyms": [
+      "insist",
+      "stand firm"
+    ]
+  },
+  {
+    "phrasal_verb": "rule out sth / rule sth out",
+    "definition": "to decide that something is not possible or suitable",
+    "synonyms": [
+      "exclude",
+      "eliminate",
+      "dismiss"
+    ],
+    "antonyms": [
+      "consider",
+      "include"
+    ]
+  },
+  {
+    "phrasal_verb": "weigh up sth / weigh sth up",
+    "definition": "to consider the advantages and disadvantages of something carefully",
+    "synonyms": [
+      "evaluate",
+      "consider",
+      "assess"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "think over sth / think sth over",
+    "definition": "to consider something carefully before making a decision",
+    "synonyms": [
+      "consider",
+      "ponder",
+      "deliberate"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "sleep on sth",
+    "definition": "to delay making a decision about something until the next day",
+    "synonyms": [
+      "delay",
+      "postpone",
+      "defer"
+    ],
+    "antonyms": [
+      "decide immediately"
+    ]
+  },
+  {
+    "phrasal_verb": "decide on sth/sb",
+    "definition": "to choose something or someone after thinking carefully",
+    "synonyms": [
+      "choose",
+      "select",
+      "settle on"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "settle on sth",
+    "definition": "to finally choose something or someone",
+    "synonyms": [
+      "decide on",
+      "choose",
+      "opt for"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "opt out",
+    "definition": "to decide not to take part in something or stop being involved in it",
+    "synonyms": [
+      "withdraw",
+      "pull out",
+      "back out"
+    ],
+    "antonyms": [
+      "opt in",
+      "join"
+    ]
+  },
+  {
+    "phrasal_verb": "bank on sth",
+    "definition": "to depend on something happening",
+    "synonyms": [
+      "rely on",
+      "count on",
+      "depend on"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "allow for sth",
+    "definition": "to take something into consideration when making plans",
+    "synonyms": [
+      "take into account",
+      "consider",
+      "provide for"
+    ],
+    "antonyms": [
+      "ignore",
+      "overlook"
+    ]
+  },
+  {
+    "phrasal_verb": "put off sth/doing sth / put sth off",
+    "definition": "to delay doing something",
+    "synonyms": [
+      "postpone",
+      "delay",
+      "defer"
+    ],
+    "antonyms": [
+      "do immediately",
+      "advance"
+    ]
+  },
+  {
+    "phrasal_verb": "make up your mind",
+    "definition": "to make a decision",
+    "synonyms": [
+      "decide",
+      "resolve",
+      "determine"
+    ],
+    "antonyms": [
+      "hesitate",
+      "waver"
+    ]
+  },
+  {
+    "phrasal_verb": "figure out sth / figure sth out",
+    "definition": "to think about a problem or situation until you find the answer or understand it",
+    "synonyms": [
+      "work out",
+      "solve",
+      "understand"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "refer to sb/sth",
+    "definition": "to mention or speak about someone or something",
+    "synonyms": [
+      "mention",
+      "allude to",
+      "cite"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "insist on sth/doing sth",
+    "definition": "to demand that something must happen or be done",
+    "synonyms": [
+      "demand",
+      "require",
+      "press for"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "object to sb/sth/doing sth",
+    "definition": "to say that you disagree with or oppose something",
+    "synonyms": [
+      "oppose",
+      "disapprove of",
+      "protest against"
+    ],
+    "antonyms": [
+      "approve",
+      "support"
+    ]
+  },
+  {
+    "phrasal_verb": "relate to sth",
+    "definition": "to be connected with something",
+    "synonyms": [
+      "be connected with",
+      "concern",
+      "have to do with"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "focus (sth) on sth",
+    "definition": "to give special attention to one particular thing",
+    "synonyms": [
+      "concentrate on",
+      "center on",
+      "zoom in on"
+    ],
+    "antonyms": [
+      "ignore",
+      "neglect"
+    ]
+  },
+  {
+    "phrasal_verb": "rely on sb/sth",
+    "definition": "to trust or depend on someone or something",
+    "synonyms": [
+      "depend on",
+      "count on",
+      "bank on"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "depend on sth/sb",
+    "definition": "to need someone or something in order to survive or be successful",
+    "synonyms": [
+      "rely on",
+      "count on",
+      "hinge on"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "count on sth",
+    "definition": "to depend on something happening or on someone doing something",
+    "synonyms": [
+      "rely on",
+      "depend on",
+      "bank on"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "drop out",
+    "definition": "to stop taking part in an activity, especially school or a course",
+    "synonyms": [
+      "quit",
+      "withdraw",
+      "leave"
+    ],
+    "antonyms": [
+      "enroll",
+      "join"
+    ]
+  },
+  {
+    "phrasal_verb": "hand in sth / hand in",
+    "definition": "to give something to a person in authority",
+    "synonyms": [
+      "submit",
+      "give in",
+      "turn in"
+    ],
+    "antonyms": [
+      "withdraw",
+      "take back"
+    ]
+  },
+  {
+    "phrasal_verb": "brush up",
+    "definition": "to improve your knowledge of something you have not used for a while",
+    "synonyms": [
+      "revise",
+      "refresh",
+      "polish up"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "catch up with sb",
+    "definition": "to reach the same level or standard as someone who is ahead of you",
+    "synonyms": [
+      "overtake",
+      "reach",
+      "keep pace with"
+    ],
+    "antonyms": [
+      "fall behind",
+      "lag behind"
+    ]
+  },
+  {
+    "phrasal_verb": "fall behind (sth/sb)",
+    "definition": "to fail to keep up with others or make progress at the same rate",
+    "synonyms": [
+      "lag behind",
+      "trail",
+      "drop back"
+    ],
+    "antonyms": [
+      "catch up",
+      "keep up"
+    ]
+  },
+  {
+    "phrasal_verb": "keep up",
+    "definition": "to continue to do something or stay at the same level as others",
+    "synonyms": [
+      "maintain",
+      "sustain",
+      "keep pace"
+    ],
+    "antonyms": [
+      "fall behind",
+      "stop"
+    ]
+  },
+  {
+    "phrasal_verb": "sign up",
+    "definition": "to put your name on a list to join a group or take part in an activity",
+    "synonyms": [
+      "enroll",
+      "register",
+      "join up"
+    ],
+    "antonyms": [
+      "withdraw",
+      "cancel"
+    ]
+  },
+  {
+    "phrasal_verb": "read up on sth",
+    "definition": "to read a lot about a subject in order to learn about it",
+    "synonyms": [
+      "study",
+      "research",
+      "learn about"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "look up sth / look sth up",
+    "definition": "to find information in a book or list",
+    "synonyms": [
+      "check",
+      "search for",
+      "find"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "write up sth / write sth up",
+    "definition": "to write a report or article about something that has happened",
+    "synonyms": [
+      "report",
+      "document",
+      "draft"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "fill out sth / fill sth out",
+    "definition": "to write information in the spaces on a form",
+    "synonyms": [
+      "complete",
+      "fill in",
+      "write out"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "take up sth / take sth up",
+    "definition": "to start doing a new activity or job",
+    "synonyms": [
+      "begin",
+      "start",
+      "adopt"
+    ],
+    "antonyms": [
+      "give up",
+      "quit"
+    ]
+  },
+  {
+    "phrasal_verb": "take on sth / take sth on",
+    "definition": "to accept a job or responsibility",
+    "synonyms": [
+      "undertake",
+      "accept",
+      "assume"
+    ],
+    "antonyms": [
+      "refuse",
+      "decline"
+    ]
+  },
+  {
+    "phrasal_verb": "set up sth / set sth up",
+    "definition": "to start a company, organization, or system",
+    "synonyms": [
+      "establish",
+      "found",
+      "create"
+    ],
+    "antonyms": [
+      "close down",
+      "dissolve"
+    ]
+  },
+  {
+    "phrasal_verb": "take over (sth) / take (sth) over",
+    "definition": "to take control of something",
+    "synonyms": [
+      "assume control of",
+      "take charge of",
+      "seize"
+    ],
+    "antonyms": [
+      "relinquish",
+      "give up"
+    ]
+  },
+  {
+    "phrasal_verb": "step down",
+    "definition": "to leave an important job or position",
+    "synonyms": [
+      "resign",
+      "stand down",
+      "retire"
+    ],
+    "antonyms": [
+      "take up",
+      "assume"
+    ]
+  },
+  {
+    "phrasal_verb": "branch out",
+    "definition": "to start doing something different from what you usually do",
+    "synonyms": [
+      "expand",
+      "diversify",
+      "move into"
+    ],
+    "antonyms": [
+      "specialize",
+      "narrow"
+    ]
+  },
+  {
+    "phrasal_verb": "fit in",
+    "definition": "to belong to a group and be accepted by its members",
+    "synonyms": [
+      "belong",
+      "integrate",
+      "blend in"
+    ],
+    "antonyms": [
+      "stand out",
+      "be excluded"
+    ]
+  },
+  {
+    "phrasal_verb": "stand out",
+    "definition": "to be much better or more noticeable than others",
+    "synonyms": [
+      "be prominent",
+      "be conspicuous",
+      "excel"
+    ],
+    "antonyms": [
+      "fit in",
+      "blend in"
+    ]
+  },
+  {
+    "phrasal_verb": "show off",
+    "definition": "to behave in a way that is intended to attract attention or admiration",
+    "synonyms": [
+      "boast",
+      "brag",
+      "flaunt"
+    ],
+    "antonyms": [
+      "be modest",
+      "hide"
+    ]
+  },
+  {
+    "phrasal_verb": "look forward to sth/doing sth",
+    "definition": "to be excited and pleased about something that is going to happen",
+    "synonyms": [
+      "anticipate",
+      "await",
+      "expect"
+    ],
+    "antonyms": [
+      "dread"
+    ]
+  },
+  {
+    "phrasal_verb": "get along",
+    "definition": "to have a friendly relationship with someone",
+    "synonyms": [
+      "get on",
+      "be friendly",
+      "coexist"
+    ],
+    "antonyms": [
+      "argue",
+      "fight"
+    ]
+  },
+  {
+    "phrasal_verb": "pick up sth / pick sth up",
+    "definition": "to learn something without formal teaching, or to collect something",
+    "synonyms": [
+      "learn",
+      "acquire",
+      "collect"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "work towards sth",
+    "definition": "to try to achieve something over a period of time",
+    "synonyms": [
+      "strive for",
+      "aim for",
+      "pursue"
+    ],
+    "antonyms": [
+      "abandon",
+      "give up"
+    ]
+  },
+  {
+    "phrasal_verb": "set about sth/doing sth",
+    "definition": "to start doing something, especially in a determined way",
+    "synonyms": [
+      "begin",
+      "start",
+      "embark on"
+    ],
+    "antonyms": [
+      "finish",
+      "stop"
+    ]
+  },
+  {
+    "phrasal_verb": "save up (sth) / save (sth) up",
+    "definition": "to keep money in order to buy something you want",
+    "synonyms": [
+      "put aside",
+      "set aside",
+      "put away"
+    ],
+    "antonyms": [
+      "spend",
+      "squander"
+    ]
+  },
+  {
+    "phrasal_verb": "pay off sth / pay sth off",
+    "definition": "to pay all the money you owe on a debt",
+    "synonyms": [
+      "settle",
+      "clear",
+      "discharge"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "set aside sth / set sth aside",
+    "definition": "to keep money or time for a special purpose",
+    "synonyms": [
+      "save",
+      "reserve",
+      "allocate"
+    ],
+    "antonyms": [
+      "spend",
+      "use up"
+    ]
+  },
+  {
+    "phrasal_verb": "cash in on sth",
+    "definition": "to take advantage of a situation to make money",
+    "synonyms": [
+      "exploit",
+      "profit from",
+      "capitalize on"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "give away sth / give sth away",
+    "definition": "to give something to someone without asking for money",
+    "synonyms": [
+      "donate",
+      "hand out",
+      "part with"
+    ],
+    "antonyms": [
+      "keep",
+      "sell"
+    ]
+  },
+  {
+    "phrasal_verb": "break out",
+    "definition": "if a war, fire, or disease breaks out, it starts suddenly",
+    "synonyms": [
+      "erupt",
+      "start suddenly",
+      "flare up"
+    ],
+    "antonyms": [
+      "end",
+      "die down"
+    ]
+  },
+  {
+    "phrasal_verb": "catch on",
+    "definition": "to become popular or fashionable",
+    "synonyms": [
+      "become popular",
+      "take off",
+      "become fashionable"
+    ],
+    "antonyms": [
+      "fade",
+      "decline"
+    ]
+  },
+  {
+    "phrasal_verb": "log in",
+    "definition": "to connect to a computer system by typing your name and password",
+    "synonyms": [
+      "sign in",
+      "log on",
+      "sign on"
+    ],
+    "antonyms": [
+      "log out",
+      "sign out"
+    ]
+  },
+  {
+    "phrasal_verb": "log out",
+    "definition": "to disconnect from a computer system",
+    "synonyms": [
+      "sign out",
+      "log off",
+      "sign off"
+    ],
+    "antonyms": [
+      "log in",
+      "sign in"
+    ]
+  },
+  {
+    "phrasal_verb": "back up (sth) / back (sth) up",
+    "definition": "to make a copy of computer information so that it is not lost",
+    "synonyms": [
+      "copy",
+      "save",
+      "archive"
+    ],
+    "antonyms": [
+      "delete",
+      "erase"
+    ]
+  },
+  {
+    "phrasal_verb": "click on sth",
+    "definition": "to press a button on a computer mouse to choose something on the screen",
+    "synonyms": [
+      "select",
+      "press",
+      "tap"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "print out (sth) / print (sth) out",
+    "definition": "to produce a paper copy of a document from a computer",
+    "synonyms": [
+      "print",
+      "run off",
+      "produce a copy"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "switch on (sth) / switch (sth) on",
+    "definition": "to turn on a light, machine, or electronic device",
+    "synonyms": [
+      "turn on",
+      "activate",
+      "power up"
+    ],
+    "antonyms": [
+      "switch off",
+      "turn off"
+    ]
+  },
+  {
+    "phrasal_verb": "switch off (sth) / switch (sth) off",
+    "definition": "to turn off a light, machine, or electronic device",
+    "synonyms": [
+      "turn off",
+      "deactivate",
+      "power down"
+    ],
+    "antonyms": [
+      "switch on",
+      "turn on"
+    ]
+  },
+  {
+    "phrasal_verb": "shut down (sth) / shut (sth) down",
+    "definition": "to stop a machine or computer from working, or to close a business",
+    "synonyms": [
+      "close down",
+      "power off",
+      "stop"
+    ],
+    "antonyms": [
+      "start up",
+      "open"
+    ]
+  },
+  {
+    "phrasal_verb": "turn off sth / turn sth off",
+    "definition": "to stop a machine, light, or supply of something",
+    "synonyms": [
+      "switch off",
+      "deactivate",
+      "shut off"
+    ],
+    "antonyms": [
+      "turn on",
+      "switch on"
+    ]
+  },
+  {
+    "phrasal_verb": "hack into sth",
+    "definition": "to secretly get into someone else's computer system",
+    "synonyms": [
+      "break into",
+      "access illegally",
+      "crack"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "set up (sth) / set (sth) up",
+    "definition": "to make a piece of equipment or a system ready to use",
+    "synonyms": [
+      "install",
+      "configure",
+      "prepare"
+    ],
+    "antonyms": [
+      "dismantle",
+      "remove"
+    ]
+  },
+  {
+    "phrasal_verb": "come down with sth",
+    "definition": "to become ill with a minor disease",
+    "synonyms": [
+      "catch",
+      "contract",
+      "go down with"
+    ],
+    "antonyms": [
+      "recover",
+      "get over"
+    ]
+  },
+  {
+    "phrasal_verb": "pass away",
+    "definition": "to die",
+    "synonyms": [
+      "die",
+      "pass on",
+      "perish"
+    ],
+    "antonyms": [
+      "live",
+      "survive"
+    ]
+  },
+  {
+    "phrasal_verb": "shake off sth / shake sth off",
+    "definition": "to get rid of an illness or a problem",
+    "synonyms": [
+      "get rid of",
+      "recover from",
+      "throw off"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "work out",
+    "definition": "to do physical exercises to get fit",
+    "synonyms": [
+      "exercise",
+      "train",
+      "keep fit"
+    ],
+    "antonyms": [
+      "rest",
+      "be inactive"
+    ]
+  },
+  {
+    "phrasal_verb": "fight off sth / fight sth off",
+    "definition": "to try hard to get rid of an illness or a feeling",
+    "synonyms": [
+      "resist",
+      "ward off",
+      "repel"
+    ],
+    "antonyms": [
+      "succumb to",
+      "give in to"
+    ]
+  },
+  {
+    "phrasal_verb": "burn out / burn yourself out",
+    "definition": "to become extremely tired and ill because you have worked too hard",
+    "synonyms": [
+      "exhaust",
+      "wear out",
+      "overwork"
+    ],
+    "antonyms": [
+      "recover",
+      "rest"
+    ]
+  },
+  {
+    "phrasal_verb": "slow down",
+    "definition": "to become less active or to make something less active",
+    "synonyms": [
+      "relax",
+      "take it easy",
+      "decelerate"
+    ],
+    "antonyms": [
+      "speed up",
+      "hurry"
+    ]
+  },
+  {
+    "phrasal_verb": "calm down (sb) / calm (sb) down",
+    "definition": "to become less angry or excited, or to make someone less angry or excited",
+    "synonyms": [
+      "relax",
+      "soothe",
+      "quiet down"
+    ],
+    "antonyms": [
+      "agitate",
+      "excite"
+    ]
+  },
+  {
+    "phrasal_verb": "cheer up (sb) / cheer (sb) up",
+    "definition": "to become happier or to make someone happier",
+    "synonyms": [
+      "brighten up",
+      "lift someone's spirits",
+      "console"
+    ],
+    "antonyms": [
+      "sadden",
+      "depress"
+    ]
+  },
+  {
+    "phrasal_verb": "grow up",
+    "definition": "to change from being a child to being an adult",
+    "synonyms": [
+      "mature",
+      "develop",
+      "become an adult"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "look after sb/sth",
+    "definition": "to take care of someone or something",
+    "synonyms": [
+      "take care of",
+      "care for",
+      "mind"
+    ],
+    "antonyms": [
+      "neglect",
+      "abandon"
+    ]
+  },
+  {
+    "phrasal_verb": "bring up sb / bring sb up",
+    "definition": "to care for a child until they are an adult",
+    "synonyms": [
+      "raise",
+      "rear",
+      "nurture"
+    ],
+    "antonyms": [
+      "neglect",
+      "abandon"
+    ]
+  },
+  {
+    "phrasal_verb": "build up sb / build sb up",
+    "definition": "to make someone stronger or more confident",
+    "synonyms": [
+      "strengthen",
+      "boost",
+      "encourage"
+    ],
+    "antonyms": [
+      "weaken",
+      "undermine"
+    ]
+  },
+  {
+    "phrasal_verb": "stay up",
+    "definition": "to go to bed later than usual",
+    "synonyms": [
+      "stay awake",
+      "remain up",
+      "keep late hours"
+    ],
+    "antonyms": [
+      "go to bed early",
+      "retire"
+    ]
+  },
+  {
+    "phrasal_verb": "sleep in",
+    "definition": "to sleep later than usual in the morning",
+    "synonyms": [
+      "oversleep",
+      "lie in",
+      "sleep late"
+    ],
+    "antonyms": [
+      "get up early",
+      "rise early"
+    ]
+  },
+  {
+    "phrasal_verb": "get up",
+    "definition": "to get out of bed",
+    "synonyms": [
+      "rise",
+      "awake",
+      "get out of bed"
+    ],
+    "antonyms": [
+      "go to bed",
+      "lie down"
+    ]
+  },
+  {
+    "phrasal_verb": "eat out",
+    "definition": "to eat a meal in a restaurant instead of at home",
+    "synonyms": [
+      "dine out",
+      "eat at a restaurant"
+    ],
+    "antonyms": [
+      "eat in",
+      "dine at home"
+    ]
+  },
+  {
+    "phrasal_verb": "hang out",
+    "definition": "to spend time in a place doing nothing in particular",
+    "synonyms": [
+      "spend time",
+      "loiter",
+      "socialize"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "drop in",
+    "definition": "to visit someone informally without arranging it first",
+    "synonyms": [
+      "drop by",
+      "call in",
+      "pop in"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "come over",
+    "definition": "to visit someone at their house",
+    "synonyms": [
+      "visit",
+      "call round",
+      "drop by"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "catch up",
+    "definition": "to meet someone you know in order to find out what they have been doing",
+    "synonyms": [
+      "meet up",
+      "get together",
+      "reconnect"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "fall out",
+    "definition": "to have an argument with someone and stop being friendly with them",
+    "synonyms": [
+      "argue",
+      "quarrel",
+      "have a disagreement"
+    ],
+    "antonyms": [
+      "make up",
+      "reconcile"
+    ]
+  },
+  {
+    "phrasal_verb": "make up",
+    "definition": "to become friendly with someone again after an argument",
+    "synonyms": [
+      "reconcile",
+      "patch things up",
+      "bury the hatchet"
+    ],
+    "antonyms": [
+      "fall out",
+      "argue"
+    ]
+  },
+  {
+    "phrasal_verb": "split up",
+    "definition": "to end a marriage or romantic relationship",
+    "synonyms": [
+      "separate",
+      "break up",
+      "divorce"
+    ],
+    "antonyms": [
+      "get together",
+      "reconcile"
+    ]
+  },
+  {
+    "phrasal_verb": "break up",
+    "definition": "to end a romantic relationship or marriage",
+    "synonyms": [
+      "split up",
+      "separate",
+      "part"
+    ],
+    "antonyms": [
+      "get together",
+      "make up"
+    ]
+  },
+  {
+    "phrasal_verb": "fall for sb/sth",
+    "definition": "to start to love someone or to be tricked by something",
+    "synonyms": [
+      "fall in love with",
+      "be taken in by",
+      "be deceived by"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "settle down",
+    "definition": "to start living a quiet and stable life, especially after getting married",
+    "synonyms": [
+      "calm down",
+      "stabilize",
+      "establish a routine"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "go out with sb",
+    "definition": "to have a romantic relationship with someone",
+    "synonyms": [
+      "date",
+      "be involved with",
+      "see"
+    ],
+    "antonyms": [
+      "break up with",
+      "split up with"
+    ]
+  },
+  {
+    "phrasal_verb": "ask out sb / ask sb out",
+    "definition": "to invite someone to go somewhere with you on a date",
+    "synonyms": [
+      "invite out",
+      "date",
+      "proposition"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "let down sb / let sb down",
+    "definition": "to disappoint someone by not doing what they expected",
+    "synonyms": [
+      "disappoint",
+      "fail",
+      "betray"
+    ],
+    "antonyms": [
+      "support",
+      "satisfy"
+    ]
+  },
+  {
+    "phrasal_verb": "turn up",
+    "definition": "to arrive at a place, especially unexpectedly",
+    "synonyms": [
+      "arrive",
+      "show up",
+      "appear"
+    ],
+    "antonyms": [
+      "leave",
+      "depart"
+    ]
+  },
+  {
+    "phrasal_verb": "show up",
+    "definition": "to arrive at a place, especially when expected",
+    "synonyms": [
+      "turn up",
+      "arrive",
+      "appear"
+    ],
+    "antonyms": [
+      "be absent",
+      "miss"
+    ]
+  },
+  {
+    "phrasal_verb": "move in",
+    "definition": "to start living in a new house or apartment",
+    "synonyms": [
+      "take up residence",
+      "settle in",
+      "relocate"
+    ],
+    "antonyms": [
+      "move out",
+      "leave"
+    ]
+  },
+  {
+    "phrasal_verb": "move out",
+    "definition": "to stop living in a particular house or apartment",
+    "synonyms": [
+      "leave",
+      "vacate",
+      "relocate"
+    ],
+    "antonyms": [
+      "move in",
+      "settle"
+    ]
+  },
+  {
+    "phrasal_verb": "move on",
+    "definition": "to start doing something new after finishing something else",
+    "synonyms": [
+      "proceed",
+      "advance",
+      "progress"
+    ],
+    "antonyms": [
+      "stay",
+      "remain"
+    ]
+  },
+  {
+    "phrasal_verb": "hang on",
+    "definition": "to wait for a short time",
+    "synonyms": [
+      "wait",
+      "hold on",
+      "hold the line"
+    ],
+    "antonyms": [
+      "proceed",
+      "go ahead"
+    ]
+  },
+  {
+    "phrasal_verb": "end up doing sth",
+    "definition": "to finally do something, especially when you did not plan to",
+    "synonyms": [
+      "finish up doing",
+      "wind up doing",
+      "land up doing"
+    ],
+    "antonyms": []
+  },
+  {
+    "phrasal_verb": "look up to sb",
+    "definition": "to admire and respect someone",
+    "synonyms": [
+      "admire",
+      "respect",
+      "idolize"
+    ],
+    "antonyms": [
+      "look down on",
+      "despise"
+    ]
+  },
+  {
+    "phrasal_verb": "look down on sb/sth",
+    "definition": "to think that someone or something is less important or worse than you",
+    "synonyms": [
+      "despise",
+      "scorn",
+      "disdain"
+    ],
+    "antonyms": [
+      "look up to",
+      "admire"
+    ]
+  },
+  {
+    "phrasal_verb": "check in",
+    "definition": "to register at a hotel or an airport",
+    "synonyms": [
+      "register",
+      "sign in",
+      "enroll"
+    ],
+    "antonyms": [
+      "check out"
+    ]
+  }
+]
