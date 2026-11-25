@@ -174,7 +174,7 @@ let wv='',sugg=[],sw='',sipa='',sfam=[];
 let listTab='all';
 let packFilter='';
 let toastT;
-const pcards=()=>packFilter?cards.filter(c=>c.src===packFilter):cards;
+const pcards=()=>packFilter==='__mine'?cards.filter(c=>!c.src):packFilter?cards.filter(c=>c.src===packFilter):cards;
 
 function toast(m,ms){const t=$('#toast');t.textContent=m;t.hidden=false;clearTimeout(toastT);toastT=setTimeout(()=>t.hidden=true,ms||2200)}
 function save(){try{localStorage.setItem(KEY,JSON.stringify(cards))}catch(e){}}
@@ -390,6 +390,32 @@ async function enrichSynAnt(w,list){
   if(!sg.ant.length)sg.ant=await dmOne('ant',sg);
  }
 }
+const FAMPOS={n:'noun',v:'verb',adj:'adjective',adv:'adverb'};
+async function familyFree(w){
+ const base=norm(w||'').toLowerCase().trim();
+ if(!base||!/^[a-z' -]{2,14}$/.test(base)||base.includes(' '))return [];
+ const cands=[];
+ const push=x=>{if(x&&!cands.includes(x))cands.push(x)};
+ const endE=base.endsWith('e'),endY=base.endsWith('y'),endDe=base.endsWith('de');
+ if(endDe){push(base.slice(0,-2)+'sion');push(base.slice(0,-2)+'sive')}
+ [['ion',1],['ation',1],['er',1],['or',1],['al',1],['ive',1],['ous',1],['ness',2],['ment',0],['ity',2],['ance',1],['ence',1],['able',2],['ful',2],['ly',1]].forEach(f=>{
+  const sf=f[0];push(base+sf);
+  if(endE)push(base.slice(0,-1)+sf);
+  if(f[1]===2&&endY)push(base.slice(0,-1)+'i'+sf);
+ });
+ ['un','re'].forEach(p=>push(p+base));
+ try{
+  const found=await Promise.all(cands.slice(0,22).map(async c=>{
+   try{const r=await fetchJSON('https://api.datamuse.com/words?sp='+encodeURIComponent(c)+'&md=p&max=1');
+    const x=(r||[])[0];
+    if(!x||String(x.word||'').toLowerCase()!==c)return null;
+    const t=['n','adj','adv','v'].find(y=>(x.tags||[]).includes(y));
+    return {w:c,pos:t?FAMPOS[t]:''};
+   }catch(e){return null}
+  }));
+  return found.filter(Boolean).slice(0,8);
+ }catch(e){return []}
+}
 async function askChainFree(w,onStatus){
  if(onStatus)onStatus('📘 Longman…');
  try{const r0=await longmanFetch(w);if(r0.list.length){if(onStatus)onStatus('🔄 ترجمهٔ فارسی…');await addPersian(r0.list);await enrichSynAnt(w,r0.list);return {res:r0,used:'Longman',failed:[]}}}catch(e){}
@@ -403,7 +429,10 @@ async function askChain(prompt,onStatus){
  const failed=[];
  const w=(prompt.match(/"([^"]+)"/)||[])[1]||'';
  const free=await askChainFree(w,onStatus);
- if(free)return free;
+ if(free){
+  if(!free.res.fam||!free.res.fam.length){if(onStatus)onStatus('\U0001F468\u200D\U0001F467 \u062e\u0627\u0646\u0648\u0627\u062f\u0647\u0654 \u06a9\u0644\u0645\u0647\u2026');free.res.fam=await familyFree(w)}
+  return free;
+ }
  const order=[...PROV];
  const lastId=localStorage.getItem('fc_last_ai');
  if(lastId){
@@ -421,6 +450,7 @@ async function askChain(prompt,onStatus){
     if(onStatus)onStatus('🔄 ترجمهٔ فارسی…');
     await addPersian(res.list);
     await enrichSynAnt(w,res.list);
+    if(!res.fam||!res.fam.length){if(onStatus)onStatus('\U0001F468\u200D\U0001F467 \u062e\u0627\u0646\u0648\u0627\u062f\u0647\u0654 \u06a9\u0644\u0645\u0647\u2026');res.fam=await familyFree(w)}
     return {res,used:p.name,failed};
   }catch(e){
     failed.push(p.name);
@@ -579,7 +609,9 @@ function studyHome(v){
    ?'<div class="hero"><div>مرور امروز</div><div class="big">'+dueCards.length+' کارت</div><button class="btn" id="stoday">▶ شروع مرور</button></div>'
    :'<div class="hero empty"><div>🎉 همه مرور شده!</div><div class="mut" style="color:#fff;opacity:.8;margin-top:4px">'+pcards().length+' کارت ذخیره‌شده</div></div>';
  const srcs=[...new Set(cards.map(c=>c.src).filter(Boolean))];
- let pf=srcs.length?'<div class="tabs">'+[''].concat(srcs).map(x=>'<button class="'+(packFilter===x?'on':'')+'" data-pf="'+esc(x)+'">'+(x?'📖 '+esc(x):'همه')+'</button>').join('')+'</div>':'';
+ const mine=cards.some(c=>!c.src);
+ const opts=[''];if(mine)opts.push('__mine');srcs.forEach(x=>opts.push(x));
+ let pf=opts.length>1?'<div class="tabs">'+opts.map(x=>'<button class="'+(packFilter===x?'on':'')+'" data-pf="'+esc(x)+'">'+(x==='__mine'?'\u270d\ufe0f \u06a9\u0627\u0631\u062a\u200c\u0647\u0627\u06cc \u0645\u0646':(x?'\ud83d\udcd6 '+esc(x):'\u0647\u0645\u0647'))+'</button>').join('')+'</div>':'';
 
  const modes=[['days','📅 روزها'],['all','📚 همه'],['rev','🔁 تعداد مرور']];
  let groups=[];
@@ -1039,6 +1071,19 @@ async function fillSynAnt(){
  toast('تکمیل شد ✓ '+done+' کارت به‌روزرسانی شد',4000);
  if(tb==='list')list();else render();
 }
+async function fillFam(){
+ const targets=cards.filter(c=>!(c.fam||[]).length&&!c.w.includes(' '));
+ if(!targets.length)return toast('\u2713 \u0647\u0645\u0647\u0654 \u06a9\u0627\u0631\u062a\u200c\u0647\u0627 \u062e\u0627\u0646\u0648\u0627\u062f\u0647\u0654 \u06a9\u0644\u0645\u0647 \u062f\u0627\u0631\u0646\u062f',3000);
+ close();
+ toast('\u062f\u0631 \u062d\u0627\u0644 \u06cc\u0627\u0641\u062a\u0646 \u062e\u0627\u0646\u0648\u0627\u062f\u0647\u0654 '+targets.length+' \u06a9\u0627\u0631\u062a\u2026',2500);
+ let done=0;
+ for(const c of targets){
+  const f=await familyFree(c.w);
+  if(f.length){c.fam=f.filter(x=>x.w.toLowerCase()!==c.w.toLowerCase()).slice(0,6);save();done++}
+ }
+ toast(done?('\u062e\u0627\u0646\u0648\u0627\u062f\u0647\u0654 '+done+' \u06a9\u0627\u0631\u062a \u0627\u0636\u0627\u0641\u0647 \u0634\u062f \u2713'):'\u062e\u0627\u0646\u0648\u0627\u062f\u0647\u0650 \u062c\u062f\u06cc\u062f\u06cc \u06cc\u0627\u0641\u062a \u0646\u0634\u062f',4000);
+ if(tb==='list')list();else render();
+}
 function menu(){
  sheet('<h3>منوی برنامه</h3>'+
   '<button class="btn" id="m1" style="width:100%">🔑 کلیدهای هوش مصنوعی</button>'+
@@ -1046,6 +1091,7 @@ function menu(){
   '<button class="btn" id="m3" style="width:100%;margin-top:8px">💾 پشتیبان کارت‌ها</button>'+
   '<button class="btn" id="m4" style="width:100%;margin-top:8px">📥 وارد کردن کارت‌ها</button>'+
   '<button class="btn" id="m6" style="width:100%;margin-top:8px">📝 تکمیل مترادف/متضاد کارت‌های موجود</button>'+
+  '<button class="btn" id="m7" style="width:100%;margin-top:8px">\ud83d\udc68\u200d\ud83d\udc67 \u062a\u06a9\u0645\u06cc\u0644 \u062e\u0627\u0646\u0648\u0627\u062f\u0647\u0654 \u06a9\u0644\u0645\u0647 \u06a9\u0627\u0631\u062a\u200c\u0647\u0627\u06cc \u0645\u0648\u062c\u0648\u062f</button>'+
   '<button class="btn" id="m5" style="width:100%;margin-top:8px">📦 مخزن کلمات</button>'+
   '<div class="hint">برای نصب روی گوشی: منوی مرورگر → Install app. بعد از اولین باز شدن، آفلاین هم کار می‌کند.</div>'+
   '<div class="row"><button class="btn" id="cl">بستن</button></div>');
@@ -1054,6 +1100,7 @@ function menu(){
  $('#m3').onclick=()=>{if(!cards.length)return toast('کارتی نیست');out(backupJSON(),'flashcards')};
  $('#m4').onclick=importSheet;
  $('#m6').onclick=fillSynAnt;
+ $('#m7').onclick=fillFam;
  $('#m5').onclick=wordStore;
  $('#cl').onclick=close;
 }
