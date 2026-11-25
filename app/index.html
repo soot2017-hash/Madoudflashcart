@@ -645,6 +645,30 @@ async function famMake(c,i){
  edit(null,f.w);
 }
 
+async function rewriteFetch(w){
+ let r=null,used='';
+ try{r=await longmanFetch(w);if(r&&r.list.length)used='Longman'}catch(e){}
+ if(!r||!r.list.length){try{const fr=await askChainFree(w);if(fr&&fr.res&&fr.res.list.length){r=fr.res;used=fr.used}}catch(e){}}
+ if(!r||!r.list.length)return null;
+ try{await addPersian(r.list);await enrichSynAnt(w,r.list)}catch(e){}
+ const list=normSenses(r.list.slice(0,12));
+ if(!list.length)return null;
+ return {list,ipa:r.ipa||'',fam:normFam(r.fam||[]).filter(f=>f.w.toLowerCase()!==String(w).toLowerCase()),used};
+}
+async function reworkCard(id){
+ const c=cards.find(x=>x.id===id);if(!c)return;
+ if(!confirm('معانی «'+c.w+'» از نو گرفته شود و بازنویسی شود؟\nپیشرفت مرور این کارت حفظ می‌شود.'))return;
+ const b=$('#rwc');if(b){b.disabled=true;b.textContent='⏳ در حال گرفتن معانی…'}
+ const r=await rewriteFetch(c.w);
+ if(b){b.disabled=false;b.textContent='♻️ بازنویسی معانی از لانگمن'}
+ if(!r)return toast('بازنویسی ناموفق بود؛ اتصال را بررسی کنید',4000);
+ c.senses=r.list;
+ if(r.ipa&&!c.ipa)c.ipa=r.ipa;
+ if(r.fam&&r.fam.length&&!(c.fam||[]).length)c.fam=r.fam;
+ save();toast('معانی از '+r.used+' بازنویسی شد ✓',3200);
+ if(tb==='study')study();
+}
+
 const revName=r=>r===0?'مرور نشده':r+' بار مرور شده';
 const grp=k=>{
  if(k===0)return {title:'همهٔ لغت‌ها',cs:cards.slice().sort((a,b)=>a.t-b.t)};
@@ -720,7 +744,7 @@ function study(){
 
  v.innerHTML='<div class="row" style="margin:0 0 8px;align-items:center"><button class="ib" id="bk" aria-label="بازگشت">→</button><div style="flex:1;text-align:center"><b>'+esc(g2.title)+'</b><div class="mut" style="font-size:.75rem">'+(idx+1)+' از '+cs.length+' · مرور '+(c.reps||0)+' بار</div></div><button class="btn" id="jp" style="min-height:40px;padding:2px 12px;flex:none">لیست ▾</button></div>'+
  '<div class="box fc '+(flip?'top':'')+' '+(showFa?'':'hide-fa')+'" id="fc"><div class="w">'+esc(c.w)+'</div><div class="ipa">'+esc(c.ipa||'')+'</div><div class="row" style="justify-content:center;margin-top:0;align-items:center"><button class="btn" id="sp1" style="min-height:42px">🔊 تلفظ</button>'+(isDue(c)&&!rated?'<span class="badge" style="background:color-mix(in srgb,var(--bad) 15%,var(--card));color:var(--bad)">مرور عقب‌افتاده</span>':'')+'</div>'+
- (flip?gh(c.senses)+faBtn+famHTML(c):'<div class="chips">'+group(c.senses).map(chipHTML).join('')+'</div><div class="mut" style="margin-top:16px">برای دیدن معانی بزنید</div>')+'</div>';
+ (flip?'<div class="row" style="margin:0 0 10px"><button class="btn" id="rwc" style="width:100%">♻️ بازنویسی معانی از لانگمن</button></div>'+gh(c.senses)+faBtn+famHTML(c) :'<div class="chips">'+group(c.senses).map(chipHTML).join('')+'</div><div class="mut" style="margin-top:16px">برای دیدن معانی بزنید</div>')+'</div>';
 
  if(!flip){
   $('#act').innerHTML=
@@ -756,6 +780,7 @@ function study(){
  $('#sp1').onclick=e=>{e.stopPropagation();speak(c.w)};
  $('#fc').onclick=()=>{if(!flip){flip=true;study();scrollTo(0,0)}};
  if($('#tfa'))$('#tfa').onclick=e=>{e.stopPropagation();showFa=!showFa;study()};
+ if($('#rwc'))$('#rwc').onclick=e=>{e.stopPropagation();reworkCard(c.id)};
  document.querySelectorAll('[data-fm]').forEach(b=>b.onclick=e=>{e.stopPropagation();famMake(c,+b.dataset.fm)});
  if($('#ffind'))$('#ffind').onclick=()=>famFind(c);
  $('#jp').onclick=()=>{
@@ -878,6 +903,7 @@ function draw(){
  const top=(document.querySelector('.sheet')||{scrollTop:0}).scrollTop;
  sheet('<h3>'+(dr.id?'ویرایش کارت':'کارت جدید')+'</h3>'+
   '<label>لغت</label><input id="fw" class="en" autocapitalize="off">'+
+  '<button class="btn" id="rwe" style="width:100%;margin-top:6px">♻️ بازنویسی معانی از لانگمن</button>'+
   '<label>تلفظ (IPA)</label><input id="fi" class="en" placeholder="/ˈlaɪt/">'+
   '<label>خانوادهٔ کلمه</label><input id="ff" class="en" autocapitalize="off" placeholder="decision (noun), decisive (adjective)">'+
   dr.ss.map((s,i)=>'<div class="sr" style="border:1px solid var(--bd);border-radius:14px;padding:10px;margin-top:10px"><div class="row" style="margin:0 0 6px"><select data-k="pos" class="en">'+POS.map(x=>'<option value="'+x[0]+'"'+(npos(s.pos)===x[0]?' selected':'')+'>'+x[1]+' · '+x[0]+'</option>').join('')+'</select><button class="ib" data-rm="'+i+'" aria-label="حذف">🗑</button></div>'+
@@ -895,6 +921,18 @@ function draw(){
  $('.sheet').scrollTop=top;
  $('#cl').onclick=close;
  $('#ns').onclick=()=>{syncDr();dr.ss.push(blankS(dr.w));draw()};
+ $('#rwe').onclick=async()=>{
+  const q=norm($('#fw').value);if(!q)return toast('اول لغت را بنویسید');
+  const b=$('#rwe');b.disabled=true;b.textContent='⏳ در حال گرفتن معانی…';
+  const r=await rewriteFetch(q);
+  b.disabled=false;b.textContent='♻️ بازنویسی معانی از لانگمن';
+  if(!r)return toast('بازنویسی ناموفق بود؛ اتصال را بررسی کنید',4000);
+  if(r.ipa)dr.ipa=r.ipa;
+  if(r.fam&&r.fam.length)dr.fam=r.fam;
+  dr.ss=r.list;
+  draw();
+  toast('معانی از '+r.used+' بازنویسی شد ✓',3000);
+ };
  document.querySelectorAll('[data-rm]').forEach(b=>b.onclick=()=>{syncDr();dr.ss.splice(+b.dataset.rm,1);if(!dr.ss.length)dr.ss.push(blankS(dr.w));draw()});
  $('#ok').onclick=()=>{
   syncDr();
