@@ -93,6 +93,8 @@ label{display:block;font-size:.85rem;color:var(--mut);margin:10px 0 4px}
 .hide-fa .fa{display:none!important}
 .badge{display:inline-block;padding:2px 10px;border-radius:10px;background:var(--sf);font-size:.8rem;color:var(--mut);margin-right:6px}
 .gchip{display:inline-block;background:color-mix(in srgb,var(--ac) 14%,var(--card));color:var(--ac);font-weight:700;font-size:.78rem;border-radius:8px;padding:1px 8px;margin-inline-end:4px;vertical-align:middle}
+.gchip-fa{background:color-mix(in srgb,#b06a00 14%,var(--card));color:#b06a00;direction:rtl}
+.spx{color:#c0504d;font-style:italic;font-size:.92rem;margin-bottom:2px}
 .trbtn{background:none;border:0;padding:2px 6px;color:var(--mut);font:inherit;font-size:.8rem;cursor:pointer;border-bottom:1px dashed var(--bd)}
 .trbtn:disabled{color:var(--mut);border-bottom-color:transparent}
 .tr{direction:rtl;text-align:right;color:var(--ok);font-size:.9rem;margin-top:2px}
@@ -183,6 +185,7 @@ const findCard=(w,exId)=>cards.find(x=>x.id!==exId&&x.w.toLowerCase()===norm(w).
 function normSenses(list){
  return (list||[]).map(s=>({
    pos:npos(s.pos), d:norm(s.d), e:norm(s.e), p:norm(s.p), g:norm(s.g), ep:norm(s.ep),
+   gram:norm(s.gram), sp:norm(s.sp),
    syn:arr(s.syn), ant:arr(s.ant), prep:arr(s.prep), sep:(['sep','insep','both','none'].indexOf(String(s.sep||''))>=0?s.sep:'')
  })).filter(s=>s.d);
 }
@@ -255,10 +258,21 @@ const SEPFA={sep:['جداپذیر','turn it off ✓ · turn off it ✗'],insep:[
 const sepRow=v=>v&&SEPFA[v]?'<div class="pr" dir="rtl"><b>ساختار فعل:</b> '+SEPFA[v][0]+' — <span dir="ltr">'+esc(SEPFA[v][1])+'</span></div>':'';
 const prepRow=a=>a&&a.length?'<div class="pr" dir="rtl"><b>حرف اضافه:</b> <span dir="ltr">'+a.map(boldPrep).join(' · ')+'</span></div>':'';
 
+function gramFa(g){
+ if(!g)return '';
+ const t=String(g).toLowerCase();
+ const it=(t.match(/intransitive/g)||[]).length;
+ const tt=(t.match(/transitive/g)||[]).length-it;
+ if(tt&&it)return 'گذرا و ناگذرا';
+ if(tt)return 'گذرا';
+ if(it)return 'ناگذرا';
+ return '';
+}
 function gh(ss,chk){
  return group(ss).map(([p,a])=>'<div class="pg" style="--c:'+pcol(p)+'"><div class="ph"><b>'+fa(p)+'</b><span class="cnt">'+p+' · '+a.length+' معنی</span></div>'+(sumP(a)?'<div class="ps">'+esc(sumP(a))+'</div>':'')+
   a.map(({s,i},k)=>{
-   const body='<div class="sb"><div class="df">'+(s.g?'<span class="gchip" dir="ltr">'+esc(s.g)+'</span> ':'')+boldPrep(s.d,true)+'</div>'+(s.e?'<div class="ex">'+boldPrep(s.e,true)+'</div><button class="trbtn" type="button" data-src="'+esc(s.e)+'">🌐 ترجمهٔ مثال ▸</button><div class="tr" hidden>'+(s.ep?esc(s.ep):'')+'</div>':'')+(s.p?'<div class="fa">'+esc(s.p)+'</div>':'')+prepRow(s.prep)+sepRow(s.sep)+tagRow('s1','هم‌معنی',s.syn)+tagRow('s2','متضاد',s.ant)+'</div>';
+   const gr=gramFa(s.gram);
+   const body='<div class="sb">'+(s.sp?'<div class="spx" dir="ltr">'+boldPrep(s.sp,true)+'</div>':'')+'<div class="df">'+(gr?'<span class="gchip gchip-fa">'+gr+'</span> ':'')+(s.g?'<span class="gchip" dir="ltr">'+esc(s.g)+'</span> ':'')+boldPrep(s.d,true)+'</div>'+(s.e?'<div class="ex">'+boldPrep(s.e,true)+'</div><button class="trbtn" type="button" data-src="'+esc(s.e)+'">🌐 ترجمهٔ مثال ▸</button><div class="tr" hidden>'+(s.ep?esc(s.ep):'')+'</div>':'')+(s.p?'<div class="fa">'+esc(s.p)+'</div>':'')+prepRow(s.prep)+sepRow(s.sep)+tagRow('s1','هم‌معنی',s.syn)+tagRow('s2','متضاد',s.ant)+'</div>';
    return chk?'<label class="sn"><input type="checkbox" data-i="'+i+'"'+(s.on?' checked':'')+'><span class="nm">'+(k+1)+'</span>'+body+'</label>':'<div class="sn"><span class="nm">'+(k+1)+'</span>'+body+'</div>';
   }).join('')+'</div>').join('');
 }
@@ -460,22 +474,52 @@ async function askChain(prompt,onStatus){
 }
 
 function longmanDom(doc){
- const res={ipa:'',list:[]};
+ const res={ipa:'',list:[],fam:[]};
+ const txt=x=>norm((x||{}).textContent||'');
+ const pushL=(a,t)=>{t=norm(t);if(t&&!a.includes(t))a.push(t)};
  doc.querySelectorAll('.ldoceEntry').forEach(en=>{
-  const pron=(en.querySelector('.PRON')||{}).textContent||'';
-  if(pron&&!res.ipa){const p=norm(pron).replace(/^\/|\/$/g,'').trim();if(p)res.ipa='/'+p+'/'}
-  const pos=norm((en.querySelector('.POS')||{}).textContent).toLowerCase();
+  const pron=txt(en.querySelector('.PRON'));
+  if(pron&&!res.ipa){const p=pron.replace(/^\/|\/$/g,'').trim();if(p)res.ipa='/'+p+'/'}
+  const pos=txt(en.querySelector('.POS')).toLowerCase();
   en.querySelectorAll('.Sense').forEach(sg=>{
-   const dEl=sg.querySelector(':scope>.DEF');if(!dEl)return;
-   const d=norm(dEl.textContent);if(!d)return;
-   let e='';
-   sg.querySelectorAll(':scope>.EXAMPLE, :scope>.GramExa>.EXAMPLE').forEach(x=>{if(!e)e=norm(x.textContent)});
-   const prep=[];
-   sg.querySelectorAll('.PROPFORMPREP').forEach(x=>{const t=norm(x.textContent);if(t&&!prep.includes(t))prep.push(t)});
-   const fw=norm((sg.querySelector(':scope>.FIELD')||{}).textContent).toUpperCase();
-   const av=norm((sg.querySelector(':scope>.ACTIV')||{}).textContent).toUpperCase();
-   res.list.push({pos,d,e,g:(av||fw),syn:[],ant:[],prep});
+   const defs=[];
+   const dEl=sg.querySelector(':scope>.DEF');
+   if(dEl){const d=norm(dEl.textContent);if(d)defs.push({d,el:sg})}
+   sg.querySelectorAll(':scope>.Subsense').forEach(sb=>{
+    const dd=sb.querySelector(':scope>.DEF');
+    if(dd){const d=norm(dd.textContent);if(d)defs.push({d,el:sb})}
+   });
+   defs.forEach(({d,el})=>{
+    let e='';
+    el.querySelectorAll('.EXAMPLE').forEach(x=>{if(!e)e=norm(x.textContent)});
+    const prep=[];
+    sg.querySelectorAll('.PROPFORMPREP').forEach(x=>pushL(prep,x.textContent));
+    el.querySelectorAll('.PROPFORM').forEach(x=>pushL(prep,x.textContent));
+    const fw=txt(sg.querySelector(':scope>.FIELD')).toUpperCase();
+    const av=txt(sg.querySelector(':scope>.ACTIV')).toUpperCase();
+    const spEl=sg.querySelector(':scope>.SIGNPOST');
+    const vr=norm((sg.querySelector(':scope>.Variant')||{}).textContent).replace(/\(\s*/,'(').replace(/\s*\)/,')');
+    let sp=spEl?norm(spEl.textContent):'';
+    if(vr)sp=sp?sp+' '+vr:vr;
+    let gram='';
+    el.querySelectorAll('.GRAM').forEach(x=>{const t=norm(x.textContent).replace(/[\[\]]/g,'').trim();if(t&&!gram.includes(t))gram=gram?gram+', '+t:t});
+    if(!gram&&pos=='verb'){const g2=txt(sg.querySelector(':scope>.GRAM')).replace(/[\[\]]/g,'').trim();if(g2)gram=g2}
+    const syn=[],ant=[];
+    el.querySelectorAll('.SYN').forEach(x=>pushL(syn,norm(x.textContent).replace(/^SYN\s*/i,'')));
+    el.querySelectorAll('.OPP').forEach(x=>pushL(ant,norm(x.textContent).replace(/^OPP\s*/i,'')));
+    res.list.push({pos,d,e,g:(av||fw),gram,sp,syn,ant,prep});
+   });
   });
+  const wf=en.querySelector('.wordfams')||doc.querySelector('.wordfams');
+  if(wf&&!res.fam.length){
+   let lp='';
+   res.fam=[];
+   wf.querySelectorAll('.pos,.crossRef,.w').forEach(el=>{
+    if(el.classList.contains('pos')){lp=norm(el.textContent).replace(/[()]/g,'').trim();return}
+    const t=norm(el.textContent);
+    if(t&&lp&&!res.fam.some(f=>f.w.toLowerCase()===t.toLowerCase()))res.fam.push({w:t,pos:lp});
+   });
+  }
  });
  const seen=new Set();
  res.list=res.list.filter(s=>!seen.has(s.d)&&seen.add(s.d));
@@ -731,7 +775,7 @@ function add(){
   '<div class="hint">بدون هیچ کلیدی کار می‌کند: دیکشنری رایگان + ترجمهٔ فارسی. کلیدهای AI (اختیاری) فقط وقتی به‌کار می‌روند که دیکشنری رایگان جواب ندهد.</div>'+
   '<div id="dup"></div>'+
  '</div>'+
- '<div class="box"><label>یا متن Longman را کپی کنید</label><textarea id="pt" class="en" placeholder="فقط ورودی همان لغت را از صفحهٔ Longman انتخاب و کپی کنید"></textarea><button class="btn p" id="pc" style="width:100%;margin-top:8px">🤖 تبدیل متن به کارت</button></div>'+
+ '<div class="box"><label>یا لینک صفحهٔ Longman را بچسبانید</label><textarea id="pt" class="en" placeholder="لینک صفحهٔ کلمه را از لانگمن کپی کنید؛ مثلا:\nhttps://www.ldoceonline.com/dictionary/fasten\nیا متن تعریف را بچسبانید"></textarea><button class="btn p" id="pc" style="width:100%;margin-top:8px">🤖 ساختن کارت از لینک/متن</button><div class="hint">اگر لینک بچسبانید، برنامه خودش صفحهٔ Longman همان کلمه را می‌خواند و کارت را مستقیم از لانگمن می‌سازد (بدون نیاز به هوش مصنوعی).</div></div>'+
  '<div id="res"></div>'+
  '<button class="btn" id="man" style="width:100%">✍️ افزودن دستی</button>';
 
@@ -767,13 +811,20 @@ async function lookup(){
   res();return;
  }
  sw=w;sipa=r.res.ipa||'';sfam=normFam(r.res.fam);
- sugg=normSenses(r.res.list.slice(0,12).map(s=>({pos:s.pos,d:s.d,e:s.e,p:'',syn:s.syn,ant:s.ant,prep:s.prep}))).map(s=>Object.assign(s,{on:true}));
+ sugg=normSenses(r.res.list.slice(0,12).map(s=>({pos:s.pos,d:s.d,e:s.e,p:'',gram:s.gram,sp:s.sp,syn:s.syn,ant:s.ant,prep:s.prep}))).map(s=>Object.assign(s,{on:true}));
  toast('منبع: '+r.used+(r.failed.length?' — ناموفق: '+r.failed.join('، '):''),3500);
  res();
 }
 
+function lmUrlWord(t){
+ const m=String(t||'').match(/ldoceonline\.com\/dictionary\/([^\/\s?#]+)/i);
+ if(!m)return '';
+ try{return norm(decodeURIComponent(m[1]).replace(/-/g,' '))}catch(e){return ''}
+}
 async function pasteAI(){
- const t=$('#pt').value.trim();if(!t)return toast('متن را بچسبانید');
+ const t=$('#pt').value.trim();if(!t)return toast('لینک یا متن را بچسبانید');
+ const uw=lmUrlWord(t);
+ if(uw){$('#pt').value='';$('#w').value=uw;wv=uw;toast('لینک Longman شناخته شد: '+uw,2500);return lookup()}
  const w=norm(wv);
  const lp=parseLmText(t,w);
  if(lp.list.length){
@@ -788,7 +839,7 @@ async function pasteAI(){
  b.disabled=false;b.textContent='🤖 تبدیل متن به کارت';
  if(!r.res||!r.res.list.length)return toast('تبدیل ناموفق بود'+(r.failed.length?' ('+r.failed.join('، ')+')':''),4000);
  sw=w;sipa=r.res.ipa||'';sfam=normFam(r.res.fam);
- sugg=normSenses(r.res.list.slice(0,12).map(s=>({pos:s.pos,d:s.d,e:s.e,p:'',syn:s.syn,ant:s.ant,prep:s.prep}))).map(s=>Object.assign(s,{on:true}));
+ sugg=normSenses(r.res.list.slice(0,12).map(s=>({pos:s.pos,d:s.d,e:s.e,p:'',gram:s.gram,sp:s.sp,syn:s.syn,ant:s.ant,prep:s.prep}))).map(s=>Object.assign(s,{on:true}));
  toast('تبدیل با '+r.used,3000);
  res();
 }
@@ -848,7 +899,7 @@ function draw(){
  $('#ok').onclick=()=>{
   syncDr();
   const w2=norm(dr.w);
-  const ss=normSenses(dr.ss.map(s=>({pos:s.pos,d:s.d,e:s.e,p:s.p,syn:s.syn,ant:s.ant,prep:s.prep})));
+  const ss=normSenses(dr.ss.map(s=>({pos:s.pos,d:s.d,e:s.e,p:s.p,gram:s.gram,sp:s.sp,syn:s.syn,ant:s.ant,prep:s.prep})));
   if(!w2||!ss.length){$('#em').textContent='لغت و حداقل یک تعریف لازم است.';return}
   const ex=findCard(w2,dr.id);
   if(ex){$('#em').innerHTML='<span style="color:var(--bad)">⚠️ قبلاً ذخیره شده.</span><button class="btn" id="ox" style="width:100%;margin-top:8px">باز کردن موجود</button>';$('#ox').onclick=()=>edit(ex.id);return}
@@ -1005,9 +1056,10 @@ function list(){
   '<div class="row" style="margin:0 0 10px"><button class="btn" id="exp">📤 خروجی همه</button><button class="btn" id="imp">📥 وارد کردن</button></div>'+
   '<input id="lq" class="en" placeholder="🔍 جستجو در لغت‌ها و معانی…" style="margin-bottom:10px">'+
   '<div class="tabs">'+TABS.map(t=>'<button class="'+(listTab===t[0]?'on':'')+'" data-lt="'+t[0]+'">'+t[1]+' ('+(t[0]==='all'?cards.length:t[0]==='r1'?cards.filter(c=>(c.reps||0)===1).length:t[0]==='r2'?cards.filter(c=>(c.reps||0)===2).length:t[0]==='r3p'?cards.filter(c=>(c.reps||0)>=3).length:cards.filter(isDue).length)+')</button>').join('')+'</div>'+
-  '<div class="box" style="padding:6px 14px" id="lst">'+(pool.length?pool.map(c=>'<div class="it" data-q="'+esc((c.w+' '+c.ipa+' '+c.senses.map(s=>[s.d,s.e,s.p,(s.syn||[]).join(' '),(s.ant||[]).join(' ')].join(' ')).join(' ')).toLowerCase())+'"><div class="t" data-e="'+c.id+'"><b>'+esc(c.w)+'</b><small dir="rtl">'+esc(summ(c)+' · مرور: '+(c.reps||0))+(isDue(c)?' · 🔔':'')+'</small></div><button class="ib" data-e="'+c.id+'" aria-label="ویرایش">✎</button><button class="ib" data-s="'+c.id+'" aria-label="اشتراک">↗</button></div>').join(''):'<div style="padding:12px 0;text-align:center;color:var(--mut)">خالی</div>')+'</div>';
+  '<div class="box" style="padding:6px 14px" id="lst">'+(pool.length?pool.map(c=>'<div class="it" data-q="'+esc((c.w+' '+c.ipa+' '+c.senses.map(s=>[s.d,s.e,s.p,(s.syn||[]).join(' '),(s.ant||[]).join(' ')].join(' ')).join(' ')).toLowerCase())+'"><div class="t" data-e="'+c.id+'"><b>'+esc(c.w)+'</b><small dir="rtl">'+esc(summ(c)+' · مرور: '+(c.reps||0))+(isDue(c)?' · 🔔':'')+'</small></div><button class="ib" data-e="'+c.id+'" aria-label="ویرایش">✎</button><button class="ib" data-s="'+c.id+'" aria-label="اشتراک">↗</button><button class="ib" data-del="'+c.id+'" aria-label="حذف">🗑</button></div>').join(''):'<div style="padding:12px 0;text-align:center;color:var(--mut)">خالی</div>')+'</div>';
 
  v.querySelectorAll('[data-lt]').forEach(b=>b.onclick=()=>{listTab=b.dataset.lt;list()});
+ v.querySelectorAll('[data-del]').forEach(e=>e.onclick=()=>{if(!confirm('این کارت حذف شود؟'))return;cards=cards.filter(x=>x.id!==e.dataset.del);save();toast('کارت حذف شد ✓',2500);list()});
  v.querySelectorAll('[data-e]').forEach(e=>e.onclick=()=>edit(e.dataset.e));
  v.querySelectorAll('[data-s]').forEach(e=>e.onclick=()=>{const c=cards.find(x=>x.id===e.dataset.s);out(c.w+(c.ipa?' '+c.ipa:'')+'\n'+group(c.senses).map(([p,a])=>'['+p+']\n'+a.map(({s},k)=>(k+1)+'. '+s.d+(s.e?'\n   '+s.e:'')+(s.p?'\n   '+s.p:'')+(s.syn.length?'\n   ≈ '+s.syn.join(', '):'')+(s.ant.length?'\n   ≠ '+s.ant.join(', '):'')+(s.prep&&s.prep.length?'\n   ⚑ '+s.prep.join(' · '):'')).join('\n')).join('\n'),c.w)});
  $('#lq').oninput=e=>{const q=e.target.value.trim().toLowerCase();v.querySelectorAll('.it').forEach(x=>x.hidden=!!q&&!x.dataset.q.includes(q))};
