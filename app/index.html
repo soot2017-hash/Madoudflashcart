@@ -398,7 +398,7 @@ async function familyFree(w){
  const push=x=>{if(x&&!cands.includes(x))cands.push(x)};
  const endE=base.endsWith('e'),endY=base.endsWith('y'),endDe=base.endsWith('de');
  if(endDe){push(base.slice(0,-2)+'sion');push(base.slice(0,-2)+'sive')}
- [['ion',1],['ation',1],['er',1],['or',1],['al',1],['ive',1],['ous',1],['ness',2],['ment',0],['ity',2],['ance',1],['ence',1],['able',2],['ful',2],['ly',1]].forEach(f=>{
+ [['ion',1],['ation',1],['er',1],['or',1],['al',1],['ive',1],['ous',1],['ness',2],['ment',0],['ity',2],['ance',1],['ence',1],['able',2],['ful',2],['ly',1],['ic',0],['ism',0]].forEach(f=>{
   const sf=f[0];push(base+sf);
   if(endE)push(base.slice(0,-1)+sf);
   if(f[1]===2&&endY)push(base.slice(0,-1)+'i'+sf);
@@ -430,7 +430,7 @@ async function askChain(prompt,onStatus){
  const w=(prompt.match(/"([^"]+)"/)||[])[1]||'';
  const free=await askChainFree(w,onStatus);
  if(free){
-  if(!free.res.fam||!free.res.fam.length){if(onStatus)onStatus('\U0001F468\u200D\U0001F467 \u062e\u0627\u0646\u0648\u0627\u062f\u0647\u0654 \u06a9\u0644\u0645\u0647\u2026');free.res.fam=await familyFree(w)}
+  if(!free.res.fam||!free.res.fam.length){if(onStatus)onStatus('\ud83d\udc68\u200d\ud83d\udc67 \u062e\u0627\u0646\u0648\u0627\u062f\u0647\u0654 \u06a9\u0644\u0645\u0647\u2026');free.res.fam=await familyFree(w)}
   return free;
  }
  const order=[...PROV];
@@ -450,7 +450,7 @@ async function askChain(prompt,onStatus){
     if(onStatus)onStatus('🔄 ترجمهٔ فارسی…');
     await addPersian(res.list);
     await enrichSynAnt(w,res.list);
-    if(!res.fam||!res.fam.length){if(onStatus)onStatus('\U0001F468\u200D\U0001F467 \u062e\u0627\u0646\u0648\u0627\u062f\u0647\u0654 \u06a9\u0644\u0645\u0647\u2026');res.fam=await familyFree(w)}
+    if(!res.fam||!res.fam.length){if(onStatus)onStatus('\ud83d\udc68\u200d\ud83d\udc67 \u062e\u0627\u0646\u0648\u0627\u062f\u0647\u0654 \u06a9\u0644\u0645\u0647\u2026');res.fam=await familyFree(w)}
     return {res,used:p.name,failed};
   }catch(e){
     failed.push(p.name);
@@ -582,7 +582,14 @@ async function out(text,title){
 }
 
 const hasCardFn=w=>!!findCard(w);
-const famHTML=c=>c.fam&&c.fam.length?'<div class="pg" style="--c:#8b5cc4;margin-top:16px"><div class="ph"><b>خانوادهٔ کلمه</b><span class="cnt">'+c.fam.length+' کلمه</span></div>'+c.fam.map((f,i)=>'<div class="fm"><span dir="ltr"><b>'+esc(f.w)+'</b> <span class="mut">'+esc(f.pos?fa(npos(f.pos))+' · '+f.pos:'')+'</span></span>'+(hasCardFn(f.w)?'<span class="mut">✓ ذخیره‌شده</span>':'<button class="btn" data-fm="'+i+'">➕ کارت</button>')+'</div>').join('')+'</div>':'';
+const famHTML=c=>'<div class="pg" style="--c:#8b5cc4;margin-top:16px"><div class="ph"><b>\u062e\u0627\u0646\u0648\u0627\u062f\u0647\u0654 \u06a9\u0644\u0645\u0647</b>'+(c.fam&&c.fam.length?'<span class="cnt">'+c.fam.length+' \u06a9\u0644\u0645\u0647</span>':'')+'</div>'+((c.fam&&c.fam.length)?c.fam.map((f,i)=>'<div class="fm"><span dir="ltr"><b>'+esc(f.w)+'</b> <span class="mut">'+esc(f.pos?fa(npos(f.pos))+' \u00b7 '+f.pos:'')+'</span></span>'+(hasCardFn(f.w)?'<span class="mut">\u2713 \u0630\u062e\u06cc\u0631\u0647\u200c\u0634\u062f\u0647</span>':'<button class="btn" data-fm="'+i+'">\u2795 \u06a9\u0627\u0631\u062a</button>')+'</div>').join(''):(c.w.includes(' ')?'<div class="fm"><span class="mut">\u2014</span></div>':'<div class="fm"><span class="mut">\u0647\u0646\u0648\u0632 \u062b\u0628\u062a \u0646\u0634\u062f\u0647</span><button class="btn" id="ffind">\ud83d\udd0d \u06cc\u0627\u0641\u062a\u0646</button></div>'))+'</div>';
+async function famFind(c){
+ toast('\u062f\u0631 \u062d\u0627\u0644 \u06cc\u0627\u0641\u062a\u0646 \u062e\u0627\u0646\u0648\u0627\u062f\u0647\u2026',2500);
+ const f=await familyFree(c.w);
+ if(!f.length)return toast('\u062e\u0627\u0646\u0648\u0627\u062f\u0647\u0650 \u062c\u062f\u06cc\u062f\u06cc \u06cc\u0627\u0641\u062a \u0646\u0634\u062f',3000);
+ c.fam=f.filter(x=>x.w.toLowerCase()!==c.w.toLowerCase()).slice(0,6);
+ save();study();
+}
 async function famMake(c,i){
  const f=(c.fam||[])[i];if(!f)return;
  if(hasCardFn(f.w))return toast('این لغت قبلاً ذخیره شده است');
@@ -609,9 +616,8 @@ function studyHome(v){
    ?'<div class="hero"><div>مرور امروز</div><div class="big">'+dueCards.length+' کارت</div><button class="btn" id="stoday">▶ شروع مرور</button></div>'
    :'<div class="hero empty"><div>🎉 همه مرور شده!</div><div class="mut" style="color:#fff;opacity:.8;margin-top:4px">'+pcards().length+' کارت ذخیره‌شده</div></div>';
  const srcs=[...new Set(cards.map(c=>c.src).filter(Boolean))];
- const mine=cards.some(c=>!c.src);
- const opts=[''];if(mine)opts.push('__mine');srcs.forEach(x=>opts.push(x));
- let pf=opts.length>1?'<div class="tabs">'+opts.map(x=>'<button class="'+(packFilter===x?'on':'')+'" data-pf="'+esc(x)+'">'+(x==='__mine'?'\u270d\ufe0f \u06a9\u0627\u0631\u062a\u200c\u0647\u0627\u06cc \u0645\u0646':(x?'\ud83d\udcd6 '+esc(x):'\u0647\u0645\u0647'))+'</button>').join('')+'</div>':'';
+ const opts=cards.length?['','__mine'].concat(srcs):[];
+ let pf=opts.length?'<div class="tabs">'+opts.map(x=>'<button class="'+(packFilter===x?'on':'')+'" data-pf="'+esc(x)+'">'+(x==='__mine'?'\u270d\ufe0f \u06a9\u0627\u0631\u062a\u200c\u0647\u0627\u06cc \u0645\u0646':(x?'\ud83d\udcd6 '+esc(x):'\u0647\u0645\u0647'))+'</button>').join('')+'</div>':'';
 
  const modes=[['days','📅 روزها'],['all','📚 همه'],['rev','🔁 تعداد مرور']];
  let groups=[];
@@ -707,6 +713,7 @@ function study(){
  $('#fc').onclick=()=>{if(!flip){flip=true;study();scrollTo(0,0)}};
  if($('#tfa'))$('#tfa').onclick=e=>{e.stopPropagation();showFa=!showFa;study()};
  document.querySelectorAll('[data-fm]').forEach(b=>b.onclick=e=>{e.stopPropagation();famMake(c,+b.dataset.fm)});
+ if($('#ffind'))$('#ffind').onclick=()=>famFind(c);
  $('#jp').onclick=()=>{
   sheet('<h3 style="margin-top:0">'+esc(g2.title)+'</h3>'+cs.map((x,i)=>'<button class="wi" data-j="'+i+'"><b>'+esc(x.w)+'</b><span class="mut">'+(i===idx?'● ':'')+'🔁 '+(x.reps||0)+'</span></button>').join('')+'<div class="row"><button class="btn" id="cl">بستن</button></div>');
   $('#cl').onclick=close;
