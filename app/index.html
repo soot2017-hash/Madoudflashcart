@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#1d6b5a">
+<meta name="theme-color" content="#6d4dc4">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="icon-192.png">
 <link rel="stylesheet" href="fonts/fonts.css">
 <title>فلش‌کارت لغات انگلیسی</title>
 <style>
-:root{--bg:#f6f5f1;--card:#fff;--tx:#1d1d1b;--mut:#6b6a64;--ac:#1d6b5a;--acx:#fff;--bd:#dcdad2;--bad:#b3402f;--sf:#ece9df;--ok:#2f9e6e}
-@media (prefers-color-scheme:dark){:root{--bg:#171716;--card:#232321;--tx:#eeede8;--mut:#9a988f;--ac:#4fb59d;--acx:#10231e;--bd:#3a3a36;--bad:#e07a68;--sf:#2c2c29;--ok:#4fb59d}}
+:root{--bg:#f5f2fb;--card:#ffffff;--tx:#1d1a2e;--mut:#69628a;--ac:#6d4dc4;--acx:#fff;--bd:#ddd6ec;--bad:#b3402f;--sf:#ece5f8;--ok:#2f8f6e}
+@media (prefers-color-scheme:dark){:root{--bg:#16121f;--card:#221b33;--tx:#eeecf4;--mut:#9d97b3;--ac:#a98ff0;--acx:#1b1330;--bd:#39314f;--bad:#e07a68;--sf:#2b2340;--ok:#6fbf9b}}
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 body{margin:0;background:var(--bg);color:var(--tx);font-family:Vazirmatn,Tahoma,system-ui,sans-serif;line-height:1.7;font-size:16px;padding:env(safe-area-inset-top,0px) 0 220px}
 main{max-width:600px;margin:0 auto;padding:12px 14px}
@@ -33,7 +33,7 @@ label{display:block;font-size:.85rem;color:var(--mut);margin:10px 0 4px}
 .hint{font-size:.82rem;color:var(--mut);margin-top:8px}
 .mut{color:var(--mut);font-size:.85rem}
 .ipa{direction:ltr;color:var(--mut);min-height:1.2em}
-.w{font-size:2rem;font-weight:800;direction:ltr;text-align:center;word-break:break-word}
+.w{font-size:2rem;font-weight:900;direction:ltr;text-align:center;word-break:break-word}
 .warn{background:color-mix(in srgb,#d98a1f 16%,var(--card));border:1px solid #d98a1f;border-radius:12px;padding:8px 12px;margin-top:10px;font-size:.9rem}
 .fc{min-height:240px;display:flex;flex-direction:column;align-items:center;padding:20px;cursor:pointer;text-align:center}
 .fc.top{justify-content:flex-start;align-items:stretch;cursor:default}
@@ -83,9 +83,9 @@ label{display:block;font-size:.85rem;color:var(--mut);margin:10px 0 4px}
 .pb{color:var(--ac);font-weight:800}
 .fm{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:6px 0;border-top:1px dashed var(--bd)}
 .fm .btn{min-height:40px;padding:2px 12px}
-.hero{background:linear-gradient(135deg,#1d6b5a,#2f9e6e);color:#fff;border:none;border-radius:18px;padding:18px;margin-bottom:12px;text-align:center}
+.hero{background:linear-gradient(135deg,#5b3fae,#8b5cc4);color:#fff;border:none;border-radius:18px;padding:18px;margin-bottom:12px;text-align:center}
 .hero .big{font-size:2.2rem;font-weight:800;margin:4px 0}
-.hero .btn{margin-top:12px;background:#fff;color:#1d6b5a;border:none;width:100%;font-weight:700}
+.hero .btn{margin-top:12px;background:#fff;color:#6d4dc4;border:none;width:100%;font-weight:700}
 .hero.empty{background:linear-gradient(135deg,#8a8a80,#6b6a64)}
 .tabs{display:flex;gap:4px;overflow-x:auto;padding:4px 0;margin-bottom:10px}
 .tabs button{padding:8px 14px;border-radius:20px;border:1px solid var(--bd);background:var(--card);color:var(--tx);font:inherit;font-size:.9rem;cursor:pointer;white-space:nowrap;flex:none}
@@ -126,7 +126,7 @@ const KEY_OLD='fc_cards_v1';
 const APP_URL=location.origin+location.pathname;
 const DAY=86400000;
 const POS=[
- ['noun','اسم','#3b82c4'],['verb','فعل','#2f9e6e'],['adjective','صفت','#d98a1f'],
+ ['noun','اسم','#3b82c4'],['verb','فعل','#7c5cd6'],['adjective','صفت','#d98a1f'],
  ['adverb','قید','#8b5cc4'],['phrasal verb','فعل عبارتی','#c4478b'],
  ['phrase','عبارت','#3a9aa8'],['idiom','اصطلاح','#b0623a'],
  ['preposition','حرف اضافه','#6b7a8f'],['conjunction','حرف ربط','#7a8a3a'],
@@ -179,7 +179,7 @@ let toastT;
 const pcards=()=>packFilter==='__mine'?cards.filter(c=>!c.src):packFilter?cards.filter(c=>c.src===packFilter):cards;
 
 function toast(m,ms){const t=$('#toast');t.textContent=m;t.hidden=false;clearTimeout(toastT);toastT=setTimeout(()=>t.hidden=true,ms||2200)}
-function save(){try{localStorage.setItem(KEY,JSON.stringify(cards))}catch(e){}}
+function save(){let ok=false;try{localStorage.setItem(KEY,JSON.stringify(cards));ok=true}catch(e){}if(!ok)toast('⚠️ ذخیره در حافظهٔ دستگاه ناموفق بود؛ حافظهٔ مرورگر پر است. از منو پشتیبان بگیرید.',5000);return ok}
 const findCard=(w,exId)=>cards.find(x=>x.id!==exId&&x.w.toLowerCase()===norm(w).toLowerCase());
 
 function normSenses(list){
@@ -336,7 +336,7 @@ async function faTr(t){
  const x=norm((j.responseData||{}).translatedText||'');
  return (x&&!/MYMEMORY WARNING/i.test(x)&&!x.includes('QUERY LENGTH'))?x:''}catch(e){return ''}
 }
-async function addPersian(list){for(const s of (list||[]).slice(0,6)){if(!norm(s.p))s.p=await faTr(s.d)}}
+async function addPersian(list){await Promise.all((list||[]).slice(0,6).map(async s=>{if(!norm(s.p))s.p=await faTr(s.d)}))}
 
 async function freeDict(w){
  const j=await fetchJSON('https://api.dictionaryapi.dev/api/v2/entries/en/'+encodeURIComponent(w));
@@ -399,10 +399,7 @@ async function enrichSynAnt(w,list){
    }).map(x=>String(x.word).trim()).slice(0,rel==='syn'?4:3);
   }catch(e){return []}
  };
- for(const sg of list){
-  if(!sg.syn.length)sg.syn=await dmOne('syn',sg);
-  if(!sg.ant.length)sg.ant=await dmOne('ant',sg);
- }
+ await Promise.all(list.map(sg=>(async()=>{if(!sg.syn.length)sg.syn=await dmOne('syn',sg);if(!sg.ant.length)sg.ant=await dmOne('ant',sg)})()));
 }
 const FAMPOS={n:'noun',v:'verb',adj:'adjective',adv:'adverb'};
 async function familyFree(w){
@@ -430,21 +427,32 @@ async function familyFree(w){
   return found.filter(Boolean).slice(0,8);
  }catch(e){return []}
 }
-async function askChainFree(w,onStatus){
- if(onStatus)onStatus('📘 Longman…');
- try{const r0=await longmanFetch(w);if(r0.list.length){if(onStatus)onStatus('🔄 ترجمهٔ فارسی…');await addPersian(r0.list);await enrichSynAnt(w,r0.list);return {res:r0,used:'Longman',failed:[]}}if(onStatus)onStatus('⛔ لانگمن پاسخ معتبری نداد؛ منبع بعدی…')}catch(e){if(onStatus)onStatus('⛔ لانگمن اجازهٔ دسترسی نداد؛ منبع بعدی…')}
- if(onStatus)onStatus('📖 دیکشنری رایگان…');
- try{const r=await freeDict(w);if(r.list.length){if(onStatus)onStatus('🔄 ترجمهٔ فارسی…');await addPersian(r.list);await enrichSynAnt(w,r.list);return {res:r,used:'دیکشنری رایگان',failed:[]}}}catch(e){}
-  if(onStatus)onStatus('📖 Wiktionary…');
- try{const r2=await wikiDict(w);if(r2.list.length){if(onStatus)onStatus('🔄 ترجمهٔ فارسی…');await addPersian(r2.list);await enrichSynAnt(w,r2.list);return {res:r2,used:'Wiktionary',failed:[]}}}catch(e){}
+async function freeFin(w,res,onStatus){
+ const jobs=[addPersian(res.list),enrichSynAnt(w,res.list)];
+ if(!res.fam||!res.fam.length){if(onStatus)onStatus('\ud83d\udc68\u200d\ud83d\udc66 \u062e\u0627\u0646\u0648\u0627\u062f\u0647\u0654 \u06a9\u0644\u0645\u0647\u2026');jobs.push(familyFree(w).then(f=>{res.fam=f}))}
+ await Promise.all(jobs);
+ return res;
+}
+function bgFin(w,list,gotFam){freeFin(w,{list:list,fam:[]}).then(fr=>{if(fr&&fr.fam&&fr.fam.length&&gotFam)gotFam(fr.fam);if(sw===w)res()}).catch(()=>{})}
+async function askChainFree(w,onStatus,lite){
+ if(onStatus)onStatus('\ud83d\udcd8 Longman\u2026');
+ try{const r0=await longmanFetch(w);if(r0.list.length){if(!lite)await freeFin(w,r0,onStatus);return {res:r0,used:'Longman',failed:[]}}if(onStatus)onStatus('\u26d4 \u0644\u0627\u0646\u06af\u0645\u0646 \u067e\u0627\u0633\u062e \u0645\u0639\u062a\u0628\u0631\u06cc \u0646\u062f\u0627\u062f\u061b \u0645\u0646\u0628\u0639 \u0628\u0639\u062f\u06cc\u2026')}catch(e){if(onStatus)onStatus('\u26d4 \u0644\u0627\u0646\u06af\u0645\u0646 \u0627\u062c\u0627\u0632\u0647\u0654 \u062f\u0633\u062a\u0631\u0633\u06cc \u0646\u062f\u0627\u062f\u061b \u0645\u0646\u0628\u0639 \u0628\u0639\u062f\u06cc\u2026')}
+ if(onStatus)onStatus('\ud83d\udcd7 Cambridge\u2026');
+ try{const rc=await cambridgeFetch(w);if(rc.list.length){if(!lite)await freeFin(w,rc,onStatus);return {res:rc,used:'Cambridge',failed:[]}}}catch(e){}
+ if(onStatus)onStatus('\ud83d\udd0d WordWeb\u2026');
+ try{const rw=await wordwebFetch(w);if(rw.list.length){if(!lite)await freeFin(w,rw,onStatus);return {res:rw,used:'WordWeb',failed:[]}}}catch(e){}
+ if(onStatus)onStatus('\ud83d\udcd6 \u062f\u06cc\u06a9\u0634\u0646\u0631\u06cc \u0631\u0627\u06cc\u06af\u0627\u0646\u2026');
+ try{const r=await freeDict(w);if(r.list.length){if(!lite)await freeFin(w,r,onStatus);return {res:r,used:'\u062f\u06cc\u06a9\u0634\u0646\u0631\u06cc \u0631\u0627\u06cc\u06af\u0627\u0646',failed:[]}}}catch(e){}
+ if(onStatus)onStatus('\ud83d\udcd6 Wiktionary\u2026');
+ try{const r2=await wikiDict(w);if(r2.list.length){if(!lite)await freeFin(w,r2,onStatus);return {res:r2,used:'Wiktionary',failed:[]}}}catch(e){}
  return null;
 }
-async function askChain(prompt,onStatus){
+async function askChain(prompt,onStatus,lite){
  const failed=[];
  const w=(prompt.match(/"([^"]+)"/)||[])[1]||'';
- const free=await askChainFree(w,onStatus);
+ const free=await askChainFree(w,onStatus,lite);
  if(free){
-  if(!free.res.fam||!free.res.fam.length){if(onStatus)onStatus('\ud83d\udc68\u200d\ud83d\udc67 \u062e\u0627\u0646\u0648\u0627\u062f\u0647\u0654 \u06a9\u0644\u0645\u0647\u2026');free.res.fam=await familyFree(w)}
+  if(!lite&&!free.res.fam?.length){if(onStatus)onStatus('\ud83d\udc68\u200d\ud83d\udc67 \u062e\u0627\u0646\u0648\u0627\u062f\u0647\u0654 \u06a9\u0644\u0645\u0647\u2026');free.res.fam=await familyFree(w)}
   return free;
  }
  const order=[...PROV];
@@ -464,7 +472,7 @@ async function askChain(prompt,onStatus){
     if(onStatus)onStatus('🔄 ترجمهٔ فارسی…');
     await addPersian(res.list);
     await enrichSynAnt(w,res.list);
-    if(!res.fam||!res.fam.length){if(onStatus)onStatus('\ud83d\udc68\u200d\ud83d\udc67 \u062e\u0627\u0646\u0648\u0627\u062f\u0647\u0654 \u06a9\u0644\u0645\u0647\u2026');res.fam=await familyFree(w)}
+    if(!lite&&!res.fam?.length){if(onStatus)onStatus('\ud83d\udc68\u200d\ud83d\udc67 \u062e\u0627\u0646\u0648\u0627\u062f\u0647\u0654 \u06a9\u0644\u0645\u0647\u2026');res.fam=await familyFree(w)}
     return {res,used:p.name,failed};
   }catch(e){
     failed.push(p.name);
@@ -556,6 +564,70 @@ async function longmanFetch(w){
  }
  if(c)return c;
  throw 0;
+}
+async function cambridgeFetch(w){
+ const url='https://dictionary.cambridge.org/dictionary/english/'+encodeURIComponent(norm(w).toLowerCase().replace(/\s+/g,'-'));
+ const ck='cb:'+url;const c=dcGet(ck);
+ try{
+  const r=await fetchTO(url,null,10000);
+  if(!r.ok)throw 0;
+  const html=await r.text();
+  const d=cambridgeDom(new DOMParser().parseFromString(html,'text/html'));
+  if(d.list.length){dcSet(ck,d);return d}
+  throw 0;
+ }catch(e){if(c)return c;throw e}
+}
+function cambridgeDom(doc){
+ const res={ipa:'',list:[],fam:[]};
+ const ip=norm((doc.querySelector('.dpron-i .ipa,.ipa')||{}).textContent||'');
+ if(ip)res.ipa=/^\/.+\/$/.test(ip)?ip:ip;
+ doc.querySelectorAll('.entry-body__el').forEach(el=>{
+  let pos=norm((el.querySelector('.dpos')||{}).textContent).toLowerCase();
+  el.querySelectorAll('.def-block').forEach(db=>{
+   const d=norm((db.querySelector('.def.ddef_d, .ddef_d')||{}).textContent);
+   if(!d)return;
+   const gram=[...db.querySelectorAll('.gc.dgc, .dgc')].map(x=>norm(x.textContent).trim()).filter(Boolean).join('');
+   let g='';
+   if(gram.includes('I')&&gram.includes('T'))g='intransitive, transitive';
+   else if(gram.includes('I'))g='intransitive';
+   else if(gram.includes('T'))g='transitive';
+   let e='';
+   db.querySelectorAll('.examp.dexamp, .dexamp').forEach(x=>{if(!e)e=norm(x.textContent)});
+   res.list.push({pos,d,e,gram:g,syn:[],ant:[],prep:[]});
+  });
+ });
+ const seen=new Set();
+ res.list=res.list.filter(s=>{const k=s.pos+'|'+s.d;if(seen.has(k))return false;seen.add(k);return true}).slice(0,12);
+ return res;
+}
+async function wordwebFetch(w){
+ const url='https://www.wordwebonline.com/en/'+norm(w).toUpperCase().replace(/[\s-]+/g,'');
+ const ck='ww:'+url;const c=dcGet(ck);
+ try{
+  const r=await fetchTO(url,null,10000);
+  if(!r.ok)throw 0;
+  const html=await r.text();
+  const d=wordwebDom(new DOMParser().parseFromString(html,'text/html'));
+  if(d.list.length){dcSet(ck,d);return d}
+  throw 0;
+ }catch(e){if(c)return c;throw e}
+}
+function wordwebDom(doc){
+ const res={ipa:'',list:[],fam:[]};
+ const root=doc.querySelector('.definition-content');
+ if(!root)return res;
+ const hd=norm((root.querySelector('.head')||{}).textContent).replace(':','').trim().toLowerCase();
+ let pos=hd;
+ root.querySelectorAll('ol > li').forEach(li=>{
+  const d=norm((li.querySelector('.def')||{}).textContent);
+  if(!d)return;
+  let e=norm((li.querySelector('.ex')||{}).textContent).replace(/^["\u201c]|["\u201d]$/g,'').trim();
+  const syn=[...li.querySelectorAll('a.syn')].map(x=>norm(x.textContent)).filter(Boolean).slice(0,4);
+  res.list.push({pos,d,e,syn,ant:[],prep:[]});
+ });
+ const seen=new Set();
+ res.list=res.list.filter(s=>{const k=s.pos+'|'+s.d;if(seen.has(k))return false;seen.add(k);return true}).slice(0,10);
+ return res;
 }
 const POSES='noun|verb|adjective|adverb|phrasal verb|phrase|idiom|preposition|conjunction|pronoun|determiner|exclamation';
 function parseLmText(t,w){
@@ -691,6 +763,7 @@ async function reworkCard(id){
  if(tb==='study')study();
 }
 
+function waitForEnd(){if(day!=null&&tb==='study'){idx=0;flip=false;sessRated={};sessKey=null;go('study');setTimeout(waitSheet,50)}else waitSheet()}
 const revName=r=>r===0?'مرور نشده':r+' بار مرور شده';
 const grp=k=>{
  if(k===0)return {title:'همهٔ لغت‌ها',cs:cards.slice().sort((a,b)=>a.t-b.t)};
@@ -720,6 +793,7 @@ function studyHome(v){
 
  v.innerHTML=hero+pf+
   '<div class="tabs">'+modes.map(m=>'<button class="'+(smode===m[0]?'on':'')+'" data-sm="'+m[0]+'">'+m[1]+'</button>').join('')+'</div>'+
+  '<button class="btn" id="wlh" style="width:100%;margin-top:10px">⏳ لیست انتظار'+(waitL.length?' ('+waitL.length+' کلمه)':'')+'</button>'+
   groups.map(g=>{const o=g.open||openD.has(g.k);return '<div class="box day"><div class="dh" data-tg="'+g.k+'"><b>'+esc(g.title)+'</b><span class="mut">'+g.cs.length+' لغت '+(g.open?'':(o?'▴':'▾'))+'</span></div>'+(o?'<div class="dw"><button class="btn p" data-s="'+g.k+':0" style="width:100%">▶ شروع از اول</button>'+wordRows(g.k,g.cs)+'</div>':'')+'</div>'}).join('');
 
  v.querySelectorAll('[data-pf]').forEach(b=>b.onclick=()=>{packFilter=b.dataset.pf;day=null;openD=new Set();sessKey=null;study();scrollTo(0,0)});
@@ -727,7 +801,62 @@ function studyHome(v){
  v.querySelectorAll('[data-sm]').forEach(b=>b.onclick=()=>{smode=b.dataset.sm;study()});
  v.querySelectorAll('[data-tg]').forEach(e=>e.onclick=()=>{const n=+e.dataset.tg;openD.has(n)?openD.delete(n):openD.add(n);study()});
  v.querySelectorAll('[data-s]').forEach(e=>e.onclick=()=>{const p=e.dataset.s.split(':').map(Number);startAt=p[1];go('day-'+p[0])});
+ if($('#wlh'))$('#wlh').onclick=waitForEnd;
 }
+let waitL=[];
+try{waitL=JSON.parse(localStorage.getItem('fc_wait')||'[]')}catch(e){waitL=[]}
+if(!Array.isArray(waitL))waitL=[];
+const waitSave=()=>{try{localStorage.setItem('fc_wait',JSON.stringify(waitL))}catch(e){}};
+function waitAdd(w0){
+ const wd=norm(w0);if(!wd)return toast('لغت را بنویسید');
+ if(findCard(wd))return toast('این لغت قبلاً ذخیره شده است');
+ if(waitL.some(x=>x.toLowerCase()===wd.toLowerCase()))return toast('قبلاً در لیست انتظار ثبت شد');
+ waitL.push(wd);waitSave();
+ if($('#wlw'))$('#wlw').value='';
+ toast('«'+wd+'» در لیست انتظار ثبت شد ⏳');
+ if(!$('#sh').hidden)waitSheet();
+}
+function waitRm(i){waitL.splice(i,1);waitSave();waitSheet()}
+async function waitConvertOne(i){
+ const wd=waitL[i];if(!wd)return;
+ close();toast('در حال ساخت کارت «'+wd+'»…',4000);
+ try{
+  const r=await askChain(PROMPT(wd));
+  if(r&&r.res&&r.res.list.length){addSenses(wd,r.res.list.slice(0,12),r.res.ipa,r.res.fam);waitL.splice(i,1);waitSave();toast('کارت «'+wd+'» ساخته شد ✓',3000);if(tb==='study')study();return}
+ }catch(e){}
+ edit(null,wd);
+}
+async function waitConvertAll(){
+ if(!waitL.length)return;
+ const total=waitL.length;let ok=0;
+ for(let i=0;i<waitL.length;i++){
+  const wd=waitL[i];
+  toast('در حال ساخت کارت «'+wd+'» … ('+(ok+1)+' از '+total+')',3000);
+  try{
+   const r=await askChain(PROMPT(wd));
+   if(r&&r.res&&r.res.list.length){addSenses(wd,r.res.list.slice(0,12),r.res.ipa,r.res.fam);ok++;waitL.splice(i,1);i--}
+  }catch(e){}
+  waitSave();
+ }
+ close();
+ toast(ok+' کارت از لیست انتظار ساخته شد ✓'+(waitL.length?'؛ '+waitL.length+' کلمه باقی ماند':''),4000);
+ render();
+}
+function waitSheet(){
+ const rows=waitL.map((x,i)=>'<div class="fm"><span dir="ltr"><b>'+esc(x)+'</b></span><span style="display:flex;gap:6px"><button class="btn" data-wc="'+i+'" style="min-height:36px;padding:2px 10px">ساخت کارت</button><button class="ib" data-wr="'+i+'" aria-label="حذف">🗑</button></span></div>').join('');
+ sheet('<h3 style="margin-top:0">⏳ لیست انتظار</h3><div class="hint">کلماتی که در حین مرور یادداشت می‌کنید؛ بعد از اتمام مرور بدون خروج از این صفحه به کارت تبدیل می‌شوند.</div>'+
+  '<div class="row" style="margin-top:10px"><input id="wlw" class="en" placeholder="e.g. elaborate" style="flex:1" autocapitalize="off" autocomplete="off"><button class="btn p" id="wla" style="min-height:44px">ثبت</button></div>'+
+  '<div style="margin-top:10px">'+(rows||'<div class="mut" style="text-align:center;padding:8px 0">لیست انتظار خالی است</div>')+'</div>'+
+  (waitL.length?'<button class="btn p" id="wlc" style="width:100%;margin-top:10px">🏗 تبدیل همه به کارت ('+waitL.length+')</button>':'')+
+  '<div class="row"><button class="btn" id="cl">بستن</button></div>');
+ $('#cl').onclick=close;
+ $('#wla').onclick=()=>waitAdd($('#wlw').value);
+ $('#wlw').onkeydown=e=>{if(e.key==='Enter')waitAdd($('#wlw').value)};
+ document.querySelectorAll('[data-wr]').forEach(b=>b.onclick=()=>waitRm(+b.dataset.wr));
+ document.querySelectorAll('[data-wc]').forEach(b=>b.onclick=()=>waitConvertOne(+b.dataset.wc));
+ if($('#wlc'))$('#wlc').onclick=waitConvertAll;
+}
+
 function study(){
  const v=$('#view');
  if(!cards.length){v.innerHTML='<div class="box" style="text-align:center;padding:24px"><div style="font-size:2.5rem">📭</div><div style="margin:8px 0">هنوز کارتی ندارید</div><div class="mut">از تب «افزودن» شروع کنید</div></div>';$('#act').innerHTML='';return}
@@ -752,9 +881,10 @@ function study(){
    cs=sessIds.map(id=>cards.find(c=>c.id===id)).filter(Boolean);
  }
  if(!cs.length){
-   v.innerHTML='<div class="box" style="text-align:center;padding:24px"><div style="font-size:2.5rem">🎉</div><div style="margin:8px 0">مرور این بخش تمام شد</div><button class="btn p" id="bh" style="width:100%;margin-top:12px">بازگشت</button></div>';
+   v.innerHTML='<div class="box" style="text-align:center;padding:24px"><div style="font-size:2.5rem">🎉</div><div style="margin:8px 0">مرور این بخش تمام شد</div><button class="btn p" id="bh" style="width:100%;margin-top:12px">بازگشت</button></div>'+(waitL.length?'<div class="box" style="text-align:center;padding:16px"><div>⏳ لیست انتظار: '+waitL.length+' کلمه</div><button class="btn p" id="wlg" style="width:100%;margin-top:10px">🏗 تبدیل به کارت</button></div>':'');
    $('#act').innerHTML='';
    $('#bh').onclick=()=>go('study');
+   if($('#wlg'))$('#wlg').onclick=waitForEnd;
    return;
  }
  if(idx>=cs.length)idx=0;
@@ -764,7 +894,7 @@ function study(){
 
  const faBtn=hasFa(c)?'<button class="btn" id="tfa" style="width:100%;margin-top:12px">'+(showFa?'🙈 پنهان کردن فارسی':'👁 نمایش فارسی')+'</button>':'';
 
- v.innerHTML='<div class="row" style="margin:0 0 8px;align-items:center"><button class="ib" id="bk" aria-label="بازگشت">→</button><div style="flex:1;text-align:center"><b>'+esc(g2.title)+'</b><div class="mut" style="font-size:.75rem">'+(idx+1)+' از '+cs.length+' · مرور '+(c.reps||0)+' بار</div></div><button class="btn" id="jp" style="min-height:40px;padding:2px 12px;flex:none">لیست ▾</button></div>'+
+ v.innerHTML='<div class="row" style="margin:0 0 8px;align-items:center"><button class="ib" id="bk" aria-label="بازگشت">→</button><div style="flex:1;text-align:center"><b>'+esc(g2.title)+'</b><div class="mut" style="font-size:.75rem">'+(idx+1)+' از '+cs.length+' · مرور '+(c.reps||0)+' بار</div></div><button class="btn" id="wlb" style="min-height:40px;padding:2px 10px;flex:none">⏳</button><button class="btn" id="jp" style="min-height:40px;padding:2px 12px;flex:none">لیست ▾</button></div>'+
  '<div class="box fc '+(flip?'top':'')+' '+(showFa?'':'hide-fa')+'" id="fc"><div class="w">'+esc(c.w)+'</div><div class="ipa">'+esc(c.ipa||'')+'</div><div class="row" style="justify-content:center;margin-top:0;align-items:center"><button class="btn" id="sp1" style="min-height:42px">🔊 تلفظ</button>'+(isDue(c)&&!rated?'<span class="badge" style="background:color-mix(in srgb,var(--bad) 15%,var(--card));color:var(--bad)">مرور عقب‌افتاده</span>':'')+'</div>'+
  (flip?'<div class="row" style="margin:0 0 10px"><button class="btn" id="rwc" style="width:100%">♻️ بازنویسی معانی از لانگمن</button></div>'+gh(c.senses)+faBtn+famHTML(c) :'<div class="chips">'+group(c.senses).map(chipHTML).join('')+'</div><div class="mut" style="margin-top:16px">برای دیدن معانی بزنید</div>')+'</div>';
 
@@ -786,8 +916,8 @@ function study(){
      '<button class="btn" data-r="0" style="background:#b3402f">فراموشی</button>'+
      '<button class="btn" data-r="2" style="background:#d98a1f">سخت</button>'+
      '<button class="btn" data-r="3" style="background:#5f7a95">معمولی</button>'+
-     '<button class="btn" data-r="4" style="background:#2f9e6e">خوب</button>'+
-     '<button class="btn" data-r="5" style="background:#1d6b5a">عالی</button>'+
+     '<button class="btn" data-r="4" style="background:#7c5cd6">خوب</button>'+
+     '<button class="btn" data-r="5" style="background:#5b3fae">عالی</button>'+
     '</div>';
    document.querySelectorAll('[data-r]').forEach(b=>b.onclick=()=>{
      const q=+b.dataset.r;
@@ -799,6 +929,7 @@ function study(){
   }
  }
  $('#bk').onclick=()=>go('study');
+ $('#wlb').onclick=waitSheet;
  $('#sp1').onclick=e=>{e.stopPropagation();speak(c.w)};
  $('#fc').onclick=()=>{if(!flip){flip=true;study();scrollTo(0,0)}};
  if($('#tfa'))$('#tfa').onclick=e=>{e.stopPropagation();showFa=!showFa;study()};
@@ -849,7 +980,7 @@ async function lookup(){
  const b=$('#sg');b.disabled=true;
 
  let r;
- try{r=await askChain(PROMPT(w),m=>{b.textContent=m})}
+ try{r=await askChain(PROMPT(w),m=>{b.textContent=m},true)}
  catch(e){r={res:null,used:'',failed:['\u062e\u0637\u0627\u06cc \u062f\u0627\u062e\u0644\u06cc: '+String((e&&e.message)||e).slice(0,60)]}}
  b.disabled=false;b.textContent='✨ معانی را بیاور';
 
@@ -859,8 +990,9 @@ async function lookup(){
  }
  sw=w;sipa=r.res.ipa||'';sfam=normFam(r.res.fam);
  sugg=normSenses(r.res.list.slice(0,12).map(s=>({pos:s.pos,d:s.d,e:s.e,p:'',gram:s.gram,sp:s.sp,syn:s.syn,ant:s.ant,prep:s.prep}))).map(s=>Object.assign(s,{on:true}));
- toast('منبع: '+r.used+(r.failed.length?' — ناموفق: '+r.failed.join('، '):''),3500);
+ toast('منبع: '+r.used+(r.failed.length?' — ناموفق: '+r.failed.join('، '):'')+'؛ در حال تکمیل ترجمهٔ فارسی و خانواده…',3500);
  res();
+ bgFin(w,sugg,f=>{if(!sfam.length)sfam=normFam(f)});
 }
 
 function lmUrlWord(t){
@@ -882,13 +1014,14 @@ async function pasteAI(){
  }
  const wq=w||'word';
  const b=$('#pc');b.disabled=true;
- const r=await askChain(PASTEQ(wq,t),m=>{b.textContent=m});
+ const r=await askChain(PASTEQ(wq,t),m=>{b.textContent=m},true);
  b.disabled=false;b.textContent='🤖 تبدیل متن به کارت';
  if(!r.res||!r.res.list.length)return toast('تبدیل ناموفق بود'+(r.failed.length?' ('+r.failed.join('، ')+')':''),4000);
  sw=w;sipa=r.res.ipa||'';sfam=normFam(r.res.fam);
  sugg=normSenses(r.res.list.slice(0,12).map(s=>({pos:s.pos,d:s.d,e:s.e,p:'',gram:s.gram,sp:s.sp,syn:s.syn,ant:s.ant,prep:s.prep}))).map(s=>Object.assign(s,{on:true}));
- toast('تبدیل با '+r.used,3000);
+ toast('تبدیل با '+r.used+'؛ در حال تکمیل ترجمهٔ فارسی…',3000);
  res();
+ bgFin(wq,sugg,f=>{if(!sfam.length)sfam=normFam(f)});
 }
 
 function res(){
