@@ -277,6 +277,24 @@ function load(){
     if(!(ex.srcs||[]).length&&card.srcs.length)ex.srcs=card.srcs.slice();
   } else cards.push(card);
  });
+ // migrate legacy data: words shared by several packs must belong to ALL of them
+ if(window.__PACKS&&__PACKS.data&&__PACKS.index){
+  const pm={};
+  __PACKS.index.forEach(pk=>{const nm=pk.short||pk.name;(__PACKS.data[pk.file]||[]).forEach(r=>{if(r&&r.w){const k=norm(r.w).toLowerCase();(pm[k]=pm[k]||[]).push(nm)}})});
+  let mig=0;
+  cards.forEach(c=>{
+   const names=pm[c.w.toLowerCase()];
+   if(!names||names.length<2)return;
+   const have=[c.src].concat(c.srcs||[]).filter(Boolean);
+   const miss=names.filter(nm=>have.indexOf(nm)<0);
+   if(!miss.length)return;
+   if(!c.src)c.src=miss.shift();
+   if(!c.srcs)c.srcs=[];
+   miss.forEach(nm=>{if(c.srcs.indexOf(nm)<0&&nm!==c.src)c.srcs.push(nm)});
+   mig++;
+  });
+  if(mig){try{localStorage.setItem(KEY,JSON.stringify(cards))}catch(e){}try{toast(mig+' \u06a9\u0627\u0631\u062a \u0628\u0647 \u0628\u0633\u062a\u0647\u200c\u0647\u0627\u06cc \u0627\u0636\u0627\u0641\u0647 \u0645\u0646\u062a\u0633\u0628 \u0634\u062f \u2713',3000)}catch(e){}}
+ }
  if(!raw)save();
 }
 
@@ -958,7 +976,7 @@ function studyInner(){
      const q=+b.dataset.r;
      applySM2(c,q);
      sessRated[c.id]=q;
-     toast('ثبت شد ✓');
+     toast('ثبت شد ✓ · مرور '+(c.reps||0)+(q<3?' (از نو)':' بار'),2200);
      setTimeout(()=>{idx++;flip=false;study();scrollTo(0,0)},150);
    });
   }
@@ -1425,7 +1443,11 @@ function errReport(){
   '<div class="hint">\u0627\u06cc\u0646 \u0645\u062a\u0646 \u0631\u0627 \u06a9\u067e\u06cc \u06a9\u0646\u06cc\u062f \u0648 \u0628\u0631\u0627\u06cc \u062a\u0639\u0645\u06cc\u0631\u06a9\u0627\u0631 \u0628\u0641\u0631\u0633\u062a\u06cc\u062f.</div>'+
   '<textarea id="ertx" class="en" style="min-height:170px" dir="ltr"></textarea>'+
   '<div class="row"><button class="btn" id="ercp">\u06a9\u067e\u06cc</button><button class="btn" id="erclr">\u067e\u0627\u06a9 \u06a9\u0631\u062f\u0646</button><button class="btn p" id="cl">\u0628\u0633\u062a\u0646</button></div>');
- const rep='version: 1.21 (fc-v21c)\nUA: '+navigator.userAgent+'\ncards: '+cards.length+'\npackFilter: '+packFilter+'\nsenses total: '+cards.reduce((a,c)=>a+(c.senses||[]).length,0)+'\nerrors:\n'+(errs.length?errs.map((x,i)=>(i+1)+'. '+x).join('\n'):'(no errors captured)');
+ const pool=packFilter?cards.filter(c=>inPack(c,packFilter)):cards;
+ const mm={};pool.forEach(c=>{const r=c.reps||0;mm[r]=(mm[r]||0)+1});
+ const byRep=Object.keys(mm).sort((a,b)=>a-b).map(r=>'reps='+r+': '+mm[r]).join(', ');
+ const sample=pool.slice(0,4).map(c=>JSON.stringify({w:c.w,src:c.src,srcs:c.srcs,reps:c.reps,interval:c.interval,due:c.due,now:Date.now()})).join('\n');
+ const rep='version: 1.21 (fc-v21d)\nUA: '+navigator.userAgent+'\ncards: '+cards.length+'\npackFilter: '+packFilter+'\nfilter pool: '+pool.length+'\nreps histogram: '+byRep+'\nsenses total: '+cards.reduce((a,c)=>a+(c.senses||[]).length,0)+'\ncard samples (first 4 of filter):\n'+sample+'\nerrors:\n'+(errs.length?errs.map((x,i)=>(i+1)+'. '+x).join('\n'):'(no errors captured)');
  $('#ertx').value=rep;
  $('#ercp').onclick=()=>{ $('#ertx').select();try{document.execCommand('copy');toast('\u06a9\u067e\u06cc \u0634\u062f \u2713')}catch(e){} };
  $('#erclr').onclick=()=>{window.__ERRS=[];try{localStorage.removeItem('fc_errlog')}catch(e){};$('#ertx').value=rep.split('\nerrors:')[0]+'\nerrors:\n(none)';toast('\u067e\u0627\u06a9 \u0634\u062f \u2713')};
