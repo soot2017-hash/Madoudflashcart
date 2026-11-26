@@ -77,6 +77,9 @@ label{display:block;font-size:.85rem;color:var(--mut);margin:10px 0 4px}
 .shade{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:10;display:flex;align-items:flex-end}
 .sheet{background:var(--card);width:100%;max-width:600px;margin:0 auto;border-radius:20px 20px 0 0;padding:16px 16px calc(16px + env(safe-area-inset-bottom,0px));max-height:90vh;overflow:auto}
 #toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(190px + env(safe-area-inset-bottom,0px));background:var(--tx);color:var(--bg);padding:10px 18px;border-radius:20px;z-index:20;font-size:.9rem;max-width:92vw;text-align:center}
+.btnrow{display:flex;flex-wrap:wrap;gap:8px}.btnrow .btn{flex:1 1 40%;font-size:.9rem;text-align:center}
+.selbar{position:fixed;top:10px;left:50%;transform:translateX(-50%);z-index:30;display:flex;gap:6px;align-items:center;padding:6px 10px;border-radius:14px;background:var(--card);border:1px solid var(--bd);box-shadow:0 6px 22px rgba(0,0,0,.5);max-width:94vw}
+.selbar .btn{min-height:34px;padding:3px 10px;font-size:.85rem;flex:none}
 [hidden]{display:none!important}
 @media (prefers-reduced-motion:no-preference){.btn:active,.ib:active{transform:scale(.97)}}
 .pr{font-size:.92rem;margin-top:3px;padding:4px 8px;border-radius:8px;background:color-mix(in srgb,var(--ac) 10%,var(--card))}
@@ -668,22 +671,6 @@ function parseLmText(t,w){
  const seen=new Set();
  return {ipa:ipaM?ipaM[0]:'',list:list.filter(s=>!seen.has(s.d)&&seen.add(s.d))};
 }
-async function longmanLookup(){
- const w=norm($('#w').value);if(!w)return toast('لغت را بنویسید');
- const b=$('#lg');b.disabled=true;b.textContent='📘 در حال خواندن…';
- let r=null;
- try{r=await longmanFetch(w)}catch(e){}
- b.disabled=false;b.textContent='📘 خود Longman';
- if(!r||!r.list.length)return toast('خواندن مستقیم Longman ممکن نشد؛ این حالت فقط داخل اپ اندروید کار می‌کند',4000);
- sw=w;sipa=r.ipa||'';sfam=[];
- sugg=normSenses(r.list.slice(0,12)).map(s=>Object.assign(s,{on:true}));
- b.textContent='🔄 ترجمهٔ فارسی…';
- await addPersian(sugg);
- b.textContent='📘 خود Longman';
- toast('مستقیم از Longman ✓',3000);
- res();
-}
-
 const go=h=>{if(location.hash.slice(1)!==h)location.hash=h;else route()};
 function route(){
  const h=location.hash.slice(1);
@@ -808,7 +795,7 @@ try{waitL=JSON.parse(localStorage.getItem('fc_wait')||'[]')}catch(e){waitL=[]}
 if(!Array.isArray(waitL))waitL=[];
 const waitSave=()=>{try{localStorage.setItem('fc_wait',JSON.stringify(waitL))}catch(e){}};
 function waitBadge(){
- const tb=document.querySelector('#wlb');if(tb)tb.innerHTML='⏳'+(waitL.length?'<b>'+waitL.length+'</b>':'');
+ const tk=document.querySelector('#wlk');if(tk)tk.innerHTML='⏳ لیست انتظار'+(waitL.length?' ('+waitL.length+')':'');
  const th=document.querySelector('#wlh');if(th)th.innerHTML='⏳ لیست انتظار'+(waitL.length?' ('+waitL.length+' کلمه)':'');
 }
 function waitAdd(w0){
@@ -900,9 +887,9 @@ function study(){
 
  const faBtn=hasFa(c)?'<button class="btn" id="tfa" style="width:100%;margin-top:12px">'+(showFa?'🙈 پنهان کردن فارسی':'👁 نمایش فارسی')+'</button>':'';
 
- v.innerHTML='<div class="row" style="margin:0 0 8px;align-items:center"><button class="ib" id="bk" aria-label="بازگشت">→</button><div style="flex:1;text-align:center"><b>'+esc(g2.title)+'</b><div class="mut" style="font-size:.75rem">'+(idx+1)+' از '+cs.length+' · مرور '+(c.reps||0)+' بار</div></div><button class="btn" id="wlb" style="min-height:40px;padding:2px 10px;flex:none">⏳</button><button class="btn" id="jp" style="min-height:40px;padding:2px 12px;flex:none">لیست ▾</button></div>'+
+ v.innerHTML='<div class="row" style="margin:0 0 8px;align-items:center"><button class="ib" id="bk" aria-label="بازگشت">→</button><div style="flex:1;text-align:center"><b>'+esc(g2.title)+'</b><div class="mut" style="font-size:.75rem">'+(idx+1)+' از '+cs.length+' · مرور '+(c.reps||0)+' بار</div></div><button class="btn" id="jp" style="min-height:40px;padding:2px 12px;flex:none">لیست ▾</button></div>'+
  '<div class="box fc '+(flip?'top':'')+' '+(showFa?'':'hide-fa')+'" id="fc"><div class="w">'+esc(c.w)+'</div><div class="ipa">'+esc(c.ipa||'')+'</div><div class="row" style="justify-content:center;margin-top:0;align-items:center"><button class="btn" id="sp1" style="min-height:42px">🔊 تلفظ</button>'+(isDue(c)&&!rated?'<span class="badge" style="background:color-mix(in srgb,var(--bad) 15%,var(--card));color:var(--bad)">مرور عقب‌افتاده</span>':'')+'</div>'+
- (flip?'<div class="row" style="margin:0 0 10px"><button class="btn" id="rwc" style="width:100%">♻️ بازنویسی معانی از لانگمن</button></div>'+gh(c.senses)+faBtn+famHTML(c) :'<div class="chips">'+group(c.senses).map(chipHTML).join('')+'</div><div class="mut" style="margin-top:16px">برای دیدن معانی بزنید</div>')+'</div>';
+ (flip?'<div class="row" style="margin:0 0 10px"><button class="btn" id="rwc" style="width:100%">♻️ بازنویسی معانی از لانگمن</button></div>'+'<div class="row" style="margin:0 0 10px"><button class="btn" id="wlk" style="width:100%">⏳ لیست انتظار'+(waitL.length?' ('+waitL.length+')':'')+'</button></div>'+gh(c.senses)+faBtn+famHTML(c) :'<div class="chips">'+group(c.senses).map(chipHTML).join('')+'</div><div class="mut" style="margin-top:16px">برای دیدن معانی بزنید</div>')+'</div>';
 
  if(!flip){
   $('#act').innerHTML=
@@ -935,7 +922,7 @@ function study(){
   }
  }
  $('#bk').onclick=()=>go('study');
- $('#wlb').onclick=waitSheet;
+ if($('#wlk'))$('#wlk').onclick=e=>{e.stopPropagation();waitSheet()};
  $('#sp1').onclick=e=>{e.stopPropagation();speak(c.w)};
  $('#fc').onclick=()=>{if(!flip){flip=true;study();scrollTo(0,0)}};
  if($('#tfa'))$('#tfa').onclick=e=>{e.stopPropagation();showFa=!showFa;study()};
@@ -955,11 +942,17 @@ function add(){
  '<div class="box">'+
   '<label>لغت یا عبارت</label>'+
   '<input id="w" class="en" placeholder="e.g. give up" autocomplete="off" autocapitalize="off" enterkeyhint="search" value="'+esc(wv)+'">'+
-  '<div class="row"><button class="btn p" id="sg">✨ معانی را بیاور</button><button class="btn" id="lg">📘 خود Longman</button><a class="btn" id="lk" target="_blank" rel="noopener noreferrer">Longman ↗</a><a class="btn" id="ww" target="_blank" rel="noopener noreferrer">WordWeb ↗</a></div>'+
-  '<div class="hint">بدون هیچ کلیدی کار می‌کند: دیکشنری رایگان + ترجمهٔ فارسی. کلیدهای AI (اختیاری) فقط وقتی به‌کار می‌روند که دیکشنری رایگان جواب ندهد.</div>'+
+  '<button class="btn p" id="sg" style="width:100%;margin-top:8px">✨ معانی را بیاور</button>'+
+  '<div class="hint">لانگمن ← کمبریج ← WordWeb ← ویکیشنری ← دیکشنری رایگان؛ اگر یکی جواب نداد بعدی امتحان می‌شود. بدون کلید AI هم کار می‌کند.</div>'+
+  '<div class="btnrow">'+
+   '<a class="btn" id="lk" target="_blank" rel="noopener noreferrer">لانگمن ↗</a>'+
+   '<a class="btn" id="ck" target="_blank" rel="noopener noreferrer">کمبریج ↗</a>'+
+   '<a class="btn" id="ww" target="_blank" rel="noopener noreferrer">WordWeb ↗</a>'+
+   '<a class="btn" id="wik" target="_blank" rel="noopener noreferrer">ویکیشنری ↗</a>'+
+  '</div>'+
   '<div id="dup"></div>'+
  '</div>'+
- '<div class="box"><label>یا لینک صفحهٔ Longman را بچسبانید</label><textarea id="pt" class="en" placeholder="لینک صفحهٔ کلمه را از لانگمن کپی کنید؛ مثلا:\nhttps://www.ldoceonline.com/dictionary/fasten\nیا متن تعریف را بچسبانید"></textarea><button class="btn p" id="pc" style="width:100%;margin-top:8px">🤖 ساختن کارت از لینک/متن</button><div class="hint">اگر لینک بچسبانید، برنامه خودش صفحهٔ Longman همان کلمه را می‌خواند و کارت را مستقیم از لانگمن می‌سازد (بدون نیاز به هوش مصنوعی).</div></div>'+
+ '<div class="box"><label>یا لینک/متن را از هر منبعی بچسبانید</label><textarea id="pt" class="en" placeholder="لینک صفحهٔ کلمه را از هر مرجعی کپی کنید؛ مثلا:\nhttps://www.ldoceonline.com/dictionary/fasten\nhttps://dictionary.cambridge.org/dictionary/english/fasten\nhttps://www.wordwebonline.com/en/FASTEN\nhttps://en.wiktionary.org/wiki/fasten\nیا متن تعریف را بچسبانید"></textarea><button class="btn p" id="pc" style="width:100%;margin-top:8px">🤖 ساختن کارت از لینک/متن</button><div class="hint">لینک هر ۴ منبع شناسایی می‌شود و معانی مستقیم از خود همان صفحه خوانده می‌شود (بدون کلید)؛ اگر خواندن صفحه ممکن نشد، زنجیرهٔ معمولی امتحان می‌شود.</div></div>'+
  '<div id="res"></div>'+
  '<button class="btn" id="man" style="width:100%">✍️ افزودن دستی</button>';
 
@@ -967,7 +960,9 @@ function add(){
  const w=$('#w');
  const upd=()=>{wv=w.value;const q=norm(wv);
   $('#lk').href='https://www.ldoceonline.com/search/?q='+encodeURIComponent(q);
+  $('#ck').href='https://dictionary.cambridge.org/dictionary/english/'+encodeURIComponent(q);
   $('#ww').href='https://www.wordwebonline.com/en/'+encodeURIComponent(wv.replace(/[\s-]+/g,'').toUpperCase());
+  $('#wik').href='https://en.wiktionary.org/wiki/'+encodeURIComponent(q.replace(/\s+/g,'_'));
   const ex=q&&findCard(q);
   $('#dup').innerHTML=ex?'<div class="warn">⚠️ قبلاً ذخیره شده ('+esc(summ(ex))+')<button class="btn" id="od" style="width:100%;margin-top:8px">باز کردن</button></div>':'';
   if(ex&&$('#od'))$('#od').onclick=()=>edit(ex.id);
@@ -975,7 +970,6 @@ function add(){
  w.oninput=upd;upd();
  w.onkeydown=e=>{if(e.key==='Enter')lookup()};
  $('#sg').onclick=lookup;
- $('#lg').onclick=longmanLookup;
  $('#pc').onclick=pasteAI;
  $('#man').onclick=()=>edit(null,norm(wv));
  res();
@@ -1006,10 +1000,48 @@ function lmUrlWord(t){
  if(!m)return '';
  try{return norm(decodeURIComponent(m[1]).replace(/-/g,' '))}catch(e){return ''}
 }
+function urlWordAny(t){
+ const s=String(t||'');
+ const m=s.match(/ldoceonline\.com\/dictionary\/([^\/\s?&#]+)/i)
+  ||s.match(/dictionary\.cambridge\.org\/dictionary\/(?:english\/)?([^\/\s?&#]+)/i)
+  ||s.match(/wordwebonline\.com\/(?:en\/|search\?[^\/\s]*?q=)([^\/\s&#+]+)/i)
+  ||s.match(/(?:[a-z]+\.)?wiktionary\.org\/wiki\/([^\/\s?&#]+)/i);
+ if(!m)return '';
+ try{return norm(decodeURIComponent(m[1]).replace(/[-_+]/g,' ')).toLowerCase()}catch(e){return ''}
+}
+function srcFromUrl(t){
+ const s=String(t||'');
+ if(/ldoceonline\.com/i.test(s))return 'Longman';
+ if(/dictionary\.cambridge\.org/i.test(s))return 'Cambridge';
+ if(/wordwebonline\.com/i.test(s))return 'WordWeb';
+ if(/wiktionary\.org/i.test(s))return 'ویکیشنری';
+ return '';
+}
 async function pasteAI(){
  const t=$('#pt').value.trim();if(!t)return toast('لینک یا متن را بچسبانید');
- const uw=lmUrlWord(t);
- if(uw){$('#pt').value='';$('#w').value=uw;wv=uw;toast('لینک Longman شناخته شد: '+uw,2500);return lookup()}
+ const uw=urlWordAny(t);
+ if(uw){
+  const srcn=srcFromUrl(t);
+  $('#pt').value='';$('#w').value=uw;wv=uw;sw=uw;
+  const b=$('#pc');b.disabled=true;b.textContent='📖 خواندن از '+srcn+'…';
+  let r=null;
+  try{
+   if(srcn==='Longman')r=await longmanFetch(uw);
+   else if(srcn==='Cambridge')r=await cambridgeFetch(uw);
+   else if(srcn==='WordWeb')r=await wordwebFetch(uw);
+  }catch(e){}
+  b.disabled=false;b.textContent='🤖 ساختن کارت از لینک/متن';
+  if(r&&r.list&&r.list.length){
+   sipa=r.ipa||'';sfam=r.fam||[];
+   sugg=normSenses(r.list.slice(0,12).map(s=>({pos:s.pos,d:s.d,e:s.e,p:'',gram:s.gram,sp:s.sp,syn:s.syn,ant:s.ant,prep:s.prep}))).map(s=>Object.assign(s,{on:true}));
+   toast('مستقیم از '+srcn+' ✓',3000);
+   res();
+   bgFin(uw,sugg,f=>{if(!sfam.length)sfam=normFam(f)});
+   return;
+  }
+  toast('خواندن '+srcn+' ممکن نشد؛ زنجیرهٔ معمولی…',2500);
+  return lookup();
+ }
  const w=norm(wv);
  const lp=parseLmText(t,w);
  if(lp.list.length){
@@ -1363,6 +1395,42 @@ function menu(){
  $('#cl').onclick=close;
 }
 $('#mn').onclick=menu;
+
+(function(){
+ const sb=document.createElement('div');sb.id='selbar';sb.hidden=true;document.body.appendChild(sb);
+ const hide=()=>{sb.hidden=true};
+ function selOpen(t,ho){
+  const r=document.getSelection();
+  if(!t||t.length>40||/\n/.test(t)){hide();return}
+  const an=r&&r.anchorNode;const el=an&&an.nodeType===1?an:(an&&an.parentElement?an.parentElement:null);
+  const host=(ho&&ho.closest)?ho:(el&&el.closest?el.closest('#fc,#view,#sh'):null);
+  const inField=el&&el.closest?el.closest('input,textarea,select'):null;
+  if(!host||inField){hide();return}
+  t=t.trim();
+  sb.innerHTML='<b dir="ltr" style="max-width:150px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+esc(t)+'</b>'+
+   '<button class="btn" id="sbC">کپی</button><button class="btn" id="sbW">⏳ ثبت</button><button class="btn p" id="sbK">🏗 کارت</button>';
+  try{const rc=r.getRangeAt(0).getBoundingClientRect();sb.style.top=(rc.top>60?Math.max(10,Math.round(rc.top)-54):10)+'px'}catch(e){sb.style.top='10px'}
+  sb.hidden=false;
+  document.getElementById('sbC').onclick=()=>{out(t);hide()};
+  document.getElementById('sbW').onclick=()=>{waitAdd(t);hide()};
+  document.getElementById('sbK').onclick=()=>{
+   hide();
+   if(tb==='add'){$('#w').value=t;wv=t;return lookup()}
+   waitAdd(t);
+   const i=waitL.findIndex(x=>x.toLowerCase()===norm(t).toLowerCase());
+   if(i>=0)waitConvertOne(i);
+  };
+ }
+ let selT=null;
+ document.addEventListener('selectionchange',()=>{
+  clearTimeout(selT);
+  selT=setTimeout(()=>{
+   const r=document.getSelection();
+   selOpen(r&&!r.isCollapsed?String(r).trim():'');
+  },250);
+ });
+ window.__selTest=selOpen;
+})();
 
 (function(){
  const sp0=new URLSearchParams(location.search);
