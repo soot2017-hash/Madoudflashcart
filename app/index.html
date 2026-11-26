@@ -135,6 +135,8 @@ window.__PACKS={"index":[{"name":"English in Use — Intermediate","short":"Inte
 const KEY='fc_cards_v2';
 const KEY_OLD='fc_cards_v1';
 const APP_URL=location.origin+location.pathname;
+const WEB_URL='https://soot2017-hash.github.io/Madoudflashcart/app/';
+const NOTE_URL=APP_URL.indexOf('http')===0?APP_URL:WEB_URL;
 const DAY=86400000;
 const POS=[
  ['noun','اسم','#3b82c4'],['verb','فعل','#7c5cd6'],['adjective','صفت','#d98a1f'],
@@ -1408,15 +1410,17 @@ function menu(){
   '<button class="btn" id="m6" style="width:100%;margin-top:8px">📝 تکمیل مترادف/متضاد کارت‌های موجود</button>'+
   '<button class="btn" id="m7" style="width:100%;margin-top:8px">\ud83d\udc68\u200d\ud83d\udc67 \u062a\u06a9\u0645\u06cc\u0644 \u062e\u0627\u0646\u0648\u0627\u062f\u0647\u0654 \u06a9\u0644\u0645\u0647 \u06a9\u0627\u0631\u062a\u200c\u0647\u0627\u06cc \u0645\u0648\u062c\u0648\u062f</button>'+
   '<button class="btn" id="m5" style="width:100%;margin-top:8px">📦 مخزن کلمات</button>'+
+  '<button class="btn" id="m8" style="width:100%;margin-top:8px">🌐 نسخهٔ وب (برای iOS/آیفون)</button>'+
   '<div class="hint">برای نصب روی گوشی: منوی مرورگر → Install app. بعد از اولین باز شدن، آفلاین هم کار می‌کند.</div>'+
   '<div class="row"><button class="btn" id="cl">بستن</button></div>');
  $('#m1').onclick=keyDialog;
- $('#m2').onclick=()=>out(APP_URL,'فلش‌کارت لغات انگلیسی');
+ $('#m2').onclick=()=>out(NOTE_URL,'فلش‌کارت لغات انگلیسی');
  $('#m3').onclick=()=>{if(!cards.length)return toast('کارتی نیست');out(backupJSON(),'flashcards')};
  $('#m4').onclick=importSheet;
  $('#m6').onclick=fillSynAnt;
  $('#m7').onclick=fillFam;
  $('#m5').onclick=wordStore;
+ $('#m8').onclick=()=>{location.href=WEB_URL};
  $('#cl').onclick=close;
 }
 $('#mn').onclick=menu;
