@@ -389,13 +389,31 @@ async function fetchJSON(url){
  const c=dcGet(url);
  try{const r=await fetchTO(url);if(!r.ok)throw 0;const j=await r.json();dcSet(url,j);return j}catch(e){if(c)return c;throw e}
 }
+/* --- free LLM (apisfreellm, no key) v1.26 --- */
+let llmChain=Promise.resolve();
+function llmQ(task){const p=llmChain.then(task);llmChain=p.catch(()=>{});return p}
+function freeLLM(prompt,mt){
+ return llmQ(async()=>{
+  const r=await fetchTO('https://api.apisfreellm.com/v1/chat/completions',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({model:'free-ai',messages:[{role:'user',content:prompt}],max_tokens:mt||800})},20000);
+  if(!r.ok)throw new Error('HTTP '+r.status);
+  const j=await r.json();
+  const t=norm((((j.choices||[])[0]||{}).message||{}).content||'');
+  if(!t)throw new Error('empty');
+  return t;
+ });
+}
+/* --- end free LLM --- */
+
 const isFa=t=>/[\u0600-\u06FF]/.test(t);
 async function faTr(t){
  t=norm(t);if(!t||isFa(t))return t;
+ try{const x=norm(await freeLLM('Translate this English definition into Persian. Reply ONLY with the Persian translation, nothing else:\n"'+t+'"',300));
+  if(x&&isFa(x))return x}catch(e){}
  try{const j=await fetchJSON('https://api.mymemory.translated.net/get?q='+encodeURIComponent(t)+'&langpair=en|fa');
  const x=norm((j.responseData||{}).translatedText||'');
  return (x&&!/MYMEMORY WARNING/i.test(x)&&!x.includes('QUERY LENGTH'))?x:''}catch(e){return ''}
 }
+
 async function addPersian(list){await Promise.all((list||[]).slice(0,6).map(async s=>{if(!norm(s.p))s.p=await faTr(s.d)}))}
 
 async function freeDict(w){
@@ -841,7 +859,7 @@ function studyHome(v){
   '<button class="btn" id="wlh" style="width:100%;margin-top:10px">⏳ لیست انتظار'+(waitL.length?' ('+waitL.length+' کلمه)':'')+'</button>'+
   groups.map(g=>{const o=g.open||openD.has(g.k);return '<div class="box day"><div class="dh" data-tg="'+g.k+'"><b>'+esc(g.title)+'</b><span class="mut">'+g.cs.length+' لغت '+(g.open?'':(o?'▴':'▾'))+'</span></div>'+(o?'<div class="dw"><button class="btn p" data-s="'+g.k+':0" style="width:100%">▶ شروع از اول</button>'+wordRows(g.k,g.cs)+'</div>':'')+'</div>'}).join('');
 
- v.insertAdjacentHTML('beforeend','<div class="mut" style="text-align:center;font-size:.68rem;opacity:.75;margin:12px 0 4px" dir="ltr">version v1.25</div>');
+ v.insertAdjacentHTML('beforeend','<div class="mut" style="text-align:center;font-size:.68rem;opacity:.75;margin:12px 0 4px" dir="ltr">version v1.26</div>');
  v.querySelectorAll('[data-pf]').forEach(b=>b.onclick=()=>{packFilter=b.dataset.pf;day=null;openD=new Set();sessKey=null;study();scrollTo(0,0)});
  if($('#stoday'))$('#stoday').onclick=()=>go('today');
  v.querySelectorAll('[data-sm]').forEach(b=>b.onclick=()=>{smode=b.dataset.sm;study()});
@@ -958,7 +976,7 @@ function studyInner(){
 
  v.innerHTML='<div class="row" style="margin:0 0 8px;align-items:center"><button class="ib" id="bk" aria-label="بازگشت">→</button><div style="flex:1;text-align:center"><b>'+esc(g2.title)+'</b><div class="mut" style="font-size:.75rem">'+(idx+1)+' از '+cs.length+' · مرور '+(c.reps||0)+' بار</div></div><button class="btn" id="jp" style="min-height:40px;padding:2px 12px;flex:none">لیست ▾</button></div>'+
  '<div class="box fc '+(flip?'top':'')+' '+(showFa?'':'hide-fa')+'" id="fc"><div class="w">'+esc(c.w)+'</div><div class="ipa">'+esc(c.ipa||'')+'</div><div class="row" style="justify-content:center;margin-top:0;align-items:center"><button class="btn" id="sp1" style="min-height:42px">🔊 تلفظ</button>'+(isDue(c)&&!rated?'<span class="badge" style="background:color-mix(in srgb,var(--bad) 15%,var(--card));color:var(--bad)">مرور عقب‌افتاده</span>':'')+'</div>'+
- (flip?'<div class="row" style="margin:0 0 10px"><button class="btn" id="rwc" style="width:100%">♻️ بازنویسی معانی از لانگمن</button></div>'+'<div class="row" style="margin:0 0 10px"><button class="btn" id="wlk" style="width:100%">⏳ لیست انتظار'+(waitL.length?' ('+waitL.length+')':'')+'</button></div>'+gh(c.senses)+faBtn+famHTML(c) :'<div class="chips">'+group(c.senses).map(chipHTML).join('')+'</div><div class="mut" style="margin-top:16px">برای دیدن معانی بزنید</div>')+'</div>';
+ (flip?'<div class="row" style="margin:0 0 10px"><button class="btn" id="rwc" style="width:100%">♻️ بازنویسی معانی از لانگمن</button></div>'+'<div class="row" style="margin:0 0 10px"><button class="btn" id="wlk" style="width:100%">⏳ لیست انتظار'+(waitL.length?' ('+waitL.length+')':'')+'</button></div>'+gh(c.senses)+'<div class="row" style="margin:10px 0 0"><button class="btn" id="mex" style="width:100%">\u2728 \u0645\u062B\u0627\u0644\u200C\u0647\u0627\u06CC \u0628\u06CC\u0634\u062A\u0631</button></div><div id="mxex">'+xexHTML(c)+'</div>'+faBtn+famHTML(c) :'<div class="chips">'+group(c.senses).map(chipHTML).join('')+'</div><div class="mut" style="margin-top:16px">برای دیدن معانی بزنید</div>')+'</div>';
 
  if(!flip){
   $('#act').innerHTML=
@@ -996,6 +1014,10 @@ function studyInner(){
  $('#fc').onclick=()=>{if(!flip){flip=true;study();scrollTo(0,0)}};
  if($('#tfa'))$('#tfa').onclick=e=>{e.stopPropagation();showFa=!showFa;study()};
  if($('#rwc'))$('#rwc').onclick=e=>{e.stopPropagation();reworkCard(c.id)};
+ if($('#mex'))$('#mex').onclick=async e=>{e.stopPropagation();const btn=$('#mex');btn.disabled=true;btn.textContent='\u23F3 \u062F\u0631 \u062D\u0627\u0644 \u0633\u0627\u062E\u062A \u0645\u062B\u0627\u0644\u200C\u0647\u0627\u06CC \u0628\u06CC\u0634\u062A\u0631\u2026';
+  try{const n=await genMoreEx(c);save();const bx=$('#mxex');if(bx)bx.innerHTML=xexHTML(c);btn.textContent='\u2728 \u0645\u062B\u0627\u0644\u200C\u0647\u0627\u06CC \u0628\u06CC\u0634\u062A\u0631';btn.disabled=false;toast(n+' \u0645\u062B\u0627\u0644 \u062C\u062F\u06CC\u062F \u0627\u0636\u0627\u0641\u0647 \u0634\u062F \u2713',3000)}
+  catch(err){btn.textContent='\u26A0\uFE0F \u062F\u0633\u062A\u0631\u0633\u06CC \u0645\u0645\u06A9\u0646 \u0646\u0634\u062F';btn.disabled=false;toast('\u26A0\uFE0F \u0628\u0631\u0627\u06CC \u0645\u062B\u0627\u0644\u200C\u0647\u0627\u06CC \u0628\u06CC\u0634\u062A\u0631 \u0627\u06CC\u0646\u062A\u0631\u0646\u062A \u0644\u0627\u0632\u0645 \u0627\u0633\u062A',3000)}
+ };
  document.querySelectorAll('[data-fm]').forEach(b=>b.onclick=e=>{e.stopPropagation();famMake(c,+b.dataset.fm)});
  if($('#ffind'))$('#ffind').onclick=()=>famFind(c);
  $('#jp').onclick=()=>{
@@ -1536,6 +1558,33 @@ function syncSheet(){
 }
 /* --- end cloud sync --- */
 
+/* --- more examples via free LLM (v1.26) --- */
+const xexHTML=c=>{
+ const x=c.xex||[];
+ if(!x.length)return '';
+ return '<div class="pg" style="--c:#6d8bc4;margin-top:14px"><div class="ph"><b>\u2728 \u0645\u062B\u0627\u0644\u200C\u0647\u0627\u06CC \u0628\u06CC\u0634\u062A\u0631</b><span class="cnt">'+x.length+'</span></div>'+x.map(x=>'<div class="sb"><div class="ex">'+esc(x.e)+'</div><button class="trbtn" type="button" data-src="'+esc(x.e)+'">\ud83c\udf10 \u062a\u0631\u062c\u0645\u0647\u0654 \u0645\u062b\u0627\u0644 \u25b8</button><div class="tr" hidden>'+(x.p?esc(x.p):'')+'</div></div>').join('')+'</div>';
+};
+async function genMoreEx(c){
+ const defs=c.senses.slice(0,3).map((sg,k)=>(k+1)+'. '+(sg.d||'')).join('\n');
+ const n=Math.min(3,c.senses.length);
+ const prompt='Word: "'+c.w+'"'+(c.ipa?' '+c.ipa:'')+'\nMeanings:\n'+defs+'\nWrite 2 NEW short natural English example sentences for EACH meaning number above ('+(2*n)+' sentences total).\nReturn ONLY a JSON array (no markdown fences, no other text) of objects: {"e":"English sentence","p":"Persian translation of that sentence"}';
+ const txt=await freeLLM(prompt,1600);
+ const added=[];
+ try{const arr=JSON.parse(String(txt).replace(/^```(json)?/,'').replace(/```$/,'').trim());
+  (Array.isArray(arr)?arr:[]).forEach(x=>{if(x&&norm(x.e)&&!isFa(x.e)&&String(x.e).length>8)added.push({e:norm(x.e),p:norm(x.p||'')})});
+ }catch(e){
+  txt.split('\n').map(x=>x.trim()).filter(Boolean).forEach(ln=>{
+   const pp=ln.split('|').map(x=>x.trim());
+   if(pp.length&&/^\d+\s*[).\-]?$/.test(pp[0]))pp.shift();
+   if(pp.length>=2&&pp[0]&&!isFa(pp[0])&&pp[0].length>8)added.push({e:pp[0],p:pp.slice(1).join(' ').trim()});
+  });
+ }
+ if(!added.length)throw new Error('bad');
+ c.xex=(c.xex||[]).concat(added);
+ return added.length;
+}
+/* --- end more examples --- */
+
 function errReport(){
  let log='';try{log=localStorage.getItem('fc_errlog')||''}catch(e){}
  let errs=window.__ERRS&&window.__ERRS.length?window.__ERRS.slice():[];
@@ -1553,7 +1602,7 @@ function errReport(){
   const lmap={};cards.forEach(c=>{const k=loose(c.w);(lmap[k]=lmap[k]||[]).push(c)});
   const dups=Object.keys(lmap).filter(k=>lmap[k].length>1).map(k=>k+' ×'+lmap[k].length).join(', ')||'(none)';
   let audit='';try{audit=(JSON.parse(localStorage.getItem('fc_audit')||'[]')||[]).map(a=>typeof a==='string'?a:JSON.stringify(a)).join('\n')||'(empty)'}catch(e){audit='(unreadable)'}
-  const rep='version: 1.25 (fc-v24)\nUA: '+navigator.userAgent+'\ncards: '+cards.length+'\npackFilter: '+packFilter+'\nfilter pool: '+pool.length+'\nreps histogram: '+byRep+'\nsenses total: '+cards.reduce((a,c)=>a+(c.senses||[]).length,0)+'\nduplicate words: '+dups+'\ncard samples (first 4 of filter):\n'+sample+'\naudit (last ratings):\n'+audit+'\nerrors:\n'+(errs.length?errs.map((x,i)=>(i+1)+'. '+x).join('\n'):'(no errors captured)');
+  const rep='version: 1.26 (fc-v25)\nUA: '+navigator.userAgent+'\ncards: '+cards.length+'\npackFilter: '+packFilter+'\nfilter pool: '+pool.length+'\nreps histogram: '+byRep+'\nsenses total: '+cards.reduce((a,c)=>a+(c.senses||[]).length,0)+'\nduplicate words: '+dups+'\ncard samples (first 4 of filter):\n'+sample+'\naudit (last ratings):\n'+audit+'\nerrors:\n'+(errs.length?errs.map((x,i)=>(i+1)+'. '+x).join('\n'):'(no errors captured)');
  $('#ertx').value=rep;
  $('#ercp').onclick=()=>{ $('#ertx').select();try{document.execCommand('copy');toast('\u06a9\u067e\u06cc \u0634\u062f \u2713')}catch(e){} };
   $('#erclr').onclick=()=>{window.__ERRS=[];try{localStorage.removeItem('fc_errlog')}catch(e){};$('#ertx').value=rep.split('\nerrors:')[0]+'\nerrors:\n(none)';toast('\u067e\u0627\u06a9 \u0634\u062f \u2713')};
@@ -1561,7 +1610,7 @@ function errReport(){
 }
 
 function menu(){
- sheet('<h3>منوی برنامه <span class="mut" style="font-size:.72rem;font-weight:400;direction:ltr">v1.25</span></h3>'+
+ sheet('<h3>منوی برنامه <span class="mut" style="font-size:.72rem;font-weight:400;direction:ltr">v1.26</span></h3>'+
   '<button class="btn" id="m1" style="width:100%">🔑 کلیدهای هوش مصنوعی</button>'+
   '<button class="btn" id="m2" style="width:100%;margin-top:8px">🔗 اشتراک‌گذاری برنامه</button>'+
   '<button class="btn" id="m3" style="width:100%;margin-top:8px">💾 پشتیبان کارت‌ها</button>'+
