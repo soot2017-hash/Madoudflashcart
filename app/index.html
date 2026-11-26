@@ -807,6 +807,10 @@ let waitL=[];
 try{waitL=JSON.parse(localStorage.getItem('fc_wait')||'[]')}catch(e){waitL=[]}
 if(!Array.isArray(waitL))waitL=[];
 const waitSave=()=>{try{localStorage.setItem('fc_wait',JSON.stringify(waitL))}catch(e){}};
+function waitBadge(){
+ const tb=document.querySelector('#wlb');if(tb)tb.innerHTML='⏳'+(waitL.length?'<b>'+waitL.length+'</b>':'');
+ const th=document.querySelector('#wlh');if(th)th.innerHTML='⏳ لیست انتظار'+(waitL.length?' ('+waitL.length+' کلمه)':'');
+}
 function waitAdd(w0){
  const wd=norm(w0);if(!wd)return toast('لغت را بنویسید');
  if(findCard(wd))return toast('این لغت قبلاً ذخیره شده است');
@@ -814,15 +818,16 @@ function waitAdd(w0){
  waitL.push(wd);waitSave();
  if($('#wlw'))$('#wlw').value='';
  toast('«'+wd+'» در لیست انتظار ثبت شد ⏳');
+ waitBadge();
  if(!$('#sh').hidden)waitSheet();
 }
-function waitRm(i){waitL.splice(i,1);waitSave();waitSheet()}
+function waitRm(i){waitL.splice(i,1);waitSave();waitBadge();waitSheet()}
 async function waitConvertOne(i){
  const wd=waitL[i];if(!wd)return;
  close();toast('در حال ساخت کارت «'+wd+'»…',4000);
  try{
   const r=await askChain(PROMPT(wd));
-  if(r&&r.res&&r.res.list.length){addSenses(wd,r.res.list.slice(0,12),r.res.ipa,r.res.fam);waitL.splice(i,1);waitSave();toast('کارت «'+wd+'» ساخته شد ✓',3000);if(tb==='study')study();return}
+  if(r&&r.res&&r.res.list.length){addSenses(wd,r.res.list.slice(0,12),r.res.ipa,r.res.fam);waitL.splice(i,1);waitSave();waitBadge();toast('کارت «'+wd+'» ساخته شد ✓',3000);if(tb==='study')study();return}
  }catch(e){}
  edit(null,wd);
 }
@@ -837,6 +842,7 @@ async function waitConvertAll(){
    if(r&&r.res&&r.res.list.length){addSenses(wd,r.res.list.slice(0,12),r.res.ipa,r.res.fam);ok++;waitL.splice(i,1);i--}
   }catch(e){}
   waitSave();
+  waitBadge();
  }
  close();
  toast(ok+' کارت از لیست انتظار ساخته شد ✓'+(waitL.length?'؛ '+waitL.length+' کلمه باقی ماند':''),4000);
