@@ -167,6 +167,10 @@ const norm=w=>String(w||'').trim().replace(/\s+/g,' ');
 const arr=a=>Array.isArray(a)?a.slice(0,5).map(x=>String(x).trim()).filter(Boolean):[];
 const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const $=s=>document.querySelector(s);
+window.__ERRS=window.__ERRS||[];
+function __errCap(msg){try{window.__ERRS.push(String(msg).slice(0,240));if(window.__ERRS.length>8)window.__ERRS.shift();try{localStorage.setItem('fc_errlog',JSON.stringify(window.__ERRS))}catch(x){}}catch(x){}}
+window.addEventListener('error',e=>{try{__errCap((e&&e.message?e.message:'error')+' @'+(e&&e.lineno||'?')+':'+(e&&e.colno||'?'))}catch(x){}});
+window.addEventListener('unhandledrejection',e=>{try{__errCap('async: '+(e&&e.reason&&e.reason.message?e.reason.message:(e&&e.reason||'rejection')))}catch(x){}});
 const uid=()=>'c'+Date.now().toString(36)+Math.random().toString(36).slice(2,6);
 const normFam=a=>(Array.isArray(a)?a:[]).map(f=>typeof f==='string'?{w:f.trim(),pos:''}:{w:String((f&&f.w)||'').trim(),pos:String((f&&f.pos)||'').trim()}).filter(f=>f.w&&f.w.length<40).slice(0,8);
 const famStr=a=>(a||[]).map(f=>f.w+(f.pos?' ('+f.pos+')':'')).join(', ');
@@ -879,6 +883,16 @@ function waitSheet(){
 }
 
 function study(){
+ try{studyInner()}catch(e){__errCap('study: '+(e&&e.message?e.message:e));try{studyFail(e)}catch(x){}}
+}
+function studyFail(e){
+ const v=$('#view');
+ $('#act').innerHTML='';
+ if(v)v.innerHTML='<div class="box" style="text-align:center;padding:20px"><div style="font-size:2rem">\u26a0\ufe0f</div><div style="margin:8px 0">\u06cc\u06a9 \u062e\u0637\u0627 \u0645\u0648\u0642\u062a\u06cc \u062f\u0631 \u0646\u0645\u0627\u06cc\u0634 \u0631\u062e \u062f\u0627\u062f</div><div class="mut" dir="ltr" style="font-size:.7rem">'+esc(String(e&&e.message||e).slice(0,160))+'</div><button class="btn p" id="slfRenew" style="width:100%;margin-top:12px">\u062a\u0644\u0627\u0634 \u062f\u0648\u0628\u0627\u0631\u0647</button><button class="btn" id="slfRep" style="width:100%;margin-top:8px">🩺 \u06af\u0632\u0627\u0631\u0634 \u0627\u0634\u06a9\u0627\u0644</button></div>';
+ const r=$('#slfRenew');if(r)r.onclick=()=>{day=null;sessKey=null;sessRated={};packFilter='';study()};
+ const rp=$('#slfRep');if(rp)rp.onclick=errReport;
+}
+function studyInner(){
  const v=$('#view');
  if(!cards.length){v.innerHTML='<div class="box" style="text-align:center;padding:24px"><div style="font-size:2.5rem">📭</div><div style="margin:8px 0">هنوز کارتی ندارید</div><div class="mut">از تب «افزودن» شروع کنید</div></div>';$('#act').innerHTML='';return}
  if(day==null){sessKey=null;studyHome(v);$('#act').innerHTML='';return}
@@ -1402,6 +1416,22 @@ async function fillFam(){
  toast(done?('\u062e\u0627\u0646\u0648\u0627\u062f\u0647\u0654 '+done+' \u06a9\u0627\u0631\u062a \u0627\u0636\u0627\u0641\u0647 \u0634\u062f \u2713'):'\u062e\u0627\u0646\u0648\u0627\u062f\u0647\u0650 \u062c\u062f\u06cc\u062f\u06cc \u06cc\u0627\u0641\u062a \u0646\u0634\u062f',4000);
  if(tb==='list')list();else render();
 }
+function errReport(){
+ let log='';try{log=localStorage.getItem('fc_errlog')||''}catch(e){}
+ let errs=window.__ERRS&&window.__ERRS.length?window.__ERRS.slice():[];
+ if(!errs.length&&log){try{errs=JSON.parse(log)}catch(e){}}
+ let store='?';try{store=(localStorage.getItem(KEY)||'').length+' bytes'}catch(e){}
+ sheet('<h3>🩺 \u06af\u0632\u0627\u0631\u0634 \u0627\u0634\u06a9\u0627\u0644</h3>'+
+  '<div class="hint">\u0627\u06cc\u0646 \u0645\u062a\u0646 \u0631\u0627 \u06a9\u067e\u06cc \u06a9\u0646\u06cc\u062f \u0648 \u0628\u0631\u0627\u06cc \u062a\u0639\u0645\u06cc\u0631\u06a9\u0627\u0631 \u0628\u0641\u0631\u0633\u062a\u06cc\u062f.</div>'+
+  '<textarea id="ertx" class="en" style="min-height:170px" dir="ltr"></textarea>'+
+  '<div class="row"><button class="btn" id="ercp">\u06a9\u067e\u06cc</button><button class="btn" id="erclr">\u067e\u0627\u06a9 \u06a9\u0631\u062f\u0646</button><button class="btn p" id="cl">\u0628\u0633\u062a\u0646</button></div>');
+ const rep='version: 1.21 (fc-v21c)\nUA: '+navigator.userAgent+'\ncards: '+cards.length+'\npackFilter: '+packFilter+'\nsenses total: '+cards.reduce((a,c)=>a+(c.senses||[]).length,0)+'\nerrors:\n'+(errs.length?errs.map((x,i)=>(i+1)+'. '+x).join('\n'):'(no errors captured)');
+ $('#ertx').value=rep;
+ $('#ercp').onclick=()=>{ $('#ertx').select();try{document.execCommand('copy');toast('\u06a9\u067e\u06cc \u0634\u062f \u2713')}catch(e){} };
+ $('#erclr').onclick=()=>{window.__ERRS=[];try{localStorage.removeItem('fc_errlog')}catch(e){};$('#ertx').value=rep.split('\nerrors:')[0]+'\nerrors:\n(none)';toast('\u067e\u0627\u06a9 \u0634\u062f \u2713')};
+ $('#cl').onclick=close;
+}
+
 function menu(){
  sheet('<h3>منوی برنامه <span class="mut" style="font-size:.72rem;font-weight:400;direction:ltr">v1.21</span></h3>'+
   '<button class="btn" id="m1" style="width:100%">🔑 کلیدهای هوش مصنوعی</button>'+
@@ -1412,6 +1442,7 @@ function menu(){
   '<button class="btn" id="m7" style="width:100%;margin-top:8px">\ud83d\udc68\u200d\ud83d\udc67 \u062a\u06a9\u0645\u06cc\u0644 \u062e\u0627\u0646\u0648\u0627\u062f\u0647\u0654 \u06a9\u0644\u0645\u0647 \u06a9\u0627\u0631\u062a\u200c\u0647\u0627\u06cc \u0645\u0648\u062c\u0648\u062f</button>'+
   '<button class="btn" id="m5" style="width:100%;margin-top:8px">📦 مخزن کلمات</button>'+
   '<button class="btn" id="m8" style="width:100%;margin-top:8px">🌐 نسخهٔ وب (برای iOS/آیفون)</button>'+
+  '<button class="btn" id="m9" style="width:100%;margin-top:8px">🩺 گزارش اشکال</button>'+
   '<div class="hint">برای نصب روی گوشی: منوی مرورگر → Install app. بعد از اولین باز شدن، آفلاین هم کار می‌کند.</div>'+
   '<div class="row"><button class="btn" id="cl">بستن</button></div>');
  $('#m1').onclick=keyDialog;
@@ -1422,6 +1453,7 @@ function menu(){
  $('#m7').onclick=fillFam;
  $('#m5').onclick=wordStore;
  $('#m8').onclick=()=>{location.href=WEB_URL};
+ $('#m9').onclick=errReport;
  $('#cl').onclick=close;
 }
 $('#mn').onclick=menu;
