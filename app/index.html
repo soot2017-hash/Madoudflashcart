@@ -841,7 +841,7 @@ function studyHome(v){
   '<button class="btn" id="wlh" style="width:100%;margin-top:10px">⏳ لیست انتظار'+(waitL.length?' ('+waitL.length+' کلمه)':'')+'</button>'+
   groups.map(g=>{const o=g.open||openD.has(g.k);return '<div class="box day"><div class="dh" data-tg="'+g.k+'"><b>'+esc(g.title)+'</b><span class="mut">'+g.cs.length+' لغت '+(g.open?'':(o?'▴':'▾'))+'</span></div>'+(o?'<div class="dw"><button class="btn p" data-s="'+g.k+':0" style="width:100%">▶ شروع از اول</button>'+wordRows(g.k,g.cs)+'</div>':'')+'</div>'}).join('');
 
- v.insertAdjacentHTML('beforeend','<div class="mut" style="text-align:center;font-size:.68rem;opacity:.75;margin:12px 0 4px" dir="ltr">version v1.24</div>');
+ v.insertAdjacentHTML('beforeend','<div class="mut" style="text-align:center;font-size:.68rem;opacity:.75;margin:12px 0 4px" dir="ltr">version v1.25</div>');
  v.querySelectorAll('[data-pf]').forEach(b=>b.onclick=()=>{packFilter=b.dataset.pf;day=null;openD=new Set();sessKey=null;study();scrollTo(0,0)});
  if($('#stoday'))$('#stoday').onclick=()=>go('today');
  v.querySelectorAll('[data-sm]').forEach(b=>b.onclick=()=>{smode=b.dataset.sm;study()});
@@ -1443,6 +1443,99 @@ async function fillFam(){
  toast(done?('\u062e\u0627\u0646\u0648\u0627\u062f\u0647\u0654 '+done+' \u06a9\u0627\u0631\u062a \u0627\u0636\u0627\u0641\u0647 \u0634\u062f \u2713'):'\u062e\u0627\u0646\u0648\u0627\u062f\u0647\u0650 \u062c\u062f\u06cc\u062f\u06cc \u06cc\u0627\u0641\u062a \u0646\u0634\u062f',4000);
  if(tb==='list')list();else render();
 }
+/* --- cloud sync (GitHub Gist) v1.25 --- */
+function syncCfg(){try{return JSON.parse(localStorage.getItem('fc_sync')||'{}')||{}}catch(e){return {}}}
+function syncSaveCfg(c){try{localStorage.setItem('fc_sync',JSON.stringify(c))}catch(e){}}
+function syncHeaders(tok){return {'Authorization':'token '+tok,'Content-Type':'application/json','Accept':'application/vnd.github+json'}}
+function syncBody(){return JSON.stringify({v:2,cards:cards,wait:waitL.slice(),at:Date.now()})}
+async function syncCreateGist(tok){
+ const r=await fetchTO('https://api.github.com/gists',{method:'POST',headers:syncHeaders(tok),body:JSON.stringify({description:'FlashCards sync',public:false,files:{'flashcards.json':{content:syncBody()}}})});
+ if(!r.ok)throw new Error('HTTP '+r.status);
+ const j=await r.json();
+ const cfg=syncCfg();cfg.tok=tok;cfg.gid=j.id;syncSaveCfg(cfg);
+ return j.id;
+}
+async function syncPush(tok,gid){
+ const r=await fetchTO('https://api.github.com/gists/'+gid,{method:'PATCH',headers:syncHeaders(tok),body:JSON.stringify({files:{'flashcards.json':{content:syncBody()}}})});
+ if(!r.ok)throw new Error('HTTP '+r.status);
+ return true;
+}
+async function syncPull(tok,gid){
+ const r=await fetchTO('https://api.github.com/gists/'+gid,{headers:syncHeaders(tok)});
+ if(!r.ok)throw new Error('HTTP '+r.status);
+ const j=await r.json();
+ const f=j.files&&j.files['flashcards.json'];
+ let content=f?f.content:null;
+ if(content==null&&f&&f.raw_url){const rr=await fetchTO(f.raw_url);if(!rr.ok)throw new Error('HTTP '+rr.status);content=await rr.text()}
+ if(!content)throw new Error('empty');
+ return JSON.parse(content);
+}
+function syncMerge(d){
+ let added=0,upd=0;
+ const idx={};cards.forEach(c=>{const k=loose(c.w);if(k&&!idx[k])idx[k]=c});
+ (d.cards||[]).forEach(rc=>{
+  const k=loose(rc.w);if(!k)return;
+  const c=idx[k];
+  if(!c){cards.push(rc);idx[k]=rc;added++;return}
+  upd++;
+  const have={};c.senses.forEach(x=>{have[norm(x.d)]=1});
+  (rc.senses||[]).forEach(x=>{if(x&&norm(x.d)&&!have[norm(x.d)])c.senses.push(x)});
+  c.reps=Math.max(c.reps||0,rc.reps||0);
+  c.interval=Math.max(c.interval||1,rc.interval||1);
+  if((rc.due||0)>0&&(!c.due||c.due<=0))c.due=rc.due;
+  else if((rc.due||0)>0&&(c.due||0)>0)c.due=Math.min(c.due,rc.due);
+  if(!c.ipa&&rc.ipa)c.ipa=rc.ipa;
+  if((!c.fam||!c.fam.length)&&(rc.fam||[]).length)c.fam=rc.fam.slice();
+  if(rc.src&&!c.src)c.src=rc.src;
+  const ss=(c.srcs||[]).slice();if(rc.src&&ss.indexOf(rc.src)<0)ss.push(rc.src);
+  (rc.srcs||[]).forEach(x=>{if(ss.indexOf(x)<0)ss.push(x)});
+  if(ss.length)c.srcs=ss;
+ });
+ let nw=0;
+ try{
+  const seen={};waitL.forEach(x=>{seen[loose(x)]=1});
+  (d.wait||[]).forEach(x=>{const k=loose(x);if(k&&!seen[k]){waitL.push(x);seen[k]=1;nw++}});
+  waitSave();waitBadge();
+ }catch(e){}
+ save();
+ return {added:added,upd:upd,wait:nw};
+}
+function syncSheet(){
+ const cfg=syncCfg();
+ sheet('<h3>\u2601\uFE0F \u0647\u0645\u06AF\u0627\u0645\u200C\u0633\u0627\u0632\u06CC \u0628\u06CC\u0646 \u062F\u0633\u062A\u06AF\u0627\u0647\u200C\u0647\u0627</h3>'+
+  '<div class="hint">\u06A9\u0627\u0631\u062A\u200C\u0647\u0627\u06CC \u0634\u0645\u0627 \u062F\u0631 \u06CC\u06A9 \u00AB\u0627\u0628\u0631 \u0645\u062E\u0641\u06CC\u00BB \u062F\u0631 \u062D\u0633\u0627\u0628 \u06AF\u06CC\u062A\u200C\u0647\u0627\u0628 \u062E\u0648\u062F\u062A\u0627\u0646 \u0630\u062E\u06CC\u0631\u0647 \u0645\u06CC\u200C\u0634\u0648\u062F (\u0641\u0642\u0637 \u0628\u0627 \u062A\u0648\u06A9\u0646 \u0642\u0627\u0628\u0644 \u062F\u0633\u062A\u0631\u06CC \u0627\u0633\u062A). \u062A\u0648\u06A9\u0646 \u0641\u0642\u0637 \u0648 \u0641\u0642\u0637 \u0631\u0648\u06CC \u0627\u06CC\u0646 \u062F\u0633\u062A\u06AF\u0627\u0647 \u0645\u06CC\u200C\u0645\u0627\u0646\u062F.</div>'+
+  '<label>\u062A\u0648\u06A9\u0646 \u06AF\u06CC\u062A\u200C\u0647\u0627\u0628 (\u0641\u0642\u0637 \u062F\u0633\u062A\u0631\u0633\u06CC Gist)</label><input id="syntok" class="en" type="password" placeholder="ghp_..." value="'+esc(cfg.tok||'')+'" autocapitalize="off">'+
+  '<label>\u0634\u0646\u0627\u0633\u0647\u0654 \u0627\u0628\u0631 (Gist ID)</label><input id="syngid" class="en" placeholder="\u062E\u0627\u0644\u06CC = \u062C\u062F\u06CC\u062F \u0633\u0627\u062E\u062A\u0647 \u0645\u06CC\u200C\u0634\u0648\u062F" value="'+esc(cfg.gid||'')+'" autocapitalize="off">'+
+  '<div class="row"><button class="btn" id="cl">\u0627\u0646\u0635\u0631\u0627\u0641</button><button class="btn" id="syncnew">\u2601\uFE0F \u0633\u0627\u062E\u062A \u0627\u0628\u0631</button><button class="btn" id="syncup">\u2B06\uFE0F \u0628\u0627\u0631\u06AF\u0630\u0627\u0631\u06CC</button><button class="btn p" id="syncdn">\u2B07\uFE0F \u062F\u0631\u06CC\u0627\u0641\u062A \u0648 \u0627\u062F\u063A\u0627\u0645</button></div>'+
+  '<div id="sym" class="hint"></div>'+
+  '<div class="hint">\u0633\u0627\u062E\u062A \u062A\u0648\u06A9\u0646: <a href="https://github.com/settings/tokens/new?scopes=gist&description=FlashCards%20Sync" target="_blank" rel="noopener">\u0644\u06CC\u0646\u06A9 \u0622\u0645\u0627\u062F\u0647\u0654 \u0633\u0627\u062E\u062A \u062A\u0648\u06A9\u0646 (\u0627\u0645\u062A\u06CC\u0627\u0632 gist)</a></div>');
+ $('#cl').onclick=close;
+ const m=()=>{const el=$('#sym');return el};
+ const readInputs=()=>{const c=syncCfg();const t=$('#syntok').value.trim();const g=$('#syngid').value.trim();if(t)c.tok=t;if(g)c.gid=g;syncSaveCfg(c);return c};
+ $('#syncnew').onclick=async()=>{
+  const c=readInputs();
+  if(!c.tok){m().textContent='\u062A\u0648\u06A9\u0646 \u0631\u0627 \u0648\u0627\u0631\u062F \u06A9\u0646\u06CC\u062F';return}
+  m().textContent='\u062F\u0631 \u062D\u0627\u0644 \u0633\u0627\u062E\u062A \u0627\u0628\u0631\u2026';
+  try{const gid=await syncCreateGist(c.tok);$('#syngid').value=gid;m().textContent='\u0627\u0628\u0631 \u0633\u0627\u062E\u062A\u0647 \u0634\u062F \u2713 (ID: '+gid+')';toast('\u0627\u0628\u0631 \u0647\u0645\u06AF\u0627\u0645\u200C\u0633\u0627\u0632\u06CC \u0633\u0627\u062E\u062A\u0647 \u0634\u062F \u2713',3000)}
+  catch(e){m().textContent='\u062E\u0637\u0627: '+(e&&e.message?e.message:'\u0646\u0627\u0645\u0639\u0644\u0648\u0645')}
+ };
+ $('#syncup').onclick=async()=>{
+  const c=readInputs();
+  if(!c.tok||!c.gid){m().textContent='\u0627\u0628\u0631 \u0648\u062C\u0648\u062F \u0646\u062F\u0627\u0631\u062F \u2014 \u0627\u0628\u062A\u062F\u0627 \u00AB\u0633\u0627\u062E\u062A \u0627\u0628\u0631\u00BB \u0631\u0627 \u0628\u0632\u0646\u06CC\u062F';return}
+  m().textContent='\u062F\u0631 \u062D\u0627\u0644 \u0628\u0627\u0631\u06AF\u0630\u0627\u0631\u06CC\u2026';
+  try{await syncPush(c.tok,c.gid);m().textContent='\u0628\u0627\u0631\u06AF\u0630\u0627\u0631\u06CC \u0634\u062F \u2713 ('+cards.length+' \u06A9\u0627\u0631\u062A \u0648 '+waitL.length+' \u0644\u063A\u062A \u0644\u06CC\u0633\u062A \u0627\u0646\u062A\u0638\u0627\u0631)';toast('\u0647\u0645\u06AF\u0627\u0645\u200C\u0633\u0627\u0632\u06CC \u0628\u0627\u0644\u0627 \u062F\u0633\u062A\u06CC \u0627\u0646\u062C\u0627\u0645 \u0634\u062F \u2713',3000)}
+  catch(e){m().textContent='\u062E\u0637\u0627: '+(e&&e.message?e.message:'\u0646\u0627\u0645\u0639\u0644\u0648\u0645')}
+ };
+ $('#syncdn').onclick=async()=>{
+  const c=readInputs();
+  if(!c.tok||!c.gid){m().textContent='\u0627\u0628\u0631 \u0648\u062C\u0648\u062F \u0646\u062F\u0627\u0631\u062F \u2014 \u0627\u0628\u062A\u062F\u0627 \u00AB\u0633\u0627\u062E\u062A \u0627\u0628\u0631\u00BB \u0631\u0627 \u0628\u0632\u0646\u06CC\u062F';return}
+  m().textContent='\u062F\u0631 \u062D\u0627\u0644 \u062F\u0631\u06CC\u0627\u0641\u062A\u2026';
+  try{const d=await syncPull(c.tok,c.gid);const res=syncMerge(d);close();render();toast('\u062F\u0631\u06CC\u0627\u0641\u062A \u0634\u062F \u2713 \u2014 '+res.added+' \u06A9\u0627\u0631\u062A \u062C\u062F\u06CC\u062F\u060C '+res.upd+' \u0628\u0647\u200C\u0631\u0648\u0632\u0631\u0633\u0627\u0646\u06CC\u060C '+res.wait+' \u0644\u063A\u062A \u0627\u0646\u062A\u0638\u0627\u0631',4000)}
+  catch(e){m().textContent='\u062E\u0637\u0627: '+(e&&e.message?e.message:'\u0646\u0627\u0645\u0639\u0644\u0648\u0645')}
+ };
+}
+/* --- end cloud sync --- */
+
 function errReport(){
  let log='';try{log=localStorage.getItem('fc_errlog')||''}catch(e){}
  let errs=window.__ERRS&&window.__ERRS.length?window.__ERRS.slice():[];
@@ -1460,7 +1553,7 @@ function errReport(){
   const lmap={};cards.forEach(c=>{const k=loose(c.w);(lmap[k]=lmap[k]||[]).push(c)});
   const dups=Object.keys(lmap).filter(k=>lmap[k].length>1).map(k=>k+' ×'+lmap[k].length).join(', ')||'(none)';
   let audit='';try{audit=(JSON.parse(localStorage.getItem('fc_audit')||'[]')||[]).map(a=>typeof a==='string'?a:JSON.stringify(a)).join('\n')||'(empty)'}catch(e){audit='(unreadable)'}
-  const rep='version: 1.24 (fc-v23)\nUA: '+navigator.userAgent+'\ncards: '+cards.length+'\npackFilter: '+packFilter+'\nfilter pool: '+pool.length+'\nreps histogram: '+byRep+'\nsenses total: '+cards.reduce((a,c)=>a+(c.senses||[]).length,0)+'\nduplicate words: '+dups+'\ncard samples (first 4 of filter):\n'+sample+'\naudit (last ratings):\n'+audit+'\nerrors:\n'+(errs.length?errs.map((x,i)=>(i+1)+'. '+x).join('\n'):'(no errors captured)');
+  const rep='version: 1.25 (fc-v24)\nUA: '+navigator.userAgent+'\ncards: '+cards.length+'\npackFilter: '+packFilter+'\nfilter pool: '+pool.length+'\nreps histogram: '+byRep+'\nsenses total: '+cards.reduce((a,c)=>a+(c.senses||[]).length,0)+'\nduplicate words: '+dups+'\ncard samples (first 4 of filter):\n'+sample+'\naudit (last ratings):\n'+audit+'\nerrors:\n'+(errs.length?errs.map((x,i)=>(i+1)+'. '+x).join('\n'):'(no errors captured)');
  $('#ertx').value=rep;
  $('#ercp').onclick=()=>{ $('#ertx').select();try{document.execCommand('copy');toast('\u06a9\u067e\u06cc \u0634\u062f \u2713')}catch(e){} };
   $('#erclr').onclick=()=>{window.__ERRS=[];try{localStorage.removeItem('fc_errlog')}catch(e){};$('#ertx').value=rep.split('\nerrors:')[0]+'\nerrors:\n(none)';toast('\u067e\u0627\u06a9 \u0634\u062f \u2713')};
@@ -1468,7 +1561,7 @@ function errReport(){
 }
 
 function menu(){
- sheet('<h3>منوی برنامه <span class="mut" style="font-size:.72rem;font-weight:400;direction:ltr">v1.24</span></h3>'+
+ sheet('<h3>منوی برنامه <span class="mut" style="font-size:.72rem;font-weight:400;direction:ltr">v1.25</span></h3>'+
   '<button class="btn" id="m1" style="width:100%">🔑 کلیدهای هوش مصنوعی</button>'+
   '<button class="btn" id="m2" style="width:100%;margin-top:8px">🔗 اشتراک‌گذاری برنامه</button>'+
   '<button class="btn" id="m3" style="width:100%;margin-top:8px">💾 پشتیبان کارت‌ها</button>'+
@@ -1478,6 +1571,7 @@ function menu(){
   '<button class="btn" id="m5" style="width:100%;margin-top:8px">📦 مخزن کلمات</button>'+
   '<button class="btn" id="m8" style="width:100%;margin-top:8px">🌐 نسخهٔ وب (برای iOS/آیفون)</button>'+
   '<button class="btn" id="m9" style="width:100%;margin-top:8px">🩺 گزارش اشکال</button>'+
+  '<button class="btn" id="m10" style="width:100%;margin-top:8px">\u2601\uFE0F \u0647\u0645\u06AF\u0627\u0645\u200C\u0633\u0627\u0632\u06CC \u0628\u06CC\u0646 \u062F\u0633\u062A\u06AF\u0627\u0647\u200C\u0647\u0627</button>'+
   '<div class="hint">برای نصب روی گوشی: منوی مرورگر → Install app. بعد از اولین باز شدن، آفلاین هم کار می‌کند.</div>'+
   '<div class="row"><button class="btn" id="cl">بستن</button></div>');
  $('#m1').onclick=keyDialog;
@@ -1489,6 +1583,7 @@ function menu(){
  $('#m5').onclick=wordStore;
  $('#m8').onclick=()=>{location.href=WEB_URL};
  $('#m9').onclick=errReport;
+ $('#m10').onclick=syncSheet;
  $('#cl').onclick=close;
 }
 $('#mn').onclick=menu;
