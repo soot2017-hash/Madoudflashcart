@@ -2,7 +2,7 @@
 
 ## 📦 نصب روی گوشی اندروید
 
-1. فایل [**FlashCards-v1.18.apk**](https://raw.githubusercontent.com/soot2017-hash/Madoudflashcart/main/releases/FlashCards-v1.18.apk) را روی گوشی دانلود کنید (۳۵۰ کیلوبایت)
+1. فایل [**FlashCards-v1.19.apk**](https://raw.githubusercontent.com/soot2017-hash/Madoudflashcart/main/releases/FlashCards-v1.19.apk) را روی گوشی دانلود کنید (۴۵۰ کیلوبایت)
 2. روی فایل بزنید؛ اگر پرسید، اجازهٔ «نصب از منابع ناشناس» را بدهید
 3. تمام! اپ با آیکون اختصاصی نصب می‌شود
 

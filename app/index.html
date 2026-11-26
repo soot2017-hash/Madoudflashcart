@@ -86,6 +86,11 @@ label{display:block;font-size:.85rem;color:var(--mut);margin:10px 0 4px}
 .pb{color:var(--ac);font-weight:800}
 .fm{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:6px 0;border-top:1px dashed var(--bd)}
 .fm .btn{min-height:40px;padding:2px 12px}
+.fmb{width:40px;height:40px;min-height:40px;border-radius:12px;border:none;background:linear-gradient(135deg,#8b5cc4,#5b3fae);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;flex:none;padding:0;box-shadow:0 2px 6px rgba(91,63,174,.25)}
+.fmb svg{width:21px;height:21px;display:block}
+.fmb:active{transform:scale(.94)}
+.fmb.wide{width:auto;min-width:116px;padding:0 14px;gap:7px;color:#fff;font:inherit;font-size:.8rem;font-weight:700}
+.fmb.wide svg{width:17px;height:17px}
 .hero{background:linear-gradient(135deg,#5b3fae,#8b5cc4);color:#fff;border:none;border-radius:18px;padding:18px;margin-bottom:12px;text-align:center}
 .hero .big{font-size:2.2rem;font-weight:800;margin:4px 0}
 .hero .btn{margin-top:12px;background:#fff;color:#6d4dc4;border:none;width:100%;font-weight:700}
@@ -706,8 +711,9 @@ async function out(text,title){
  $('#io').value=text;$('#io').select();$('#cl').onclick=close;
 }
 
+const FMICON='<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="6.2" y="2.6" width="12.6" height="15.4" rx="2.4" fill="#ffffff" opacity=".55" transform="rotate(9 12.5 10.3)"/><rect x="3.6" y="5.2" width="12.6" height="15.4" rx="2.4" fill="#ffffff"/><path d="M9.9 12.9h4.4M12.1 10.7v4.4" stroke="#5b3fae" stroke-width="1.9" stroke-linecap="round"/></svg>';
 const hasCardFn=w=>!!findCard(w);
-const famHTML=c=>'<div class="pg" style="--c:#8b5cc4;margin-top:16px"><div class="ph"><b>\u062e\u0627\u0646\u0648\u0627\u062f\u0647\u0654 \u06a9\u0644\u0645\u0647</b>'+(c.fam&&c.fam.length?'<span class="cnt">'+c.fam.length+' \u06a9\u0644\u0645\u0647</span>':'')+'</div>'+((c.fam&&c.fam.length)?c.fam.map((f,i)=>'<div class="fm"><span dir="ltr"><b>'+esc(f.w)+'</b> <span class="mut">'+esc(f.pos?fa(npos(f.pos))+' \u00b7 '+f.pos:'')+'</span></span>'+(hasCardFn(f.w)?'<span class="mut">\u2713 \u0630\u062e\u06cc\u0631\u0647\u200c\u0634\u062f\u0647</span>':'<button class="btn" data-fm="'+i+'">\u2795 \u06a9\u0627\u0631\u062a</button>')+'</div>').join(''):(c.w.includes(' ')?'<div class="fm"><span class="mut">\u2014</span></div>':'<div class="fm"><span class="mut">\u0647\u0646\u0648\u0632 \u062b\u0628\u062a \u0646\u0634\u062f\u0647</span><button class="btn" id="ffind">\ud83d\udd0d \u06cc\u0627\u0641\u062a\u0646</button></div>'))+'</div>';
+const famHTML=c=>{const has=c.fam&&c.fam.length;const head='<div class="ph"><b>\u062e\u0627\u0646\u0648\u0627\u062f\u0647\u0654 \u06a9\u0644\u0645\u0647</b>'+(has?'<span class="cnt">'+c.fam.length+' \u06a9\u0644\u0645\u0647</span>':'<button class="fmb wide" id="ffind" aria-label="\u06a9\u0627\u0631\u062a\u200c\u0633\u0627\u0632: \u06cc\u0627\u0641\u062a\u0646 \u062e\u0627\u0646\u0648\u0627\u062f\u0647">'+FMICON+'<span>\u06a9\u0627\u0631\u062a\u200c\u0633\u0627\u0632</span></button>')+'</div>';const body=has?c.fam.map((f,i)=>'<div class="fm"><span dir="ltr"><b>'+esc(f.w)+'</b> <span class="mut">'+esc(f.pos?fa(npos(f.pos))+' \u00b7 '+f.pos:'')+'</span></span>'+(hasCardFn(f.w)?'<span class="mut">\u2713 \u0630\u062e\u06cc\u0631\u0647\u200c\u0634\u062f\u0647</span>':'<button class="fmb" data-fm="'+i+'" aria-label="\u0633\u0627\u062e\u062a \u06a9\u0627\u0631\u062a '+esc(f.w)+'">'+FMICON+'</button>')+'</div>').join(''):'<div class="fm"><span class="mut">\u2014</span></div>';return '<div class="pg" style="--c:#8b5cc4;margin-top:16px">'+head+body+'</div>';};
 async function famFind(c){
  toast('\u062f\u0631 \u062d\u0627\u0644 \u06cc\u0627\u0641\u062a\u0646 \u062e\u0627\u0646\u0648\u0627\u062f\u0647\u2026',2500);
  const f=await familyFree(c.w);
@@ -753,8 +759,8 @@ async function reworkCard(id){
 function waitForEnd(){if(day!=null&&tb==='study'){idx=0;flip=false;sessRated={};sessKey=null;go('study');setTimeout(waitSheet,50)}else waitSheet()}
 const revName=r=>r===0?'مرور نشده':r+' بار مرور شده';
 const grp=k=>{
- if(k===0)return {title:'همهٔ لغت‌ها',cs:cards.slice().sort((a,b)=>a.t-b.t)};
- if(k>=1000){const r=k-1000;return {title:revName(r),cs:cards.filter(c=>(c.reps||0)===r)}}
+ if(k===0)return {title:'همهٔ لغت‌ها',cs:pcards().slice().sort((a,b)=>a.t-b.t)};
+ if(k>=1000){const r=k-1000;return {title:revName(r),cs:pcards().filter(c=>(c.reps||0)===r)}}
  const d=days().find(x=>x.n===k);return d?{title:dayName(k),cs:d.cs}:null;
 };
 const chipHTML=g=>'<span class="chip" style="color:'+pcol(g[0])+';border-color:'+pcol(g[0])+'">'+fa(g[0])+' · '+g[1].length+'</span>';
