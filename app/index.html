@@ -187,7 +187,8 @@ let wv='',sugg=[],sw='',sipa='',sfam=[];
 let listTab='all';
 let packFilter='';
 let toastT;
-const pcards=()=>packFilter==='__mine'?cards.filter(c=>!c.src):packFilter?cards.filter(c=>c.src===packFilter):cards;
+const inPack=(c,f)=>f==='__mine'?(!c.src&&!(c.srcs||[]).length):(c.src===f||(c.srcs||[]).indexOf(f)>=0);
+const pcards=()=>packFilter?cards.filter(c=>inPack(c,packFilter)):cards;
 
 function toast(m,ms){const t=$('#toast');t.textContent=m;t.hidden=false;clearTimeout(toastT);toastT=setTimeout(()=>t.hidden=true,ms||2200)}
 function save(){let ok=false;try{localStorage.setItem(KEY,JSON.stringify(cards));ok=true}catch(e){}if(!ok)toast('⚠️ ذخیره در حافظهٔ دستگاه ناموفق بود؛ حافظهٔ مرورگر پر است. از منو پشتیبان بگیرید.',5000);return ok}
@@ -201,12 +202,19 @@ function normSenses(list){
  })).filter(s=>s.d);
 }
 function blankCard(w){
- return { id:uid(), w:norm(w), t:Date.now(), ipa:'', reps:0, interval:1, ease:2.5, due:today0(), last:null, fam:[], senses:[], src:'' };
+ return { id:uid(), w:norm(w), t:Date.now(), ipa:'', reps:0, interval:1, ease:2.5, due:today0(), last:null, fam:[], senses:[], src:'', srcs:[] };
 }
 
 function addSenses(w,list,ipa,fam,sm2,src){
  let c=findCard(w),n=0;
  if(!c){c=blankCard(w);if(src)c.src=src;if(sm2){c.reps=sm2.reps||0;c.interval=sm2.interval||1;c.ease=sm2.ease||2.5;c.due=sm2.due||today0();c.last=sm2.last||null}cards.push(c)}
+ if(src){
+  if(!c.src)c.src=src;
+  else if(c.src!==src){
+   if(!(c.srcs||[]).length)c.srcs=[c.src];
+   if(c.srcs.indexOf(src)<0)c.srcs.push(src);
+  }
+ }
  if(ipa&&!c.ipa)c.ipa=norm(ipa);
  if(fam&&fam.length&&!(c.fam||[]).length)c.fam=normFam(fam).filter(f=>f.w.toLowerCase()!==c.w.toLowerCase());
  normSenses(list).forEach(s=>{if(!c.senses.some(x=>x.d===s.d)){c.senses.push(s);n++}});
@@ -244,7 +252,8 @@ function load(){
   const card={
     id:c.id||uid(), w:norm(c.w), t, ipa:c.ipa||'',
     reps: reps||0, interval: +c.interval||1, ease: +c.ease||2.5, due: +c.due||today0(), last: c.last||null,
-    fam:normFam(c.fam), senses:normSenses(list), src:String(c.src||'')
+    fam:normFam(c.fam), senses:normSenses(list), src:String(c.src||''),
+    srcs:Array.isArray(c.srcs)?c.srcs:[]
   };
   const ex=cards.find(x=>x.w.toLowerCase()===card.w.toLowerCase());
   if(ex){
@@ -255,6 +264,11 @@ function load(){
     if(!(ex.fam||[]).length)ex.fam=card.fam;
     if(!ex.ipa)ex.ipa=card.ipa;
     if(!ex.src)ex.src=card.src;
+    if(card.src&&ex.src&&card.src!==ex.src){
+     if(!(ex.srcs||[]).length)ex.srcs=[ex.src];
+     if(ex.srcs.indexOf(card.src)<0)ex.srcs.push(card.src);
+    }
+    if(!(ex.srcs||[]).length&&card.srcs.length)ex.srcs=card.srcs.slice();
   } else cards.push(card);
  });
  if(!raw)save();
@@ -776,7 +790,7 @@ function studyHome(v){
  const hero=dueCards.length
    ?'<div class="hero"><div>مرور امروز</div><div class="big">'+dueCards.length+' کارت</div><button class="btn" id="stoday">▶ شروع مرور</button></div>'
    :'<div class="hero empty"><div>🎉 همه مرور شده!</div><div class="mut" style="color:#fff;opacity:.8;margin-top:4px">'+pcards().length+' کارت ذخیره‌شده</div></div>';
- const srcs=[...new Set(cards.map(c=>c.src).filter(Boolean))];
+ const srcs=[...new Set(cards.reduce((a,c)=>a.concat(c.src||[],c.srcs||[]),[]).filter(Boolean))];
  const opts=cards.length?['','__mine'].concat(srcs):[];
  let pf=opts.length?'<div class="tabs">'+opts.map(x=>'<button class="'+(packFilter===x?'on':'')+'" data-pf="'+esc(x)+'">'+(x==='__mine'?'\u270d\ufe0f \u06a9\u0627\u0631\u062a\u200c\u0647\u0627\u06cc \u0645\u0646':(x?'\ud83d\udcd6 '+esc(x):'\u0647\u0645\u0647'))+'</button>').join('')+'</div>':'';
 
@@ -1242,7 +1256,7 @@ function csvRows(t){const rows=[];let row=[],f='',q=false;for(let i=0;i<t.length
 
 function backupJSON(){
  return JSON.stringify(cards.map(c=>({
-  w:c.w, ipa:c.ipa, fam:c.fam||[], senses:c.senses, src:c.src||'',
+  w:c.w, ipa:c.ipa, fam:c.fam||[], senses:c.senses, src:c.src||'', srcs:c.srcs||[],
   reps:c.reps||0, interval:c.interval||1, ease:c.ease||2.5, due:c.due, last:c.last
  })));
 }
@@ -1386,7 +1400,7 @@ async function fillFam(){
  if(tb==='list')list();else render();
 }
 function menu(){
- sheet('<h3>منوی برنامه <span class="mut" style="font-size:.72rem;font-weight:400;direction:ltr">v1.20</span></h3>'+
+ sheet('<h3>منوی برنامه <span class="mut" style="font-size:.72rem;font-weight:400;direction:ltr">v1.21</span></h3>'+
   '<button class="btn" id="m1" style="width:100%">🔑 کلیدهای هوش مصنوعی</button>'+
   '<button class="btn" id="m2" style="width:100%;margin-top:8px">🔗 اشتراک‌گذاری برنامه</button>'+
   '<button class="btn" id="m3" style="width:100%;margin-top:8px">💾 پشتیبان کارت‌ها</button>'+
