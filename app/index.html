@@ -164,6 +164,7 @@ const keyGet=id=>{try{return localStorage.getItem('fc_k_'+id)||''}catch(e){retur
 const keySet=(id,k)=>{try{localStorage.setItem('fc_k_'+id,k)}catch(e){}};
 
 const norm=w=>String(w||'').trim().replace(/\s+/g,' ');
+const loose=w=>String(w||'').toLowerCase().replace(/[^a-z0-9\u0600-\u06FF]+/gi,' ').trim();
 const arr=a=>Array.isArray(a)?a.slice(0,5).map(x=>String(x).trim()).filter(Boolean):[];
 const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const $=s=>document.querySelector(s);
@@ -198,7 +199,7 @@ const pcards=()=>packFilter?cards.filter(c=>inPack(c,packFilter)):cards;
 
 function toast(m,ms){const t=$('#toast');t.textContent=m;t.hidden=false;clearTimeout(toastT);toastT=setTimeout(()=>t.hidden=true,ms||2200)}
 function save(){let ok=false;try{localStorage.setItem(KEY,JSON.stringify(cards));ok=true}catch(e){}if(!ok)toast('⚠️ ذخیره در حافظهٔ دستگاه ناموفق بود؛ حافظهٔ مرورگر پر است. از منو پشتیبان بگیرید.',5000);return ok}
-const findCard=(w,exId)=>cards.find(x=>x.id!==exId&&x.w.toLowerCase()===norm(w).toLowerCase());
+const findCard=(w,exId)=>cards.find(x=>x.id!==exId&&loose(x.w)===loose(w));
 
 function normSenses(list){
  return (list||[]).map(s=>({
@@ -250,6 +251,7 @@ function load(){
  try{raw=localStorage.getItem(KEY)||localStorage.getItem(KEY_OLD)}catch(e){}
  if(!raw&&window.__SEED)raw=JSON.stringify(window.__SEED);
  let o=[];try{o=JSON.parse(raw||'[]')}catch(e){}
+ let mergedLoad=0;
  o.forEach(c=>{
   if(!c||!c.w)return;
   const list=c.senses||[{pos:c.pos,d:c.d,e:c.e,p:c.p}];
@@ -262,7 +264,7 @@ function load(){
     fam:normFam(c.fam), senses:normSenses(list), src:String(c.src||''),
     srcs:Array.isArray(c.srcs)?c.srcs:[]
   };
-  const ex=cards.find(x=>x.w.toLowerCase()===card.w.toLowerCase());
+  const ex=cards.find(x=>loose(x.w)===loose(card.w));
   if(ex){
     card.senses.forEach(s=>{if(!ex.senses.some(y=>y.d===s.d))ex.senses.push(s)});
     ex.t=Math.min(ex.t,t);
@@ -276,15 +278,16 @@ function load(){
      if(ex.srcs.indexOf(card.src)<0)ex.srcs.push(card.src);
     }
     if(!(ex.srcs||[]).length&&card.srcs.length)ex.srcs=card.srcs.slice();
-  } else cards.push(card);
+  } else { cards.push(card); mergedLoad++ }
  });
+ if(mergedLoad)save();
  // migrate legacy data: words shared by several packs must belong to ALL of them
  if(window.__PACKS&&__PACKS.data&&__PACKS.index){
   const pm={};
-  __PACKS.index.forEach(pk=>{const nm=pk.short||pk.name;(__PACKS.data[pk.file]||[]).forEach(r=>{if(r&&r.w){const k=norm(r.w).toLowerCase();(pm[k]=pm[k]||[]).push(nm)}})});
+  __PACKS.index.forEach(pk=>{const nm=pk.short||pk.name;(__PACKS.data[pk.file]||[]).forEach(r=>{if(r&&r.w){const k=loose(r.w);(pm[k]=pm[k]||[]).push(nm)}})});
   let mig=0;
   cards.forEach(c=>{
-   const names=pm[c.w.toLowerCase()];
+   const names=pm[loose(c.w)];
    if(!names||names.length<2)return;
    const have=[c.src].concat(c.srcs||[]).filter(Boolean);
    const miss=names.filter(nm=>have.indexOf(nm)<0);
@@ -833,7 +836,7 @@ function studyHome(v){
   '<button class="btn" id="wlh" style="width:100%;margin-top:10px">⏳ لیست انتظار'+(waitL.length?' ('+waitL.length+' کلمه)':'')+'</button>'+
   groups.map(g=>{const o=g.open||openD.has(g.k);return '<div class="box day"><div class="dh" data-tg="'+g.k+'"><b>'+esc(g.title)+'</b><span class="mut">'+g.cs.length+' لغت '+(g.open?'':(o?'▴':'▾'))+'</span></div>'+(o?'<div class="dw"><button class="btn p" data-s="'+g.k+':0" style="width:100%">▶ شروع از اول</button>'+wordRows(g.k,g.cs)+'</div>':'')+'</div>'}).join('');
 
- v.insertAdjacentHTML('beforeend','<div class="mut" style="text-align:center;font-size:.68rem;opacity:.75;margin:12px 0 4px" dir="ltr">version v1.22</div>');
+ v.insertAdjacentHTML('beforeend','<div class="mut" style="text-align:center;font-size:.68rem;opacity:.75;margin:12px 0 4px" dir="ltr">version v1.23</div>');
  v.querySelectorAll('[data-pf]').forEach(b=>b.onclick=()=>{packFilter=b.dataset.pf;day=null;openD=new Set();sessKey=null;study();scrollTo(0,0)});
  if($('#stoday'))$('#stoday').onclick=()=>go('today');
  v.querySelectorAll('[data-sm]').forEach(b=>b.onclick=()=>{smode=b.dataset.sm;study()});
@@ -1438,7 +1441,6 @@ async function fillFam(){
 function repairData(){
  let fixed=0,merged=0;
  try{
-  const loose=v=>String(v||'').toLowerCase().replace(/[^a-z0-9\u0600-\u06FF]+/gi,' ').trim();
   const lm={};
   cards.forEach(c=>{const k=loose(c.w);(lm[k]=lm[k]||[]).push(c)});
   Object.keys(lm).forEach(k=>{
@@ -1472,7 +1474,7 @@ function repairData(){
     fixed++;
    });
   }
-  if(merged||fixed)save();
+  save();
   close();
   toast('\u062a\u0639\u0645\u06cc\u0631 \u0627\u0646\u062c\u0627\u0645 \u0634\u062f: '+merged+' \u06a9\u0627\u0631\u062a \u062a\u06a9\u0631\u0627\u0631\u06cc \u0627\u062f\u063a\u0627\u0645 \u0634\u062f\u060c '+fixed+' \u06a9\u0627\u0631\u062a \u0628\u0647 \u0628\u0633\u062a\u0647\u200c\u0647\u0627 \u0645\u062a\u0635\u0644 \u0634\u062f',5000);
   render();
@@ -1496,7 +1498,7 @@ function errReport(){
   const lmap={};cards.forEach(c=>{const k=loose(c.w);(lmap[k]=lmap[k]||[]).push(c)});
   const dups=Object.keys(lmap).filter(k=>lmap[k].length>1).map(k=>k+' ×'+lmap[k].length).join(', ')||'(none)';
   let audit='';try{audit=(JSON.parse(localStorage.getItem('fc_audit')||'[]')||[]).map(a=>typeof a==='string'?a:JSON.stringify(a)).join('\n')||'(empty)'}catch(e){audit='(unreadable)'}
-  const rep='version: 1.22 (fc-v21e)\nUA: '+navigator.userAgent+'\ncards: '+cards.length+'\npackFilter: '+packFilter+'\nfilter pool: '+pool.length+'\nreps histogram: '+byRep+'\nsenses total: '+cards.reduce((a,c)=>a+(c.senses||[]).length,0)+'\nduplicate words: '+dups+'\ncard samples (first 4 of filter):\n'+sample+'\naudit (last ratings):\n'+audit+'\nerrors:\n'+(errs.length?errs.map((x,i)=>(i+1)+'. '+x).join('\n'):'(no errors captured)');
+  const rep='version: 1.23 (fc-v22)\nUA: '+navigator.userAgent+'\ncards: '+cards.length+'\npackFilter: '+packFilter+'\nfilter pool: '+pool.length+'\nreps histogram: '+byRep+'\nsenses total: '+cards.reduce((a,c)=>a+(c.senses||[]).length,0)+'\nduplicate words: '+dups+'\ncard samples (first 4 of filter):\n'+sample+'\naudit (last ratings):\n'+audit+'\nerrors:\n'+(errs.length?errs.map((x,i)=>(i+1)+'. '+x).join('\n'):'(no errors captured)');
  $('#ertx').value=rep;
  $('#ercp').onclick=()=>{ $('#ertx').select();try{document.execCommand('copy');toast('\u06a9\u067e\u06cc \u0634\u062f \u2713')}catch(e){} };
   $('#erclr').onclick=()=>{window.__ERRS=[];try{localStorage.removeItem('fc_errlog')}catch(e){};$('#ertx').value=rep.split('\nerrors:')[0]+'\nerrors:\n(none)';toast('\u067e\u0627\u06a9 \u0634\u062f \u2713')};
@@ -1505,7 +1507,7 @@ function errReport(){
 }
 
 function menu(){
- sheet('<h3>منوی برنامه <span class="mut" style="font-size:.72rem;font-weight:400;direction:ltr">v1.22</span></h3>'+
+ sheet('<h3>منوی برنامه <span class="mut" style="font-size:.72rem;font-weight:400;direction:ltr">v1.23</span></h3>'+
   '<button class="btn" id="m1" style="width:100%">🔑 کلیدهای هوش مصنوعی</button>'+
   '<button class="btn" id="m2" style="width:100%;margin-top:8px">🔗 اشتراک‌گذاری برنامه</button>'+
   '<button class="btn" id="m3" style="width:100%;margin-top:8px">💾 پشتیبان کارت‌ها</button>'+
