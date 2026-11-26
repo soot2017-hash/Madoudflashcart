@@ -242,6 +242,7 @@ function applySM2(c,q){
  c.last=Date.now();
  c.due=today0() + c.interval*DAY;
  save();
+ try{const L=JSON.parse(localStorage.getItem('fc_audit')||'[]');L.push(JSON.stringify({w:c.w,q:q,reps:c.reps,due:c.due,at:Date.now()}));while(L.length>30)L.shift();localStorage.setItem('fc_audit',JSON.stringify(L))}catch(e){}
 }
 
 function load(){
@@ -832,7 +833,7 @@ function studyHome(v){
   '<button class="btn" id="wlh" style="width:100%;margin-top:10px">⏳ لیست انتظار'+(waitL.length?' ('+waitL.length+' کلمه)':'')+'</button>'+
   groups.map(g=>{const o=g.open||openD.has(g.k);return '<div class="box day"><div class="dh" data-tg="'+g.k+'"><b>'+esc(g.title)+'</b><span class="mut">'+g.cs.length+' لغت '+(g.open?'':(o?'▴':'▾'))+'</span></div>'+(o?'<div class="dw"><button class="btn p" data-s="'+g.k+':0" style="width:100%">▶ شروع از اول</button>'+wordRows(g.k,g.cs)+'</div>':'')+'</div>'}).join('');
 
- v.insertAdjacentHTML('beforeend','<div class="mut" style="text-align:center;font-size:.68rem;opacity:.75;margin:12px 0 4px" dir="ltr">version v1.21</div>');
+ v.insertAdjacentHTML('beforeend','<div class="mut" style="text-align:center;font-size:.68rem;opacity:.75;margin:12px 0 4px" dir="ltr">version v1.22</div>');
  v.querySelectorAll('[data-pf]').forEach(b=>b.onclick=()=>{packFilter=b.dataset.pf;day=null;openD=new Set();sessKey=null;study();scrollTo(0,0)});
  if($('#stoday'))$('#stoday').onclick=()=>go('today');
  v.querySelectorAll('[data-sm]').forEach(b=>b.onclick=()=>{smode=b.dataset.sm;study()});
@@ -1434,6 +1435,50 @@ async function fillFam(){
  toast(done?('\u062e\u0627\u0646\u0648\u0627\u062f\u0647\u0654 '+done+' \u06a9\u0627\u0631\u062a \u0627\u0636\u0627\u0641\u0647 \u0634\u062f \u2713'):'\u062e\u0627\u0646\u0648\u0627\u062f\u0647\u0650 \u062c\u062f\u06cc\u062f\u06cc \u06cc\u0627\u0641\u062a \u0646\u0634\u062f',4000);
  if(tb==='list')list();else render();
 }
+function repairData(){
+ let fixed=0,merged=0;
+ try{
+  const loose=v=>String(v||'').toLowerCase().replace(/[^a-z0-9\u0600-\u06FF]+/gi,' ').trim();
+  const lm={};
+  cards.forEach(c=>{const k=loose(c.w);(lm[k]=lm[k]||[]).push(c)});
+  Object.keys(lm).forEach(k=>{
+   const g=lm[k];if(g.length<2)return;
+   g.sort((a,b)=>((b.reps||0)-(a.reps||0))||((b.senses||[]).length-(a.senses||[]).length));
+   const keep=g[0];
+   g.slice(1).forEach(o=>{
+    (o.senses||[]).forEach(sx=>{if(!keep.senses.some(y=>y.d===sx.d))keep.senses.push(sx)});
+    keep.reps=Math.max(keep.reps||0,o.reps||0);
+    const od=+o.due||0,kd=+keep.due||0;if(od&&kd)keep.due=Math.min(kd,od);
+    keep.t=Math.min(keep.t,o.t);
+    if(!keep.ipa&&o.ipa)keep.ipa=o.ipa;
+    if(!(keep.fam||[]).length&&o.fam&&o.fam.length)keep.fam=o.fam;
+    if(o.src&&keep.src!==o.src&&!(keep.srcs||[]).includes(o.src)){if(!keep.srcs)keep.srcs=[];keep.srcs.push(o.src)}
+    (o.srcs||[]).forEach(nm=>{ if(!keep.srcs)keep.srcs=[]; if(nm!==keep.src&&!(keep.srcs||[]).includes(nm))keep.srcs.push(nm) });
+    cards=cards.filter(x=>x!==o);merged++;
+   });
+  });
+  if(window.__PACKS&&__PACKS.data&&__PACKS.index){
+   const pm={};
+   __PACKS.index.forEach(pk=>{const nm=pk.short||pk.name;(__PACKS.data[pk.file]||[]).forEach(r=>{if(r&&r.w){const k=loose(r.w);(pm[k]=pm[k]||[]).push(nm)}})});
+   cards.forEach(c=>{
+    const names=pm[loose(c.w)];
+    if(!names||names.length<2)return;
+    const have=[c.src].concat(c.srcs||[]).filter(Boolean);
+    const miss=names.filter(nm=>have.indexOf(nm)<0);
+    if(!miss.length)return;
+    if(!c.src)c.src=miss.shift();
+    if(!c.srcs)c.srcs=[];
+    miss.forEach(nm=>{if(c.srcs.indexOf(nm)<0&&nm!==c.src)c.srcs.push(nm)});
+    fixed++;
+   });
+  }
+  if(merged||fixed)save();
+  close();
+  toast('\u062a\u0639\u0645\u06cc\u0631 \u0627\u0646\u062c\u0627\u0645 \u0634\u062f: '+merged+' \u06a9\u0627\u0631\u062a \u062a\u06a9\u0631\u0627\u0631\u06cc \u0627\u062f\u063a\u0627\u0645 \u0634\u062f\u060c '+fixed+' \u06a9\u0627\u0631\u062a \u0628\u0647 \u0628\u0633\u062a\u0647\u200c\u0647\u0627 \u0645\u062a\u0635\u0644 \u0634\u062f',5000);
+  render();
+ }catch(e){__errCap('repair: '+(e&&e.message?e.message:e));toast('\u062a\u0639\u0645\u06cc\u0631 \u0646\u0627\u0645\u0648\u0641\u0642 '+(e&&e.message||''),4000)}
+}
+
 function errReport(){
  let log='';try{log=localStorage.getItem('fc_errlog')||''}catch(e){}
  let errs=window.__ERRS&&window.__ERRS.length?window.__ERRS.slice():[];
@@ -1442,20 +1487,25 @@ function errReport(){
  sheet('<h3>🩺 \u06af\u0632\u0627\u0631\u0634 \u0627\u0634\u06a9\u0627\u0644</h3>'+
   '<div class="hint">\u0627\u06cc\u0646 \u0645\u062a\u0646 \u0631\u0627 \u06a9\u067e\u06cc \u06a9\u0646\u06cc\u062f \u0648 \u0628\u0631\u0627\u06cc \u062a\u0639\u0645\u06cc\u0631\u06a9\u0627\u0631 \u0628\u0641\u0631\u0633\u062a\u06cc\u062f.</div>'+
   '<textarea id="ertx" class="en" style="min-height:170px" dir="ltr"></textarea>'+
-  '<div class="row"><button class="btn" id="ercp">\u06a9\u067e\u06cc</button><button class="btn" id="erclr">\u067e\u0627\u06a9 \u06a9\u0631\u062f\u0646</button><button class="btn p" id="cl">\u0628\u0633\u062a\u0646</button></div>');
+   '<div class="row"><button class="btn" id="ercp">\u06a9\u067e\u06cc</button><button class="btn" id="erclr">\u067e\u0627\u06a9 \u06a9\u0631\u062f\u0646</button><button class="btn" id="errep">🛠 \u062a\u0639\u0645\u06cc\u0631 \u062f\u0627\u062f\u0647\u200c\u0647\u0627</button><button class="btn p" id="cl">\u0628\u0633\u062a\u0646</button></div>');
  const pool=packFilter?cards.filter(c=>inPack(c,packFilter)):cards;
  const mm={};pool.forEach(c=>{const r=c.reps||0;mm[r]=(mm[r]||0)+1});
  const byRep=Object.keys(mm).sort((a,b)=>a-b).map(r=>'reps='+r+': '+mm[r]).join(', ');
  const sample=pool.slice(0,4).map(c=>JSON.stringify({w:c.w,src:c.src,srcs:c.srcs,reps:c.reps,interval:c.interval,due:c.due,now:Date.now()})).join('\n');
- const rep='version: 1.21 (fc-v21d)\nUA: '+navigator.userAgent+'\ncards: '+cards.length+'\npackFilter: '+packFilter+'\nfilter pool: '+pool.length+'\nreps histogram: '+byRep+'\nsenses total: '+cards.reduce((a,c)=>a+(c.senses||[]).length,0)+'\ncard samples (first 4 of filter):\n'+sample+'\nerrors:\n'+(errs.length?errs.map((x,i)=>(i+1)+'. '+x).join('\n'):'(no errors captured)');
+ const loose=v=>String(v||'').toLowerCase().replace(/[^a-z0-9\u0600-\u06FF]+/gi,' ').trim();
+  const lmap={};cards.forEach(c=>{const k=loose(c.w);(lmap[k]=lmap[k]||[]).push(c)});
+  const dups=Object.keys(lmap).filter(k=>lmap[k].length>1).map(k=>k+' ×'+lmap[k].length).join(', ')||'(none)';
+  let audit='';try{audit=(JSON.parse(localStorage.getItem('fc_audit')||'[]')||[]).map(a=>typeof a==='string'?a:JSON.stringify(a)).join('\n')||'(empty)'}catch(e){audit='(unreadable)'}
+  const rep='version: 1.22 (fc-v21e)\nUA: '+navigator.userAgent+'\ncards: '+cards.length+'\npackFilter: '+packFilter+'\nfilter pool: '+pool.length+'\nreps histogram: '+byRep+'\nsenses total: '+cards.reduce((a,c)=>a+(c.senses||[]).length,0)+'\nduplicate words: '+dups+'\ncard samples (first 4 of filter):\n'+sample+'\naudit (last ratings):\n'+audit+'\nerrors:\n'+(errs.length?errs.map((x,i)=>(i+1)+'. '+x).join('\n'):'(no errors captured)');
  $('#ertx').value=rep;
  $('#ercp').onclick=()=>{ $('#ertx').select();try{document.execCommand('copy');toast('\u06a9\u067e\u06cc \u0634\u062f \u2713')}catch(e){} };
- $('#erclr').onclick=()=>{window.__ERRS=[];try{localStorage.removeItem('fc_errlog')}catch(e){};$('#ertx').value=rep.split('\nerrors:')[0]+'\nerrors:\n(none)';toast('\u067e\u0627\u06a9 \u0634\u062f \u2713')};
+  $('#erclr').onclick=()=>{window.__ERRS=[];try{localStorage.removeItem('fc_errlog')}catch(e){};$('#ertx').value=rep.split('\nerrors:')[0]+'\nerrors:\n(none)';toast('\u067e\u0627\u06a9 \u0634\u062f \u2713')};
+  $('#errep').onclick=repairData;
  $('#cl').onclick=close;
 }
 
 function menu(){
- sheet('<h3>منوی برنامه <span class="mut" style="font-size:.72rem;font-weight:400;direction:ltr">v1.21</span></h3>'+
+ sheet('<h3>منوی برنامه <span class="mut" style="font-size:.72rem;font-weight:400;direction:ltr">v1.22</span></h3>'+
   '<button class="btn" id="m1" style="width:100%">🔑 کلیدهای هوش مصنوعی</button>'+
   '<button class="btn" id="m2" style="width:100%;margin-top:8px">🔗 اشتراک‌گذاری برنامه</button>'+
   '<button class="btn" id="m3" style="width:100%;margin-top:8px">💾 پشتیبان کارت‌ها</button>'+
