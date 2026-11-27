@@ -2,12 +2,12 @@
 
 ## 📦 نصب روی گوشی اندروید
 
-1. فایل [**FlashCards-v1.36.apk**](https://raw.githubusercontent.com/soot2017-hash/Madoudflashcart/main/releases/FlashCards-v1.36.apk) را روی گوشی دانلود کنید (۷۴۶ کیلوبایت)
+1. فایل [**FlashCards-v1.37.apk**](https://raw.githubusercontent.com/soot2017-hash/Madoudflashcart/main/releases/FlashCards-v1.37.apk) را روی گوشی دانلود کنید (۷۴۶ کیلوبایت)
 > 🌐 اگر لینک بالا باز نشد (فیلتر raw.githubusercontent)، از این آینه‌ها استفاده کنید:
-> - `https://cdn.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.36.apk`
-> - `https://fastly.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.36.apk`
-> - `https://testingcf.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.36.apk`
-> - `https://gcore.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.36.apk`
+> - `https://cdn.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.37.apk`
+> - `https://fastly.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.37.apk`
+> - `https://testingcf.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.37.apk`
+> - `https://gcore.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.37.apk`
 
 2. روی فایل بزنید؛ اگر پرسید، اجازهٔ «نصب از منابع ناشناس» را بدهید
 3. تمام! اپ با آیکون اختصاصی نصب می‌شود

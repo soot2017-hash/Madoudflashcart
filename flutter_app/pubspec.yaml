@@ -4,7 +4,7 @@ description: >-
   purple-themed, RTL/LTR-safe card UI with flutter_tts pronunciation
   and word-selection-to-card creation.
 publish_to: "none"
-version: 1.36.0+39
+version: 1.37.0+40
 
 environment:
   sdk: ">=3.0.0 <4.0.0"

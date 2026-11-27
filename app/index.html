@@ -340,7 +340,7 @@ const hasFa=c=>(c.senses||[]).some(s=>s.p&&s.p.trim());
 const JUNKW=new Set('onfang orped doughty peery bield betell bespeak balbucinate balbutiate beclothe becourage beghast belimp belock bergh beshield betide betime betoken betone bewield busk cack coact consentaneous consentient conduce contraindicate controvert cooccur descry doff dob duppy eclecticist educe enounce environs toom ween whelm withcall wont yark upgrow unstay unuseful unexplicit unheed unfaked worthly subsequentness subsequence umbworld underprop derestrict disconfirm disprefer weighbridge bone-idle blood-minded stut'.split(' '));
 const cleanTags=a=>{const out=[],seen=new Set();(a||[]).forEach(x=>{String(x==null?'':x).split(/[,،]/).forEach(y=>{y=y.trim();if(!y)return;const lo=y.toLowerCase();if(seen.has(lo)||JUNKW.has(lo))return;seen.add(lo);out.push(y)})});return out};
 const tagRow=(cls,label,a)=>{const t=cleanTags(a).slice(0,4);return t.length?'<div class="sa '+cls+'" dir="rtl"><b>'+label+':</b> <span dir="ltr">'+esc(t.join(', '))+'</span></div>':''};
-const synChip=s=>{const t=cleanTags(s.syn);return t.length?'<span class="gchip" dir="ltr" style="color:#b8860b;border-color:#b8860b">\u2248 '+esc(t[0])+'</span> ':''};
+const GRAMOK=/transitive|intransitive|reflexive|reciprocal|linking|copular|modal|auxiliary|passive|regular|irregular|countable|uncountable|comparative|superlative|plural|singular|followed by/i;
 const PREPW=new Set('in on at of for to with about from by into onto over under up down out off away back through along around across against between among after before during without within upon toward towards beyond behind beside near past per via despite except inside outside above below beneath underneath throughout till until since'.split(' '));
 const boldPrep=(t,skip)=>esc(t).split(' ').map(w=>{const lw=w.toLowerCase().replace(/[^a-z]/g,'');return PREPW.has(lw)&&!(skip&&lw==='to')?'<b class="pb">'+w+'</b>':w}).join(' ');
 const prepWordsOf=s=>{const ws=new Set();(s.prep||[]).forEach(p=>String(p).toLowerCase().split(/[^a-z]+/).forEach(x=>{if(PREPW.has(x))ws.add(x)}));return ws};
@@ -362,8 +362,9 @@ function gramFa(g){
 function gh(ss,chk){
  return group(ss).map(([p,a])=>'<div class="pg" style="--c:'+pcol(p)+'"><div class="ph"><b>'+fa(p)+'</b><span class="cnt">'+p+' · '+a.length+' معنی</span></div>'+
   a.map(({s,i},k)=>{
-   const gr=gramFa(s.gram);
-   const body='<div class="sb">'+(s.sp?'<div class="spx" dir="ltr">'+boldPrep(s.sp,true)+'</div>':'')+'<div class="df">'+synChip(s)+(gr?'<span class="gchip gchip-fa">'+gr+'</span> ':'')+(s.g?'<span class="gchip" dir="ltr">'+esc(s.g)+'</span> ':'')+boldSensePrep(s,s.d)+'</div>'+(s.e?'<div class="ex">'+boldSensePrep(s,s.e)+'</div><button class="trbtn" type="button" data-src="'+esc(s.e)+'">🌐 ترجمهٔ مثال ▸</button><div class="tr" hidden>'+(s.ep?esc(s.ep):'')+'</div>':'')+(s.p?'<div class="fa">'+esc(s.p)+'</div>':'')+prepRow(s.prep)+sepRow(s.sep)+tagRow('s1','هم‌معنی',s.syn)+tagRow('s2','متضاد',s.ant)+'</div>';
+   const gr=gramFa(s.gram)||gramFa(s.g);
+   const gRaw=(s.g&&GRAMOK.test(String(s.g))&&!gramFa(s.g))?'<span class="gchip" dir="ltr">'+esc(s.g)+'</span> ':'';
+   const body='<div class="sb">'+(s.sp?'<div class="spx" dir="ltr">'+boldPrep(s.sp,true)+'</div>':'')+'<div class="df">'+(gr?'<span class="gchip gchip-fa">'+gr+'</span> ':'')+gRaw+boldSensePrep(s,s.d)+'</div>'+(s.e?'<div class="ex">'+boldSensePrep(s,s.e)+'</div><button class="trbtn" type="button" data-src="'+esc(s.e)+'">🌐 ترجمهٔ مثال ▸</button><div class="tr" hidden>'+(s.ep?esc(s.ep):'')+'</div>':'')+(s.p?'<div class="fa">'+esc(s.p)+'</div>':'')+prepRow(s.prep)+sepRow(s.sep)+tagRow('s1','هم‌معنی',s.syn)+tagRow('s2','متضاد',s.ant)+'</div>';
    return chk?'<label class="sn"><input type="checkbox" data-i="'+i+'"'+(s.on?' checked':'')+'><span class="nm">'+(k+1)+'</span>'+body+'</label>':'<div class="sn"><span class="nm">'+(k+1)+'</span>'+body+'</div>';
   }).join('')+'</div>').join('');
 }
