@@ -2,12 +2,12 @@
 
 ## 📦 نصب روی گوشی اندروید
 
-1. فایل [**FlashCards-v1.32.apk**](https://raw.githubusercontent.com/soot2017-hash/Madoudflashcart/main/releases/FlashCards-v1.32.apk) را روی گوشی دانلود کنید (۶۴۱ کیلوبایت)
+1. فایل [**FlashCards-v1.33.apk**](https://raw.githubusercontent.com/soot2017-hash/Madoudflashcart/main/releases/FlashCards-v1.33.apk) را روی گوشی دانلود کنید (۶۴۹ کیلوبایت)
 > 🌐 اگر لینک بالا باز نشد (فیلتر raw.githubusercontent)، از این آینه‌ها استفاده کنید:
-> - `https://cdn.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.32.apk`
-> - `https://fastly.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.32.apk`
-> - `https://testingcf.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.32.apk`
-> - `https://gcore.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.32.apk`
+> - `https://cdn.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.33.apk`
+> - `https://fastly.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.33.apk`
+> - `https://testingcf.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.33.apk`
+> - `https://gcore.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.33.apk`
 
 2. روی فایل بزنید؛ اگر پرسید، اجازهٔ «نصب از منابع ناشناس» را بدهید
 3. تمام! اپ با آیکون اختصاصی نصب می‌شود
@@ -35,6 +35,18 @@
 3. تمام! اپ مثل یک برنامهٔ واقعی تمام‌صفحه باز می‌شود و بعد از اولین بار، آفلاین هم کار می‌کند
 
 داده‌ها کاملاً محلی‌اند: فلش‌کارت‌ها فقط در حافظهٔ همان دستگاه ذخیره می‌شوند (localStorage مرورگر) و روی هیچ سروری ارسال نمی‌شوند — هر کاربر دنیای خودش را دارد و دادهٔ هیچ‌کس با کسی اشتراکی نیست. ثبت‌نام هم لازم نیست.
+
+## ✨ در نسخهٔ ۱٫۳۳ — اصلاحات تجربهٔ کاربری گرامر
+
+- **فونت بزرگ‌تر** متن‌ها، جداول، BUT و نکات + رفع کامل بیرون‌زدگی متن از کادرها
+- **رنگ‌بندی سطح:** هر بخش بر اساس سطح (پایه سبز / متوسط آبی / پیشرفته نارنجی) رنگ مخصوص دارد
+- **ترجمهٔ فارسی جملات مثال مخفی شد** — چیپ «🇺 ترجمه» را لمس کنید تا ظاهر شود (کارت‌ها خلوت‌تر)
+- **رفع پرش به بالای صفحه بعد از هر سؤال تمرین** — صفحه روی محل سؤال بعدی می‌ماند
+- **دو بخش جدید:**
+  - 📋 «جدول جامع الگوی فعل‌ها» — ۱۰ فعل + infinitive، ۱۰ فعل + gerund، و جدول فعل‌های دوفرمی با تفاوت معنایی (stop / remember / forget / try / regret / go on / mean / like)
+  - 🔮 «will / would / shall فراتر از آینده» — تمایل، امتناع، عادت‌های گذشته، درخواست مؤدبانه، پیشنهاد (Shall I…?)
+- **یکسان‌سازی تمرین‌ها:** دقیقاً ۱۰/۱۵/۲۰ بر اساس سطح (مجموع ۷۰۰ تمرین)
+- هدر فارسی جدول‌های سمبلیک + تکمیل پالایش نهایی همهٔ ۱۶۳ بخش
 
 ## 🏗 در نسخهٔ ۱٫۳۲ — فاز ۳: بازسازی کامل کیفیت گرامر (قالب جدید آموزشی)
 
