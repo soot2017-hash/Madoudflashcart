@@ -1,7 +1,7 @@
 [
  {
   "w": "abundant",
-  "ipa": "/əˈbʌn.dən𝘁/",
+  "ipa": "/əˈbʌn.dənt/",
   "senses": [
    {
     "pos": "adjective",
@@ -153,8 +153,7 @@
     ],
     "p": "به وضوح بیان کردن",
     "prep": [],
-    "epF": "او تلاش کرد احساسات پیچیده خود را در طول جلسه به وضوح بیان کند.",
-    "ep": "او نمی‌توانست افکارش را واضح بیان کند."
+    "ep": "او تلاش کرد احساسات پیچیده خود را در طول جلسه به وضوح بیان کند."
    }
   ]
  },
@@ -327,7 +326,7 @@
   "senses": [
    {
     "pos": "verb",
-    "d": "to accept or allow behaviour that is considered morally wrong or offensive",
+    "d": "to accept or allow behavior that is considered morally wrong or offensive",
     "e": "The school does not condone any form of bullying.",
     "syn": [
      "overlook",
@@ -1490,7 +1489,7 @@
      "diligent",
      "careful"
     ],
-    "p": "سؤال‌برانگیز در بی‌توجهی، غافل و سهل‌انگار",
+    "p": "سهل‌انگار، بی‌توجه",
     "prep": [
      "be negligent of sth",
      "be negligent in sth"
@@ -1565,9 +1564,22 @@
   ]
  },
  {
-  "w": "overhaul sth",
+  "w": "overhaul",
   "ipa": "/ˈəʊvəhɔːl/",
   "senses": [
+   {
+    "pos": "verb",
+    "d": "to examine and repair a machine or system completely",
+    "e": "The engine was completely overhauled last month.",
+    "ep": "موتور ماه گذشته کاملاً بازسازی شد.",
+    "syn": [
+     "rebuild",
+     "refurbish"
+    ],
+    "ant": [],
+    "prep": [],
+    "p": "بازسازی کردن"
+   },
    {
     "pos": "noun",
     "d": "a complete examination and repair of a machine or system",
@@ -1842,12 +1854,12 @@
  },
  {
   "w": "reconcile",
-  "ipa": "/ˈɹɛkənsaɪl/",
+  "ipa": "/ˈrɛkənsaɪl/",
   "senses": [
    {
     "pos": "verb",
     "d": "To restore a friendly relationship; to bring back to harmony",
-    "e": "to reconcile people who have quarrelled",
+    "e": "The manager tried to reconcile the two sides after the argument.",
     "syn": [
      "conciliate",
      "accommodate",
@@ -1861,7 +1873,7 @@
     "prep": [
      "reconcile sth with sth"
     ],
-    "ep": "آشتی دادن افرادی که با هم دعوا کرده‌اند"
+    "ep": "مدیر سعی کرد بعد از بحث، دو طرف را آشتی دهد."
    }
   ]
  },
@@ -2120,7 +2132,7 @@
  },
  {
   "w": "threshold",
-  "ipa": "/ˈθɹeʃ(h)əʊld/",
+  "ipa": "/ˈθreʃ(h)əʊld/",
   "senses": [
    {
     "pos": "noun",
@@ -2145,7 +2157,7 @@
  },
  {
   "w": "transparent",
-  "ipa": "/tɹæn(t)sˈpæɹənt/",
+  "ipa": "/træn(t)sˈpærənt/",
   "senses": [
    {
     "pos": "adjective",
@@ -2170,7 +2182,7 @@
  },
  {
   "w": "trivial",
-  "ipa": "/ˈtɹɪ.vi.əl/",
+  "ipa": "/ˈtrɪ.vi.əl/",
   "senses": [
    {
     "pos": "adjective",
@@ -2222,7 +2234,7 @@
    {
     "pos": "adjective",
     "d": "Based on unanimity, assent or agreement",
-    "e": "The debate went on for hours, but in the end the decision was unanimous",
+    "e": "The debate went on for hours, but in the end the decision was unanimous.",
     "syn": [
      "solid",
      "accordant",
@@ -2244,7 +2256,7 @@
  },
  {
   "w": "understate",
-  "ipa": "",
+  "ipa": "/ˌʌndəˈsteɪt/",
   "senses": [
    {
     "pos": "verb",
@@ -2266,7 +2278,7 @@
  },
  {
   "w": "unprecedented",
-  "ipa": "/ʌnˈpɹɛsɪdɛntɪd/",
+  "ipa": "/ʌnˈprɛsɪdɛntɪd/",
   "senses": [
    {
     "pos": "adjective",

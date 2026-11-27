@@ -1,7 +1,7 @@
 [
  {
   "w": "account for",
-  "ipa": "",
+  "ipa": "/əˈkaʊnt fɔː(r)/",
   "senses": [
    {
     "pos": "phrasal verb",
@@ -22,7 +22,7 @@
  },
  {
   "w": "approve of",
-  "ipa": "",
+  "ipa": "/əˈpruːv əv/",
   "senses": [
    {
     "pos": "phrasal verb",
@@ -46,12 +46,12 @@
  },
  {
   "w": "back up",
-  "ipa": "",
+  "ipa": "/ˌbæk ˈʌp/",
   "senses": [
    {
     "pos": "phrasal verb",
     "d": "To move backwards, especially for a vehicle to do so",
-    "e": "That beeping sound indicates that the truck is backing up",
+    "e": "That beeping sound indicates that the truck is backing up.",
     "syn": [
      "support",
      "confirm",
@@ -67,12 +67,12 @@
  },
  {
   "w": "break down",
-  "ipa": "",
+  "ipa": "/ˌbreɪk ˈdaʊn/",
   "senses": [
    {
     "pos": "phrasal verb",
     "d": "To fail, to cease to function",
-    "e": "I am afraid my computer will break down if I try to run it at too high a speed",
+    "e": "I am afraid my computer will break down if I try to run it at too high a speed.",
     "syn": [
      "stop working",
      "fail",
@@ -91,12 +91,12 @@
  },
  {
   "w": "break in",
-  "ipa": "",
+  "ipa": "/ˌbreɪk ˈɪn/",
   "senses": [
    {
     "pos": "phrasal verb",
     "d": "To enter a place by force or illicit means",
-    "e": "Someone broke in and stole his radio",
+    "e": "Someone broke in and stole his radio.",
     "syn": [
      "interrupt",
      "enter by force",
@@ -112,12 +112,12 @@
  },
  {
   "w": "break up",
-  "ipa": "",
+  "ipa": "/ˌbreɪk ˈʌp/",
   "senses": [
    {
     "pos": "phrasal verb",
     "d": "To break or separate into pieces; to disintegrate or come apart",
-    "e": "It broke up when it hit the ground",
+    "e": "It broke up when it hit the ground.",
     "syn": [
      "separate",
      "split up",
@@ -135,12 +135,12 @@
  },
  {
   "w": "bring up",
-  "ipa": "",
+  "ipa": "/ˌbrɪŋ ˈʌp/",
   "senses": [
    {
     "pos": "phrasal verb",
     "d": "To mention",
-    "e": "Don't bring up politics if you want to have a quiet conversation with that guy",
+    "e": "Don't bring up politics if you want to have a quiet conversation with that guy.",
     "syn": [
      "bring back"
     ],
@@ -154,12 +154,12 @@
  },
  {
   "w": "call off",
-  "ipa": "",
+  "ipa": "/ˌkɔːl ˈɒf/",
   "senses": [
    {
     "pos": "phrasal verb",
     "d": "to cancel an event that was planned or arranged",
-    "e": "After four months, the police called off the search for the missing boy",
+    "e": "After four months, the police called off the search for the missing boy.",
     "syn": [
      "cancel"
     ],
@@ -173,12 +173,12 @@
  },
  {
   "w": "call on",
-  "ipa": "",
+  "ipa": "/ˌkɔːl ˈɒn/",
   "senses": [
    {
     "pos": "phrasal verb",
     "d": "To visit a person ; to pay a call to",
-    "e": "I really should call on my aunt more often",
+    "e": "I really should call on my aunt more often.",
     "syn": [
      "pay a visit",
      "visit",
@@ -194,7 +194,7 @@
  },
  {
   "w": "calm down",
-  "ipa": "",
+  "ipa": "/ˌkɑːm ˈdaʊn/",
   "senses": [
    {
     "pos": "phrasal verb",
@@ -506,7 +506,7 @@
  },
  {
   "w": "drop off",
-  "ipa": "",
+  "ipa": "/ˌdrɒp ˈɒf/",
   "senses": [
    {
     "pos": "phrasal verb",
@@ -1556,12 +1556,12 @@
  },
  {
   "w": "put on",
-  "ipa": "",
+  "ipa": "/ˌpʊt ˈɒn/",
   "senses": [
    {
     "pos": "phrasal verb",
     "d": "To don clothing, equipment or the like",
-    "e": "Why don't you put on your jacket. It's cold",
+    "e": "Why don't you put on your jacket. It's cold.",
     "syn": [
      "beclothe",
      "hoodwink",
@@ -1581,7 +1581,7 @@
  },
  {
   "w": "put up with",
-  "ipa": "",
+  "ipa": "/ˌpʊt ˈʌp wð/",
   "senses": [
    {
     "pos": "phrasal verb",
@@ -1602,12 +1602,12 @@
  },
  {
   "w": "run away",
-  "ipa": "",
+  "ipa": "/ˌrʌn əˈweɪ/",
   "senses": [
    {
     "pos": "phrasal verb",
     "d": "To flee by running",
-    "e": "The crowd had to run away from the burning structure with only the clothes on their backs",
+    "e": "The crowd had to run away from the burning structure with only the clothes on their backs.",
     "syn": [
      "flee",
      "escape"
@@ -1624,12 +1624,12 @@
  },
  {
   "w": "run into",
-  "ipa": "",
+  "ipa": "/ˌrʌn ˈɪntuː/",
   "senses": [
    {
     "pos": "phrasal verb",
     "d": "To enter by running",
-    "e": "He ran into the building",
+    "e": "He ran into the building.",
     "syn": [
      "meet by chance",
      "encounter"
@@ -1644,7 +1644,7 @@
  },
  {
   "w": "run out of",
-  "ipa": "",
+  "ipa": "/ˌrʌn ˈaʊt əv/",
   "senses": [
    {
     "pos": "phrasal verb",
@@ -1664,12 +1664,12 @@
  },
  {
   "w": "set off",
-  "ipa": "",
+  "ipa": "/ˌset ˈɒf/",
   "senses": [
    {
     "pos": "phrasal verb",
     "d": "To leave; to begin a journey or trip",
-    "e": "He set off in search of better opportunities",
+    "e": "He set off in search of better opportunities.",
     "syn": [
      "leave",
      "depart",
@@ -1687,12 +1687,12 @@
  },
  {
   "w": "set up",
-  "ipa": "",
+  "ipa": "/ˌset ˈʌp/",
   "senses": [
    {
     "pos": "phrasal verb",
     "d": "To ready something for use",
-    "e": "We set up the sprinkler",
+    "e": "We set up the sprinkler.",
     "syn": [
      "assemble",
      "configure",
@@ -1711,12 +1711,12 @@
  },
  {
   "w": "show off",
-  "ipa": "",
+  "ipa": "/ˌʃəʊ ˈɒf/",
   "senses": [
    {
     "pos": "phrasal verb",
     "d": "To exhibit the best attributes of something",
-    "e": "Grocery stores show off their produce by placing the most attractive specimens in front",
+    "e": "Grocery stores show off their produce by placing the most attractive specimens in front.",
     "syn": [
      "flaunt",
      "display",
@@ -1732,12 +1732,12 @@
  },
  {
   "w": "show up",
-  "ipa": "",
+  "ipa": "/ˌʃəʊ ˈʌp/",
   "senses": [
    {
     "pos": "phrasal verb",
     "d": "To appear, arrive, or attend, especially suddenly or erratically",
-    "e": "No matter how many I throw away, more copies always show up",
+    "e": "No matter how many I throw away, more copies always show up.",
     "syn": [
      "turn up"
     ],
@@ -1753,7 +1753,7 @@
  },
  {
   "w": "shut down",
-  "ipa": "",
+  "ipa": "/ˌʃʌt ˈdaʊn/",
   "senses": [
    {
     "pos": "phrasal verb",

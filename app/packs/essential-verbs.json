@@ -1,75 +1,5 @@
 [
  {
-  "w": "improve",
-  "ipa": "/ɪmˈpruːv/",
-  "senses": [
-   {
-    "pos": "verb",
-    "d": "to make something better, or to become better",
-    "e": "Her English improved a lot last year.",
-    "p": "بهبود بخشیدن، بهتر شدن",
-    "syn": [
-     "enhance",
-     "upgrade",
-     "advance",
-     "ameliorate"
-    ],
-    "ant": [
-     "worsen",
-     "decline"
-    ],
-    "prep": [
-     "improve on/upon sth"
-    ],
-    "ep": "انگلیسی او سال گذشته خیلی بهتر شد."
-   }
-  ],
-  "fam": [
-   {
-    "w": "improvement",
-    "pos": "noun"
-   },
-   {
-    "w": "improved",
-    "pos": "adjective"
-   }
-  ]
- },
- {
-  "w": "decide",
-  "ipa": "/dɪˈsaɪd/",
-  "senses": [
-   {
-    "pos": "verb",
-    "d": "to make a choice or judgment about something",
-    "e": "We decided to stay at home.",
-    "p": "تصمیم گرفتن",
-    "syn": [
-     "determine",
-     "choose",
-     "resolve",
-     "settle"
-    ],
-    "ant": [],
-    "prep": [
-     "decide on/against sth",
-     "decide to do sth"
-    ],
-    "ep": "تصمیم گرفتیم در خانه بمانیم."
-   }
-  ],
-  "fam": [
-   {
-    "w": "decision",
-    "pos": "noun"
-   },
-   {
-    "w": "decisive",
-    "pos": "adjective"
-   }
-  ]
- },
- {
   "w": "achieve",
   "ipa": "/əˈtʃiːv/",
   "senses": [
@@ -100,77 +30,6 @@
    {
     "w": "achiever",
     "pos": "noun"
-   }
-  ]
- },
- {
-  "w": "explain",
-  "ipa": "/ɪkˈspleɪn/",
-  "senses": [
-   {
-    "pos": "verb",
-    "d": "to tell someone about something in a way that is clear or easy to understand",
-    "e": "Can you explain how this machine works?",
-    "p": "توضیح دادن",
-    "syn": [
-     "clarify",
-     "describe",
-     "illustrate",
-     "explicate"
-    ],
-    "ant": [
-     "retail"
-    ],
-    "prep": [
-     "explain sth to sb"
-    ],
-    "ep": "می‌توانی توضیح بدهی این دستگاه چطور کار می‌کند؟"
-   }
-  ],
-  "fam": [
-   {
-    "w": "explanation",
-    "pos": "noun"
-   },
-   {
-    "w": "explanatory",
-    "pos": "adjective"
-   }
-  ]
- },
- {
-  "w": "prefer",
-  "ipa": "/prɪˈfɜː/",
-  "senses": [
-   {
-    "pos": "verb",
-    "d": "to like one thing more than another",
-    "e": "I prefer tea to coffee.",
-    "p": "ترجیح دادن",
-    "syn": [
-     "favor",
-     "choose",
-     "favour",
-     "opt for"
-    ],
-    "ant": [
-     "disprefer"
-    ],
-    "prep": [
-     "prefer sth to sth",
-     "prefer to do sth"
-    ],
-    "ep": "چای را به قهوه ترجیح می‌دهم."
-   }
-  ],
-  "fam": [
-   {
-    "w": "preference",
-    "pos": "noun"
-   },
-   {
-    "w": "preferable",
-    "pos": "adjective"
    }
   ]
  },
@@ -211,42 +70,6 @@
   ]
  },
  {
-  "w": "suggest",
-  "ipa": "/səˈdʒest/",
-  "senses": [
-   {
-    "pos": "verb",
-    "d": "to tell someone your ideas about what they should do",
-    "e": "He suggested going for a walk.",
-    "p": "پیشنهاد کردن",
-    "syn": [
-     "propose",
-     "recommend",
-     "advise",
-     "intimate"
-    ],
-    "ant": [
-     "contraindicate"
-    ],
-    "prep": [
-     "suggest doing sth",
-     "suggest sth to sb"
-    ],
-    "ep": "او پیشنهاد کرد پیاده‌روی برویم."
-   }
-  ],
-  "fam": [
-   {
-    "w": "suggestion",
-    "pos": "noun"
-   },
-   {
-    "w": "suggestive",
-    "pos": "adjective"
-   }
-  ]
- },
- {
   "w": "compare",
   "ipa": "/kəmˈpeə/",
   "senses": [
@@ -275,6 +98,109 @@
    },
    {
     "w": "comparable",
+    "pos": "adjective"
+   }
+  ]
+ },
+ {
+  "w": "decide",
+  "ipa": "/dɪˈsaɪd/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to make a choice or judgment about something",
+    "e": "We decided to stay at home.",
+    "p": "تصمیم گرفتن",
+    "syn": [
+     "determine",
+     "choose",
+     "resolve",
+     "settle"
+    ],
+    "ant": [],
+    "prep": [
+     "decide on/against sth",
+     "decide to do sth"
+    ],
+    "ep": "تصمیم گرفتیم در خانه بمانیم."
+   }
+  ],
+  "fam": [
+   {
+    "w": "decision",
+    "pos": "noun"
+   },
+   {
+    "w": "decisive",
+    "pos": "adjective"
+   }
+  ]
+ },
+ {
+  "w": "explain",
+  "ipa": "/ɪkˈspleɪn/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to tell someone about something in a way that is clear or easy to understand",
+    "e": "Can you explain how this machine works?",
+    "p": "توضیح دادن",
+    "syn": [
+     "clarify",
+     "describe",
+     "illustrate",
+     "explicate"
+    ],
+    "ant": [],
+    "prep": [
+     "explain sth to sb"
+    ],
+    "ep": "می‌توانی توضیح بدهی این دستگاه چطور کار می‌کند؟"
+   }
+  ],
+  "fam": [
+   {
+    "w": "explanation",
+    "pos": "noun"
+   },
+   {
+    "w": "explanatory",
+    "pos": "adjective"
+   }
+  ]
+ },
+ {
+  "w": "improve",
+  "ipa": "/ɪmˈpruːv/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to make something better, or to become better",
+    "e": "Her English improved a lot last year.",
+    "p": "بهبود بخشیدن، بهتر شدن",
+    "syn": [
+     "enhance",
+     "upgrade",
+     "advance",
+     "ameliorate"
+    ],
+    "ant": [
+     "worsen",
+     "decline"
+    ],
+    "prep": [
+     "improve on/upon sth"
+    ],
+    "ep": "انگلیسی او سال گذشته خیلی بهتر شد."
+   }
+  ],
+  "fam": [
+   {
+    "w": "improvement",
+    "pos": "noun"
+   },
+   {
+    "w": "improved",
     "pos": "adjective"
    }
   ]
@@ -316,6 +242,41 @@
   ]
  },
  {
+  "w": "prefer",
+  "ipa": "/prɪˈfɜː/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to like one thing more than another",
+    "e": "I prefer tea to coffee.",
+    "p": "ترجیح دادن",
+    "syn": [
+     "choose",
+     "opt for",
+     "favor"
+    ],
+    "ant": [
+     "disprefer"
+    ],
+    "prep": [
+     "prefer sth to sth",
+     "prefer to do sth"
+    ],
+    "ep": "چای را به قهوه ترجیح می‌دهم."
+   }
+  ],
+  "fam": [
+   {
+    "w": "preference",
+    "pos": "noun"
+   },
+   {
+    "w": "preferable",
+    "pos": "adjective"
+   }
+  ]
+ },
+ {
   "w": "replace",
   "ipa": "/rɪˈpleɪs/",
   "senses": [
@@ -346,6 +307,42 @@
    },
    {
     "w": "replaceable",
+    "pos": "adjective"
+   }
+  ]
+ },
+ {
+  "w": "suggest",
+  "ipa": "/səˈdʒest/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to tell someone your ideas about what they should do",
+    "e": "He suggested going for a walk.",
+    "p": "پیشنهاد کردن",
+    "syn": [
+     "propose",
+     "recommend",
+     "advise",
+     "intimate"
+    ],
+    "ant": [
+     "contraindicate"
+    ],
+    "prep": [
+     "suggest doing sth",
+     "suggest sth to sb"
+    ],
+    "ep": "او پیشنهاد کرد پیاده‌روی برویم."
+   }
+  ],
+  "fam": [
+   {
+    "w": "suggestion",
+    "pos": "noun"
+   },
+   {
+    "w": "suggestive",
     "pos": "adjective"
    }
   ]

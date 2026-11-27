@@ -245,7 +245,7 @@
      "imbalance",
      "disparity"
     ],
-    "p": "تعادل یا توازن بین دو چیز",
+    "p": "تعادل، توازن",
     "prep": [],
     "ep": "سیاست جدید قصد دارد تعادل بین رشد اقتصادی و حفاظت از محیط زیست را برقرار کند."
    }
@@ -267,7 +267,7 @@
     "ant": [
      "misbehave"
     ],
-    "p": "رفتار کردن یا ادب را رعایت کردن",
+    "p": "رفتار کردن",
     "prep": [],
     "ep": "بچه ها باید یاد بگیرند که وقتی مهمان داریم چطور به درستی رفتار کنند."
    }
@@ -290,7 +290,7 @@
      "disbelief",
      "doubt"
     ],
-    "p": "باور یا اعتقاد راسخ به چیزی",
+    "p": "باور، اعتقاد",
     "prep": [
      "belief in sth"
     ],
@@ -311,7 +311,7 @@
      "pertain"
     ],
     "ant": [],
-    "p": "تعلق داشتن به کسی یا جایی",
+    "p": "تعلق داشتن",
     "prep": [
      "belong to sb/sth"
     ],
@@ -336,7 +336,7 @@
      "cowardly",
      "timid"
     ],
-    "p": "شجاع یا دلیر در برابر خطر",
+    "p": "شجاع، دلیر",
     "prep": [],
     "ep": "بسیار شجاعانه بود که او علیه قوانین ناعادلانه اعتراض کرد."
    }
@@ -359,7 +359,7 @@
      "mourn",
      "forget"
     ],
-    "p": "جشن گرفتن یا گرامی داشتن مناسبتی",
+    "p": "جشن گرفتن",
     "prep": [],
     "ep": "ما قرار است سالگرد ازدواج‌مان را با یک شام آرام جشن بگیریم."
    }
@@ -381,7 +381,7 @@
     "ant": [
      "certainty"
     ],
-    "p": "شانس یا فرصتی برای انجام کاری",
+    "p": "شانس، فرصت",
     "prep": [
      "chance of sth/of doing sth"
     ],
@@ -406,7 +406,7 @@
      "reject",
      "refuse"
     ],
-    "p": "انتخاب کردن از میان چند گزینه",
+    "p": "انتخاب کردن",
     "prep": [
      "choose between A and B",
      "choose from sth"
@@ -429,7 +429,7 @@
      "weigh"
     ],
     "ant": [],
-    "p": "مقایسه کردن شباهت ها و تفاوت ها",
+    "p": "مقایسه کردن",
     "prep": [
      "compare A with/to B"
     ],
@@ -454,7 +454,7 @@
      "praise",
      "compliment"
     ],
-    "p": "شکایت یا اعتراض کردن نسبت به چیزی",
+    "p": "شکایت کردن",
     "prep": [
      "complain to sb",
      "complain about sth"
@@ -494,7 +494,7 @@
   "senses": [
    {
     "pos": "adjective",
-    "d": "easy to use or helping to plans and situations without causing trouble",
+    "d": "suitable for your needs because it saves time or effort",
     "e": "Online shopping is very convenient for busy people who have no time.",
     "syn": [
      "handy",
@@ -641,7 +641,7 @@
      "characterize"
     ],
     "ant": [],
-    "p": "تصیف کردن",
+    "p": "توصیف کردن",
     "prep": [
      "describe sth to sb",
      "describe sb/sth as sth"
@@ -745,8 +745,7 @@
     "e": "The committee met to discuss the new budget proposal for next year.",
     "syn": [
      "talk about",
-     "debate",
-     "conversate"
+     "debate"
     ],
     "ant": [],
     "p": "بحث کردن درباره چیزی",
@@ -790,8 +789,7 @@
     "e": "The company offers great benefits to attract and retain skilled employees.",
     "syn": [
      "worker",
-     "staff member",
-     "ercant"
+     "staff member"
     ],
     "ant": [
      "employer"
@@ -935,9 +933,22 @@
   ]
  },
  {
-  "w": "experience sth",
+  "w": "experience",
   "ipa": "/ɪkˈspɪəriəns/",
   "senses": [
+   {
+    "pos": "verb",
+    "d": "to feel something or to live through something",
+    "e": "She experienced a lot of stress during the exams.",
+    "ep": "او در طول امتحانات استرس زیادی را تجربه کرد.",
+    "syn": [
+     "go through",
+     "undergo"
+    ],
+    "ant": [],
+    "prep": [],
+    "p": "تجربه کردن"
+   },
    {
     "pos": "noun",
     "d": "knowledge or skill that you get from doing a particular job or activity",
@@ -963,22 +974,19 @@
   "senses": [
    {
     "pos": "verb",
-    "d": "To make plain, manifest, or intelligible; to clear of obscurity; to illustrate the meaning of",
-    "e": "To explain a chapter of the Bible",
+    "d": "to make something clear or easy to understand by giving details",
+    "e": "The teacher explained the rules to the class.",
     "syn": [
      "elaborate",
      "expound",
-     "recce",
      "explicate"
     ],
-    "ant": [
-     "retail"
-    ],
+    "ant": [],
     "p": "توضیح دادن",
     "prep": [
      "explain sth to sb"
     ],
-    "ep": "توضیح دادن یک فصل از کتاب مقدس"
+    "ep": "معلم قوانین را برای کلاس توضیح داد."
    }
   ]
  },
@@ -993,7 +1001,7 @@
     "p": "آشنا",
     "ep": "آن صدا آشنا به نظر می‌رسد، اما نمی‌توانم به خاطر بیاورم مال چه کسی است.",
     "syn": [
-     "recognisable",
+     "recognizable",
      "known"
     ],
     "ant": [
@@ -1096,19 +1104,19 @@
  },
  {
   "w": "forgive",
-  "ipa": "/fɚˈɡɪv/",
+  "ipa": "/fəˈɡɪv/",
   "senses": [
    {
     "pos": "verb",
-    "d": "To pardon; to waive any negative feeling or desire for punishment, retribution, or compensation",
-    "e": "Forgive others, not because they deserve forgiveness, but because you deserve peace",
+    "d": "to stop being angry with someone who has done something wrong",
+    "e": "I forgave him for forgetting my birthday.",
     "syn": [],
     "ant": [],
     "p": "بخشیدن",
     "prep": [
      "forgive sb for sth"
     ],
-    "ep": "دیگران را ببخشید، نه به این خاطر که مستحق بخشش هستند، بلکه به این دلیل که شما مستحق آرامش هستید"
+    "ep": "او را بابت فراموش کردن تولدم بخشیدم."
    }
   ]
  },
@@ -1345,7 +1353,7 @@
   "senses": [
    {
     "pos": "noun",
-    "d": "an act of travelling from one place to another, especially when it is far",
+    "d": "an act of traveling from one place to another, especially when it is far",
     "e": "The train journey through the mountains offered some breathtaking views.",
     "syn": [
      "trip",
@@ -1412,7 +1420,7 @@
  },
  {
   "w": "lend",
-  "ipa": "",
+  "ipa": "/lend/",
   "senses": [
    {
     "pos": "verb",
@@ -1567,24 +1575,22 @@
  },
  {
   "w": "offer",
-  "ipa": "/ˈɑfɚ/",
+  "ipa": "/ˈɒfə(r)/",
   "senses": [
    {
     "pos": "verb",
-    "d": "To propose or express one's willingness to do something",
-    "e": "She offered to help with her homework",
+    "d": "to say that you are willing to do something or give something to someone",
+    "e": "She offered to help me with my homework.",
     "syn": [
      "tender",
-     "crack",
-     "pass",
-     "fling"
+     "propose"
     ],
     "ant": [],
     "p": "پیشنهاد دادن",
     "prep": [
      "offer sth to sb"
     ],
-    "ep": "او پیشنهاد کرد در انجام تکالیف خانه کمک کند"
+    "ep": "او پیشنهاد کرد در تکالیفم به من کمک کند."
    }
   ]
  },
@@ -1696,7 +1702,7 @@
     "d": "to like someone or something more than another person or thing",
     "e": "Most children prefer watching cartoons to reading serious news articles.",
     "syn": [
-     "favour",
+     "favor",
      "select",
      "choose",
      "elect"
@@ -1838,11 +1844,24 @@
   "senses": [
    {
     "pos": "verb",
+    "d": "to suddenly understand something",
+    "e": "I suddenly realized that I had left my phone at home.",
+    "ep": "ناگهان متوجه شدم گوشی‌ام را در خانه جا گذاشته‌ام.",
+    "syn": [
+     "understand",
+     "become aware of"
+    ],
+    "ant": [],
+    "prep": [],
+    "p": "متوجه شدن، پی بردن"
+   },
+   {
+    "pos": "verb",
     "d": "to achieve something that you have hoped for or planned",
     "e": "She finally realized her dream of opening her own bakery.",
     "syn": [
      "achieve",
-     "fulfil",
+     "fulfill",
      "accomplish"
     ],
     "ant": [],
@@ -1901,9 +1920,21 @@
   ]
  },
  {
-  "w": "regret sth",
+  "w": "regret",
   "ipa": "/rɪˈɡret/",
   "senses": [
+   {
+    "pos": "verb",
+    "d": "to feel sad about something you have done or that has happened",
+    "e": "I regret not studying harder at school.",
+    "ep": "حیفم می‌آید در مدرسه بیشتر درس نخواندم.",
+    "syn": [
+     "be sorry about"
+    ],
+    "ant": [],
+    "prep": [],
+    "p": "پشیمان بودن"
+   },
    {
     "pos": "noun",
     "d": "a feeling of sadness about something sad or wrong that you have done, or about a missed opportunity",
@@ -2015,12 +2046,12 @@
  },
  {
   "w": "reply",
-  "ipa": "/ɹɪˈplaɪ/",
+  "ipa": "/rɪˈplaɪ/",
   "senses": [
    {
     "pos": "verb",
-    "d": "To act or gesture in response",
-    "e": "Joanne replied to Pete's insult with a slap to his face",
+    "d": "to answer someone by speaking or writing",
+    "e": "I replied to his email within an hour.",
     "syn": [
      "answer",
      "answer back",
@@ -2032,7 +2063,7 @@
     "prep": [
      "reply to sb/sth"
     ],
-    "ep": "جوآن با سیلی‌ای به صورت پیت، به توهین او پاسخ داد"
+    "ep": "طبق یک ساعت به ایمیلش پاسخ دادم."
    }
   ]
  },

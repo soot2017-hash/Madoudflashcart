@@ -15,7 +15,7 @@
     "ant": [
      "fail"
     ],
-    "p": "انجام دادن و به اتمام رساندن چیزی با موفقیت",
+    "p": "انجام دادن، به سرانجام رساندن",
     "prep": [],
     "ep": "او توانست قبل از پایان سال به تمام اهدافش جامه عمل بپوشاند."
    }
@@ -63,7 +63,7 @@
     "prep": [
      "acknowledge sth as sth"
     ],
-    "ep": "دولت سرانجام نیاز به اصلاحات فوری را پذیرافت."
+    "ep": "دولت سرانجام نیاز به اصلاحات فوری را پذیرفت."
    }
   ]
  },
@@ -626,7 +626,7 @@
     "prep": [
      "be consistent with sth"
     ],
-    "ep": "او در طول تمام فصل ثاب‌ت‌قدم‌ترین بازیکن ما بوده است."
+    "ep": "او در طول تمام فصل ثابت‌قدم‌ترین بازیکن ما بوده است."
    }
   ]
  },
@@ -975,7 +975,7 @@
     ],
     "p": "تحمل کردن",
     "prep": [],
-    "ep": "تیم سال‌ها نتا��ج بد را تحمل کرد قبل از اینکه جام را ببرد."
+    "ep": "تیم سال‌ها نتایج بد را تحمل کرد قبل از اینکه جام را ببرد."
    }
   ]
  },
@@ -1879,7 +1879,7 @@
  },
  {
   "w": "precise",
-  "ipa": "/pɹɪˈsaɪs/",
+  "ipa": "/prɪˈsaɪs/",
   "senses": [
    {
     "pos": "adjective",
@@ -1902,12 +1902,12 @@
  },
  {
   "w": "presume",
-  "ipa": "/pɹɪˈzjuːm/",
+  "ipa": "/prɪˈzjuːm/",
   "senses": [
    {
     "pos": "verb",
-    "d": "With infinitive object: to be so presumptuous as to do something without proper authority or permission",
-    "e": "I wouldn't presume to tell him how to do his job",
+    "d": "to suppose that something is true without having proof",
+    "e": "I presume you have already heard the news.",
     "syn": [
      "assume",
      "take for granted"
@@ -1915,51 +1915,46 @@
     "ant": [],
     "p": "پنداشتن",
     "prep": [],
-    "ep": "من به خودم جرات نمی‌دهم (یا به خودم اجازه نمی‌دهم) که به او بگویم چطور کارش را انجام دهد."
+    "ep": "حدس می‌زنم خبر را قبلاً شنیده‌ای."
    }
   ]
  },
  {
   "w": "priority",
-  "ipa": "/pɹaɪˈɒɹɨti/",
+  "ipa": "/praɪˈɒrɨti/",
   "senses": [
    {
     "pos": "noun",
-    "d": "An item's relative importance",
-    "e": "He set his e-mail message's priority to high",
+    "d": "the thing that you think is most important and that you do first",
+    "e": "Our top priority is the safety of our employees.",
     "syn": [
-     "dignity",
-     "eminence",
-     "seniority",
-     "superiority"
+     "precedence",
+     "importance",
+     "urgency"
     ],
-    "ant": [
-     "posteriority",
-     "subsequence",
-     "subsequentness"
-    ],
+    "ant": [],
     "p": "اولویت",
     "prep": [
      "priority over sth",
      "be a priority for sb"
     ],
-    "ep": "او اولویت پیام ایمیل خود را روی حالت «بالا» تنظیم کرد."
+    "ep": "اولویت اصلی ما امنیت کارکنانمان است."
    }
   ]
  },
  {
   "w": "proceed",
-  "ipa": "/pɹəˈsiːd/",
+  "ipa": "/prəˈsiːd/",
   "senses": [
    {
     "pos": "verb",
-    "d": "To move, pass, or go forward or onward; to advance; to carry on",
-    "e": "To proceed on a journey",
+    "d": "to continue doing something that has already been planned or started",
+    "e": "After a short break, the meeting proceeded.",
     "syn": [
-     "forthgo",
      "progress",
-     "keep",
-     "move"
+     "move",
+     "continue",
+     "go ahead"
     ],
     "ant": [
      "recede",
@@ -1970,36 +1965,36 @@
      "proceed with sth",
      "proceed to sth"
     ],
-    "ep": "ادامه دادن به یک سفر"
+    "ep": "بعد از یک وقفه‌ی کوتاه، جلسه ادامه یافت."
    }
   ]
  },
  {
   "w": "process",
-  "ipa": "/ˈpɹoʊsɛs/",
+  "ipa": "/ˈproʊsɛs/",
   "senses": [
    {
     "pos": "noun",
-    "d": "A series of events which produce a result the product",
-    "e": "This product of last month's quality standards committee is quite good, even though the process was flawed",
+    "d": "a series of actions or steps done to achieve a particular result",
+    "e": "Learning a language is a slow process.",
     "syn": [
-     "work",
      "procedure",
-     "act",
-     "operation"
+     "operation",
+     "method",
+     "system"
     ],
     "ant": [],
     "p": "فرایند",
     "prep": [
      "process of sth"
     ],
-    "ep": "این محصولِ کمیته استانداردهای کیفیت ماه گذشته بسیار خوب است، هرچند که فرایند آن نقص داشت."
+    "ep": "یادگیری یک زبان فرایندی کند است."
    }
   ]
  },
  {
   "w": "reliable",
-  "ipa": "/ɹɪˈlaɪəbəl/",
+  "ipa": "/rɪˈlaɪəbəl/",
   "senses": [
    {
     "pos": "adjective",
@@ -2020,12 +2015,12 @@
  },
  {
   "w": "reluctant",
-  "ipa": "/ɹɪˈlʌktənt/",
+  "ipa": "/rɪˈlʌktənt/",
   "senses": [
    {
     "pos": "adjective",
     "d": "Not wanting to take some action; unwilling",
-    "e": "She was reluctant to lend him the money",
+    "e": "She was reluctant to lend him the money.",
     "syn": [
      "disinclined",
      "unwilling",
@@ -2033,7 +2028,8 @@
      "loath"
     ],
     "ant": [
-     "greedy"
+     "willing",
+     "eager"
     ],
     "p": "بی‌میل",
     "prep": [],
@@ -2043,7 +2039,7 @@
  },
  {
   "w": "remedy",
-  "ipa": "/ˈɹɛmədi/",
+  "ipa": "/ˈrɛmədi/",
   "senses": [
    {
     "pos": "noun",
@@ -2065,7 +2061,7 @@
  },
  {
   "w": "require",
-  "ipa": "/ɹɪˈkwaɪə/",
+  "ipa": "/rɪˈkwaɪə/",
   "senses": [
    {
     "pos": "verb",
@@ -2078,9 +2074,7 @@
      "command"
     ],
     "ant": [
-     "obviate",
-     "eliminate",
-     "rid of"
+     "eliminate"
     ],
     "p": "لازم داشتن",
     "prep": [
@@ -2092,36 +2086,32 @@
  },
  {
   "w": "resolve",
-  "ipa": "/ɹiːˈzɒlv/",
+  "ipa": "/riːˈzɒlv/",
   "senses": [
    {
     "pos": "verb",
-    "d": "To reduce to simple or intelligible notions; to make clear or certain; to unravel; to explain",
-    "e": "to resolve a riddle",
+    "d": "to find a satisfactory way to deal with a problem or disagreement",
+    "e": "The two companies resolved their dispute out of court.",
     "syn": [
-     "purpose",
      "settle",
-     "answer",
-     "conclude"
+     "conclude",
+     "solve"
     ],
-    "ant": [
-     "aggravate",
-     "compound"
-    ],
+    "ant": [],
     "p": "حل و فصل کردن",
     "prep": [],
-    "ep": "حل کردن یک معما"
+    "ep": "دو شرکت اختلاف‌شان را خارج از دادگاه حل کردند."
    }
   ]
  },
  {
   "w": "respond",
-  "ipa": "",
+  "ipa": "/rɪˈspɒnd/",
   "senses": [
    {
     "pos": "verb",
-    "d": "To say something in return; to answer; to reply",
-    "e": "to respond to a question or an argument",
+    "d": "to say or write something as an answer",
+    "e": "She responded to my question with a smile.",
     "syn": [
      "answer",
      "reply",
@@ -2133,7 +2123,7 @@
      "respond to sth",
      "respond with sth"
     ],
-    "ep": "پاسخ دادن به یک سوال یا استدلال"
+    "ep": "او با لبخند به سوالم پاسخ داد."
    }
   ]
  },

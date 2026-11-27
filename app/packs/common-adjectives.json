@@ -1,37 +1,71 @@
 [
  {
-  "w": "important",
-  "ipa": "/ɪmˈpɔːtnt/",
+  "w": "careful",
+  "ipa": "/ˈkeəfl/",
   "senses": [
    {
     "pos": "adjective",
-    "d": "having a big effect or value; something that matters a lot",
-    "e": "It is important to check your work.",
-    "p": "مهم، بااهمیت",
+    "d": "giving a lot of attention to what you do so that you make no mistakes",
+    "e": "Be careful with the glass.",
+    "p": "مواظب، دقیق",
     "syn": [
-     "significant",
-     "crucial",
-     "vital",
-     "eminent"
+     "cautious",
+     "attentive",
+     "deliberate",
+     "close"
     ],
     "ant": [
-     "unimportant",
-     "trivial"
+     "careless"
     ],
     "prep": [
-     "important to/for sb"
+     "careful with/about sth"
     ],
-    "ep": "بررسی کارهایت مهم است."
+    "ep": "مراقب لیوان باش."
    }
   ],
   "fam": [
    {
-    "w": "importance",
+    "w": "carefully",
+    "pos": "adverb"
+   },
+   {
+    "w": "careless",
+    "pos": "adjective"
+   }
+  ]
+ },
+ {
+  "w": "dangerous",
+  "ipa": "/ˈdeɪndʒərəs/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "likely to cause harm or injury",
+    "e": "It is dangerous to swim here.",
+    "p": "خطرناک",
+    "syn": [
+     "risky",
+     "hazardous",
+     "unsafe",
+     "insidious"
+    ],
+    "ant": [
+     "safe"
+    ],
+    "prep": [
+     "dangerous for/to sb"
+    ],
+    "ep": "اینجا شنا کردن خطرناک است."
+   }
+  ],
+  "fam": [
+   {
+    "w": "danger",
     "pos": "noun"
    },
    {
-    "w": "importantly",
-    "pos": "adverb"
+    "w": "endanger",
+    "pos": "verb"
    }
   ]
  },
@@ -63,6 +97,37 @@
   "fam": [
    {
     "w": "difficulty",
+    "pos": "noun"
+   }
+  ]
+ },
+ {
+  "w": "famous",
+  "ipa": "/ˈfeɪməs/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "known by very many people",
+    "e": "Paris is famous for its museums.",
+    "p": "مشهور، معروف",
+    "syn": [
+     "well-known",
+     "renowned",
+     "noted",
+     "illustrious"
+    ],
+    "ant": [
+     "unknown"
+    ],
+    "prep": [
+     "famous for sth"
+    ],
+    "ep": "پاریس به موزه‌هایش معروف است."
+   }
+  ],
+  "fam": [
+   {
+    "w": "fame",
     "pos": "noun"
    }
   ]
@@ -105,172 +170,37 @@
   ]
  },
  {
-  "w": "careful",
-  "ipa": "/ˈkeəfl/",
+  "w": "important",
+  "ipa": "/ɪmˈpɔːtnt/",
   "senses": [
    {
     "pos": "adjective",
-    "d": "giving a lot of attention to what you do so that you make no mistakes",
-    "e": "Be careful with the glass.",
-    "p": "مواظب، دقیق",
+    "d": "having a big effect or value; something that matters a lot",
+    "e": "It is important to check your work.",
+    "p": "مهم، بااهمیت",
     "syn": [
-     "cautious",
-     "attentive",
-     "deliberate",
-     "close"
+     "significant",
+     "crucial",
+     "vital",
+     "eminent"
     ],
     "ant": [
-     "careless"
+     "unimportant",
+     "trivial"
     ],
     "prep": [
-     "careful with/about sth"
+     "important to/for sb"
     ],
-    "ep": "مراقب لیوان باش."
+    "ep": "بررسی کارهایت مهم است."
    }
   ],
   "fam": [
    {
-    "w": "carefully",
-    "pos": "adverb"
-   },
-   {
-    "w": "careless",
-    "pos": "adjective"
-   }
-  ]
- },
- {
-  "w": "useful",
-  "ipa": "/ˈjuːsfl/",
-  "senses": [
-   {
-    "pos": "adjective",
-    "d": "able to help you do or get what you want",
-    "e": "This book is useful for beginners.",
-    "p": "مفید، سودمند",
-    "syn": [
-     "helpful",
-     "handy",
-     "practical",
-     "important"
-    ],
-    "ant": [
-     "useless"
-    ],
-    "prep": [
-     "useful for/to sb"
-    ],
-    "ep": "این کتاب برای مبتدیان مفید است."
-   }
-  ],
-  "fam": [
-   {
-    "w": "usefully",
-    "pos": "adverb"
-   },
-   {
-    "w": "useless",
-    "pos": "adjective"
-   }
-  ]
- },
- {
-  "w": "famous",
-  "ipa": "/ˈfeɪməs/",
-  "senses": [
-   {
-    "pos": "adjective",
-    "d": "known by very many people",
-    "e": "Paris is famous for its museums.",
-    "p": "مشهور، معروف",
-    "syn": [
-     "well-known",
-     "renowned",
-     "noted",
-     "illustrious"
-    ],
-    "ant": [
-     "unknown"
-    ],
-    "prep": [
-     "famous for sth"
-    ],
-    "ep": "پاریس به موزه‌هایش معروف است."
-   }
-  ],
-  "fam": [
-   {
-    "w": "fame",
-    "pos": "noun"
-   }
-  ]
- },
- {
-  "w": "dangerous",
-  "ipa": "/ˈdeɪndʒərəs/",
-  "senses": [
-   {
-    "pos": "adjective",
-    "d": "likely to cause harm or injury",
-    "e": "It is dangerous to swim here.",
-    "p": "خطرناک",
-    "syn": [
-     "risky",
-     "hazardous",
-     "unsafe",
-     "insidious"
-    ],
-    "ant": [
-     "safe"
-    ],
-    "prep": [
-     "dangerous for/to sb"
-    ],
-    "ep": "اینجا شنا کردن خطرناک است."
-   }
-  ],
-  "fam": [
-   {
-    "w": "danger",
+    "w": "importance",
     "pos": "noun"
    },
    {
-    "w": "endanger",
-    "pos": "verb"
-   }
-  ]
- },
- {
-  "w": "similar",
-  "ipa": "/ˈsɪmələ/",
-  "senses": [
-   {
-    "pos": "adjective",
-    "d": "almost the same in some way but not exactly the same",
-    "e": "Our opinions are similar.",
-    "p": "مشابه، شبیه",
-    "syn": [
-     "alike",
-     "comparable",
-     "equivalent",
-     "analogous"
-    ],
-    "ant": [
-     "different"
-    ],
-    "prep": [
-     "similar to sth/sb"
-    ],
-    "ep": "نظرات ما شبیه هم است."
-   }
-  ],
-  "fam": [
-   {
-    "w": "similarity",
-    "pos": "noun"
-   },
-   {
-    "w": "similarly",
+    "w": "importantly",
     "pos": "adverb"
    }
   ]
@@ -344,6 +274,76 @@
    {
     "w": "quietness",
     "pos": "noun"
+   }
+  ]
+ },
+ {
+  "w": "similar",
+  "ipa": "/ˈsɪmələ/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "almost the same in some way but not exactly the same",
+    "e": "Our opinions are similar.",
+    "p": "مشابه، شبیه",
+    "syn": [
+     "alike",
+     "comparable",
+     "equivalent",
+     "analogous"
+    ],
+    "ant": [
+     "different"
+    ],
+    "prep": [
+     "similar to sth/sb"
+    ],
+    "ep": "نظرات ما شبیه هم است."
+   }
+  ],
+  "fam": [
+   {
+    "w": "similarity",
+    "pos": "noun"
+   },
+   {
+    "w": "similarly",
+    "pos": "adverb"
+   }
+  ]
+ },
+ {
+  "w": "useful",
+  "ipa": "/ˈjuːsfl/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "able to help you do or get what you want",
+    "e": "This book is useful for beginners.",
+    "p": "مفید، سودمند",
+    "syn": [
+     "helpful",
+     "handy",
+     "practical",
+     "important"
+    ],
+    "ant": [
+     "useless"
+    ],
+    "prep": [
+     "useful for/to sb"
+    ],
+    "ep": "این کتاب برای مبتدیان مفید است."
+   }
+  ],
+  "fam": [
+   {
+    "w": "usefully",
+    "pos": "adverb"
+   },
+   {
+    "w": "useless",
+    "pos": "adjective"
    }
   ]
  }

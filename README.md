@@ -2,12 +2,12 @@
 
 ## 📦 نصب روی گوشی اندروید
 
-1. فایل [**FlashCards-v1.35.apk**](https://raw.githubusercontent.com/soot2017-hash/Madoudflashcart/main/releases/FlashCards-v1.35.apk) را روی گوشی دانلود کنید (۷۴۶ کیلوبایت)
+1. فایل [**FlashCards-v1.36.apk**](https://raw.githubusercontent.com/soot2017-hash/Madoudflashcart/main/releases/FlashCards-v1.36.apk) را روی گوشی دانلود کنید (۷۴۶ کیلوبایت)
 > 🌐 اگر لینک بالا باز نشد (فیلتر raw.githubusercontent)، از این آینه‌ها استفاده کنید:
-> - `https://cdn.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.35.apk`
-> - `https://fastly.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.35.apk`
-> - `https://testingcf.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.35.apk`
-> - `https://gcore.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.35.apk`
+> - `https://cdn.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.36.apk`
+> - `https://fastly.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.36.apk`
+> - `https://testingcf.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.36.apk`
+> - `https://gcore.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.36.apk`
 
 2. روی فایل بزنید؛ اگر پرسید، اجازهٔ «نصب از منابع ناشناس» را بدهید
 3. تمام! اپ با آیکون اختصاصی نصب می‌شود
@@ -35,6 +35,19 @@
 3. تمام! اپ مثل یک برنامهٔ واقعی تمام‌صفحه باز می‌شود و بعد از اولین بار، آفلاین هم کار می‌کند
 
 داده‌ها کاملاً محلی‌اند: فلش‌کارت‌ها فقط در حافظهٔ همان دستگاه ذخیره می‌شوند (localStorage مرورگر) و روی هیچ سروری ارسال نمی‌شوند — هر کاربر دنیای خودش را دارد و دادهٔ هیچ‌کس با کسی اشتراکی نیست. ثبت‌نام هم لازم نیست.
+
+## ✨ در نسخهٔ ۱٫۳۶ — پاک‌سازی علمی لغت‌نامه + فیکس ۹ موردی
+
+- **تلفیق تایپی و کاراکتر خراب:** اصلاح IPA (دیگر وجود ندارد)، حذف کاراکتر شکسته، اصلاح ترجمه‌های فارسی
+- **مترادُ/متضاد ها:** حذف مترادف‌های نامعتبر و جایگزینی با مترادف واقعی همجنس (مانند priority → precedence/importance/urgency)
+- **تعاریف و مثال‌ها:** بازنویسی تعاریف ویکی‌واژه‌ای/قدیمی به انگلیسی ساده و معاصر + مثال جمله کامل
+- **تلفظ بریتانیایی یکدست:** یک‌سازی IPA بریتانیایی در همهٔ بسته‌ها (دیگر آوای آمریکایی/ویکی‌واژه نیست)
+- **نوع کلمه:** اصلاح pos برای experience / regret / overhaul (حس فعلی در اول و حس اسمی حفز شده) + اضافه شدن حس اصلی realize (متوجه شدن)
+- **املای آمریکایی یکدست** در تعاریف و مترادف‌ها (favor، behavior، fulfill ،...)
+- **ترجمه‌های فارسی کوتاه** برای یکسالاری کارت‌ها
+- **دارک‌مود گرامر:** جداول، فرمول‌ها و نکات در حالت تیره سیستم حالا کاملاً خوانا هستند
+- **گارد قبل از بیلد:** اسکریپت اعتبارسنجی جدید؛ اگر دادهٔ بسته‌ها خطا داشته باشد، build متوقف می‌شود
+- **جمع ۷۷ تغییر مستند شده در بسته‌های لغت + رفع کاراکتر خراب در 3 مورد دادهٔ گرامر**
 
 ## ✨ در نسخهٔ ۱٫۳۴ — اصلاحات نهایی گرامر (فاز ۴)
 
