@@ -2,12 +2,12 @@
 
 ## 📦 نصب روی گوشی اندروید
 
-1. فایل [**FlashCards-v1.33.apk**](https://raw.githubusercontent.com/soot2017-hash/Madoudflashcart/main/releases/FlashCards-v1.33.apk) را روی گوشی دانلود کنید (۶۴۹ کیلوبایت)
+1. فایل [**FlashCards-v1.34.apk**](https://raw.githubusercontent.com/soot2017-hash/Madoudflashcart/main/releases/FlashCards-v1.34.apk) را روی گوشی دانلود کنید (۶۴۹ کیلوبایت)
 > 🌐 اگر لینک بالا باز نشد (فیلتر raw.githubusercontent)، از این آینه‌ها استفاده کنید:
-> - `https://cdn.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.33.apk`
-> - `https://fastly.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.33.apk`
-> - `https://testingcf.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.33.apk`
-> - `https://gcore.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.33.apk`
+> - `https://cdn.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.34.apk`
+> - `https://fastly.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.34.apk`
+> - `https://testingcf.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.34.apk`
+> - `https://gcore.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.34.apk`
 
 2. روی فایل بزنید؛ اگر پرسید، اجازهٔ «نصب از منابع ناشناس» را بدهید
 3. تمام! اپ با آیکون اختصاصی نصب می‌شود
@@ -35,6 +35,15 @@
 3. تمام! اپ مثل یک برنامهٔ واقعی تمام‌صفحه باز می‌شود و بعد از اولین بار، آفلاین هم کار می‌کند
 
 داده‌ها کاملاً محلی‌اند: فلش‌کارت‌ها فقط در حافظهٔ همان دستگاه ذخیره می‌شوند (localStorage مرورگر) و روی هیچ سروری ارسال نمی‌شوند — هر کاربر دنیای خودش را دارد و دادهٔ هیچ‌کس با کسی اشتراکی نیست. ثبت‌نام هم لازم نیست.
+
+## ✨ در نسخهٔ ۱٫۳۴ — اصلاحات نهایی گرامر (فاز ۴)
+
+- **رفع کرش t17/t19:** بخش‌های «infinitive/gerund» و «جدول جامع الگوی فعل‌ها» باز نمی‌شدند (مقدار سطح نادرست در داده) — فیکس شد و همهٔ ۴۳ مبحث با تست خودکار تأیید شدند
+- **تم جدید سطح‌ها:** پایه = زرد، متوسط = آبی، پیشرفته = سبز (نقطهٔ رنگی در هر بخش + نشان سطح) با لیبل انگلیسی elementary / intermediate / advanced
+- **چپ‌چینی انگلیسی‌ها:** هدرهای Common mistakes و Golden rules و Exercises به‌صورت LTR استاندارد؛ نتیجهٔ تمرین RTL
+- **ترجمهٔ فارسی آپشنال:** ترجمهٔ فرمول/جدول/نکات فقط با دکمهٔ «🇫🇷 فارسی» ظاهر می‌شود و حالا بدون پرش صفحه و بدون رندر مجدد فوری عمل می‌کند
+- **ترجمهٔ جملات مثال لمسی:** چیپ «🇺 ترجمه» زیر هر مثال؛ با یک لمس ظاهر می‌شود
+- **رنگ‌بندی و ارگونومی آیکون‌ها:** پالت منسجم، نقاط رنگی سطح، چیپ‌های بزرگ‌تر لمس‌پذیر
 
 ## ✨ در نسخهٔ ۱٫۳۳ — اصلاحات تجربهٔ کاربری گرامر
 
