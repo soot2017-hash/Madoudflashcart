@@ -1,0 +1,22 @@
+name: madoud_flashcards
+description: >-
+  Offline English-vocabulary flashcard app (Madoud Flash Cards) —
+  purple-themed, RTL/LTR-safe card UI with flutter_tts pronunciation
+  and word-selection-to-card creation.
+publish_to: "none"
+version: 1.36.0+39
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Text-to-speech for word & example-sentence pronunciation (en-US).
+  flutter_tts: ^4.0.0
+
+dev_dependencies:
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
