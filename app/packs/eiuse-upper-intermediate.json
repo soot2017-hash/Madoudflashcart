@@ -1,1 +1,2343 @@
-[{"w": "accomplish", "ipa": "/əˈkɐm.plɪʃ/", "senses": [{"pos": "verb", "d": "To execute fully; to fulfill; to complete successfully", "e": "to accomplish a design, an object, a promise", "syn": ["achieve", "carry out", "complete", "consummate"], "ant": ["fail"], "p": "انجام دادن (با موفقیت)", "prep": [], "ep": ""}]}, {"w": "accurate", "ipa": "/ˈæk.jə.ɹɪt/", "senses": [{"pos": "adjective", "d": "Telling the truth or giving a true result; exact; not defective or faulty", "e": "accurate knowledge", "syn": ["correct", "exact", "just", "nice"], "ant": ["inaccurate"], "p": "دقیق", "prep": ["be accurate in sth"], "ep": ""}]}, {"w": "acknowledge", "ipa": "/əkˈnɒ.lɪdʒ/", "senses": [{"pos": "verb", "d": "To admit the knowledge of; to recognize as a fact or truth; to declare one's belief in", "e": "to acknowledge the being of a god", "syn": ["admit", "allow", "avow", "concede"], "ant": ["deny"], "p": "اقرار کردن", "prep": ["acknowledge sth as sth"], "ep": ""}]}, {"w": "acquire", "ipa": "/əˈkwaɪə/", "senses": [{"pos": "verb", "d": "To gain, usually by one's own exertions; to get as one's own", "e": "He acquired a title", "syn": ["attain", "come by", "earn", "gain"], "ant": ["abandon", "lose"], "p": "کسب کردن", "prep": [], "ep": ""}]}, {"w": "adapt", "ipa": "/əˈdæpt/", "senses": [{"pos": "verb", "d": "To fit by alteration; to modify or remodel for a different purpose; to adjust", "e": "to adapt a story for the stage", "syn": ["proportion", "embrace", "accommodate", "conform"], "ant": [], "p": "وفق دادن", "prep": ["adapt to sth", "adapt sth for sb"], "ep": ""}]}, {"w": "adequate", "ipa": "", "senses": [{"pos": "adjective", "d": "Equal to or fulfilling some requirement", "e": "an adequate definition", "syn": ["acceptable", "correspondent", "proportionate", "satisfactory"], "ant": ["inadequate"], "p": "کافی", "prep": ["be adequate for sth"], "ep": ""}]}, {"w": "adjust", "ipa": "/əˈdʒʌst/", "senses": [{"pos": "verb", "d": "To modify", "e": "Morimoto's recipes are adjusted to suit the American palate", "syn": ["change", "edit", "modify", "set"], "ant": ["skew"], "p": "تنظیم کردن", "prep": ["adjust to sth"], "ep": ""}]}, {"w": "ambitious", "ipa": "/æmˈbɪʃ.əs/", "senses": [{"pos": "adjective", "d": "of a person or their character Having or showing ambition; wanting a lot of power, honor, respect, superiority, or other distinction", "e": "an ambitious person", "syn": ["aspiring", "showy", "challenging", "hard"], "ant": ["nonambitious", "unambitious"], "p": "جاه‌طلب", "prep": ["be ambitious for sb", "be ambitious about sth"], "ep": ""}]}, {"w": "anticipate", "ipa": "/ænˈtɪs.ɪ.peɪt/", "senses": [{"pos": "verb", "d": "To take up or introduce something prematurely", "e": "The advocate plans to anticipate a part of her argument", "syn": ["expect", "foresee", "foretaste", "look forward to"], "ant": [], "p": "پیش‌بینی کردن", "prep": [], "ep": ""}]}, {"w": "anxious", "ipa": "/ˈaŋ(k)ʃəs/", "senses": [{"pos": "adjective", "d": "Having a feeling of anxiety or disquietude; extremely concerned, especially about something that will happen in the future or that is unknown", "e": "I could tell she was anxious as she was biting her nails", "syn": ["angstful", "careful", "concerned", "disturbed"], "ant": ["calm", "relaxed"], "p": "نگران", "prep": ["be anxious about sth", "be anxious for sb"], "ep": ""}]}, {"w": "apparent", "ipa": "/əˈpæ.ɹənt/", "senses": [{"pos": "adjective", "d": "easy to see or understand; clear", "e": "It was apparent that he was not listening.", "syn": ["clear", "distinct", "obvious", "plain"], "ant": ["ambiguous", "obscure", "hidden"], "p": "آشکار", "prep": ["be apparent to sb"], "ep": ""}]}, {"w": "appropriate", "ipa": "", "senses": [{"pos": "adjective", "d": "Suitable or fit; proper", "e": "The headmaster wondered what an appropriate measure would be to make the pupil behave better", "syn": ["apt", "felicitous", "fitting", "suitable"], "ant": ["inappropriate"], "p": "مناسب", "prep": ["be appropriate for/to sth"], "ep": ""}]}, {"w": "assess", "ipa": "/əˈsɛs/", "senses": [{"pos": "verb", "d": "To determine, estimate or judge the value of; to evaluate", "e": "He assessed the situation", "syn": ["appraise", "evaluate", "value", "measure"], "ant": [], "p": "ارزیابی کردن", "prep": [], "ep": ""}]}, {"w": "assist", "ipa": "/əˈsɪst/", "senses": [{"pos": "verb", "d": "To help", "e": "This book will assist you in getting your life in order", "syn": ["attend", "serve", "attend to", "wait on"], "ant": ["hinder"], "p": "کمک کردن", "prep": ["assist sb with sth", "assist in doing sth"], "ep": ""}]}, {"w": "assume", "ipa": "/əˈsuːm/", "senses": [{"pos": "verb", "d": "To authenticate by means of belief; to surmise; to suppose to be true, especially without proof", "e": "We assume that, as her parents were dentists, she knows quite a bit about dentistry", "syn": ["arrogate", "acquire", "sham", "presume"], "ant": [], "p": "فرض کردن", "prep": [], "ep": ""}]}, {"w": "attempt", "ipa": "/əˈtɛmpt/", "senses": [{"pos": "verb", "d": "To try", "e": "A group of 80 budding mountaineers attempted Kilimanjaro, but 30 of them didn't make it to the top", "syn": ["take a run at", "take a stab at", "endeavor", "assay"], "ant": [], "p": "تلاش کردن", "prep": [], "ep": ""}]}, {"w": "attract", "ipa": "/əˈtɹækt/", "senses": [{"pos": "verb", "d": "To pull toward without touching", "e": "A magnet attracts iron filings", "syn": ["allure", "draw", "fetch", "appeal"], "ant": ["repel"], "p": "جذب کردن", "prep": [], "ep": ""}]}, {"w": "available", "ipa": "/əˈveɪləb(ə)l/", "senses": [{"pos": "adjective", "d": "Such as one may avail oneself of; capable of being used for the accomplishment of a purpose", "e": "We have an available candidate", "syn": ["effectual", "valid", "advantageous", "profitable"], "ant": ["unavailable"], "p": "موجود و در دسترس", "prep": ["be available to sb"], "ep": ""}]}, {"w": "aware", "ipa": "/əˈweːɹ/", "senses": [{"pos": "adjective", "d": "Vigilant or on one's guard against danger or difficulty", "e": "Stay aware! Don't let your guard down", "syn": ["apprised", "cognizant", "conscious", "informed"], "ant": ["unaware"], "p": "آگاه", "prep": ["be aware of sth"], "ep": ""}]}, {"w": "burden", "ipa": "/ˈbɜːdn/", "senses": [{"pos": "noun", "d": "The capacity of a vessel, or the weight of cargo that she will carry", "e": "a ship of a hundred tons burden", "syn": ["essence", "charge", "core", "effect"], "ant": [], "p": "بار (مسئولیت فکر)", "prep": ["burden on sb"], "ep": ""}]}, {"w": "circumstance", "ipa": "/-æns/", "senses": [{"pos": "noun", "d": "the conditions and facts that affect a situation", "e": "We could not travel because of family circumstances.", "syn": ["condition", "consideration", "context"], "ant": [], "p": "موقعیت و شرایط", "prep": ["under/in the circumstances"], "ep": ""}]}, {"w": "clarify", "ipa": "/ˈklæɹɪfaɪ/", "senses": [{"pos": "verb", "d": "To grow or become clear or transparent; to become free from feculent impurities, as wine or other liquid under clarification", "e": "Leave the wine for 24 hours and it will clarify", "syn": ["explicitize", "get something straight", "elucidate", "clear"], "ant": ["obscure", "obfuscate", "blur"], "p": "روشن کردن", "prep": [], "ep": ""}]}, {"w": "commit", "ipa": "/kəˈmɪt/", "senses": [{"pos": "verb", "d": "To have a person enter an establishment, such as a hospital or asylum, as a patient", "e": "Tony should be committed to a nuthouse!", "syn": ["charge", "give", "trust", "pull"], "ant": ["divest"], "p": "متعهد شدن", "prep": ["commit oneself to sth"], "ep": ""}]}, {"w": "compete", "ipa": "/kəm.ˈpiːt/", "senses": [{"pos": "verb", "d": "To be in battle or in a rivalry with another for the same thing, position, or reward; to contend", "e": "", "syn": ["contend", "vie"], "ant": ["cooperate"], "p": "رقابت کردن", "prep": ["compete with/against sb", "compete for sth"], "ep": ""}]}, {"w": "concentrate", "ipa": "/ˈkɒn.sən.tɹeɪt/", "senses": [{"pos": "verb", "d": "To bring to, or direct toward, a common center; to unite more closely; to gather into one body, mass, or force", "e": "to concentrate rays of light into a focus", "syn": ["focus", "reduce", "contract", "centre"], "ant": ["dilute"], "p": "تمرکز کردن", "prep": ["concentrate on sth"], "ep": ""}]}, {"w": "consequence", "ipa": "/ˈkɒnsɪkwɛns/", "senses": [{"pos": "noun", "d": "A result of actions, especially if such a result is unwanted or unpleasant", "e": "I'm warning you. If you don't get me the report on time, there will be consequences", "syn": ["aftercome", "distinction", "implication", "moment"], "ant": ["inconsequence"], "p": "پیامد", "prep": ["consequence of sth", "as a consequence of sth"], "ep": ""}]}, {"w": "consistent", "ipa": "/kənˈsɪstənt/", "senses": [{"pos": "adjective", "d": "Of a regularly occurring, dependable nature", "e": "He is very consistent in his political choices: economy good or bad, he always votes Labour!", "syn": ["concordant", "accordant", "coherent", "orderly"], "ant": ["contradictory", "incompatible", "inconsistent"], "p": "سازگار", "prep": ["be consistent with sth"], "ep": ""}]}, {"w": "contribute", "ipa": "/kənˈt(ʃ)ɹɪb.juːt/", "senses": [{"pos": "verb", "d": "To give something that is or becomes part of a larger whole", "e": "to contribute articles to a journal", "syn": ["impart", "lead", "give", "conduce"], "ant": [], "p": "مشارکت کردن", "prep": ["contribute to sth", "contribute sth to sth"], "ep": ""}]}, {"w": "convince", "ipa": "/kənˈvɪns/", "senses": [{"pos": "verb", "d": "To make someone believe, or feel sure about something, especially by using logic, argument or evidence", "e": "I wouldn't have or do something, unless I'm convinced that it's good", "syn": ["assure", "convert", "persuade", "satisfy"], "ant": ["dissuade"], "p": "متقاعد کردن", "prep": ["convince sb of sth"], "ep": ""}]}, {"w": "cooperate", "ipa": "/koʊˈɒpəɹeɪt/", "senses": [{"pos": "verb", "d": "To work or act together, especially for a common purpose or benefit", "e": "", "syn": ["co-op", "coact", "make common cause", "collaborate"], "ant": ["obstruct"], "p": "همکاری کردن", "prep": ["cooperate with sb", "cooperate on sth"], "ep": ""}]}, {"w": "criticize", "ipa": "/ˈkɹɪtɪsaɪz/", "senses": [{"pos": "verb", "d": "To find fault with something", "e": "They criticized him for endangering people's lives", "syn": ["censure", "pick at", "criticise", "pick apart"], "ant": ["praise"], "p": "نقد کردن", "prep": ["criticize sb for sth"], "ep": ""}]}, {"w": "decline", "ipa": "/dɪˈklaɪn/", "senses": [{"pos": "verb", "d": "To move downwards, to fall, to drop", "e": "The dollar has declined rapidly since 2001", "syn": ["decay", "reject", "fall", "wane"], "ant": ["ameliorate", "improve", "meliorate"], "p": "کاهش یافتن؛ رد کردن", "prep": [], "ep": ""}]}, {"w": "demonstrate", "ipa": "/ˈdɛmənstɹeɪt/", "senses": [{"pos": "verb", "d": "To show how to use something", "e": "Can you demonstrate the new tools for us?", "syn": ["ascertain", "exhibit", "manifest", "present"], "ant": ["confute", "disprove"], "p": "نشان دادن", "prep": ["demonstrate sth to sb"], "ep": ""}]}, {"w": "deny", "ipa": "/dɪˈnaɪ/", "senses": [{"pos": "verb", "d": "To disallow or reject", "e": "I wanted to go to the party, but I was denied", "syn": ["contradict", "disclaim", "gainsay", "refute"], "ant": ["affirm", "confirm", "allow"], "p": "انکار کردن", "prep": [], "ep": ""}]}, {"w": "determine", "ipa": "/dɪˈtɜːmɪn/", "senses": [{"pos": "verb", "d": "To fix the course of; to impel and direct; with a remoter object preceded by to", "e": "The news of his father's illness determined him to depart immediately", "syn": ["ascertain", "set", "influence", "shape"], "ant": [], "p": "تعیین کردن", "prep": [], "ep": ""}]}, {"w": "discourage", "ipa": "/dɪsˈkʌɹɪd͡ʒ/", "senses": [{"pos": "verb", "d": "To extinguish the courage of; to dishearten; to depress the spirits of; to deprive of confidence; to deject", "e": "Don't be discouraged by the amount of work left to do: you'll finish it in good time", "syn": ["becourage", "deter", "dissuade", "admonish"], "ant": ["encourage"], "p": "دلسرد کردن", "prep": ["discourage sb from doing sth"], "ep": ""}]}, {"w": "distribute", "ipa": "/dɨˈstɹɪbjuːt/", "senses": [{"pos": "verb", "d": "To divide into portions and dispense", "e": "He distributed the bread amongst his followers", "syn": ["categorize", "sort", "courier", "allot"], "ant": ["gather", "collect", "pull together"], "p": "توزیع کردن", "prep": ["distribute sth among/to sb"], "ep": ""}]}, {"w": "diverse", "ipa": "/daɪˈvɜːs/", "senses": [{"pos": "adjective", "d": "Belonging to a minority group", "e": "Idris Elba was a diverse hire for the franchise", "syn": ["manifold", "various", "different", "divers"], "ant": ["homogeneous"], "p": "متنوع", "prep": ["be diverse in sth"], "ep": ""}]}, {"w": "emphasize", "ipa": "/ˈɛm.fə.saɪz/", "senses": [{"pos": "verb", "d": "To stress, give emphasis or extra weight to something", "e": "His two-fingered gesture emphasized what he had told his boss to do with his job", "syn": ["betone", "stress", "underscore", "accentuate"], "ant": ["de-emphasize", "downplay"], "p": "تأکید کردن", "prep": [], "ep": ""}]}, {"w": "enable", "ipa": "/ɪˈneɪbəl/", "senses": [{"pos": "verb", "d": "To yield the opportunity or provide the possibility for something; to provide with means, opportunities, and the like", "e": "April 16, 2018, Norimitsu Onishi and Selam Gebrekidan writing in The New York Times, ‘They Eat Money’: How Mandela’s Political Heirs Grow Rich Off Corruption", "syn": ["allow"], "ant": ["disable"], "p": "قادر ساختن", "prep": [], "ep": ""}]}, {"w": "encounter", "ipa": "/ɪnˈkaʊntə/", "senses": [{"pos": "verb", "d": "To engage in conflict, as with an enemy", "e": "Three armies encountered at Waterloo", "syn": ["brush", "see", "play", "chance"], "ant": [], "p": "مواجه شدن", "prep": [], "ep": ""}]}, {"w": "endure", "ipa": "/ɪnˈdjɔː(ɹ)/", "senses": [{"pos": "verb", "d": "To continue or carry on, despite obstacles or hardships; to persist", "e": "The singer's popularity endured for decades", "syn": ["carry on", "plug away", "go on", "hold on"], "ant": ["enjoy"], "p": "تحمل کردن", "prep": [], "ep": ""}]}, {"w": "engage", "ipa": "/ɛnˈɡeɪdʒ/", "senses": [{"pos": "verb", "d": "to take part in or become involved in an activity", "e": "The students engaged in a heated discussion.", "syn": ["employ", "plight", "retain", "pursue"], "ant": ["disengage"], "p": "درگیر کردن", "prep": ["engage sb in sth", "be engaged in sth"], "ep": ""}]}, {"w": "enhance", "ipa": "/ɪnˈhɑːns/", "senses": [{"pos": "verb", "d": "To be raised up; to grow larger", "e": "A debt enhances rapidly by compound interest", "syn": ["heighten", "raise"], "ant": ["diminish", "weaken"], "p": "ارتقا دادن", "prep": [], "ep": ""}]}, {"w": "establish", "ipa": "/ɪˈstæb.lɪʃ/", "senses": [{"pos": "verb", "d": "to start a company, organization, or system", "e": "The charity was established in 1998.", "syn": ["base", "demonstrate", "constitute", "show"], "ant": ["confute", "get rid of", "disprove"], "p": "تأسیس کردن", "prep": [], "ep": ""}]}, {"w": "estimate", "ipa": "/ˈɛstɨmɨt/", "senses": [{"pos": "verb", "d": "to guess an amount by calculating roughly", "e": "The police estimated the crowd at ten thousand people.", "syn": ["appraise", "assessment", "reckon", "figure"], "ant": [], "p": "تخمین زدن", "prep": ["be estimated at sth"], "ep": ""}]}, {"w": "expand", "ipa": "/ɛkˈspænd/", "senses": [{"pos": "verb", "d": "To change something from a smaller form and/or size to a larger one; to spread out or lay open", "e": "You can expand this compact umbrella to cover a large table", "syn": ["spread", "spread out", "unfold", "elaborate"], "ant": ["factor", "contract", "contract"], "p": "گسترش دادن", "prep": ["expand into sth"], "ep": ""}]}, {"w": "expose", "ipa": "/ɪkˈspəʊz/", "senses": [{"pos": "verb", "d": "To reveal, uncover, make visible, bring to light, introduce to", "e": "", "syn": ["bare", "nake", "impart", "exhibit"], "ant": ["cover"], "p": "آشکار ساختن", "prep": ["expose sb to sth", "be exposed to sth"], "ep": ""}]}, {"w": "extensive", "ipa": "/ɛksˈtɛn.sɪv/", "senses": [{"pos": "adjective", "d": "Considerable in amount", "e": "I have done extensive research on the subject", "syn": ["comprehensive", "copious", "abundant", "considerable"], "ant": ["intensive"], "p": "گسترده", "prep": [], "ep": ""}]}, {"w": "feature", "ipa": "/ˈfiːtʃə/", "senses": [{"pos": "noun", "d": "The cast or structure of anything, or of any part of a thing, as of a landscape, a picture, a treaty, or an essay; any marked peculiarity or characteristic", "e": "one of the features of the landscape", "syn": ["characteristic", "have", "boast", "lineament"], "ant": ["miss", "lack"], "p": "ویژگی", "prep": ["feature of sth"], "ep": ""}]}, {"w": "flexible", "ipa": "/ˈflɛk.sə.bəl/", "senses": [{"pos": "adjective", "d": "Capable or being adapted or molded in some way", "e": "This was a principle more flexible to their purpose. -Rogers", "syn": ["malleable", "plastic", "pliant", "versatile"], "ant": ["brittle", "inflexible", "stiff"], "p": "انعطاف‌پذیر", "prep": ["be flexible about sth"], "ep": ""}]}, {"w": "generate", "ipa": "/ˈdʒɛn.əɹ.eɪt/", "senses": [{"pos": "verb", "d": "To bring into being; give rise to", "e": "The discussion generated an uproar", "syn": ["create", "spawn", "yield", "render"], "ant": ["annihilate", "degenerate", "extinguish"], "p": "تولید کردن", "prep": [], "ep": ""}]}, {"w": "hesitate", "ipa": "", "senses": [{"pos": "verb", "d": "To stop or pause respecting decision or action; to be in suspense or uncertainty as to a determination", "e": "", "syn": ["balbucinate", "balbutiate", "falter", "haw"], "ant": ["decide", "plunge"], "p": "تردید کردن", "prep": ["hesitate over sth"], "ep": ""}]}, {"w": "identify", "ipa": "", "senses": [{"pos": "verb", "d": "To establish the identity of someone or something", "e": "", "syn": ["ID", "key", "describe", "distinguish"], "ant": [], "p": "شناسایی کردن", "prep": ["identify sth as sth", "identify with sb"], "ep": ""}]}, {"w": "ignore", "ipa": "/ɪɡˈnɔː/", "senses": [{"pos": "verb", "d": "To deliberately not listen or pay attention to", "e": "A problem ignored is a problem doubled", "syn": ["misheed", "neglect", "unheed", "unmind"], "ant": ["notice", "recognize", "watch"], "p": "نادیده گرفتن", "prep": [], "ep": ""}]}, {"w": "implement", "ipa": "/ˈɪmpləmənt/", "senses": [{"pos": "verb", "d": "To bring about; to put into practice", "e": "It’s a good thought, but it will be a difficult thing to implement", "syn": ["apply", "utilize", "carry out", "enforce"], "ant": ["free", "exempt", "relieve"], "p": "اجرا کردن", "prep": [], "ep": ""}]}, {"w": "imply", "ipa": "/ɪmˈplaɪ/", "senses": [{"pos": "verb", "d": "of a proposition to have as a necessary consequence", "e": "The proposition that \"all dogs are mammals\" implies that my dog is a mammal", "syn": ["entail", "allude", "hint", "insinuate"], "ant": [], "p": "به‌طور ضمنی رساندن", "prep": [], "ep": ""}]}, {"w": "impress", "ipa": "/ˈɪmpɹɛs/", "senses": [{"pos": "verb", "d": "To affect someone strongly and often favourably", "e": "You impressed me with your command of Urdu", "syn": ["pressgang", "cut a figure", "imprint", "print"], "ant": [], "p": "تحت تأثیر قرار دادن", "prep": ["impress sb with sth", "be impressed by/with sth"], "ep": ""}]}, {"w": "indicate", "ipa": "/ˈɪndɪkeɪt/", "senses": [{"pos": "verb", "d": "To point out; to discover; to direct to a knowledge of; to show; to make known", "e": "The guard blew his whistle to indicate imminent departure", "syn": ["betoken", "show", "point", "suggest"], "ant": ["contraindicate"], "p": "نشانه دادن", "prep": [], "ep": ""}]}, {"w": "influence", "ipa": "/ˈɪn.flu.əns/", "senses": [{"pos": "verb", "d": "To have an effect on by using gentle or subtle action; to exert an influence upon; to modify, bias, or sway; to persuade or induce", "e": "I must admit that this book influenced my outlook on life", "syn": ["charm", "shape", "determine", "regulate"], "ant": [], "p": "تأثیر گذاشتن", "prep": [], "ep": ""}]}, {"w": "inform", "ipa": "/ɪnˈfɔːm/", "senses": [{"pos": "verb", "d": "To give form or character to; to inspire with a given quality ; to affect, influence with a pervading principle, idea etc", "e": "His sense of religion informs everything he writes", "syn": ["dob", "name names", "peach", "snitch"], "ant": [], "p": "آگاه کردن", "prep": ["inform sb of/about sth"], "ep": ""}]}, {"w": "initiative", "ipa": "/ɪˈnɪʃətɪv/", "senses": [{"pos": "noun", "d": "the ability to decide and act without waiting to be told", "e": "She showed great initiative by fixing the machine herself.", "syn": ["direct initiative", "maiden", "opening", "inaugural"], "ant": [], "p": "ابتکار عمل", "prep": ["initiative on sth", "take the initiative"], "ep": ""}]}, {"w": "insist", "ipa": "/ɪnˈsɪst/", "senses": [{"pos": "verb", "d": "with on or upon or that + ordinary verb form To hold up a claim emphatically", "e": "I insist that my secretary dresses nicely", "syn": ["assert", "importune"], "ant": [], "p": "اصرار کردن", "prep": ["insist on sth", "insist on doing sth"], "ep": ""}]}, {"w": "inspire", "ipa": "/ɪn.ˈspaɪə(ɹ)/", "senses": [{"pos": "verb", "d": "To infuse into; to affect, as with a superior or supernatural influence; to fill with what animates, enlivens or exalts; to communicate inspiration to", "e": "Elders should inspire children with sentiments of virtue", "syn": ["beghast", "prompt", "exalt", "urge"], "ant": ["expire"], "p": "الهام بخشیدن", "prep": ["inspire sb with sth"], "ep": ""}]}, {"w": "intend", "ipa": "/ɪnˈtɛnd/", "senses": [{"pos": "verb", "d": "usually followed by the particle \"to\" To hope; to wish something, or something to be accomplished ; be intent upon", "e": "He intends to go to university", "syn": ["design", "mean", "plan", "purpose"], "ant": [], "p": "قصد داشتن", "prep": ["intend sth for sb"], "ep": ""}]}, {"w": "intense", "ipa": "/ɪnˈtɛns/", "senses": [{"pos": "adjective", "d": "Strict, very close or earnest", "e": "intense study; intense thought", "syn": ["profound", "vehement", "keen", "exquisite"], "ant": ["mild"], "p": "شدید", "prep": [], "ep": ""}]}, {"w": "interfere", "ipa": "/ˌɪntəˈfɪə/", "senses": [{"pos": "verb", "d": "To get involved or involve oneself, causing disturbance", "e": "I always try not to interfere with other people’s personal affairs", "syn": ["interpose", "intervene", "step in"], "ant": [], "p": "دخالت کردن", "prep": ["interfere with sth", "interfere in sth"], "ep": ""}]}, {"w": "interpret", "ipa": "/ɪnˈtɜː.pɹɪt/", "senses": [{"pos": "verb", "d": "To explain or tell the meaning of; to translate orally into intelligible or familiar language or terms. applied especially to language, but also to dreams, signs, conduct, mysteries, etc", "e": "to interpret an Indian speech", "syn": ["decipher", "elucidate", "explain", "expound"], "ant": [], "p": "تفسیر کردن", "prep": ["interpret sth as sth"], "ep": ""}]}, {"w": "involve", "ipa": "/ɪnˈvɒlv/", "senses": [{"pos": "verb", "d": "To envelop completely; to surround; to cover; to hide", "e": "to involve in darkness or obscurity", "syn": ["complicate", "embarrass", "entangle", "implicate"], "ant": ["obviate", "eliminate", "rid of"], "p": "شامل بودن", "prep": ["involve sb in sth", "be involved in sth"], "ep": ""}]}, {"w": "justify", "ipa": "/ˈdʒʌstɪfaɪ/", "senses": [{"pos": "verb", "d": "To provide an acceptable explanation for", "e": "How can you justify spending so much money on clothes?", "syn": ["free", "absolve", "vindicate", "excuse"], "ant": ["fault", "blame"], "p": "توجیه کردن", "prep": [], "ep": ""}]}, {"w": "label", "ipa": "/ˈleɪbəl/", "senses": [{"pos": "verb", "d": "To put a label a ticket or sign on something", "e": "The shop assistant labeled all the products in the shop", "syn": ["categorise", "compartmentalise", "peg", "pigeonhole"], "ant": [], "p": "برچسب زدن", "prep": ["label sb/sth as sth"], "ep": ""}]}, {"w": "launch", "ipa": "/lɔːnt͡ʃ/", "senses": [{"pos": "verb", "d": "To cause a vessel to move or slide from the land or a larger vessel into the water; to set afloat", "e": "The navy launched another ship", "syn": ["lance", "pierce", "establish", "mount"], "ant": ["get rid of", "abolish"], "p": "راه‌اندازی کردن", "prep": [], "ep": ""}]}, {"w": "maintain", "ipa": "/meɪnˈteɪn/", "senses": [{"pos": "verb", "d": "to keep something in good condition or to continue it", "e": "The city maintains its parks very well.", "syn": ["assert", "sustain", "observe", "hold"], "ant": ["abandon"], "p": "نگه داشتن", "prep": [], "ep": ""}]}, {"w": "negotiate", "ipa": "/nəˈɡəʊ.ʃi.eɪt/", "senses": [{"pos": "verb", "d": "To arrange or settle something by mutual agreement", "e": "The client and server computers must first negotiate a network protocol to be used", "syn": ["negociate", "talk terms"], "ant": [], "p": "مذاکره کردن", "prep": ["negotiate with sb", "negotiate on/over sth"], "ep": ""}]}, {"w": "obtain", "ipa": "", "senses": [{"pos": "verb", "d": "to get something you want or need", "e": "You must obtain a visa before you travel.", "syn": ["hold", "prevail", "incur", "get"], "ant": [], "p": "به دست آوردن", "prep": [], "ep": ""}]}, {"w": "occur", "ipa": "/əˈkɜː/", "senses": [{"pos": "verb", "d": "To happen or take place", "e": "The liftoff will occur in exactly twelve seconds", "syn": ["belimp", "betide", "betime", "come to pass"], "ant": [], "p": "رخ دادن", "prep": [], "ep": ""}]}, {"w": "opportunity", "ipa": "/ˌɒp.əˈtjuː.nɪ.tɪ/", "senses": [{"pos": "noun", "d": "A chance for advancement, progress or profit", "e": "The world is full of opportunities and it's up to me to see them and pursue them", "syn": ["chance"], "ant": [], "p": "فرصت", "prep": ["opportunity for sth"], "ep": ""}]}, {"w": "overcome", "ipa": "/ˌəʊvəˈkʌm/", "senses": [{"pos": "verb", "d": "To surmount a physical or abstract obstacle ; to prevail over, to get the better of", "e": "to overcome enemies in battle", "syn": ["subdue", "surmount", "master", "whelm"], "ant": ["succumb", "yield"], "p": "غلبه کردن", "prep": [], "ep": ""}]}, {"w": "persuade", "ipa": "/pəˈsweɪd/", "senses": [{"pos": "verb", "d": "To successfully convince someone to agree to, accept, or do something, usually through reasoning and verbal influence", "e": "That salesman was able to persuade me into buying this bottle of lotion", "syn": ["convince", "carry", "sway"], "ant": ["deter", "dissuade"], "p": "قانع کردن", "prep": ["persuade sb of sth"], "ep": ""}]}, {"w": "potential", "ipa": "/pəˈtɛnʃəl/", "senses": [{"pos": "adjective", "d": "Existing in possibility, not in actuality", "e": "", "syn": ["noumenal", "spiritual", "virtual", "latent"], "ant": ["actual", "phenomenal", "real"], "p": "بالقوه", "prep": [], "ep": ""}]}, {"w": "precise", "ipa": "/pɹɪˈsaɪs/", "senses": [{"pos": "adjective", "d": "Exact, accurate", "e": "", "syn": ["meticulous", "dead", "fine", "right"], "ant": ["imprecise", "inexact"], "p": "بسیار دقیق", "prep": [], "ep": ""}]}, {"w": "presume", "ipa": "/pɹɪˈzjuːm/", "senses": [{"pos": "verb", "d": "With infinitive object: to be so presumptuous as to do something without proper authority or permission", "e": "I wouldn't presume to tell him how to do his job", "syn": ["assume", "take for granted"], "ant": [], "p": "پنداشتن", "prep": [], "ep": ""}]}, {"w": "priority", "ipa": "/pɹaɪˈɒɹɨti/", "senses": [{"pos": "noun", "d": "An item's relative importance", "e": "He set his e-mail message's priority to high", "syn": ["dignity", "eminence", "seniority", "superiority"], "ant": ["posteriority", "subsequence", "subsequentness"], "p": "اولویت", "prep": ["priority over sth", "be a priority for sb"], "ep": ""}]}, {"w": "proceed", "ipa": "/pɹəˈsiːd/", "senses": [{"pos": "verb", "d": "To move, pass, or go forward or onward; to advance; to carry on", "e": "To proceed on a journey", "syn": ["forthgo", "progress", "keep", "move"], "ant": ["recede", "regress"], "p": "ادامه دادن", "prep": ["proceed with sth", "proceed to sth"], "ep": ""}]}, {"w": "process", "ipa": "/ˈpɹoʊsɛs/", "senses": [{"pos": "noun", "d": "A series of events which produce a result the product", "e": "This product of last month's quality standards committee is quite good, even though the process was flawed", "syn": ["work", "procedure", "act", "operation"], "ant": [], "p": "فرایند", "prep": ["process of sth"], "ep": ""}]}, {"w": "reliable", "ipa": "/ɹɪˈlaɪəbəl/", "senses": [{"pos": "adjective", "d": "Suitable or fit to be relied on; worthy of dependence, reliance or trust; dependable, trustworthy", "e": "", "syn": ["dependable", "secure", "trustworthy", "trusty"], "ant": ["unreliable"], "p": "قابل اعتماد", "prep": [], "ep": ""}]}, {"w": "reluctant", "ipa": "/ɹɪˈlʌktənt/", "senses": [{"pos": "adjective", "d": "Not wanting to take some action; unwilling", "e": "She was reluctant to lend him the money", "syn": ["disinclined", "unwilling", "refractory", "loath"], "ant": ["greedy"], "p": "بی‌میل", "prep": [], "ep": ""}]}, {"w": "remedy", "ipa": "/ˈɹɛmədi/", "senses": [{"pos": "noun", "d": "Something that corrects or counteracts", "e": "", "syn": ["remeid", "redress", "cure", "curative"], "ant": [], "p": "درمان؛ چاره", "prep": ["remedy for sth"], "ep": ""}]}, {"w": "require", "ipa": "/ɹɪˈkwaɪə/", "senses": [{"pos": "verb", "d": "to need something; to make it necessary", "e": "This course requires a lot of reading.", "syn": ["call for", "compel", "necessitate", "command"], "ant": ["obviate", "eliminate", "rid of"], "p": "لازم داشتن", "prep": ["require sth of sb"], "ep": ""}]}, {"w": "resolve", "ipa": "/ɹiːˈzɒlv/", "senses": [{"pos": "verb", "d": "To reduce to simple or intelligible notions; to make clear or certain; to unravel; to explain", "e": "to resolve a riddle", "syn": ["purpose", "settle", "answer", "conclude"], "ant": ["aggravate", "compound"], "p": "حل و فصل کردن", "prep": [], "ep": ""}]}, {"w": "respond", "ipa": "", "senses": [{"pos": "verb", "d": "To say something in return; to answer; to reply", "e": "to respond to a question or an argument", "syn": ["answer", "reply", "react"], "ant": [], "p": "پاسخ دادن", "prep": ["respond to sth", "respond with sth"], "ep": ""}]}, {"w": "reveal", "ipa": "/ɹəˈviːl/", "senses": [{"pos": "verb", "d": "To uncover; to show and display that which was hidden", "e": "", "syn": ["disclose", "divulge", "uncover", "unfold"], "ant": ["conceal", "hide"], "p": "فاش کردن", "prep": [], "ep": ""}]}, {"w": "restrict", "ipa": "/ɹɪˈstɹɪkt/", "senses": [{"pos": "verb", "d": "To restrain within boundaries; to limit; to confine", "e": "After suffering diahrroea, the patient was restricted to a diet of rice, cold meat, and yoghurt", "syn": ["bound", "circumscribe", "coerce", "curb"], "ant": ["derestrict"], "p": "محدود کردن", "prep": ["restrict sth to sth"], "ep": ""}]}, {"w": "significant", "ipa": "/sɪɡˈnɪ.fɪ.kənt/", "senses": [{"pos": "adjective", "d": "Signifying something; carrying meaning", "e": "a significant word or sound; a significant look", "syn": ["important", "profound", "substantial", "portentous"], "ant": ["ignorable", "insignificant", "negligible"], "p": "قابل توجه", "prep": ["be significant to sb"], "ep": ""}]}, {"w": "strategy", "ipa": "/ˈstɹætədʒi/", "senses": [{"pos": "noun", "d": "a careful plan for achieving a goal over a long period", "e": "Our marketing strategy failed because nobody followed the plan.", "syn": ["generalship", "scheme"], "ant": [], "p": "راهبرد", "prep": ["strategy for sth"], "ep": ""}]}, {"w": "temporary", "ipa": "/ˈtɛmpəɹi/", "senses": [{"pos": "adjective", "d": "Not permanent; existing only for a period or periods of time", "e": "", "syn": ["ephemeral", "transient", "evanescent", "temporal"], "ant": ["lasting", "permanent"], "p": "موقت", "prep": [], "ep": ""}]}, {"w": "valuable", "ipa": "/ˈvæljuəbl̩/", "senses": [{"pos": "adjective", "d": "Having a great value", "e": "valuable gemstones", "syn": ["worthly", "worthy", "important", "rich"], "ant": ["worthless"], "p": "ارزنده", "prep": ["be valuable to sb", "be valuable for sth"], "ep": ""}]}, {"w": "volunteer", "ipa": "/vɒl.ənˈtɪə/", "senses": [{"pos": "verb", "d": "To do or offer to do something voluntarily", "e": "to volunteer for doing the dishes", "syn": ["offer"], "ant": ["conscript"], "p": "داوطلب شدن", "prep": ["volunteer for sth"], "ep": ""}]}, {"w": "witness", "ipa": "/ˈwɪtnəs/", "senses": [{"pos": "noun", "d": "Attestation of a fact or event; testimony", "e": "She can bear witness, since she was there at the time", "syn": ["see", "find", "watcher", "attestant"], "ant": [], "p": "شاهد بودن", "prep": [], "ep": ""}]}, {"w": "withdraw", "ipa": "/wɪðˈdɹɔː/", "senses": [{"pos": "verb", "d": "To take back a comment, etc ; retract", "e": "to withdraw false charges", "syn": ["recant", "unsay", "draw", "recall"], "ant": ["engage", "operate", "bank"], "p": "کنار کشیدن", "prep": [], "ep": ""}]}]
+[
+ {
+  "w": "accomplish sth",
+  "ipa": "/əˈkʌmplɪʃ/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to succeed in doing or completing something successfully",
+    "e": "She managed to accomplish all her goals before the end of the year.",
+    "syn": [
+     "achieve",
+     "complete",
+     "fulfill"
+    ],
+    "ant": [
+     "fail"
+    ],
+    "p": "انجام دادن و به اتمام رساندن چیزی با موفقیت",
+    "prep": [],
+    "ep": "او توانست قبل از پایان سال به تمام اهدافش جامه عمل بپوشاند."
+   }
+  ]
+ },
+ {
+  "w": "accurate",
+  "ipa": "/ˈækjərət/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "correct, exact, and without any mistakes",
+    "e": "We need to get more accurate information before we make a decision.",
+    "syn": [
+     "correct",
+     "exact",
+     "precise"
+    ],
+    "ant": [
+     "inaccurate"
+    ],
+    "p": "دقیق و بدون اشتباه",
+    "prep": [],
+    "ep": "ما پیش از گرفتن تصمیم باید اطلاعات دقیق‌تری به دست آوریم."
+   }
+  ]
+ },
+ {
+  "w": "acknowledge sth",
+  "ipa": "/əkˈnɒlɪdʒ/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to accept, admit, or recognize that something is true or exists",
+    "e": "The government finally acknowledged the need for urgent reform.",
+    "syn": [
+     "admit",
+     "accept",
+     "recognize"
+    ],
+    "ant": [
+     "deny"
+    ],
+    "p": "پذیرفتن، اعتراف کردن یا اذعان به چیزی",
+    "prep": [
+     "acknowledge sth as sth"
+    ],
+    "ep": "دولت سرانجام نیاز به اصلاحات فوری را پذیرافت."
+   }
+  ]
+ },
+ {
+  "w": "acquire sth",
+  "ipa": "/əˈkwaɪə(r)/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to obtain or buy something for yourself, or to gain a skill or quality",
+    "e": "She managed to acquire a good knowledge of Spanish during her travels.",
+    "syn": [
+     "obtain",
+     "gain",
+     "get"
+    ],
+    "ant": [
+     "lose",
+     "give up"
+    ],
+    "p": "به دست آوردن، کسب کردن (مهارت، دانش یا مال)",
+    "prep": [],
+    "ep": "او توانست در طول سفرهایش دانش خوبی از زبان اسپانیایی کسب کند."
+   }
+  ]
+ },
+ {
+  "w": "adapt sth",
+  "ipa": "/əˈdæpt/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to change something so that it can be used for a different purpose or in a new situation",
+    "e": "It is difficult to adapt a complex novel for a short film.",
+    "syn": [
+     "modify",
+     "adjust",
+     "alter"
+    ],
+    "ant": [],
+    "p": "تطبیق دادن، وفق دادن چیزی با شرایط جدید",
+    "prep": [
+     "adapt to sth",
+     "adapt sth for sth"
+    ],
+    "ep": "تطبیق دادن یک رمان پیچیده برای یک فیلم کوتاه کار دشواری است."
+   }
+  ]
+ },
+ {
+  "w": "adequate",
+  "ipa": "/ˈædɪkwət/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "enough in quantity or of a good enough quality for a particular purpose",
+    "e": "The hotel room was small, but it was clean and adequate.",
+    "syn": [
+     "sufficient",
+     "satisfactory",
+     "acceptable"
+    ],
+    "ant": [
+     "inadequate"
+    ],
+    "p": "کافی، مناسب و قابل قبول",
+    "prep": [],
+    "ep": "اتاق هتل کوچک بود، اما تمیز و کافی بود."
+   }
+  ]
+ },
+ {
+  "w": "adjust sth",
+  "ipa": "/əˈdʒʌst/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to change something slightly to make it more correct, effective, or suitable",
+    "e": "You need to adjust the height of the chair so your back is comfortable.",
+    "syn": [
+     "alter",
+     "modify",
+     "regulate"
+    ],
+    "ant": [],
+    "p": "تنظیم کردن، تغییر دادن جزئی چیزی برای بهبود آن",
+    "prep": [
+     "adjust to sth"
+    ],
+    "ep": "باید ارتفاع صندلی را تنظیم کنید تا کمرتان راحت باشد."
+   }
+  ]
+ },
+ {
+  "w": "ambitious",
+  "ipa": "/æmˈbɪʃəs/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "having a strong desire to be successful, rich, or powerful",
+    "e": "She is a very ambitious young lawyer who wants to become a partner.",
+    "syn": [
+     "aspiring",
+     "driven",
+     "determined"
+    ],
+    "ant": [
+     "unambitious"
+    ],
+    "p": "جاه‌طلب، بلندپرواز",
+    "prep": [
+     "be ambitious for sth"
+    ],
+    "ep": "او وکیل جوانی بسیار جاه‌طلبی است که می‌خواهد شریک مؤسسه شود."
+   }
+  ]
+ },
+ {
+  "w": "anticipate sth",
+  "ipa": "/ænˈtɪsɪpeɪt/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to expect something to happen and prepare for it beforehand",
+    "e": "We don't anticipate any major problems with the new system.",
+    "syn": [
+     "expect",
+     "foresee",
+     "predict"
+    ],
+    "ant": [],
+    "p": "پیش‌بینی کردن، انتظار چیزی را داشتن",
+    "prep": [],
+    "ep": "ما هیچ مشکل بزرگی را با سیستم جدید پیش‌بینی نمی‌کنیم."
+   }
+  ]
+ },
+ {
+  "w": "anxious",
+  "ipa": "/ˈæŋkʃəs/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "feeling worried, nervous, or afraid about something uncertain",
+    "e": "Parents are naturally anxious about their children's safety online.",
+    "syn": [
+     "worried",
+     "nervous",
+     "concerned"
+    ],
+    "ant": [
+     "calm",
+     "relaxed"
+    ],
+    "p": "نگران، مضطرب",
+    "prep": [
+     "be anxious about sth"
+    ],
+    "ep": "والدین به طور طبیعی نگران امنیت فرزندانشان در فضای مجازی هستند."
+   }
+  ]
+ },
+ {
+  "w": "apparent",
+  "ipa": "/əˈpærənt/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "easy to see or understand; clear",
+    "e": "It soon became apparent that she had lost interest in the project.",
+    "syn": [
+     "obvious",
+     "clear",
+     "evident",
+     "plain"
+    ],
+    "ant": [
+     "hidden",
+     "obscure",
+     "unclear"
+    ],
+    "prep": [
+     "be apparent to sb"
+    ],
+    "p": "آشکار، واضح",
+    "ep": "به زودی آشکار شد که او دیگر به پروژه علاقه ای ندارد."
+   }
+  ]
+ },
+ {
+  "w": "appropriate",
+  "ipa": "/əˈprəʊpriət/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "suitable or right for a particular situation or occasion",
+    "e": "Jeans are not appropriate attire for a formal dinner party.",
+    "syn": [
+     "suitable",
+     "fitting",
+     "proper",
+     "apt"
+    ],
+    "ant": [
+     "inappropriate",
+     "unsuitable"
+    ],
+    "prep": [
+     "be appropriate for sth",
+     "be appropriate to sth"
+    ],
+    "p": "مناسب، درخور",
+    "ep": "شلوار جین لباس مناسبی برای یک مهمانی شام رسمی نیست."
+   }
+  ]
+ },
+ {
+  "w": "assess sth",
+  "ipa": "/əˈses/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to make a judgment about the nature, quality, or value of something",
+    "e": "The teacher needs to assess the students' progress at the end of every term.",
+    "syn": [
+     "evaluate",
+     "judge",
+     "appraise",
+     "estimate"
+    ],
+    "ant": [],
+    "prep": [],
+    "p": "ارزیابی کردن، سنجیدن",
+    "ep": "معلم باید پیشرفت دانش‌آموزان را در پایان هر ترم ارزیابی کند."
+   }
+  ]
+ },
+ {
+  "w": "assist sth/sb",
+  "ipa": "/əˈsɪst/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to help someone or something to do something",
+    "e": "An experienced project manager will assist you with the new software.",
+    "syn": [
+     "help",
+     "aid",
+     "support"
+    ],
+    "ant": [
+     "hinder",
+     "impede",
+     "obstruct"
+    ],
+    "prep": [
+     "assist sb with sth",
+     "assist in doing sth"
+    ],
+    "p": "کمک کردن، یاری رساندن",
+    "ep": "یک مدیر پروژه باتجربه در کار با نرم‌افزار جدید به شما کمک خواهد کرد."
+   }
+  ]
+ },
+ {
+  "w": "assume sth",
+  "ipa": "/əˈsuːm/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to accept something to be true without having proof",
+    "e": "We cannot assume that everyone attending the meeting speaks English.",
+    "syn": [
+     "presume",
+     "suppose",
+     "surmise"
+    ],
+    "ant": [],
+    "prep": [],
+    "p": "فرض کردن، پنداشتن",
+    "ep": "ما نمی‌توانیم فرض کنیم که همه افراد حاضر در جلسه انگلیسی صحبت می‌کنند."
+   }
+  ]
+ },
+ {
+  "w": "attempt sth",
+  "ipa": "/əˈtempt/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to try to do something, especially something difficult",
+    "e": "She decided to attempt the difficult exam despite having little preparation.",
+    "syn": [
+     "try",
+     "endeavor",
+     "strive"
+    ],
+    "ant": [],
+    "prep": [],
+    "p": "تلاش کردن، سعی کردن",
+    "ep": "او تصمیم گرفت با وجود آمادگی کم، امتحان دشوار را امتحان کند."
+   }
+  ]
+ },
+ {
+  "w": "attract sth/sb",
+  "ipa": "/əˈtrækt/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to make someone or something interested in coming closer or taking notice",
+    "e": "The vibrant colors of the flowers attract many butterflies to the garden.",
+    "syn": [
+     "draw",
+     "appeal to",
+     "entice"
+    ],
+    "ant": [
+     "repel",
+     "drive away"
+    ],
+    "prep": [],
+    "p": "جذب کردن",
+    "ep": "رنگ‌های شاداب گل‌ها پروانه‌های زیادی را به باغ جذب می‌کند."
+   }
+  ]
+ },
+ {
+  "w": "available",
+  "ipa": "/əˈveɪləbl/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "able to be used or obtained; able to be reached or spoken to",
+    "e": "There are several cheaper options available for your trip to Europe.",
+    "syn": [
+     "obtainable",
+     "accessible",
+     "handy"
+    ],
+    "ant": [
+     "unavailable",
+     "inaccessible"
+    ],
+    "prep": [
+     "be available to sb"
+    ],
+    "p": "موجود، در دسترس",
+    "ep": "چندین گزینه ارزان‌تر برای سفر شما به اروپا در دسترس است."
+   }
+  ]
+ },
+ {
+  "w": "aware",
+  "ipa": "/əˈweə(r)/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "knowing that something exists, or having knowledge or experience of a particular thing",
+    "e": "Are you aware of the new security regulations introduced this week?",
+    "syn": [
+     "conscious",
+     "mindful",
+     "cognizant"
+    ],
+    "ant": [
+     "unaware",
+     "ignorant"
+    ],
+    "prep": [
+     "be aware of sth"
+    ],
+    "p": "آگاه، باخبر",
+    "ep": "آیا از مقررات امنیتی جدیدی که این هفته معرفی شده است آگاه هستید؟"
+   }
+  ]
+ },
+ {
+  "w": "burden",
+  "ipa": "/ˈbɜːdn/",
+  "senses": [
+   {
+    "pos": "noun",
+    "d": "a heavy duty, responsibility, or worry that is difficult to bear",
+    "e": "Paying high taxes can become a heavy financial burden for small businesses.",
+    "syn": [
+     "load",
+     "weight",
+     "pressure",
+     "strain"
+    ],
+    "ant": [],
+    "prep": [
+     "burden on sb"
+    ],
+    "p": "بار مسئولیت، بار سنگین",
+    "ep": "پرداخت مالیات‌های سنگین می‌تواند به یک بار مالی سنگین برای کسب‌وکارهای کوچک تبدیل شود."
+   }
+  ]
+ },
+ {
+  "w": "circumstance",
+  "ipa": "/ˈsɜːkəmstəns/",
+  "senses": [
+   {
+    "pos": "noun",
+    "d": "a condition or fact that affects a particular situation or event",
+    "e": "We could not travel this summer because of unexpected family circumstances.",
+    "syn": [
+     "condition",
+     "situation",
+     "factor"
+    ],
+    "ant": [],
+    "p": "شرایط و اوضاع",
+    "prep": [
+     "under/in the circumstances"
+    ],
+    "ep": "ما نتوانستیم تابستان امسال به خاطر شرایط پیش‌بینی‌نشده خانوادگی سفر کنیم."
+   }
+  ]
+ },
+ {
+  "w": "clarify",
+  "ipa": "/ˈklærɪfaɪ/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to make something clearer or easier to understand by explaining it more",
+    "e": "I asked the teacher to clarify the instructions for the assignment.",
+    "syn": [
+     "explain",
+     "elucidate",
+     "clear up"
+    ],
+    "ant": [
+     "obscure",
+     "confuse"
+    ],
+    "p": "روشن کردن و توضیح دادن",
+    "prep": [],
+    "ep": "از معلم خواستم دستورالعمل‌های مربوط به تکلیف را روشن کند."
+   }
+  ]
+ },
+ {
+  "w": "commit",
+  "ipa": "/kəˈmɪt/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to promise sincerely to do something or to use money, time, etc. for a particular purpose",
+    "e": "The government has committed more funds to improve public healthcare.",
+    "syn": [
+     "pledge",
+     "dedicate",
+     "devote"
+    ],
+    "ant": [],
+    "p": "متعهد شدن و اختصاص دادن",
+    "prep": [
+     "commit to sth",
+     "commit oneself to sth"
+    ],
+    "ep": "دولت بودجه بیشتری را برای بهبود بهداشت عمومی اختصاص داده است."
+   }
+  ]
+ },
+ {
+  "w": "compete",
+  "ipa": "/kəmˈpiːt/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to try to be more successful or better than others who are doing the same thing",
+    "e": "Several companies are competing for the major government contract.",
+    "syn": [
+     "contend",
+     "vie",
+     "rival"
+    ],
+    "ant": [
+     "cooperate"
+    ],
+    "p": "رقابت کردن",
+    "prep": [
+     "compete with sb",
+     "compete against sb",
+     "compete for sth"
+    ],
+    "ep": "چندین شرکت برای به‌دست آوردن قرارداد بزرگ دولتی با هم رقابت می‌کنند."
+   }
+  ]
+ },
+ {
+  "w": "concentrate",
+  "ipa": "/ˈkɒnsəntreɪt/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to give all your attention to something and not think about anything else",
+    "e": "I cannot concentrate on my studies with all that noise outside.",
+    "syn": [
+     "focus",
+     "pay attention"
+    ],
+    "ant": [
+     "distract"
+    ],
+    "p": "تمرکز کردن",
+    "prep": [
+     "concentrate on sth"
+    ],
+    "ep": "با وجود آن همه سر و صدا در بیرون، نمی‌توانم روی درس‌هایم تمرکز کنم."
+   }
+  ]
+ },
+ {
+  "w": "consequence",
+  "ipa": "/ˈkɒnsɪkwəns/",
+  "senses": [
+   {
+    "pos": "noun",
+    "d": "a result of an action or situation, especially a bad or unpleasant result",
+    "e": "If you break the rules, you must face the consequences of your actions.",
+    "syn": [
+     "result",
+     "outcome",
+     "effect"
+    ],
+    "ant": [
+     "cause"
+    ],
+    "p": "پیامد و عواقب",
+    "prep": [
+     "as a consequence of sth"
+    ],
+    "ep": "اگر قوانین را زیر پا بگذارید، باید با پیامدهای کارهای خود روبرو شوید."
+   }
+  ]
+ },
+ {
+  "w": "consistent",
+  "ipa": "/kənˈsɪstənt/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "always behaving in the same way, or happening in the same way over time",
+    "e": "She has been our most consistent player throughout the entire season.",
+    "syn": [
+     "steady",
+     "constant",
+     "reliable"
+    ],
+    "ant": [
+     "inconsistent",
+     "erratic"
+    ],
+    "p": "سازگار و ثابت‌قدم",
+    "prep": [
+     "be consistent with sth"
+    ],
+    "ep": "او در طول تمام فصل ثاب‌ت‌قدم‌ترین بازیکن ما بوده است."
+   }
+  ]
+ },
+ {
+  "w": "contribute",
+  "ipa": "/kənˈtrɪbjuːt/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to give money, help, or ideas to something that other people are also helping",
+    "e": "Many local residents contributed money to rebuild the community center.",
+    "syn": [
+     "donate",
+     "give",
+     "provide"
+    ],
+    "ant": [],
+    "p": "مشارکت کردن و کمک کردن",
+    "prep": [
+     "contribute to sth",
+     "contribute sth to sth"
+    ],
+    "ep": "بسیاری از ساکنان محلی برای بازسازی مرکز جامعه پول کمک کردند."
+   }
+  ]
+ },
+ {
+  "w": "convince",
+  "ipa": "/kənˈvɪns/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to make someone believe that something is true by using arguments or evidence",
+    "e": "He managed to convince the committee of the value of his research.",
+    "syn": [
+     "persuade",
+     "assure"
+    ],
+    "ant": [
+     "dissuade"
+    ],
+    "p": "متقاعد کردن",
+    "prep": [
+     "convince sb of sth"
+    ],
+    "ep": "او توانست کمیته را از ارزش پژوهش خود متقاعد کند."
+   }
+  ]
+ },
+ {
+  "w": "cooperate",
+  "ipa": "/kəʊˈɒpəreɪt/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to work together with someone else in order to achieve something",
+    "e": "Both countries agreed to cooperate in the fight against international crime.",
+    "syn": [
+     "collaborate",
+     "work together",
+     "team up"
+    ],
+    "ant": [
+     "obstruct",
+     "compete"
+    ],
+    "p": "همکاری کردن",
+    "prep": [
+     "cooperate with sb",
+     "cooperate on sth"
+    ],
+    "ep": "هر دو کشور توافق کردند که در مبارزه با جرم و جنایت بین‌المللی با یکدیگر همکاری کنند."
+   }
+  ]
+ },
+ {
+  "w": "criticize sth/sb",
+  "ipa": "/ˈkrɪtɪsaɪz/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to express disapproval of someone or something, or to talk about their faults",
+    "e": "Local residents criticized the council for failing to fix the damaged roads.",
+    "syn": [
+     "condemn",
+     "blame",
+     "disapprove"
+    ],
+    "ant": [
+     "praise",
+     "commend"
+    ],
+    "prep": [
+     "criticize sb/sth for sth"
+    ],
+    "p": "نقد کردن، انتقاد کردن",
+    "ep": "مقیمان محلی شورا را به خاطر عدم تعمیر جاده‌های آسیب‌دیده مورد انتقاد قرار دادند."
+   }
+  ]
+ },
+ {
+  "w": "decline",
+  "ipa": "/dɪˈklaɪn/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to decrease in quantity, quality, or strength; to become smaller or worse",
+    "e": "Property values have declined steadily over the past twelve months.",
+    "syn": [
+     "decrease",
+     "drop",
+     "fall"
+    ],
+    "ant": [
+     "increase",
+     "rise"
+    ],
+    "prep": [],
+    "p": "کاهش یافتن، افت کردن",
+    "ep": "ارزش ملک در دوازده ماه گذشته به طور پیوسته کاهش یافته است."
+   }
+  ]
+ },
+ {
+  "w": "demonstrate sth",
+  "ipa": "/ˈdemənstreɪt/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to show clearly how something works or how to do something",
+    "e": "The chef will demonstrate how to prepare fresh pasta during the workshop.",
+    "syn": [
+     "show",
+     "illustrate",
+     "exhibit"
+    ],
+    "ant": [],
+    "prep": [
+     "demonstrate sth to sb"
+    ],
+    "p": "نشان دادن، اثبات کردن",
+    "ep": "سرآشپز در طول کارگاه نشان خواهد داد که چگونه پاستای تازه تهیه کنید."
+   }
+  ]
+ },
+ {
+  "w": "deny sth",
+  "ipa": "/dɪˈnaɪ/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to state that something is not true or that you have not done something",
+    "e": "The suspect strongly denied stealing the money from the corner shop.",
+    "syn": [
+     "contradict",
+     "reject"
+    ],
+    "ant": [
+     "admit",
+     "confess"
+    ],
+    "prep": [],
+    "p": "انکار کردن",
+    "ep": "مظنون به شدت سرقت پول از مغازه سر کوچه را انکار کرد."
+   }
+  ]
+ },
+ {
+  "w": "determine sth",
+  "ipa": "/dɪˈtɜːmɪn/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to discover the facts about something or calculate something exactly",
+    "e": "An inquiry was set up to determine the exact cause of the accident.",
+    "syn": [
+     "establish",
+     "calculate",
+     "ascertain"
+    ],
+    "ant": [],
+    "prep": [],
+    "p": "تعیین کردن، مشخص کردن",
+    "ep": "تحقیقی برای تعیین علت دقیق تصادف تشکیل شد."
+   }
+  ]
+ },
+ {
+  "w": "discourage sb",
+  "ipa": "/dɪsˈkʌrɪdʒ/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to make someone lose their confidence or enthusiasm for doing something",
+    "e": "Don't let initial failures discourage you from pursuing your career goals.",
+    "syn": [
+     "deter",
+     "dishearten",
+     "demoralize"
+    ],
+    "ant": [
+     "encourage",
+     "inspire"
+    ],
+    "prep": [
+     "discourage sb from doing sth"
+    ],
+    "p": "دلسرد کردن، منصرف کردن",
+    "ep": "اجازه ندهید شکست‌های اولیه شما را از دنبال کردن اهداف شغلی‌تان دلسرد کنند."
+   }
+  ]
+ },
+ {
+  "w": "distribute sth",
+  "ipa": "/dɪˈstrɪbjuːt/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to share things among a group of people or hand them out",
+    "e": "Volunteers distributed warm blankets and food packages to the refugees.",
+    "syn": [
+     "hand out",
+     "allocate",
+     "dispense"
+    ],
+    "ant": [
+     "collect",
+     "gather"
+    ],
+    "prep": [
+     "distribute sth among/to sb"
+    ],
+    "p": "توزیع کردن، پخش کردن",
+    "ep": "داوطلبان پتوهای گرم و بسته‌های غذایی را بین پناهندگان توزیع کردند."
+   }
+  ]
+ },
+ {
+  "w": "diverse",
+  "ipa": "/daɪˈvɜːs/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "including many different types of people or things; varied",
+    "e": "The university attracts students from a diverse range of cultural backgrounds.",
+    "syn": [
+     "varied",
+     "various",
+     "assorted"
+    ],
+    "ant": [
+     "homogeneous",
+     "uniform"
+    ],
+    "prep": [],
+    "p": "متنوع، گوناگون",
+    "ep": "این دانشگاه دانشجویانی را از طیف متنوعی از پیشینه‌های فرهنگی جذب می‌کند."
+   }
+  ]
+ },
+ {
+  "w": "emphasize sth",
+  "ipa": "/ˈemfəsaɪz/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to give special importance to something or show that it is particularly important",
+    "e": "The teacher emphasized the importance of regular reading for vocabulary growth.",
+    "syn": [
+     "stress",
+     "underscore",
+     "highlight"
+    ],
+    "ant": [
+     "downplay",
+     "minimize"
+    ],
+    "prep": [],
+    "p": "تأکید کردن بر",
+    "ep": "معلم بر اهمیت مطالعه منظم برای رشد دایره واژگان تأکید کرد."
+   }
+  ]
+ },
+ {
+  "w": "enable sb/sth",
+  "ipa": "/ɪˈneɪbəl/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to give someone the ability or opportunity to do something, or make something possible",
+    "e": "Advanced software can enable businesses to track inventory levels in real time.",
+    "syn": [
+     "allow",
+     "permit",
+     "empower"
+    ],
+    "ant": [
+     "prevent",
+     "disable"
+    ],
+    "prep": [
+     "enable sb to do sth"
+    ],
+    "p": "قادر ساختن، امکان‌پذیر کردن",
+    "ep": "نرم‌افزار پیشرفته می‌تواند کسب‌وکارها را قادر سازد تا سطح موجودی را به صورت لحظه‌ای پیگیری کنند."
+   }
+  ]
+ },
+ {
+  "w": "encounter",
+  "ipa": "/ɪnˈkaʊntə/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to meet someone or something, especially unexpectedly or by chance",
+    "e": "We encountered a lot of traffic on the way to the airport.",
+    "syn": [
+     "meet",
+     "come across",
+     "run into",
+     "find"
+    ],
+    "ant": [],
+    "p": "مواجه شدن",
+    "prep": [],
+    "ep": "ما در راه به فرودگاه ترافیک زیادی داشتیم."
+   }
+  ]
+ },
+ {
+  "w": "endure",
+  "ipa": "/ɪnˈdjʊə/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to suffer something unpleasant patiently over a long period",
+    "e": "The team endured years of poor results before winning the cup.",
+    "syn": [
+     "tolerate",
+     "bear",
+     "stand",
+     "put up with"
+    ],
+    "ant": [
+     "enjoy"
+    ],
+    "p": "تحمل کردن",
+    "prep": [],
+    "ep": "تیم سال‌ها نتا��ج بد را تحمل کرد قبل از اینکه جام را ببرد."
+   }
+  ]
+ },
+ {
+  "w": "engage",
+  "ipa": "/ɪnˈɡeɪdʒ/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to involve yourself in an activity or conversation",
+    "e": "The students engaged in a lively debate about climate change.",
+    "syn": [
+     "participate",
+     "take part in",
+     "involve oneself in"
+    ],
+    "ant": [
+     "disengage"
+    ],
+    "p": "درگیر شدن",
+    "prep": [
+     "engage in sth",
+     "engage sb in sth"
+    ],
+    "ep": "دانش‌آموزان در یک بحث پرجنب‌وجوش درباره تغییرات اقلیمی درگیر شدند."
+   }
+  ]
+ },
+ {
+  "w": "enhance",
+  "ipa": "/ɪnˈhɑːns/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to improve the quality, value, or extent of something",
+    "e": "The new lighting will enhance the atmosphere of the restaurant.",
+    "syn": [
+     "improve",
+     "boost",
+     "increase",
+     "strengthen"
+    ],
+    "ant": [
+     "diminish",
+     "weaken"
+    ],
+    "p": "بهبود دادن",
+    "prep": [],
+    "ep": "نورپردازی جدید جو رستوران را بهبود خواهد بخشید."
+   }
+  ]
+ },
+ {
+  "w": "establish",
+  "ipa": "/ɪˈstæblɪʃ/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to start a company, organization, or system and make it permanent",
+    "e": "The company was established in 1998 by two engineers.",
+    "syn": [
+     "found",
+     "set up",
+     "start",
+     "create"
+    ],
+    "ant": [
+     "close down",
+     "dissolve"
+    ],
+    "p": "تأسیس کردن",
+    "prep": [],
+    "ep": "شرکت در سال ۱۹۹۸ توسط دو مهندس تأسیس شد."
+   }
+  ]
+ },
+ {
+  "w": "estimate",
+  "ipa": "/ˈestɪmeɪt/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to say how much, how many, or how big something is or will be, based on calculations",
+    "e": "Experts estimate that the project will cost two million dollars.",
+    "syn": [
+     "calculate",
+     "judge",
+     "assess",
+     "guess"
+    ],
+    "ant": [],
+    "p": "تخمین زدن",
+    "prep": [
+     "be estimated at sth"
+    ],
+    "ep": "کارشناسان تخمین می‌زنند که این پروژه دو میلیون دلار هزینه خواهد داشت."
+   }
+  ]
+ },
+ {
+  "w": "expand",
+  "ipa": "/ɪkˈspænd/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to become larger or more extensive",
+    "e": "The company plans to expand into the Asian market next year.",
+    "syn": [
+     "grow",
+     "increase",
+     "extend",
+     "widen"
+    ],
+    "ant": [
+     "contract",
+     "shrink",
+     "reduce"
+    ],
+    "p": "گسترش دادن",
+    "prep": [
+     "expand into sth",
+     "expand to sth"
+    ],
+    "ep": "شرکت برنامه دارد سال آینده به بازار آسیا گسترش یابد."
+   }
+  ]
+ },
+ {
+  "w": "expose",
+  "ipa": "/ɪkˈspəʊz/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to reveal something that was previously hidden or unknown",
+    "e": "The report exposed corruption within the government.",
+    "syn": [
+     "reveal",
+     "uncover",
+     "disclose",
+     "show up"
+    ],
+    "ant": [
+     "cover",
+     "hide",
+     "conceal"
+    ],
+    "p": "آشکار کردن",
+    "prep": [
+     "expose sth to sth",
+     "be exposed to sth"
+    ],
+    "ep": "گزارش فساد در دولت را آشکار کرد."
+   }
+  ]
+ },
+ {
+  "w": "extensive",
+  "ipa": "/ɪkˈstensɪv/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "covering a large area or amount",
+    "e": "She has extensive experience in international marketing.",
+    "syn": [
+     "wide",
+     "broad",
+     "comprehensive",
+     "vast"
+    ],
+    "ant": [
+     "limited",
+     "narrow",
+     "restricted"
+    ],
+    "p": "گسترده",
+    "prep": [],
+    "ep": "او تجربه گسترده‌ای در بازاریابی بین‌المللی دارد."
+   }
+  ]
+ },
+ {
+  "w": "feature",
+  "ipa": "/ˈfiːtʃə/",
+  "senses": [
+   {
+    "pos": "noun",
+    "d": "a distinctive attribute or aspect of something",
+    "e": "One key feature of this phone is its long battery life.",
+    "syn": [
+     "characteristic",
+     "aspect",
+     "quality",
+     "trait"
+    ],
+    "ant": [],
+    "p": "ویژگی",
+    "prep": [
+     "feature of sth"
+    ],
+    "ep": "یکی از ویژگی‌های کلیدی این تلفن عمر باتری طولانی آن است."
+   }
+  ]
+ },
+ {
+  "w": "flexible",
+  "ipa": "/ˈfleksəbəl/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "able to change or be changed easily to suit new situations or conditions",
+    "e": "Our schedule is quite flexible, so we can easily change the meeting time.",
+    "syn": [
+     "adaptable",
+     "adjustable",
+     "versatile"
+    ],
+    "ant": [
+     "inflexible",
+     "rigid",
+     "stiff"
+    ],
+    "p": "انعطاف‌پذیر",
+    "prep": [
+     "be flexible about sth"
+    ],
+    "ep": "برنامه ما کاملاً انعطاف‌پذیر است، بنابراین می‌توانیم به راحتی زمان جلسه را تغییر دهیم."
+   }
+  ]
+ },
+ {
+  "w": "generate",
+  "ipa": "/ˈdʒenəreɪt/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to cause something to exist or happen, such as energy, profits, or ideas",
+    "e": "The new wind farm will generate enough electricity for thousands of homes.",
+    "syn": [
+     "produce",
+     "create",
+     "cause"
+    ],
+    "ant": [
+     "destroy",
+     "eliminate"
+    ],
+    "p": "تولید کردن، ایجاد کردن",
+    "prep": [],
+    "ep": "مزرعه بادی جدید برق کافی برای هزاران خانه تولید خواهد کرد."
+   }
+  ]
+ },
+ {
+  "w": "hesitate",
+  "ipa": "/ˈhezɪteɪt/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to pause before saying or doing something because you are nervous or not sure",
+    "e": "Please do not hesitate to contact our customer service team if you need help.",
+    "syn": [
+     "pause",
+     "waver",
+     "dally"
+    ],
+    "ant": [
+     "proceed",
+     "rush"
+    ],
+    "p": "تردید کردن، مکث کردن",
+    "prep": [
+     "hesitate about/over sth"
+    ],
+    "ep": "اگر به کمک نیاز دارید، لطفاً در تماس با تیم خدمات مشتریان ما تردید نکنید."
+   }
+  ]
+ },
+ {
+  "w": "identify",
+  "ipa": "/aɪˈdentɪfaɪ/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to recognize and correctly name someone or something",
+    "e": "The police asked the witness to identify the suspect from a photograph.",
+    "syn": [
+     "recognize",
+     "spot",
+     "distinguish"
+    ],
+    "ant": [
+     "confuse",
+     "misidentify"
+    ],
+    "p": "شناسایی کردن، تشخیص دادن",
+    "prep": [
+     "identify sth/sb as sth/sb",
+     "identify with sb"
+    ],
+    "ep": "پلیس از شاهد خواست تا مظنون را از روی عکس شناسایی کند."
+   }
+  ]
+ },
+ {
+  "w": "ignore",
+  "ipa": "/ɪɡˈnɔː(r)/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to deliberately pay no attention to someone or something",
+    "e": "He chose to ignore the warning signs and continued driving in the storm.",
+    "syn": [
+     "disregard",
+     "neglect",
+     "overlook"
+    ],
+    "ant": [
+     "notice",
+     "heed",
+     "acknowledge"
+    ],
+    "p": "نادیده گرفتن",
+    "prep": [],
+    "ep": "او تصمیم گرفت علائم هشدار را نادیده بگیرد و به رانندگی در طوفان ادامه داد."
+   }
+  ]
+ },
+ {
+  "w": "implement",
+  "ipa": "/ˈɪmplɪment/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to make a law, system, plan, etc. start to operate or happen",
+    "e": "The company decided to implement a new policy to reduce paper waste.",
+    "syn": [
+     "apply",
+     "execute",
+     "enforce"
+    ],
+    "ant": [
+     "abandon",
+     "cancel"
+    ],
+    "p": "اجرا کردن، پیاده‌سازی کردن",
+    "prep": [],
+    "ep": "شرکت تصمیم گرفت سیاست جدیدی را برای کاهش زباله کاغذی اجرا کند."
+   }
+  ]
+ },
+ {
+  "w": "imply",
+  "ipa": "/ɪmˈplaɪ/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to suggest or state something indirectly, without saying it plainly",
+    "e": "Her tone of voice seemed to imply that she was not satisfied with the results.",
+    "syn": [
+     "suggest",
+     "hint",
+     "insinuate"
+    ],
+    "ant": [
+     "state",
+     "declare"
+    ],
+    "p": "به‌طور ضمنی رساندن، اشاره داشتن",
+    "prep": [],
+    "ep": "لحن صدای او به نظر می‌رسید که نشان‌دهنده نارضایتی‌اش از نتایج است."
+   }
+  ]
+ },
+ {
+  "w": "impress",
+  "ipa": "/ɪmˈpres/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to cause someone to feel admiration and respect",
+    "e": "Her deep knowledge of ancient history really impressed the interviewers.",
+    "syn": [
+     "strike",
+     "affect",
+     "awe"
+    ],
+    "ant": [
+     "disappoint",
+     "bore"
+    ],
+    "p": "تحت تأثیر قرار دادن",
+    "prep": [
+     "impress sb with sth",
+     "be impressed by/with sth"
+    ],
+    "ep": "دانش عمیق او از تاریخ باستان واقعاً مصاحبه‌کنندگان را تحت تأثیر قرار داد."
+   }
+  ]
+ },
+ {
+  "w": "indicate",
+  "ipa": "/ˈɪndɪkeɪt/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to show, point, or make clear in another way",
+    "e": "Red traffic lights indicate that drivers must stop immediately.",
+    "syn": [
+     "show",
+     "denote",
+     "display"
+    ],
+    "ant": [
+     "hide",
+     "conceal"
+    ],
+    "p": "نشان دادن، حاکی بودن از",
+    "prep": [],
+    "ep": "چراغ‌های قرمز راهنمایی و رانندگی نشان می‌دهند که رانندگان باید بلافاصله متوقف شوند."
+   }
+  ]
+ },
+ {
+  "w": "influence",
+  "ipa": "/ˈɪnfluəns/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to affect or change how someone behaves or thinks, or how something happens",
+    "e": "Good teachers can positively influence a student's future career choices.",
+    "syn": [
+     "affect",
+     "shape",
+     "sway"
+    ],
+    "ant": [],
+    "p": "تأثیر گذاشتن بر",
+    "prep": [],
+    "ep": "معلمان خوب می‌توانند به طور مثبت بر انتخاب‌های شغلی آینده دانش‌آموز تأثیر بگذارند."
+   }
+  ]
+ },
+ {
+  "w": "inform sb",
+  "ipa": "/ɪnˈfɔːm/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to officially tell someone about something or give them information",
+    "e": "Please inform the manager of any changes to your schedule.",
+    "syn": [
+     "notify",
+     "advise",
+     "apprise"
+    ],
+    "ant": [],
+    "p": "آگاه کردن، مطلع کردن",
+    "prep": [
+     "inform sb of sth",
+     "inform sb about sth"
+    ],
+    "ep": "لطفاً مدیر را از هرگونه تغییر در برنامه خود مطلع کنید."
+   }
+  ]
+ },
+ {
+  "w": "initiative",
+  "ipa": "/ɪnˈɪʃətɪv/",
+  "senses": [
+   {
+    "pos": "noun",
+    "d": "the ability to make decisions and take action without waiting for someone to tell you what to do",
+    "e": "She showed great initiative by fixing the broken equipment herself.",
+    "syn": [
+     "enterprise",
+     "resourcefulness",
+     "drive"
+    ],
+    "ant": [],
+    "p": "ابتکار عمل، پیش‌قدمی",
+    "prep": [
+     "take the initiative"
+    ],
+    "ep": "او با تعمیر کردن تجهیزات خراب توسط خودش، ابتکار عمل زیادی نشان داد."
+   }
+  ]
+ },
+ {
+  "w": "insist",
+  "ipa": "/ɪnˈsɪst/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to demand strongly that something must happen or that you must have something",
+    "e": "He will insist on paying for dinner whenever we meet.",
+    "syn": [
+     "maintain",
+     "demand",
+     "persist"
+    ],
+    "ant": [],
+    "p": "اصرار کردن، پافشاری کردن",
+    "prep": [
+     "insist on sth",
+     "insist on doing sth"
+    ],
+    "ep": "او هر زمان که همدیگر را می‌بینیم اصرار می‌کند که پول شام را بدهد."
+   }
+  ]
+ },
+ {
+  "w": "inspire sb",
+  "ipa": "/ɪnˈspaɪə(r)/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to make someone want to do something, especially by giving them good ideas and a feeling of enthusiasm",
+    "e": "The inspiring teacher managed to motivate all the students in her class.",
+    "syn": [
+     "motivate",
+     "encourage",
+     "stimulate"
+    ],
+    "ant": [
+     "discourage",
+     "demoralize"
+    ],
+    "p": "الهام بخشیدن، ترغیب کردن",
+    "prep": [
+     "inspire sb with sth"
+    ],
+    "ep": "معلم الهام‌بخش توانست همه دانش‌آموزان کلاسش را ترغیب کند."
+   }
+  ]
+ },
+ {
+  "w": "intend sth",
+  "ipa": "/ɪnˈtɛnd/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to have a plan, purpose, or goal in your mind to do something",
+    "e": "We intend to visit our relatives in Canada this summer.",
+    "syn": [
+     "plan",
+     "aim",
+     "mean"
+    ],
+    "ant": [],
+    "p": "قصد داشتن، در نظر داشتن",
+    "prep": [
+     "intend to do sth"
+    ],
+    "ep": "ما قصد داریم تابستان امسال به دیدن فامیل‌هایمان در کانادا برویم."
+   }
+  ]
+ },
+ {
+  "w": "intense",
+  "ipa": "/ɪnˈtɛns/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "having a very strong effect or felt with a very high degree",
+    "e": "The athletes underwent intense training before the championship match.",
+    "syn": [
+     "extreme",
+     "severe",
+     "profound"
+    ],
+    "ant": [
+     "mild",
+     "gentle"
+    ],
+    "p": "شدید، عمیق",
+    "prep": [],
+    "ep": "ورزشکاران قبل از مسابقه قهرمانی تمرینات شدیدی را پشت سر گذاشتند."
+   }
+  ]
+ },
+ {
+  "w": "interfere",
+  "ipa": "/ˌɪntəˈfɪə(r)/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to get involved in a situation where you are not wanted and where your help is not helpful",
+    "e": "I try not to interfere in other people's personal relationships.",
+    "syn": [
+     "meddle",
+     "intervene",
+     "butt in"
+    ],
+    "ant": [],
+    "p": "دخالت کردن، مداخله کردن",
+    "prep": [
+     "interfere in sth",
+     "interfere with sth"
+    ],
+    "ep": "من تلاش می‌کنم در روابط شخصی دیگران دخالت نکنم."
+   }
+  ]
+ },
+ {
+  "w": "interpret sth",
+  "ipa": "/ɪnˈtɜːprɪt/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to explain the meaning of something, or to understand it in a particular way",
+    "e": "It is difficult to interpret the results of this scientific experiment.",
+    "syn": [
+     "explain",
+     "clarify",
+     "construe"
+    ],
+    "ant": [],
+    "p": "تفسیر کردن، تعبیر کردن",
+    "prep": [
+     "interpret sth as sth"
+    ],
+    "ep": "تفسیر کردن نتایج این آزمایش علمی دشوار است."
+   }
+  ]
+ },
+ {
+  "w": "involve sth",
+  "ipa": "/ɪnˈvɒlv/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "if a situation or activity involves something, that thing is a necessary part of it",
+    "e": "His new job will involve a lot of traveling abroad.",
+    "syn": [
+     "include",
+     "entail",
+     "incorporate"
+    ],
+    "ant": [
+     "exclude"
+    ],
+    "p": "شامل بودن، در بر داشتن",
+    "prep": [
+     "involve sb in sth"
+    ],
+    "ep": "شغل جدید او شامل سفرهای خارجی زیادی خواهد بود."
+   }
+  ]
+ },
+ {
+  "w": "justify sth",
+  "ipa": "/ˈdʒʌstɪfaɪ/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to show or prove that a decision, action, or idea is right or reasonable",
+    "e": "How can you justify spending so much money on designer clothes?",
+    "syn": [
+     "defend",
+     "vindicate",
+     "explain"
+    ],
+    "ant": [
+     "condemn",
+     "criticize"
+    ],
+    "p": "توجیه کردن",
+    "prep": [],
+    "ep": "چطور می‌توانید خرج کردن این همه پول روی لباس‌های مارک‌دار را توجیه کنید؟"
+   }
+  ]
+ },
+ {
+  "w": "label sth/sb",
+  "ipa": "/ˈleɪbəl/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to attach a label or write information on something to identify it",
+    "e": "She carefully labeled each folder with the project name and date.",
+    "syn": [
+     "tag",
+     "mark",
+     "identify"
+    ],
+    "ant": [],
+    "p": "برچسب زدن",
+    "prep": [
+     "label sb/sth as sth"
+    ],
+    "ep": "او با دقت روی هر پوشه را با نام پروژه و تاریخ برچسب زد."
+   }
+  ]
+ },
+ {
+  "w": "launch sth",
+  "ipa": "/lɔːntʃ/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to start an activity, plan, or product, or make it available to the public",
+    "e": "The company plans to launch a new smartphone next month.",
+    "syn": [
+     "release",
+     "introduce",
+     "start"
+    ],
+    "ant": [
+     "withdraw",
+     "cancel"
+    ],
+    "p": "راه‌اندازی کردن",
+    "prep": [],
+    "ep": "این شرکت قصد دارد ماه آینده یک گوشی هوشمند جدید را به بازار عرضه کند."
+   }
+  ]
+ },
+ {
+  "w": "maintain sth",
+  "ipa": "/meɪnˈteɪn/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to keep a building, machine, or road in good condition by checking and repairing it regularly",
+    "e": "It costs a lot of money to maintain a large historic house.",
+    "syn": [
+     "preserve",
+     "keep up",
+     "service"
+    ],
+    "ant": [
+     "neglect",
+     "destroy"
+    ],
+    "p": "نگهداری کردن",
+    "prep": [],
+    "ep": "نگهداری از یک خانه تاریخی بزرگ هزینه زیادی دارد."
+   }
+  ]
+ },
+ {
+  "w": "negotiate sth",
+  "ipa": "/nəˈɡəʊʃiˌeɪt/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to discuss something in order to reach an agreement, especially in business or politics",
+    "e": "The union leaders are currently negotiating a new pay deal with management.",
+    "syn": [
+     "bargain",
+     "discuss",
+     "mediate"
+    ],
+    "ant": [],
+    "p": "مذاکره کردن",
+    "prep": [
+     "negotiate with sb",
+     "negotiate on/over sth"
+    ],
+    "ep": "رهبران اتحادیه در حال حاضر در حال مذاکره بر سر توافق حقوقی جدیدی با مدیریت هستند."
+   }
+  ]
+ },
+ {
+  "w": "obtain sth",
+  "ipa": "/əbˈteɪn/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to get something, especially by asking for it, buying it, or working for it",
+    "e": "You need to obtain permission from the council before building an extension.",
+    "syn": [
+     "acquire",
+     "secure",
+     "get"
+    ],
+    "ant": [
+     "lose",
+     "forfeit"
+    ],
+    "p": "به دست آوردن",
+    "prep": [],
+    "ep": "شما باید قبل از ساختن الحاقیه، از شهرداری اجازه بگیرید."
+   }
+  ]
+ },
+ {
+  "w": "occur",
+  "ipa": "/əˈkɜː(r)/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to happen, especially without being planned",
+    "e": "The accident occurred at a busy intersection during the rush hour.",
+    "syn": [
+     "happen",
+     "take place",
+     "arise"
+    ],
+    "ant": [],
+    "p": "رخ دادن",
+    "prep": [],
+    "ep": "این تصادف در یک تقاطع شلوغ در ساعات اوج ترافیک رخ داد."
+   }
+  ]
+ },
+ {
+  "w": "opportunity",
+  "ipa": "/ˌɒpəˈtjuːnəti/",
+  "senses": [
+   {
+    "pos": "noun",
+    "d": "a situation in which it is possible for you to do something that you want to do",
+    "e": "Studying abroad gives you a great opportunity to experience a new culture.",
+    "syn": [
+     "chance",
+     "occasion",
+     "possibility"
+    ],
+    "ant": [],
+    "p": "فرصت",
+    "prep": [
+     "opportunity for sth",
+     "opportunity to do sth"
+    ],
+    "ep": "تحصیل در خارج از کشور فرصت عالی برای تجربه یک فرهنگ جدید به شما می‌دهد."
+   }
+  ]
+ },
+ {
+  "w": "overcome sth",
+  "ipa": "/ˌəʊvəˈkʌm/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to successfully deal with or control a problem or feeling that makes it difficult for you to do something",
+    "e": "She managed to overcome her fear of public speaking and delivered a great presentation.",
+    "syn": [
+     "conquer",
+     "surmount",
+     "defeat"
+    ],
+    "ant": [
+     "surrender",
+     "yield"
+    ],
+    "p": "غلبه کردن",
+    "prep": [],
+    "ep": "او توانست بر ترس خود از سخنرانی در جمع غلبه کند و ارائه عالی‌ای داشت."
+   }
+  ]
+ },
+ {
+  "w": "persuade sb",
+  "ipa": "/pəˈsweɪd/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to make someone agree to do something by giving them good reasons",
+    "e": "I managed to persuade my parents to let me go on the school trip.",
+    "syn": [
+     "convince",
+     "influence",
+     "prompt"
+    ],
+    "ant": [
+     "dissuade",
+     "deter"
+    ],
+    "p": "قانع کردن",
+    "prep": [
+     "persuade sb to do sth",
+     "persuade sb of sth"
+    ],
+    "ep": "توانستم والدینم را قانع کنم که اجازه دهند به اردوی مدرسه بروم."
+   }
+  ]
+ },
+ {
+  "w": "potential",
+  "ipa": "/pəˈtenʃəl/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "possible, or likely to develop or happen in the future",
+    "e": "We need to identify potential problems before we start the project.",
+    "syn": [
+     "possible",
+     "prospective",
+     "future"
+    ],
+    "ant": [
+     "actual",
+     "certain"
+    ],
+    "p": "بالقوه",
+    "prep": [],
+    "ep": "ما باید قبل از شروع پروژه، مشکلات بالقوه را شناسایی کنیم."
+   }
+  ]
+ },
+ {
+  "w": "precise",
+  "ipa": "/pɹɪˈsaɪs/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "clear and accurate; exact in every detail",
+    "e": "The instructions were very precise, so we had no problems.",
+    "syn": [
+     "exact",
+     "accurate",
+     "specific"
+    ],
+    "ant": [
+     "imprecise",
+     "vague"
+    ],
+    "p": "بسیار دقیق",
+    "prep": [],
+    "ep": "دستورالعمل‌ها بسیار دقیق بودند، پس هیچ مشکلی نداشتیم."
+   }
+  ]
+ },
+ {
+  "w": "presume",
+  "ipa": "/pɹɪˈzjuːm/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "With infinitive object: to be so presumptuous as to do something without proper authority or permission",
+    "e": "I wouldn't presume to tell him how to do his job",
+    "syn": [
+     "assume",
+     "take for granted"
+    ],
+    "ant": [],
+    "p": "پنداشتن",
+    "prep": [],
+    "ep": "من به خودم جرات نمی‌دهم (یا به خودم اجازه نمی‌دهم) که به او بگویم چطور کارش را انجام دهد."
+   }
+  ]
+ },
+ {
+  "w": "priority",
+  "ipa": "/pɹaɪˈɒɹɨti/",
+  "senses": [
+   {
+    "pos": "noun",
+    "d": "An item's relative importance",
+    "e": "He set his e-mail message's priority to high",
+    "syn": [
+     "dignity",
+     "eminence",
+     "seniority",
+     "superiority"
+    ],
+    "ant": [
+     "posteriority",
+     "subsequence",
+     "subsequentness"
+    ],
+    "p": "اولویت",
+    "prep": [
+     "priority over sth",
+     "be a priority for sb"
+    ],
+    "ep": "او اولویت پیام ایمیل خود را روی حالت «بالا» تنظیم کرد."
+   }
+  ]
+ },
+ {
+  "w": "proceed",
+  "ipa": "/pɹəˈsiːd/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To move, pass, or go forward or onward; to advance; to carry on",
+    "e": "To proceed on a journey",
+    "syn": [
+     "forthgo",
+     "progress",
+     "keep",
+     "move"
+    ],
+    "ant": [
+     "recede",
+     "regress"
+    ],
+    "p": "ادامه دادن",
+    "prep": [
+     "proceed with sth",
+     "proceed to sth"
+    ],
+    "ep": "ادامه دادن به یک سفر"
+   }
+  ]
+ },
+ {
+  "w": "process",
+  "ipa": "/ˈpɹoʊsɛs/",
+  "senses": [
+   {
+    "pos": "noun",
+    "d": "A series of events which produce a result the product",
+    "e": "This product of last month's quality standards committee is quite good, even though the process was flawed",
+    "syn": [
+     "work",
+     "procedure",
+     "act",
+     "operation"
+    ],
+    "ant": [],
+    "p": "فرایند",
+    "prep": [
+     "process of sth"
+    ],
+    "ep": "این محصولِ کمیته استانداردهای کیفیت ماه گذشته بسیار خوب است، هرچند که فرایند آن نقص داشت."
+   }
+  ]
+ },
+ {
+  "w": "reliable",
+  "ipa": "/ɹɪˈlaɪəbəl/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "able to be trusted to do what you expect or to work well",
+    "e": "She is a very reliable colleague and never misses a deadline.",
+    "syn": [
+     "dependable",
+     "trustworthy"
+    ],
+    "ant": [
+     "unreliable"
+    ],
+    "p": "قابل اعتماد",
+    "prep": [],
+    "ep": "او همکار بسیار قابل‌اعتمادی است و هرگز ضرب‌الاجل را از دست نمی‌دهد."
+   }
+  ]
+ },
+ {
+  "w": "reluctant",
+  "ipa": "/ɹɪˈlʌktənt/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "Not wanting to take some action; unwilling",
+    "e": "She was reluctant to lend him the money",
+    "syn": [
+     "disinclined",
+     "unwilling",
+     "refractory",
+     "loath"
+    ],
+    "ant": [
+     "greedy"
+    ],
+    "p": "بی‌میل",
+    "prep": [],
+    "ep": "او بی‌میل بود که پول را به او قرض بدهد."
+   }
+  ]
+ },
+ {
+  "w": "remedy",
+  "ipa": "/ˈɹɛmədi/",
+  "senses": [
+   {
+    "pos": "noun",
+    "d": "a successful way of curing an illness or dealing with a problem",
+    "e": "There is no simple remedy for unemployment.",
+    "syn": [
+     "cure",
+     "solution",
+     "redress"
+    ],
+    "ant": [],
+    "p": "درمان؛ چاره",
+    "prep": [
+     "remedy for sth"
+    ],
+    "ep": "راه‌حل ساده‌ای برای بیکاری وجود ندارد."
+   }
+  ]
+ },
+ {
+  "w": "require",
+  "ipa": "/ɹɪˈkwaɪə/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to need something; to make it necessary",
+    "e": "This course requires a lot of reading.",
+    "syn": [
+     "call for",
+     "compel",
+     "necessitate",
+     "command"
+    ],
+    "ant": [
+     "obviate",
+     "eliminate",
+     "rid of"
+    ],
+    "p": "لازم داشتن",
+    "prep": [
+     "require sth of sb"
+    ],
+    "ep": "این درس مستلزم مطالعه فراوانی است."
+   }
+  ]
+ },
+ {
+  "w": "resolve",
+  "ipa": "/ɹiːˈzɒlv/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To reduce to simple or intelligible notions; to make clear or certain; to unravel; to explain",
+    "e": "to resolve a riddle",
+    "syn": [
+     "purpose",
+     "settle",
+     "answer",
+     "conclude"
+    ],
+    "ant": [
+     "aggravate",
+     "compound"
+    ],
+    "p": "حل و فصل کردن",
+    "prep": [],
+    "ep": "حل کردن یک معما"
+   }
+  ]
+ },
+ {
+  "w": "respond",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "To say something in return; to answer; to reply",
+    "e": "to respond to a question or an argument",
+    "syn": [
+     "answer",
+     "reply",
+     "react"
+    ],
+    "ant": [],
+    "p": "پاسخ دادن",
+    "prep": [
+     "respond to sth",
+     "respond with sth"
+    ],
+    "ep": "پاسخ دادن به یک سوال یا استدلال"
+   }
+  ]
+ },
+ {
+  "w": "restrict sth",
+  "ipa": "/rɪˈstrɪkt/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to put a limit on someone or something so that they cannot grow or change",
+    "e": "The new rules restrict parking in the downtown area during the day.",
+    "syn": [
+     "limit",
+     "confine",
+     "curb"
+    ],
+    "ant": [
+     "expand",
+     "extend"
+    ],
+    "p": "محدود کردن",
+    "prep": [
+     "restrict sth to sth"
+    ],
+    "ep": "قوانین جدید پارک کردن در منطقه مرکزی شهر را در طول روز محدود می‌کند."
+   }
+  ]
+ },
+ {
+  "w": "reveal sth",
+  "ipa": "/rɪˈviːl/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to make something known that was previously secret or unknown",
+    "e": "The company refused to reveal the details of the new contract.",
+    "syn": [
+     "disclose",
+     "divulge",
+     "uncover"
+    ],
+    "ant": [
+     "conceal",
+     "hide"
+    ],
+    "p": "فاش کردن",
+    "prep": [],
+    "ep": "شرکت از فاش کردن جزئیات قرارداد جدید خودداری کرد."
+   }
+  ]
+ },
+ {
+  "w": "significant",
+  "ipa": "/sɪɡˈnɪfɪkənt/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "large or important enough to have an effect or to be noticed",
+    "e": "There has been a significant increase in the number of tourists this year.",
+    "syn": [
+     "substantial",
+     "considerable",
+     "notable"
+    ],
+    "ant": [
+     "insignificant",
+     "negligible"
+    ],
+    "p": "قابل توجه",
+    "prep": [],
+    "ep": "امسال افزایشی قابل توجه در تعداد گردشگران رخ داده است."
+   }
+  ]
+ },
+ {
+  "w": "strategy",
+  "ipa": "/ˈstrætədʒi/",
+  "senses": [
+   {
+    "pos": "noun",
+    "d": "a planned series of actions for achieving something, especially over a long period",
+    "e": "The company developed a new sales strategy to attract younger customers.",
+    "syn": [
+     "plan",
+     "approach",
+     "tactic"
+    ],
+    "ant": [],
+    "p": "راهبرد",
+    "prep": [
+     "strategy for sth"
+    ],
+    "ep": "شرکت یک راهبرد فروش جدید برای جذب مشتریان جوان‌تر تدوین کرد."
+   }
+  ]
+ },
+ {
+  "w": "temporary",
+  "ipa": "/ˈtemprəri/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "continuing for a limited period of time, not permanent",
+    "e": "She found a temporary job working at a bookstore for the summer.",
+    "syn": [
+     "provisional",
+     "brief",
+     "short-term"
+    ],
+    "ant": [
+     "permanent",
+     "lasting"
+    ],
+    "p": "موقت",
+    "prep": [],
+    "ep": "او یک کار موقت برای تابستان در یک کتابفروشی پیدا کرد."
+   }
+  ]
+ },
+ {
+  "w": "valuable",
+  "ipa": "/ˈvæljuəbl/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "worth a lot of money, or very useful and helpful",
+    "e": "My grandfather gave me some valuable advice about starting a business.",
+    "syn": [
+     "useful",
+     "helpful",
+     "precious"
+    ],
+    "ant": [
+     "worthless",
+     "useless"
+    ],
+    "p": "ارزشمند",
+    "prep": [],
+    "ep": "پدربزرگم توصیه‌های ارزشمندی درباره راه‌اندازی کسب‌وکار به من داد."
+   }
+  ]
+ },
+ {
+  "w": "volunteer",
+  "ipa": "/ˌvɒlənˈtɪə(r)/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to offer to do something without being forced or paid to do it",
+    "e": "She volunteered to help organize the charity event this weekend.",
+    "syn": [
+     "step forward",
+     "offer"
+    ],
+    "ant": [],
+    "p": "داوطلب شدن",
+    "prep": [
+     "volunteer for sth",
+     "volunteer to do sth"
+    ],
+    "ep": "او داوطلب شد تا در سازماندهی رویداد خیریه این آخر هفته کمک کند."
+   }
+  ]
+ },
+ {
+  "w": "withdraw sth",
+  "ipa": "/wɪðˈdrɔː/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to take back something you said or agreed to do",
+    "e": "The candidate had to withdraw his controversial statement after public criticism.",
+    "syn": [
+     "retract",
+     "remove",
+     "pull out"
+    ],
+    "ant": [
+     "maintain",
+     "keep"
+    ],
+    "p": "پس گرفتن",
+    "prep": [],
+    "ep": "نامزد مجبور شد پس از انتقادهای عمومی، اظهارنظر جنجالی خود را پس بگیرد."
+   }
+  ]
+ },
+ {
+  "w": "witness",
+  "ipa": "/ˈwɪtnəs/",
+  "senses": [
+   {
+    "pos": "noun",
+    "d": "someone who sees a crime or an accident happen",
+    "e": "Police are appealing for any witnesses to come forward with information.",
+    "syn": [
+     "observer",
+     "onlooker"
+    ],
+    "ant": [],
+    "p": "شاهد",
+    "prep": [],
+    "ep": "پلیس از هر شاهدی درخواست می‌کند که اطلاعات خود را ارائه دهد."
+   }
+  ]
+ }
+]

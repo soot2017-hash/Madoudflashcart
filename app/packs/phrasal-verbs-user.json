@@ -1,1 +1,3949 @@
-[{"w": "lead to sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to cause something to happen", "e": "Smoking can lead to serious health problems.", "p": "", "syn": ["cause", "result in", "bring about"], "ant": ["prevent", "hinder"], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "result in sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to make something happen", "e": "The strike resulted in the cancellation of all flights.", "p": "", "syn": ["cause", "lead to", "bring about"], "ant": ["prevent", "avoid"], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "stem from sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to develop as a result of something else", "e": "Her fear of dogs stems from a childhood incident.", "p": "", "syn": ["arise from", "originate from", "derive from"], "ant": ["result in", "lead to"], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "contribute to sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to help to cause something to happen", "e": "Lack of sleep can contribute to poor concentration.", "p": "", "syn": ["lead to", "promote", "add to"], "ant": ["hinder", "impede"], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "bring about sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to make something happen", "e": "The new law brought about major changes in education.", "p": "", "syn": ["cause", "produce", "generate"], "ant": ["prevent", "stop"], "prep": [], "ep": "", "sep": "sep"}]}, {"w": "come about", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to happen, especially in a way that is not planned", "e": "The disagreement came about through a simple misunderstanding.", "p": "", "syn": ["happen", "occur", "take place"], "ant": ["cease", "stop"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "account for sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to be the reason why something happens; to form a particular amount or part of something", "e": "Women account for sixty percent of our employees.", "p": "", "syn": ["explain", "constitute", "make up"], "ant": [], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "put sth down to sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to think that something is caused by a particular thing", "e": "I put his bad mood down to tiredness.", "p": "", "syn": ["attribute to", "ascribe to", "blame on"], "ant": [], "prep": [], "ep": "", "sep": "sep"}]}, {"w": "attribute sth to sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to say or believe that something is the result of a particular thing", "e": "Doctors attributed his recovery to the new treatment.", "p": "", "syn": ["put down to", "ascribe to", "credit with"], "ant": [], "prep": [], "ep": "", "sep": "sep"}]}, {"w": "impact on sth/sb", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to have an important or noticeable effect on someone or something", "e": "Rising prices have had a huge impact on family budgets.", "p": "", "syn": ["affect", "influence", "have an effect on"], "ant": [], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "be rooted in sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to be based on something or caused by something", "e": "The tradition is rooted in ancient customs.", "p": "", "syn": ["originate in", "stem from", "be based on"], "ant": [], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "end up", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to finally be in a particular place or situation, especially when you did not plan it", "e": "We got lost and ended up in a small village.", "p": "", "syn": ["finish up", "wind up", "land up"], "ant": [], "prep": [], "ep": "", "sep": "none"}]}, {"w": "add up to sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to have a particular result or total, especially when this is surprising", "e": "All these small delays add up to three lost hours.", "p": "", "syn": ["amount to", "total", "constitute"], "ant": [], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "amount to sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to be the same as something, or to have the same effect as something", "e": "His silence amounts to an admission of guilt.", "p": "", "syn": ["add up to", "constitute", "be equivalent to"], "ant": [], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "go up", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to increase in price, amount, or level", "e": "House prices went up sharply last year.", "p": "", "syn": ["rise", "increase", "climb"], "ant": ["go down", "fall", "decrease"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "go down", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to decrease in price, amount, or level", "e": "Unemployment went down by two percent this month.", "p": "", "syn": ["fall", "decrease", "drop"], "ant": ["go up", "rise", "increase"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "pick up", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to start to improve or increase after a bad period", "e": "Sales picked up after the holiday season.", "p": "", "syn": ["improve", "recover", "rally"], "ant": ["decline", "worsen"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "level off/out", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to stop increasing or decreasing and stay at a steady level", "e": "After years of growth, profits finally leveled off.", "p": "", "syn": ["stabilize", "plateau", "flatten out"], "ant": ["rise", "fall"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "drop off", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to decrease, especially by a noticeable amount", "e": "Attendance dropped off towards the end of the course.", "p": "", "syn": ["decline", "fall off", "slip"], "ant": ["increase", "rise"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "tail off", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to decrease gradually and become smaller or less", "e": "The sound of cheering tailed off as darkness fell.", "p": "", "syn": ["diminish", "dwindle", "fall away"], "ant": ["increase", "grow"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "build up", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to increase or make something increase gradually", "e": "Tension built up in the city before the match.", "p": "", "syn": ["accumulate", "grow", "expand"], "ant": ["reduce", "decrease"], "prep": [], "ep": "", "sep": "both"}]}, {"w": "cut back", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to reduce something such as spending or the amount you use", "e": "We should cut back on sugar in our diet.", "p": "", "syn": ["reduce", "cut down", "trim"], "ant": ["increase", "expand"], "prep": [], "ep": "", "sep": "both"}]}, {"w": "average out at sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to have a particular average amount or level", "e": "My working hours average out at about forty a week.", "p": "", "syn": ["average", "come to an average of"], "ant": [], "prep": [], "ep": "", "sep": "none"}]}, {"w": "slow down", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to become slower or make something become slower", "e": "The car slowed down as it approached the school.", "p": "", "syn": ["decelerate", "slacken", "retard"], "ant": ["speed up", "accelerate"], "prep": [], "ep": "", "sep": "both"}]}, {"w": "die out", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to gradually become less common and finally disappear completely", "e": "Many old customs are dying out.", "p": "", "syn": ["become extinct", "vanish", "disappear"], "ant": ["flourish", "thrive"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "run out", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to use all of something and not have any left", "e": "We ran out of petrol on the motorway.", "p": "", "syn": ["be used up", "be exhausted", "dry up"], "ant": [], "prep": [], "ep": "", "sep": "none"}]}, {"w": "use up sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to use all of something until there is none left", "e": "She used up all the flour making pancakes.", "p": "", "syn": ["consume", "exhaust", "deplete"], "ant": ["save", "conserve"], "prep": [], "ep": "", "sep": "sep"}]}, {"w": "deal with sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to take the necessary action, especially in order to solve a problem", "e": "Our office deals with customer complaints.", "p": "", "syn": ["handle", "manage", "cope with"], "ant": ["ignore", "neglect"], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "cope with sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to succeed in dealing with a difficult problem or situation", "e": "He coped well with the pressure of the exams.", "p": "", "syn": ["manage", "deal with", "handle"], "ant": ["fail", "struggle"], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "sort out sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to solve a problem or deal with a difficult situation", "e": "It took an hour to sort out the booking problem.", "p": "", "syn": ["resolve", "solve", "fix"], "ant": ["ignore", "neglect"], "prep": [], "ep": "", "sep": "sep"}]}, {"w": "work out sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to think about a problem or situation carefully in order to understand it or find a solution", "e": "I couldn't work out how to open the file.", "p": "", "syn": ["figure out", "solve", "understand"], "ant": [], "prep": [], "ep": "", "sep": "sep"}]}, {"w": "come up with sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to produce an idea, plan, or solution", "e": "She came up with a brilliant idea for the project.", "p": "", "syn": ["produce", "devise", "think of"], "ant": [], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "think through sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to consider all the possible results or effects of something carefully", "e": "Think the plan through before you invest your money.", "p": "", "syn": ["consider", "ponder", "evaluate"], "ant": ["ignore", "overlook"], "prep": [], "ep": "", "sep": "sep"}]}, {"w": "iron out sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to remove small problems or difficulties, especially by discussing them", "e": "The two companies met to iron out their differences.", "p": "", "syn": ["resolve", "settle", "smooth out"], "ant": [], "prep": [], "ep": "", "sep": "sep"}]}, {"w": "crack down", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to become more strict in dealing with a problem and punishing the people involved", "e": "Police are cracking down on illegal parking.", "p": "", "syn": ["clamp down", "get tough", "crack down on"], "ant": ["relax", "loosen"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "clamp down", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to take strict action to stop something happening", "e": "The government clamped down on tax evasion.", "p": "", "syn": ["crack down", "crack down on", "clamp down on"], "ant": ["relax", "ease up"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "stamp out sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to completely stop something bad from continuing", "e": "The campaign aims to stamp out corruption.", "p": "", "syn": ["eliminate", "eradicate", "wipe out"], "ant": ["encourage", "promote"], "prep": [], "ep": "", "sep": "sep"}]}, {"w": "root out sth/sb", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to find and get rid of a problem or someone who is causing trouble", "e": "The new manager rooted out corruption in the department.", "p": "", "syn": ["eliminate", "eradicate", "weed out"], "ant": [], "prep": [], "ep": "", "sep": "sep"}]}, {"w": "rule out sth/sb", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to decide that something is not possible or suitable", "e": "The police have not ruled out theft.", "p": "", "syn": ["exclude", "eliminate", "dismiss"], "ant": ["consider", "include"], "prep": [], "ep": "", "sep": "sep"}]}, {"w": "wipe out sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to completely destroy or get rid of something", "e": "The disease almost wiped out the island's population.", "p": "", "syn": ["destroy", "eradicate", "annihilate"], "ant": ["create", "preserve"], "prep": [], "ep": "", "sep": "sep"}]}, {"w": "phase out sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to gradually stop using or providing something", "e": "The country is phasing out coal-fired power stations.", "p": "", "syn": ["eliminate", "discontinue", "wind down"], "ant": ["introduce", "phase in"], "prep": [], "ep": "", "sep": "sep"}]}, {"w": "clear up sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to solve a problem or explain something that was confusing", "e": "There are a few points I'd like to clear up.", "p": "", "syn": ["resolve", "clarify", "settle"], "ant": ["confuse", "complicate"], "prep": [], "ep": "", "sep": "sep"}]}, {"w": "make up for sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to make a bad situation better, or replace something that has been lost", "e": "He bought her flowers to make up for forgetting her birthday.", "p": "", "syn": ["compensate for", "atone for", "offset"], "ant": [], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "fall back on sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to use something as a way of dealing with a problem, especially because there is no other choice", "e": "If the business fails, I can fall back on my savings.", "p": "", "syn": ["resort to", "turn to", "rely on"], "ant": [], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "resort to sth/doing sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to do something bad or unpleasant because you cannot think of any other way to achieve something", "e": "They had to resort to borrowing money from their neighbors.", "p": "", "syn": ["fall back on", "turn to", "stoop to"], "ant": [], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "put up with sb/sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to accept an unpleasant situation or person without complaining", "e": "I can't put up with this noise any longer.", "p": "", "syn": ["tolerate", "endure", "bear"], "ant": ["reject", "oppose"], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "get by", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to have just enough money or knowledge to survive or do what you need", "e": "They get by on one small salary.", "p": "", "syn": ["manage", "survive", "cope"], "ant": ["fail", "struggle"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "cut down", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to reduce the amount you eat, drink, or use", "e": "You should cut down on coffee before bedtime.", "p": "", "syn": ["reduce", "cut back", "trim"], "ant": ["increase", "expand"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "cut down sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to reduce the amount or quantity of something", "e": "The doctor told him to cut down his fat intake.", "p": "", "syn": ["reduce", "cut back", "decrease"], "ant": ["increase", "raise"], "prep": [], "ep": "", "sep": "sep"}]}, {"w": "give up", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to stop doing or having something", "e": "She gave up smoking two years ago.", "p": "", "syn": ["quit", "stop", "abandon"], "ant": ["continue", "persist"], "prep": [], "ep": "", "sep": "both"}]}, {"w": "break down", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "if a machine or vehicle breaks down, it stops working; if a system or discussion breaks down, it fails", "e": "Our car broke down on the motorway.", "p": "", "syn": ["fail", "collapse", "stop working"], "ant": ["work", "function"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "fall apart", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to become broken or start failing completely", "e": "My old backpack is falling apart.", "p": "", "syn": ["disintegrate", "collapse", "break up"], "ant": ["hold together", "succeed"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "fall through", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "if a plan or agreement falls through, it fails to happen", "e": "The deal fell through at the last minute.", "p": "", "syn": ["fail", "collapse", "be abandoned"], "ant": ["succeed", "go ahead"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "miss out", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to not get the benefit or pleasure of something because you are not there or do not do it", "e": "If you don't come, you'll miss out on all the fun.", "p": "", "syn": ["lose out", "forfeit", "skip"], "ant": [], "prep": [], "ep": "", "sep": "none"}]}, {"w": "face up to sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to accept and deal with an unpleasant fact or situation", "e": "He finally faced up to the fact that he needed help.", "p": "", "syn": ["confront", "acknowledge", "accept"], "ant": ["avoid", "evade"], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "come up against sth/sb", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to have to deal with a problem or difficulty", "e": "We came up against strong opposition to the plan.", "p": "", "syn": ["encounter", "confront", "run into"], "ant": [], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "point out sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to tell someone something that they did not already know or had not thought about", "e": "She pointed out that we had missed an important detail.", "p": "", "syn": ["indicate", "mention", "draw attention to"], "ant": [], "prep": [], "ep": "", "sep": "sep"}]}, {"w": "bring up sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to mention a subject or start to talk about it", "e": "Don't bring that topic up at dinner.", "p": "", "syn": ["raise", "mention", "introduce"], "ant": ["suppress", "conceal"], "prep": [], "ep": "", "sep": "sep"}]}, {"w": "put forward sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to suggest an idea, plan, or opinion for other people to consider", "e": "The committee put forward a new proposal.", "p": "", "syn": ["propose", "suggest", "submit"], "ant": ["withdraw", "retract"], "prep": [], "ep": "", "sep": "sep"}]}, {"w": "sum up", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to give the main facts or ideas about something in a short, clear way", "e": "To sum up, the project was a great success.", "p": "", "syn": ["summarize", "recap", "outline"], "ant": [], "prep": [], "ep": "", "sep": "both"}]}, {"w": "touch on sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to mention a subject briefly when you are talking or writing about something else", "e": "The lecture touched on the history of the region.", "p": "", "syn": ["mention", "refer to", "allude to"], "ant": ["elaborate", "expand on"], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "look into sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to try to find out the truth about a problem, crime, etc.", "e": "The police are looking into the robbery.", "p": "", "syn": ["investigate", "examine", "explore"], "ant": ["ignore", "overlook"], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "find out", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to get information, especially by asking or searching", "e": "I found out that the meeting had been cancelled.", "p": "", "syn": ["discover", "learn", "determine"], "ant": [], "prep": [], "ep": "", "sep": "both"}]}, {"w": "carry out sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to do something that you have planned or been told to do", "e": "The team carried out a detailed survey.", "p": "", "syn": ["conduct", "perform", "execute"], "ant": ["abandon", "neglect"], "prep": [], "ep": "", "sep": "sep"}]}, {"w": "speak up", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to talk louder; to express your opinion openly", "e": "Could you speak up? I can't hear you.", "p": "", "syn": ["speak out", "voice", "assert oneself"], "ant": ["be quiet", "keep silent"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "speak out", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to publicly speak in support of or against something", "e": "Several employees spoke out against the new rules.", "p": "", "syn": ["speak up", "protest", "object"], "ant": ["remain silent", "keep quiet"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "stand up for sth/sb", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to support or defend someone or something", "e": "Always stand up for what you believe in.", "p": "", "syn": ["defend", "support", "champion"], "ant": ["oppose", "attack"], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "stand for sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to represent a word, phrase, or idea; to support a particular set of beliefs", "e": "The letters BBC stand for British Broadcasting Corporation.", "p": "", "syn": ["represent", "symbolize", "mean"], "ant": [], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "agree to", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to accept a plan, suggestion, or request", "e": "The board finally agreed to the merger.", "p": "", "syn": ["accept", "consent to", "approve"], "ant": ["refuse", "reject"], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "go along with sth/sb", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to agree with or support someone or something", "e": "I'll go along with whatever the majority decides.", "p": "", "syn": ["agree to", "support", "cooperate with"], "ant": ["oppose", "resist"], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "give in", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to finally agree to do something you were refusing to do", "e": "The children nagged until their parents gave in.", "p": "", "syn": ["surrender", "yield", "concede"], "ant": ["resist", "hold out"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "back down", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to admit that you are wrong or that you cannot win an argument", "e": "He refused to back down in the argument.", "p": "", "syn": ["retreat", "give in", "concede"], "ant": ["insist", "stand firm"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "weigh up sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to consider the advantages and disadvantages of something carefully", "e": "She weighed up the costs and benefits carefully.", "p": "", "syn": ["evaluate", "consider", "assess"], "ant": [], "prep": [], "ep": "", "sep": "sep"}]}, {"w": "think over sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to consider something carefully before making a decision", "e": "I'll think your offer over and call you tomorrow.", "p": "", "syn": ["consider", "ponder", "deliberate"], "ant": [], "prep": [], "ep": "", "sep": "sep"}]}, {"w": "sleep on sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to delay making a decision about something until the next day", "e": "Don't decide now — sleep on it.", "p": "", "syn": ["delay", "postpone", "defer"], "ant": ["decide immediately"], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "decide on sth/sb", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to choose something or someone after thinking carefully", "e": "We've decided on the blue design.", "p": "", "syn": ["choose", "select", "settle on"], "ant": [], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "settle on sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to finally choose something or someone", "e": "After hours of discussion, they settled on a price.", "p": "", "syn": ["decide on", "choose", "opt for"], "ant": [], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "opt out", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to decide not to take part in something or stop being involved in it", "e": "Some parents chose to opt out of the school program.", "p": "", "syn": ["withdraw", "pull out", "back out"], "ant": ["opt in", "join"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "bank on sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to depend on something happening", "e": "I'm banking on good weather for the picnic.", "p": "", "syn": ["rely on", "count on", "depend on"], "ant": [], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "allow for sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to take something into consideration when making plans", "e": "The schedule allows for delays on the motorway.", "p": "", "syn": ["take into account", "consider", "provide for"], "ant": ["ignore", "overlook"], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "put off sth/doing sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to delay doing something", "e": "Never put off until tomorrow what you can do today.", "p": "", "syn": ["postpone", "delay", "defer"], "ant": ["do immediately", "advance"], "prep": [], "ep": "", "sep": "sep"}]}, {"w": "make up your mind", "ipa": "", "senses": [{"pos": "phrase", "d": "to make a decision", "e": "Have you made up your mind about the new job?", "p": "", "syn": ["decide", "resolve", "determine"], "ant": ["hesitate", "waver"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "figure out sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to think about a problem or situation until you find the answer or understand it", "e": "I can't figure out why he left without saying goodbye.", "p": "", "syn": ["work out", "solve", "understand"], "ant": [], "prep": [], "ep": "", "sep": "sep"}]}, {"w": "refer to sb/sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to mention or speak about someone or something", "e": "The professor often refers to her own research.", "p": "", "syn": ["mention", "allude to", "cite"], "ant": [], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "insist on sth/doing sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to demand that something must happen or be done", "e": "She insisted on paying for the meal.", "p": "", "syn": ["demand", "require", "press for"], "ant": [], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "object to sb/sth/doing sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to say that you disagree with or oppose something", "e": "I object to being spoken to like that.", "p": "", "syn": ["oppose", "disapprove of", "protest against"], "ant": ["approve", "support"], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "relate to sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to be connected with something", "e": "The course relates to modern marketing methods.", "p": "", "syn": ["be connected with", "concern", "have to do with"], "ant": [], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "focus on sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to give special attention to one particular thing", "e": "The report focuses on climate change.", "p": "", "syn": ["concentrate on", "center on", "zoom in on"], "ant": ["ignore", "neglect"], "prep": [], "ep": "", "sep": "both"}]}, {"w": "rely on sb/sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to trust or depend on someone or something", "e": "You can't rely on the buses in this city.", "p": "", "syn": ["depend on", "count on", "bank on"], "ant": [], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "depend on sth/sb", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to need someone or something in order to survive or be successful", "e": "The town depends on tourism for jobs.", "p": "", "syn": ["rely on", "count on", "hinge on"], "ant": [], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "count on sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to depend on something happening or on someone doing something", "e": "You can count on me to finish the work.", "p": "", "syn": ["rely on", "depend on", "bank on"], "ant": [], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "drop out", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to stop taking part in an activity, especially school or a course", "e": "He dropped out of college after one year.", "p": "", "syn": ["quit", "withdraw", "leave"], "ant": ["enroll", "join"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "hand in sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to give something to a person in authority", "e": "Please hand in your homework on Friday.", "p": "", "syn": ["submit", "give in", "turn in"], "ant": ["withdraw", "take back"], "prep": [], "ep": "", "sep": "sep"}]}, {"w": "brush up", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to improve your knowledge of something you have not used for a while", "e": "I need to brush up on my French before the trip.", "p": "", "syn": ["revise", "refresh", "polish up"], "ant": [], "prep": [], "ep": "", "sep": "none"}]}, {"w": "catch up with sb", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to reach the same level or standard as someone who is ahead of you", "e": "After her illness she worked hard to catch up with her classmates.", "p": "", "syn": ["overtake", "reach", "keep pace with"], "ant": ["fall behind", "lag behind"], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "fall behind", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to fail to keep up with others or make progress at the same rate", "e": "He fell behind with his rent payments.", "p": "", "syn": ["lag behind", "trail", "drop back"], "ant": ["catch up", "keep up"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "keep up", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to continue to do something or stay at the same level as others", "e": "Walk slowly — I can't keep up!", "p": "", "syn": ["maintain", "sustain", "keep pace"], "ant": ["fall behind", "stop"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "sign up", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to put your name on a list to join a group or take part in an activity", "e": "She signed up for an evening photography course.", "p": "", "syn": ["enroll", "register", "join up"], "ant": ["withdraw", "cancel"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "read up on sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to read a lot about a subject in order to learn about it", "e": "I read up on the company before the interview.", "p": "", "syn": ["study", "research", "learn about"], "ant": [], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "look up sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to find information in a book or list", "e": "If you don't know the word, look it up in a dictionary.", "p": "", "syn": ["check", "search for", "find"], "ant": [], "prep": [], "ep": "", "sep": "sep"}]}, {"w": "write up sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to write a report or article about something that has happened", "e": "He wrote up the experiment for the journal.", "p": "", "syn": ["report", "document", "draft"], "ant": [], "prep": [], "ep": "", "sep": "sep"}]}, {"w": "fill out sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to write information in the spaces on a form", "e": "Please fill out this form and sign at the bottom.", "p": "", "syn": ["complete", "fill in", "write out"], "ant": [], "prep": [], "ep": "", "sep": "sep"}]}, {"w": "take up sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to start doing a new activity or job", "e": "She has taken up yoga to relax.", "p": "", "syn": ["begin", "start", "adopt"], "ant": ["give up", "quit"], "prep": [], "ep": "", "sep": "sep"}]}, {"w": "take on sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to accept a job or responsibility", "e": "He took on too much work and made himself ill.", "p": "", "syn": ["undertake", "accept", "assume"], "ant": ["refuse", "decline"], "prep": [], "ep": "", "sep": "sep"}]}, {"w": "set up sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to start a company, organization, or system", "e": "They set up a small software company together.", "p": "", "syn": ["establish", "found", "create"], "ant": ["close down", "dissolve"], "prep": [], "ep": "", "sep": "sep"}]}, {"w": "take over", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to take control of something", "e": "A rival firm took over the factory last year.", "p": "", "syn": ["assume control of", "take charge of", "seize"], "ant": ["relinquish", "give up"], "prep": [], "ep": "", "sep": "sep"}]}, {"w": "step down", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to leave an important job or position", "e": "The chairman stepped down after ten years.", "p": "", "syn": ["resign", "stand down", "retire"], "ant": ["take up", "assume"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "branch out", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to start doing something different from what you usually do", "e": "The bakery is branching out into wedding cakes.", "p": "", "syn": ["expand", "diversify", "move into"], "ant": ["specialize", "narrow"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "fit in", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to belong to a group and be accepted by its members", "e": "She quickly fit in with her new colleagues.", "p": "", "syn": ["belong", "integrate", "blend in"], "ant": ["stand out", "be excluded"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "stand out", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to be much better or more noticeable than others", "e": "His bright red coat made him stand out in the crowd.", "p": "", "syn": ["be prominent", "be conspicuous", "excel"], "ant": ["fit in", "blend in"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "show off", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to behave in a way that is intended to attract attention or admiration", "e": "Stop showing off and let someone else answer.", "p": "", "syn": ["boast", "brag", "flaunt"], "ant": ["be modest", "hide"], "prep": [], "ep": "", "sep": "both"}]}, {"w": "look forward to sth/doing sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to be excited and pleased about something that is going to happen", "e": "I'm really looking forward to the weekend.", "p": "", "syn": ["anticipate", "await", "expect"], "ant": ["dread"], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "get along", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to have a friendly relationship with someone", "e": "Do you get along with your roommates?", "p": "", "syn": ["get on", "be friendly", "coexist"], "ant": ["argue", "fight"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "pick up sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to learn something without formal teaching, or to collect something", "e": "Children pick up languages incredibly quickly.", "p": "", "syn": ["learn", "acquire", "collect"], "ant": [], "prep": [], "ep": "", "sep": "sep"}]}, {"w": "work towards sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to try to achieve something over a period of time", "e": "Both parties are working towards a peaceful solution.", "p": "", "syn": ["strive for", "aim for", "pursue"], "ant": ["abandon", "give up"], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "set about sth/doing sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to start doing something, especially in a determined way", "e": "She set about cleaning the house straight away.", "p": "", "syn": ["begin", "start", "embark on"], "ant": ["finish", "stop"], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "save up", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to keep money in order to buy something you want", "e": "He's saving up for a new motorbike.", "p": "", "syn": ["put aside", "set aside", "put away"], "ant": ["spend", "squander"], "prep": [], "ep": "", "sep": "both"}]}, {"w": "pay off sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to pay all the money you owe on a debt", "e": "It took them ten years to pay off the mortgage.", "p": "", "syn": ["settle", "clear", "discharge"], "ant": [], "prep": [], "ep": "", "sep": "sep"}]}, {"w": "set aside sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to keep money or time for a special purpose", "e": "Try to set aside an hour a day for reading.", "p": "", "syn": ["save", "reserve", "allocate"], "ant": ["spend", "use up"], "prep": [], "ep": "", "sep": "sep"}]}, {"w": "cash in on sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to take advantage of a situation to make money", "e": "Shops cashed in on the World Cup craze.", "p": "", "syn": ["exploit", "profit from", "capitalize on"], "ant": [], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "give away sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to give something to someone without asking for money", "e": "She gave all her old clothes away.", "p": "", "syn": ["donate", "hand out", "part with"], "ant": ["keep", "sell"], "prep": [], "ep": "", "sep": "sep"}]}, {"w": "break out", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "if a war, fire, or disease breaks out, it starts suddenly", "e": "Fire broke out in the kitchen late at night.", "p": "", "syn": ["erupt", "start suddenly", "flare up"], "ant": ["end", "die down"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "catch on", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to become popular or fashionable", "e": "The new dance quickly caught on among teenagers.", "p": "", "syn": ["become popular", "take off", "become fashionable"], "ant": ["fade", "decline"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "log in", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to connect to a computer system by typing your name and password", "e": "You must log in with your password to read your emails.", "p": "", "syn": ["sign in", "log on", "sign on"], "ant": ["log out", "sign out"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "log out", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to disconnect from a computer system", "e": "Always log out when you use a public computer.", "p": "", "syn": ["sign out", "log off", "sign off"], "ant": ["log in", "sign in"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "back up", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to make a copy of computer information so that it is not lost", "e": "Remember to back up your files every week.", "p": "", "syn": ["copy", "save", "archive"], "ant": ["delete", "erase"], "prep": [], "ep": "", "sep": "both"}]}, {"w": "click on sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to press a button on a computer mouse to choose something on the screen", "e": "Click on the link to open the page.", "p": "", "syn": ["select", "press", "tap"], "ant": [], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "print out", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to produce a paper copy of a document from a computer", "e": "Could you print out the report for me?", "p": "", "syn": ["print", "run off", "produce a copy"], "ant": [], "prep": [], "ep": "", "sep": "sep"}]}, {"w": "switch on", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to turn on a light, machine, or electronic device", "e": "He switched on the kettle and made some tea.", "p": "", "syn": ["turn on", "activate", "power up"], "ant": ["switch off", "turn off"], "prep": [], "ep": "", "sep": "sep"}]}, {"w": "switch off", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to turn off a light, machine, or electronic device", "e": "Please switch off your phones during the exam.", "p": "", "syn": ["turn off", "deactivate", "power down"], "ant": ["switch on", "turn on"], "prep": [], "ep": "", "sep": "sep"}]}, {"w": "shut down", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to stop a machine or computer from working, or to close a business", "e": "The factory shut down after fifty years of business.", "p": "", "syn": ["close down", "power off", "stop"], "ant": ["start up", "open"], "prep": [], "ep": "", "sep": "both"}]}, {"w": "turn off sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to stop a machine, light, or supply of something", "e": "Turn off the lights when you leave the room.", "p": "", "syn": ["switch off", "deactivate", "shut off"], "ant": ["turn on", "switch on"], "prep": [], "ep": "", "sep": "sep"}]}, {"w": "hack into sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to secretly get into someone else's computer system", "e": "Somebody hacked into their email account.", "p": "", "syn": ["break into", "access illegally", "crack"], "ant": [], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "set up", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to make a piece of equipment or a system ready to use", "e": "It took an hour to set up the new printer.", "p": "", "syn": ["install", "configure", "prepare"], "ant": ["dismantle", "remove"], "prep": [], "ep": "", "sep": "sep"}]}, {"w": "come down with sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to become ill with a minor disease", "e": "I came down with the flu last week.", "p": "", "syn": ["catch", "contract", "go down with"], "ant": ["recover", "get over"], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "pass away", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to die", "e": "Her grandfather passed away last month.", "p": "", "syn": ["die", "pass on", "perish"], "ant": ["live", "survive"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "shake off sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to get rid of an illness or a problem", "e": "He just can't shake off this cold.", "p": "", "syn": ["get rid of", "recover from", "throw off"], "ant": [], "prep": [], "ep": "", "sep": "sep"}]}, {"w": "work out", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to do physical exercises to get fit", "e": "She works out at the gym three times a week.", "p": "", "syn": ["exercise", "train", "keep fit"], "ant": ["rest", "be inactive"], "prep": [], "ep": "", "sep": "sep"}]}, {"w": "fight off sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to try hard to get rid of an illness or a feeling", "e": "Rest and plenty of fluids help the body fight off infection.", "p": "", "syn": ["resist", "ward off", "repel"], "ant": ["succumb to", "give in to"], "prep": [], "ep": "", "sep": "sep"}]}, {"w": "burn out", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to become extremely tired and ill because you have worked too hard", "e": "Many young doctors burn out within a few years.", "p": "", "syn": ["exhaust", "wear out", "overwork"], "ant": ["recover", "rest"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "slow down", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to become less active or to make something less active", "e": "You need to slow down before you make yourself ill.", "p": "", "syn": ["relax", "take it easy", "decelerate"], "ant": ["speed up", "hurry"], "prep": [], "ep": "", "sep": "both"}]}, {"w": "calm down", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to become less angry or excited, or to make someone less angry or excited", "e": "Take a deep breath and calm down.", "p": "", "syn": ["relax", "soothe", "quiet down"], "ant": ["agitate", "excite"], "prep": [], "ep": "", "sep": "both"}]}, {"w": "cheer up", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to become happier or to make someone happier", "e": "Cheer up! The news isn't that bad.", "p": "", "syn": ["brighten up", "lift someone's spirits", "console"], "ant": ["sadden", "depress"], "prep": [], "ep": "", "sep": "both"}]}, {"w": "grow up", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to change from being a child to being an adult", "e": "I grew up in a small town near the coast.", "p": "", "syn": ["mature", "develop", "become an adult"], "ant": [], "prep": [], "ep": "", "sep": "none"}]}, {"w": "look after sb/sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to take care of someone or something", "e": "Who looks after the dog when you travel?", "p": "", "syn": ["take care of", "care for", "mind"], "ant": ["neglect", "abandon"], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "bring up sb", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to care for a child until they are an adult", "e": "Her grandparents brought her up.", "p": "", "syn": ["raise", "rear", "nurture"], "ant": ["neglect", "abandon"], "prep": [], "ep": "", "sep": "sep"}]}, {"w": "build up sb", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to make someone stronger or more confident", "e": "A good coach builds the team's confidence up.", "p": "", "syn": ["strengthen", "boost", "encourage"], "ant": ["weaken", "undermine"], "prep": [], "ep": "", "sep": "sep"}]}, {"w": "stay up", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to go to bed later than usual", "e": "The kids stay up late during the holidays.", "p": "", "syn": ["stay awake", "remain up", "keep late hours"], "ant": ["go to bed early", "retire"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "sleep in", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to sleep later than usual in the morning", "e": "I love sleeping in on Sundays.", "p": "", "syn": ["oversleep", "lie in", "sleep late"], "ant": ["get up early", "rise early"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "get up", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to get out of bed", "e": "He gets up at six every morning.", "p": "", "syn": ["rise", "awake", "get out of bed"], "ant": ["go to bed", "lie down"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "eat out", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to eat a meal in a restaurant instead of at home", "e": "We eat out most Fridays.", "p": "", "syn": ["dine out", "eat at a restaurant"], "ant": ["eat in", "dine at home"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "hang out", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to spend time in a place doing nothing in particular", "e": "The teenagers hang out at the shopping mall.", "p": "", "syn": ["spend time", "loiter", "socialize"], "ant": [], "prep": [], "ep": "", "sep": "none"}]}, {"w": "drop in", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to visit someone informally without arranging it first", "e": "Drop in for a coffee whenever you're in town.", "p": "", "syn": ["drop by", "call in", "pop in"], "ant": [], "prep": [], "ep": "", "sep": "none"}]}, {"w": "come over", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to visit someone at their house", "e": "Why don't you come over for dinner tonight?", "p": "", "syn": ["visit", "call round", "drop by"], "ant": [], "prep": [], "ep": "", "sep": "none"}]}, {"w": "catch up", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to meet someone you know in order to find out what they have been doing", "e": "Let's catch up over coffee next week.", "p": "", "syn": ["meet up", "get together", "reconnect"], "ant": [], "prep": [], "ep": "", "sep": "none"}]}, {"w": "fall out", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to have an argument with someone and stop being friendly with them", "e": "The two sisters fell out over money.", "p": "", "syn": ["argue", "quarrel", "have a disagreement"], "ant": ["make up", "reconcile"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "make up", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to become friendly with someone again after an argument", "e": "They argued, but they made up the next day.", "p": "", "syn": ["reconcile", "patch things up", "bury the hatchet"], "ant": ["fall out", "argue"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "split up", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to end a marriage or romantic relationship", "e": "The couple split up after five years together.", "p": "", "syn": ["separate", "break up", "divorce"], "ant": ["get together", "reconcile"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "break up", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to end a romantic relationship or marriage", "e": "She broke up with her boyfriend last month.", "p": "", "syn": ["split up", "separate", "part"], "ant": ["get together", "make up"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "fall for sb/sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to start to love someone or to be tricked by something", "e": "He fell for her the moment they met.", "p": "", "syn": ["fall in love with", "be taken in by", "be deceived by"], "ant": [], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "settle down", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to start living a quiet and stable life, especially after getting married", "e": "After years abroad, he settled down and got married.", "p": "", "syn": ["calm down", "stabilize", "establish a routine"], "ant": [], "prep": [], "ep": "", "sep": "none"}]}, {"w": "go out with sb", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to have a romantic relationship with someone", "e": "They've been going out with each other for a year.", "p": "", "syn": ["date", "be involved with", "see"], "ant": ["break up with", "split up with"], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "ask out sb", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to invite someone to go somewhere with you on a date", "e": "He finally asked her out to the cinema.", "p": "", "syn": ["invite out", "date", "proposition"], "ant": [], "prep": [], "ep": "", "sep": "sep"}]}, {"w": "let down sb", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to disappoint someone by not doing what they expected", "e": "I promised I'd help, and I won't let you down.", "p": "", "syn": ["disappoint", "fail", "betray"], "ant": ["support", "satisfy"], "prep": [], "ep": "", "sep": "sep"}]}, {"w": "turn up", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to arrive at a place, especially unexpectedly", "e": "He turned up an hour late for the interview.", "p": "", "syn": ["arrive", "show up", "appear"], "ant": ["leave", "depart"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "show up", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to arrive at a place, especially when expected", "e": "Only half of the guests showed up.", "p": "", "syn": ["turn up", "arrive", "appear"], "ant": ["be absent", "miss"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "move in", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to start living in a new house or apartment", "e": "They're moving in on Saturday.", "p": "", "syn": ["take up residence", "settle in", "relocate"], "ant": ["move out", "leave"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "move out", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to stop living in a particular house or apartment", "e": "She moved out of her parents' house at eighteen.", "p": "", "syn": ["leave", "vacate", "relocate"], "ant": ["move in", "settle"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "move on", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to start doing something new after finishing something else", "e": "He decided to move on and find a new job.", "p": "", "syn": ["proceed", "advance", "progress"], "ant": ["stay", "remain"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "hang on", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to wait for a short time", "e": "Hang on a moment — I'll get a pen.", "p": "", "syn": ["wait", "hold on", "hold the line"], "ant": ["proceed", "go ahead"], "prep": [], "ep": "", "sep": "none"}]}, {"w": "end up doing sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to finally do something, especially when you did not plan to", "e": "We ended up staying until midnight.", "p": "", "syn": ["finish up doing", "wind up doing", "land up doing"], "ant": [], "prep": [], "ep": "", "sep": "none"}]}, {"w": "look up to sb", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to admire and respect someone", "e": "Children often look up to their older siblings.", "p": "", "syn": ["admire", "respect", "idolize"], "ant": ["look down on", "despise"], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "look down on sb/sth", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to think that someone or something is less important or worse than you", "e": "Never look down on people with less education.", "p": "", "syn": ["despise", "scorn", "disdain"], "ant": ["look up to", "admire"], "prep": [], "ep": "", "sep": "insep"}]}, {"w": "check in", "ipa": "", "senses": [{"pos": "phrasal verb", "d": "to register at a hotel or an airport", "e": "Passengers should check in two hours before the flight.", "p": "", "syn": ["register", "sign in", "enroll"], "ant": ["check out"], "prep": [], "ep": "", "sep": "none"}]}]
+[
+ {
+  "w": "account for sth",
+  "ipa": "/əˈkaʊnt fɔːr/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to be the explanation or cause for something, or to form a particular amount",
+    "e": "Women account for nearly sixty percent of our total workforce.",
+    "p": "توجیه کردن، دلیل چیزی بودن، تشکیل دادن (درصد یا آمار)",
+    "syn": [
+     "explain",
+     "make up",
+     "constitute"
+    ],
+    "ant": [],
+    "prep": [
+     "account for sth"
+    ],
+    "ep": "زنان نزدیک به شصت درصد از کل نیروی کار ما را تشکیل می‌دهند.",
+    "sep": "insep"
+   }
+  ]
+ },
+ {
+  "w": "add up to sth",
+  "ipa": "/æd ˈʌp tuː ˌsʌmθɪŋ/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to result in a particular total or have a specific overall effect",
+    "e": "All these minor expenses will add up to a significant amount by next month.",
+    "p": "به رقم یا نتیجه‌ای رسیدن، مجموعاً چیزی شدن",
+    "syn": [
+     "amount to",
+     "total",
+     "constitute"
+    ],
+    "ant": [],
+    "prep": [
+     "add up to sth"
+    ],
+    "ep": "تمام این هزینه‌های جزئی تا ماه آینده به مبلغ قابل توجهی خواهند رسید.",
+    "sep": "insep"
+   }
+  ]
+ },
+ {
+  "w": "agree to sth",
+  "ipa": "/əˈgriː tuː/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to accept a plan, proposal, or condition after considering it",
+    "e": "The board of directors finally agreed to the proposed merger.",
+    "p": "توافق کردن با، تن دادن به، پذیرفتن پیشنهاد یا طرحی",
+    "syn": [
+     "consent to",
+     "approve",
+     "accept"
+    ],
+    "ant": [
+     "reject",
+     "refuse"
+    ],
+    "prep": [
+     "agree to sth"
+    ],
+    "ep": "هیئت مدیره در نهایت با ادغام پیشنهادی موافقت کرد.",
+    "sep": "insep"
+   }
+  ]
+ },
+ {
+  "w": "allow for sth",
+  "ipa": "/əˈlaʊ ˌfɔː(r)/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to include something in your calculations or plans because it might happen",
+    "e": "You should allow for extra time to get to the airport during rush hour.",
+    "p": "در نظر گرفتن، لحاظ کردن",
+    "syn": [
+     "take into account",
+     "factor in",
+     "provide for"
+    ],
+    "ant": [
+     "ignore",
+     "overlook"
+    ],
+    "prep": [],
+    "ep": "باید برای رسیدن به فرودگاه در ساعات اوج ترافیک وقت اضافه در نظر بگیرید.",
+    "sep": "insep"
+   }
+  ]
+ },
+ {
+  "w": "amount to sth",
+  "ipa": "/əˈmaʊnt tuː ˌsʌmθɪŋ/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to be the same as something, or to have the same practical effect",
+    "e": "His silence on the matter amounts to a complete admission of guilt.",
+    "p": "معادل بودن با، به معنای چیزی بودن",
+    "syn": [
+     "add up to",
+     "constitute",
+     "be equivalent to"
+    ],
+    "ant": [],
+    "prep": [
+     "amount to sth"
+    ],
+    "ep": "سکوت او در این مورد به معنای اعتراف کامل به گناه است.",
+    "sep": "insep"
+   }
+  ]
+ },
+ {
+  "w": "ask out sth / ask sth out",
+  "ipa": "/ɑːsk aʊt/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to invite someone to go with you to a restaurant, the cinema, etc. on a date",
+    "e": "He finally gathered the courage to ask her out to dinner.",
+    "p": "کسی را به قرار ملاقات دعوت کردن",
+    "syn": [
+     "invite out"
+    ],
+    "ant": [],
+    "prep": [],
+    "ep": "او بالاخره جرات پیدا کرد که او را برای شام دعوت کند.",
+    "sep": "sep"
+   }
+  ]
+ },
+ {
+  "w": "attribute sth to sth",
+  "ipa": "/əˈtrɪbjuːt tuː/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to say or believe that something is the result of a particular thing",
+    "e": "Doctors attributed his miraculous recovery to the new medical treatment.",
+    "p": "نسبت دادن به، حاصل دانستن",
+    "syn": [
+     "put down to",
+     "ascribe to"
+    ],
+    "ant": [],
+    "prep": [
+     "attribute sth to sth"
+    ],
+    "ep": "پزشکان بهبودی معجزه‌آسای او را به درمان پزشکی جدید نسبت دادند.",
+    "sep": "sep"
+   }
+  ]
+ },
+ {
+  "w": "average out at sth",
+  "ipa": "/ˌævərɪdʒ ˈaʊt/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to reach a particular average amount or figure after calculating over a period of time",
+    "e": "Our monthly electricity bills average out at about fifty pounds.",
+    "p": "به طور میانگین رسیدن به، معدل چیزی شدن",
+    "ep": "قبض‌های برق ماهانه ما به‌طور میانگین حدود پنجاه پوند می‌شود.",
+    "syn": [
+     "equal",
+     "come to"
+    ],
+    "ant": [],
+    "prep": [
+     "average out at sth"
+    ],
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "back down",
+  "ipa": "/bæk ˈdaʊn/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to admit that you were wrong or that you have lost an argument",
+    "e": "Local residents refused to back down in their fight against the new road.",
+    "p": "پعقب‌نشینی کردن، کوتاه آمدن از موضع خود",
+    "syn": [
+     "retreat",
+     "yield",
+     "concede"
+    ],
+    "ant": [
+     "persist",
+     "stand firm"
+    ],
+    "prep": [],
+    "ep": "ساکنان محلی از کوتاه آمدن در مبارزه خود علیه جاده جدید خودداری کردند.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "back up sth / back sth up",
+  "ipa": "/bæk ˈʌp/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to make a copy of computer data so that you do not lose it",
+    "e": "Remember to back up your important documents every single week.",
+    "p": "نسخه پشتیبان تهیه کردن",
+    "syn": [
+     "copy",
+     "save",
+     "archive"
+    ],
+    "ant": [
+     "delete",
+     "erase"
+    ],
+    "prep": [],
+    "ep": "یادتان باشد که هر هفته از اسناد مهم خود نسخه پشتیبان تهیه کنید.",
+    "sep": "both"
+   }
+  ]
+ },
+ {
+  "w": "bank on sth",
+  "ipa": "/ˈbæŋk ˌɒn/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to depend on something happening or someone helping you",
+    "e": "We are banking on good weather for our outdoor party this weekend.",
+    "p": "حساب کردن روی (چیزی یا کسی)، متکی بودن",
+    "syn": [
+     "rely on",
+     "count on",
+     "depend on"
+    ],
+    "ant": [],
+    "prep": [],
+    "ep": "ما برای مهمانی در فضای باز خود در این آخر هفته روی هوای خوب حساب می‌کنیم.",
+    "sep": "insep"
+   }
+  ]
+ },
+ {
+  "w": "be rooted in sth",
+  "ipa": "/bi ˈruːtɪd ɪn ˌsʌmθɪŋ/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to have developed from something or be strongly influenced by it",
+    "e": "Traditional folk music is deeply rooted in local history and rural culture.",
+    "p": "ریشه‌ داشتن در، سرچشمه گرفتن از",
+    "syn": [
+     "originate in",
+     "stem from",
+     "be based on"
+    ],
+    "ant": [],
+    "prep": [
+     "be rooted in sth"
+    ],
+    "ep": "موسیقی محلی سنتی به طور عمیق در تاریخ محلی و فرهنگ روستایی ریشه دارد.",
+    "sep": "insep"
+   }
+  ]
+ },
+ {
+  "w": "branch out",
+  "ipa": "/brɑːntʃ aʊt/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to start doing an activity that is different from your usual work",
+    "e": "The company is planning to branch out into international markets next year.",
+    "p": "گسترش دادن فعالیت به حوزه‌های جدید",
+    "syn": [
+     "expand",
+     "diversify",
+     "reaches out"
+    ],
+    "ant": [
+     "specialize",
+     "narrow down"
+    ],
+    "prep": [],
+    "ep": "این شرکت برنامه‌ریزی کرده است که سال آینده فعالیت خود را به بازارهای بین‌المللی گسترش دهد.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "break down",
+  "ipa": "/ˈbreɪk daʊn/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "if a machine or vehicle breaks down, it stops working; if a system or discussion breaks down, it fails",
+    "e": "Our car broke down on the motorway on the way to London.",
+    "p": "خراب شدن (ماشین)، از کار افتادن، متوقف شدن",
+    "syn": [
+     "fail",
+     "collapse",
+     "stop working"
+    ],
+    "ant": [
+     "work",
+     "function"
+    ],
+    "prep": [],
+    "ep": "ماشین ما در بزرگراه به سمت لندن خراب شد.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "break out",
+  "ipa": "/breɪk aʊt/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "if something unpleasant like a war, fire, or disease breaks out, it starts suddenly",
+    "e": "A major fire broke out in the office building late at night.",
+    "p": "(جنگ، آتش‌سوزی و غیره) ناگهان شروع شدن، رخ دادن",
+    "syn": [
+     "erupt",
+     "start",
+     "flare up"
+    ],
+    "ant": [
+     "end",
+     "stop"
+    ],
+    "prep": [],
+    "ep": "یک آتش‌سوزی بزرگ اواخر شب در ساختمان اداری رخ داد.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "break up sth / break sth up",
+  "ipa": "/breɪk ʌp/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to end a romantic relationship or marriage with someone",
+    "e": "She decided to break up with her boyfriend after discovering he lied.",
+    "p": "به هم زدن رابطه، کات کردن",
+    "syn": [
+     "split up",
+     "separate"
+    ],
+    "ant": [
+     "get together",
+     "make up"
+    ],
+    "prep": [],
+    "ep": "او پس از اینکه فهمید نامزدش به او دروغ گفته است، تصمیم گرفت رابطه2ش را با او به هم بزند.",
+    "sep": "sep"
+   }
+  ]
+ },
+ {
+  "w": "bring about sth / bring sth about",
+  "ipa": "/brɪŋ əˈbaʊt/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to make something happen, especially to cause changes",
+    "e": "The new government hopes to bring about major changes in education.",
+    "p": "به‌وجود آوردن، محقق کردن",
+    "syn": [
+     "cause",
+     "produce",
+     "generate"
+    ],
+    "ant": [
+     "prevent",
+     "stop"
+    ],
+    "prep": [],
+    "ep": "دولت جدید امیدوارu است تغییرات عمده‌ای در سیستم آموزشی ایجاد کند.",
+    "sep": "sep"
+   }
+  ]
+ },
+ {
+  "w": "bring up sb / bring sb up",
+  "ipa": "/brɪŋ ʌp/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to look after a child and teach them how to behave until they are grown up",
+    "e": "Her grandparents brought her up after her parents passed away.",
+    "p": "بزرگ کردن، تربیت کردن",
+    "ep": "پدربزرگ و مادربزرگش پس از فوت والدینش، او را بزرگ کردند.",
+    "syn": [
+     "raise",
+     "rear",
+     "nurture"
+    ],
+    "ant": [
+     "neglect"
+    ],
+    "prep": [],
+    "sep": "sep"
+   }
+  ]
+ },
+ {
+  "w": "bring up sth / bring sth up",
+  "ipa": "/brɪŋ ʌp/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to look after a child and teach them how to behave until they are grown up",
+    "e": "Her grandparents brought her up after her parents passed away.",
+    "p": "بزرگ کردن، تربیت کردن",
+    "ep": "پدربزرگ و مادربزرگش پس از فوت والدینش، او را بزرگ کردند.",
+    "syn": [
+     "raise",
+     "rear",
+     "nurture"
+    ],
+    "ant": [
+     "neglect"
+    ],
+    "prep": [],
+    "sep": "sep"
+   }
+  ]
+ },
+ {
+  "w": "brush up",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to improve your knowledge of something you have not used for a while",
+    "e": "I need to brush up on my French before the trip.",
+    "p": "مرور کردن، تقویت کردن (دانش یا مهارت)",
+    "ep": "من باید قبل از سفر زبان فرانسه‌ام را مرور کنم.",
+    "syn": [
+     "revise",
+     "refresh",
+     "polish up"
+    ],
+    "ant": [],
+    "prep": [],
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "build up / build sth up",
+  "ipa": "/ˌbɪld ˈʌp/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to make someone stronger, healthier, or more confident",
+    "e": "The physical therapy will help build the patient up after surgery.",
+    "p": "تقویت کردن، قوی کردن، اعتمادبه‌نفس دادن",
+    "ep": "فیزیوتراپی به قوی شدن بیمار پس از جراحی کمک خواهد کرد.",
+    "syn": [
+     "strengthen",
+     "boost",
+     "fortify"
+    ],
+    "ant": [
+     "weaken",
+     "undermine"
+    ],
+    "prep": [],
+    "sep": "sep"
+   }
+  ]
+ },
+ {
+  "w": "build up sb / build sb up",
+  "ipa": "/bɪld ʌp/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to make someone stronger, healthier, or more confident",
+    "e": "The physical therapy will help build the patient up after surgery.",
+    "p": "تقویت کردن، قوی کردن، اعتمادبه‌نفس دادن",
+    "ep": "فیزیوتراپی به قوی شدن بیمار پس از جراحی کمک خواهد کرد.",
+    "syn": [
+     "strengthen",
+     "boost",
+     "fortify"
+    ],
+    "ant": [
+     "weaken",
+     "undermine"
+    ],
+    "prep": [],
+    "sep": "sep"
+   }
+  ]
+ },
+ {
+  "w": "burn out",
+  "ipa": "/ˌbɜːn ˈaʊt/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to become extremely tired, stressed, and ill because you have worked too hard for too long",
+    "e": "Many young doctors burn out within a few years due to excessive working hours.",
+    "p": "فرسوده شدن، از فرط کار زیاد از پا در آمدن",
+    "syn": [
+     "exhaust",
+     "overwork"
+    ],
+    "ant": [
+     "recharge",
+     "relax"
+    ],
+    "prep": [],
+    "ep": "بسیاری از پزشکان جوان به دلیل ساعات کاری بیش از حد، طی چند سال دچار فرسودگی شغلی می‌شوند.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "calm down / calm sb down",
+  "ipa": "/kɑːm daʊn/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to stop feeling angry, upset, or excited, or to make someone stop feeling this way",
+    "e": "Take a deep breath and try to calm yourself down.",
+    "p": "آرام شدن، آرام کردن",
+    "ep": "نفس عمیقی بکش و سعی کن خودت را آرام کنی.",
+    "syn": [
+     "relax",
+     "settle down",
+     "soothe"
+    ],
+    "ant": [
+     "agitate",
+     "excite"
+    ],
+    "prep": [],
+    "sep": "both"
+   }
+  ]
+ },
+ {
+  "w": "carry out sth / carry sth out",
+  "ipa": "/ˈkæri aʊt/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to do a task, plan, or experiment and complete it",
+    "e": "The scientists carried out a series of tests in the laboratory.",
+    "p": "انجام دادن، به اتمام رساندن کار یا طرحی",
+    "syn": [
+     "conduct",
+     "perform",
+     "execute"
+    ],
+    "ant": [
+     "abandon",
+     "neglect"
+    ],
+    "prep": [],
+    "ep": "دانشمندان یک سری آزمایش‌ها را در آزمایشگاه انجام دادند.",
+    "sep": "sep"
+   }
+  ]
+ },
+ {
+  "w": "cash in on sth",
+  "ipa": "/kæʃ ˈɪn ɒn/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to make money or gain an advantage from an event or situation, often in an unfair way",
+    "e": "Several companies tried to cash in on the popularity of the film.",
+    "p": "سود بردن از، بهره‌برداری کردن از موقعیت",
+    "syn": [
+     "exploit",
+     "capitalize on"
+    ],
+    "ant": [],
+    "prep": [
+     "cash in on sth"
+    ],
+    "ep": "چندین شرکت تلاش کردند تا از محبوبیت این فیلم سود ببرند.",
+    "sep": "insep"
+   }
+  ]
+ },
+ {
+  "w": "catch on",
+  "ipa": "/kætʃ ɒn/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to become popular or fashionable",
+    "e": "The new fitness trend quickly caught on among young adults.",
+    "p": "محبوب شدن، مد شدن",
+    "syn": [
+     "take off",
+     "become popular"
+    ],
+    "ant": [
+     "fade",
+     "decline"
+    ],
+    "prep": [],
+    "ep": "روند جدید تناسب اندام به سرعت در میان جوانان محبوب شد.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "catch up",
+  "ipa": "/kætʃ ʌp/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to talk to someone you have not seen for a while to find out what they have been doing",
+    "e": "We sat in a café for hours just to catch up on old times.",
+    "p": "گپ زدن و با خبر شدن از احوال یکدیگر",
+    "syn": [
+     "get together",
+     "meet up",
+     "reconnect"
+    ],
+    "ant": [],
+    "prep": [],
+    "ep": "چند ساعت در یک کافه نشستیم تا فقط از احوال همدیگر باخبر شویم.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "catch up with sb",
+  "ipa": "/kætʃ ˈʌp wɪð/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to reach the same level or standard as someone who is ahead of you",
+    "e": "She worked hard all weekend to catch up with the rest of the class.",
+    "p": "به سطح دیگران رسیدن، عقب‌ماندگی را جبران کردن",
+    "syn": [
+     "reach",
+     "keep pace with",
+     "equal"
+    ],
+    "ant": [
+     "fall behind"
+    ],
+    "prep": [
+     "catch up with sb"
+    ],
+    "ep": "او تمام آخر هفته سخت کار کرد تا به بقیه کلاس برسد.",
+    "sep": "insep"
+   }
+  ]
+ },
+ {
+  "w": "check in",
+  "ipa": "/ˈtʃek ɪn/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to arrive at a hotel or airport and report that you have arrived",
+    "e": "Please make sure to check in at the front desk upon arrival.",
+    "p": "پذیرش گرفتن در هتل، اعلام حضور در فرودگاه",
+    "syn": [
+     "register",
+     "sign in"
+    ],
+    "ant": [
+     "check out"
+    ],
+    "prep": [],
+    "ep": "لطفاً هنگام ورود حتماً در میز پذیرش حضور خود را ثبت کنید.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "cheer up / cheer sb up",
+  "ipa": "/tʃɪə(r) ʌp/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to become happier, or to make someone feel less sad",
+    "e": "Let's buy her some flowers to cheer her up.",
+    "p": "خوشحال شدن، خوشحال کردن، روحیه دادن",
+    "ep": "بیایید برایش گل بخریم تا خوشحال شود (روحیه‌اش عوض شود).",
+    "syn": [
+     "brighten up",
+     "lift",
+     "console"
+    ],
+    "ant": [
+     "sadden",
+     "depress"
+    ],
+    "prep": [],
+    "sep": "both"
+   }
+  ]
+ },
+ {
+  "w": "clamp down",
+  "ipa": "/klæmp daʊn/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to take strict action to prevent something illegal or unwanted from happening",
+    "e": "The government decided to clamp down on tax evasion.",
+    "p": "اقدام شدید کردن، سرکوب کردن",
+    "syn": [
+     "crack down"
+    ],
+    "ant": [
+     "relax",
+     "ease up"
+    ],
+    "prep": [
+     "clamp down on sth"
+    ],
+    "ep": "دولت تصمیم گرفت اقدام شدیدی علیه فرار مالیاتی انجام دهد.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "clear up sth / clear sth up",
+  "ipa": "/klɪər ʌp/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to solve a problem, explain something confusing, or clear away a misunderstanding",
+    "e": "There are a few questions I would like to clear up before we sign.",
+    "p": "برطرف کردن، حل کردن، روشن کردن (سوءتفاهم یا مشکل)",
+    "syn": [
+     "resolve",
+     "clarify",
+     "settle"
+    ],
+    "ant": [
+     "complicate",
+     "confuse"
+    ],
+    "prep": [],
+    "ep": "چند سوال وجود دارد که دوست دارم قبل از امضا کردن روشنشان کنم.",
+    "sep": "sep"
+   }
+  ]
+ },
+ {
+  "w": "click on sth",
+  "ipa": "/klɪk ɒn/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to press a button on a mouse or touchpad to select something on a screen",
+    "e": "Click on the blue link to open the registration page.",
+    "p": "کلیک کردن روی (چیزی روی صفحه نمایش)",
+    "syn": [
+     "select",
+     "press",
+     "tap"
+    ],
+    "ant": [],
+    "prep": [],
+    "ep": "برای باز کردن صفحه ثبت‌نام روی لینک آبی کلیک کنید.",
+    "sep": "insep"
+   }
+  ]
+ },
+ {
+  "w": "come about",
+  "ipa": "/kʌm əˈbaʊt/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to happen, especially by chance rather than being planned",
+    "e": "The whole misunderstanding came about through a simple communication error.",
+    "p": "اتفاق افتادن، رخ دادن",
+    "syn": [
+     "happen",
+     "occur",
+     "take place"
+    ],
+    "ant": [],
+    "prep": [],
+    "ep": "کل این سوءتفاهم از طریق یک خطای ساده در ارتباط به وجود آمد.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "come down with sth",
+  "ipa": "/ˌkʌm ˈdaʊn wɪð/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to become ill with a minor infectious disease such as a cold or the flu",
+    "e": "Half of the staff came down with a nasty flu virus last week.",
+    "p": "مبتلا شدن به، مریض شدن",
+    "syn": [
+     "contract",
+     "catch",
+     "develop"
+    ],
+    "ant": [
+     "recover from"
+    ],
+    "prep": [],
+    "ep": "نیمی از کارکنان هفته گذشته به یک ویروس آنفولانزای بد مبتلا شدند.",
+    "sep": "insep"
+   }
+  ]
+ },
+ {
+  "w": "come over",
+  "ipa": "/kʌm ˈəʊvə(r)/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to visit someone at their home, usually someone you know",
+    "e": "Why don't you come over to our house for dinner this weekend?",
+    "p": "به خانه کسی رفتن، سر زدن",
+    "syn": [
+     "visit",
+     "call round",
+     "drop by"
+    ],
+    "ant": [],
+    "prep": [],
+    "ep": "چرا آخر هفته این هفته برای شام به خانه ما نمی‌آیید؟",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "come up against sth",
+  "ipa": "/kʌm ʌp əˈɡenst/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to have to deal with a problem, difficulty, or opposition",
+    "e": "We came up against unexpected opposition when we tried to change the office rules.",
+    "p": "مواجه شدن با، دست به گریبان شدن با (مشکل یا مخالفت)",
+    "syn": [
+     "encounter",
+     "confront",
+     "run into"
+    ],
+    "ant": [],
+    "prep": [
+     "come up against sth"
+    ],
+    "ep": "وقتی خواستیم قوانین اداره را تغییر دهیم، با مخالفت غیرمنتظره‌ای روبرو شدیم.",
+    "sep": "insep"
+   }
+  ]
+ },
+ {
+  "w": "come up with sth",
+  "ipa": "/kʌm ʌp wɪð/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to think of an idea, plan, or solution and suggest it",
+    "e": "She came up with a brilliant idea for the project.",
+    "p": "ارائه دادن، پیشنهاد کردن، به ذهن رساندن",
+    "syn": [
+     "produce",
+     "devise",
+     "think of"
+    ],
+    "ant": [],
+    "prep": [],
+    "ep": "او ایده درخشانی برای پروژه ارائه داد.",
+    "sep": "insep"
+   }
+  ]
+ },
+ {
+  "w": "contribute to sth",
+  "ipa": "/kənˈtrɪbjuːt tuː/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to help to cause an event or situation",
+    "e": "A lack of sleep can contribute to poor concentration at work.",
+    "p": "سهیم بودن در، کمک کردن به (به‌وجود آمدن چیزی)",
+    "syn": [
+     "lead to",
+     "add to",
+     "promote"
+    ],
+    "ant": [
+     "hinder",
+     "prevent"
+    ],
+    "prep": [
+     "contribute to sth"
+    ],
+    "ep": "کمبود خواب می‌تواند در تمرکز ضعیف در محل کار نقش داشته باشد.",
+    "sep": "insep"
+   }
+  ]
+ },
+ {
+  "w": "cope with sth",
+  "ipa": "/ˈkəʊp wɪð/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to deal successfully with a difficult situation or problem",
+    "e": "She managed to cope with the heavy workload despite feeling unwell.",
+    "p": "از پس چیزی برآمدن، کنار آمدن با، تحمل کردن",
+    "ep": "او با وجود اینکه حالش خوب نبود، توانست از پس حجم سنگین کار برآید.",
+    "syn": [
+     "manage",
+     "handle"
+    ],
+    "ant": [
+     "fail",
+     "struggle"
+    ],
+    "prep": [
+     "cope with sth"
+    ],
+    "sep": "insep"
+   }
+  ]
+ },
+ {
+  "w": "count on sb/sth",
+  "ipa": "/ˈkaʊnt ɒn/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to trust someone or depend on something to happen",
+    "e": "You can always count on my brother to help you out.",
+    "p": "حساب کردن روی کسی/چیزی، اعتماد کردن",
+    "syn": [
+     "rely on",
+     "depend on",
+     "bank on"
+    ],
+    "ant": [],
+    "prep": [
+     "count on sb/sth"
+    ],
+    "ep": "همیشه می‌توانید برای کمک روی برادرم حساب کنید.",
+    "sep": "insep"
+   }
+  ]
+ },
+ {
+  "w": "crack down",
+  "ipa": "/kræk daʊn/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to become much more strict in dealing with a problem and punishing people",
+    "e": "Police are cracking down on illegal parking in the city center.",
+    "p": "به شدت برخورد کردن، سرکوب کردن",
+    "syn": [
+     "clamp down",
+     "get tough"
+    ],
+    "ant": [
+     "relax",
+     "loosen"
+    ],
+    "prep": [
+     "crack down on sth"
+    ],
+    "ep": "پلیس به شدت با پارک غیرمجاز در مرکز شهر برخورد می‌کند.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "cut back",
+  "ipa": "",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to reduce something such as spending or the amount you use",
+    "e": "We should cut back on sugar in our diet.",
+    "p": "کاهش دادن، کم کردن",
+    "ep": "ما باید مصرف شکر را در رژیم غذایی خود کم کنیم.",
+    "syn": [
+     "reduce",
+     "cut down",
+     "trim"
+    ],
+    "ant": [
+     "increase",
+     "expand"
+    ],
+    "prep": [],
+    "sep": "both"
+   }
+  ]
+ },
+ {
+  "w": "cut down",
+  "ipa": "/kʌt daʊn/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to reduce the amount of something you eat, drink, or do",
+    "e": "The doctor told him to cut down on fatty foods.",
+    "p": "کم کردن مصرف، کاهش دادن",
+    "syn": [
+     "reduce",
+     "cut back"
+    ],
+    "ant": [
+     "increase"
+    ],
+    "prep": [
+     "cut down on sth"
+    ],
+    "ep": "پزشک به او گفت مصرف غذاهای چرب را کاهش دهد.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "cut down sth / cut sth down",
+  "ipa": "/kʌt daʊn/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to reduce the amount, size, or number of something",
+    "e": "You need to cut down the amount of sugar you eat every day.",
+    "p": "کم کردن، کاهش دادن",
+    "syn": [
+     "reduce",
+     "decrease",
+     "cut back"
+    ],
+    "ant": [
+     "increase",
+     "raise"
+    ],
+    "prep": [],
+    "ep": "باید میزان قندی را که هر روز مصرف می‌کنید کاهش دهید.",
+    "sep": "sep"
+   }
+  ]
+ },
+ {
+  "w": "deal with sth",
+  "ipa": "/ˈdiːl wɪð/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to take action in order to solve a problem or handle a situation",
+    "e": "The manager needs to deal with these customer complaints immediately.",
+    "p": "سر و کار داشتن با، رسیدگی کردن به، حل کردن",
+    "ep": "مدیر باید فوراً به این شکایات مشتریان رسیدگی کند.",
+    "syn": [
+     "handle",
+     "manage",
+     "address"
+    ],
+    "ant": [
+     "ignore",
+     "neglect"
+    ],
+    "prep": [
+     "deal with sth"
+    ],
+    "sep": "insep"
+   }
+  ]
+ },
+ {
+  "w": "decide on sth/sb",
+  "ipa": "/dɪˈsaɪd ˌɒn/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to choose something or someone after careful thought",
+    "e": "Have you decided on a venue for the wedding reception yet?",
+    "p": "تصمیم گرفتن درباره، انتخاب کردن",
+    "syn": [
+     "choose",
+     "select",
+     "settle on"
+    ],
+    "ant": [],
+    "prep": [],
+    "ep": "آیا هنوز مکانی را برای مراسم عروسی انتخاب کرده‌اید؟",
+    "sep": "insep"
+   }
+  ]
+ },
+ {
+  "w": "depend on sth/sb",
+  "ipa": "dɪˈpɛnd ɒn",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to need someone or something in order to survive or be successful",
+    "e": "The town depends on tourism for jobs.",
+    "p": "وابسته بودن",
+    "syn": [
+     "rely on",
+     "count on",
+     "hinge on"
+    ],
+    "ant": [],
+    "prep": [],
+    "ep": "شهر براي اشتغال به گردشگری وابسته است",
+    "sep": "insep"
+   }
+  ]
+ },
+ {
+  "w": "die out",
+  "ipa": "/ˌdaɪ ˈaʊt/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to become less and less common until completely gone or extinct",
+    "e": "Many traditional customs are slowly dying out in modern society.",
+    "p": "منقرض شدن، نسل‌شان منقرض شدن، از بین رفتن",
+    "ep": "بسیاری از سنت‌های قدیمی در جامعه مدرن به آرامی در حال از بین رفتن هستند.",
+    "syn": [
+     "disappear",
+     "vanish",
+     "become extinct"
+    ],
+    "ant": [
+     "flourish",
+     "thrive"
+    ],
+    "prep": [],
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "drop in",
+  "ipa": "/drɒp ɪn/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to visit someone informally without arranging it beforehand",
+    "e": "Feel free to drop in for a cup of coffee whenever you are nearby.",
+    "p": "سر زدن (بدون قرار قبلی)، سرزده رفتن",
+    "syn": [
+     "drop by",
+     "call in",
+     "pop in"
+    ],
+    "ant": [],
+    "prep": [],
+    "ep": "هر زمان که نزدیک بودید، راحت باشید و برای یک فنجان قهوه سر بزنید.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "drop off",
+  "ipa": "/drɒp ˈɒf/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to decrease in number, amount, or intensity, especially gradually",
+    "e": "Tourist numbers always drop off sharply toward the end of autumn.",
+    "p": "کاهش یافتن، کم شدن",
+    "syn": [
+     "decline",
+     "fall off",
+     "slip"
+    ],
+    "ant": [
+     "increase",
+     "rise"
+    ],
+    "prep": [],
+    "ep": "تعداد گردشگران همیشه در اواخر پاییز به شدت کاهش می‌یابد.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "drop out",
+  "ipa": "/drɒp aʊt/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to leave a school, college, or race before you have finished your course or competition",
+    "e": "He decided to drop out of university and start his own business.",
+    "p": "ترک تحصیل کردن، انصراف دادن",
+    "syn": [
+     "quit",
+     "withdraw",
+     "leave"
+    ],
+    "ant": [
+     "enroll",
+     "stay"
+    ],
+    "prep": [],
+    "ep": "او تصمیم گرفت از دانشگاه انصراف دهد و کسب‌وکار خودش را راه بیندازد.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "eat out",
+  "ipa": "/iːt aʊt/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to eat a meal in a restaurant instead of at home",
+    "e": "We usually eat out at a local restaurant on Friday evenings.",
+    "p": "در رستوران غذا خوردن",
+    "syn": [
+     "dine out",
+     "go out for a meal"
+    ],
+    "ant": [
+     "eat in",
+     "dine at home"
+    ],
+    "prep": [],
+    "ep": "ما معمولاً جمعه‌شب‌ها در یک رستوران محلی غذا می‌خوریم.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "end up",
+  "ipa": "/end ˈʌp/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to finally be in a particular place or situation, especially without having planned it",
+    "e": "We missed our train and ended up spending the night at the station.",
+    "p": "سرانجام جایی رسیدن، کار به جایی کشیدن",
+    "syn": [
+     "finish up",
+     "wind up",
+     "land up"
+    ],
+    "ant": [],
+    "prep": [],
+    "ep": "ما قطارمان را از دست دادیم و در نهایت مجبور شدیم شب را در ایستگاه بگذرانیم.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "end up doing sth",
+  "ipa": "/ˈend ˌʌp ˈduːɪŋ ˌsʌmθɪŋ/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to finally be in a particular place or state, especially without having planned it",
+    "e": "We missed our train and ended up spending the night at the station.",
+    "p": "سرانجام کاری را انجام دادن، در وضعیت خاصی قرار گرفتن",
+    "syn": [
+     "finish up doing",
+     "wind up doing"
+    ],
+    "ant": [],
+    "prep": [],
+    "ep": "قطارمان را از دست دادیم و در نهایت مجبور شدیم شب را در ایستگاه بگذرانیم.",
+    "sep": "none",
+    "g": "Always followed by a verb ending in -ing"
+   }
+  ]
+ },
+ {
+  "w": "face up to sth",
+  "ipa": "/feɪs ʌp tuː/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to accept and deal with a difficult fact or situation",
+    "e": "He finally had to face up to the reality that he needed professional help.",
+    "p": "روبرو شدن با، پذیرفتن و کنار آمدن با (حقیقت یا موقعیت ناخوشایند)",
+    "syn": [
+     "confront",
+     "acknowledge",
+     "accept"
+    ],
+    "ant": [
+     "avoid",
+     "evade"
+    ],
+    "prep": [
+     "face up to sth"
+    ],
+    "ep": "او سرانجام مجبور شد با این واقعیت روبرو شود که به کمک تخصصی نیاز دارد.",
+    "sep": "insep"
+   }
+  ]
+ },
+ {
+  "w": "fall apart",
+  "ipa": "/fɔːl əˈpɑːt/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to break into pieces because of being old or badly made, or to experience serious emotional failure",
+    "e": "My old leather backpack is finally falling apart after years of heavy use.",
+    "p": "از هم پاشیدن، متلاشی شدن، خرد شدن",
+    "syn": [
+     "disintegrate",
+     "collapse",
+     "break up"
+    ],
+    "ant": [
+     "hold together",
+     "succeed"
+    ],
+    "prep": [],
+    "ep": "کوله پشتی چرمی قدیمی من پس از سال‌ها استفاده سنگین بالاخره دارد از هم می‌پاشد.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "fall back on sth",
+  "ipa": "/fɔːl bæk ɒn/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to use something as a last resort when other plans have failed",
+    "e": "If the business fails, we have our savings to fall back on.",
+    "p": "پناه بردن به، متوسل شدن به (به عنوان آخرین راه حل)",
+    "syn": [
+     "resort to",
+     "turn to",
+     "rely on"
+    ],
+    "ant": [],
+    "prep": [],
+    "ep": "اگر کسب‌وکار شکست بخورد، پس‌اندازی داریم که به آن تکیه کنیم.",
+    "sep": "insep"
+   }
+  ]
+ },
+ {
+  "w": "fall behind",
+  "ipa": "/fɔːl bɪˈhaɪnd/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to fail to make enough progress or move as fast as other people",
+    "e": "If you miss too many classes, you will quickly fall behind.",
+    "p": "عقب افتادن (از درس، کار یا برنامه)",
+    "syn": [
+     "lag behind",
+     "fall back"
+    ],
+    "ant": [
+     "catch up",
+     "keep up"
+    ],
+    "prep": [],
+    "ep": "اگر کلاس‌های زیادی را غیبت کنید، به سرعت عقب خواهید افتاد.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "fall for sb/sth",
+  "ipa": "/fɔːl fɔː(r)/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to start to be in love with someone, or to be tricked into believing something that is not true",
+    "e": "He is so naive that he will fall for any trick you play on him.",
+    "p": "عاشق کسی شدن، فریب چیزی را خوردن",
+    "syn": [
+     "fall in love",
+     "be deceived",
+     "be tricked"
+    ],
+    "ant": [],
+    "prep": [],
+    "ep": "او آن‌قدر ساده است که فریب هر کلکی را که به او بزنی می‌خورد.",
+    "sep": "insep"
+   }
+  ]
+ },
+ {
+  "w": "fall out",
+  "ipa": "/fɔːl aʊt/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to argue with someone and stop being friendly with them",
+    "e": "The two brothers fell out over who should inherit the family business.",
+    "p": "قهر کردن، دعوا کردن و به هم زدن رابطه",
+    "syn": [
+     "quarrel",
+     "argue",
+     "dispute"
+    ],
+    "ant": [
+     "make up",
+     "reconcile"
+    ],
+    "prep": [],
+    "ep": "این دو برادر سر اینکه چه کسی باید کسب‌وکار خانوادگی را به ارث ببرد با هم دعوا کردند.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "fall through",
+  "ipa": "/fɔːl θruː/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "if a plan, deal, or arrangement falls through, it fails to happen",
+    "e": "The business deal fell through at the last minute because of funding issues.",
+    "p": "عملی نشدن، به هم خوردن (توافق یا برنامه)",
+    "syn": [
+     "fail",
+     "collapse",
+     "be abandoned"
+    ],
+    "ant": [
+     "succeed",
+     "go ahead"
+    ],
+    "prep": [],
+    "ep": "معامله تجاری در آخرین لحظه به دلیل مشکلات بودجه به هم خورد.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "fight off sth / fight sth off",
+  "ipa": "/ˌfaɪt ˈɒf/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to try hard and successfully to stop an illness, attack, or strong emotion",
+    "e": "Drink plenty of warm liquids to help your body fight off the infection.",
+    "p": "مقاومت کردن در برابر، دفع کردن (بیماری یا حمله)",
+    "syn": [
+     "ward off",
+     "resist",
+     "repel"
+    ],
+    "ant": [
+     "succumb to",
+     "yield to"
+    ],
+    "prep": [],
+    "ep": "مایعات گرم فراوان بنوشید تا به بدن خود در دفع عفونت کمک کنید.",
+    "sep": "sep"
+   }
+  ]
+ },
+ {
+  "w": "figure out sth",
+  "ipa": "fɪgjər aʊt",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to understand something or find the answer to a problem",
+    "e": "I can't figure out why he left without saying goodbye.",
+    "p": "فهمیدن",
+    "syn": [
+     "work out",
+     "solve",
+     "understand"
+    ],
+    "ant": [],
+    "prep": [],
+    "ep": "نميتوانم بفهمم چرا رفت",
+    "sep": "sep"
+   }
+  ]
+ },
+ {
+  "w": "fill out sth / fill sth out",
+  "ipa": "/fɪl aʊt/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to write information in the spaces on a document or form",
+    "e": "Please fill out this application form in black ink.",
+    "p": "پر کردن فرم یا پرسشنامه",
+    "syn": [
+     "fill in",
+     "complete"
+    ],
+    "ant": [],
+    "prep": [],
+    "ep": "لطفاً این فرم درخواست را با جوهر مشکی پر کنید.",
+    "sep": "sep"
+   }
+  ]
+ },
+ {
+  "w": "find out sth / find sth out",
+  "ipa": "/ˈfaɪnd aʊt/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to obtain information, especially by asking questions, reading, or searching",
+    "e": "We need to find out the train times before we book our tickets.",
+    "p": "فهمیدن، مطلع شدن، کشف کردن حقیقت یا اطلاعات",
+    "syn": [
+     "discover",
+     "learn",
+     "ascertain"
+    ],
+    "ant": [],
+    "prep": [],
+    "ep": "ما باید پیش از رزرو بلیت‌هایمان، ساعت حرکت قطارها را پیدا کنیم.",
+    "sep": "sep"
+   }
+  ]
+ },
+ {
+  "w": "fit in",
+  "ipa": "/fɪt ɪn/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to feel that you belong to a particular group and are accepted by them",
+    "e": "As the new student, she tried hard to fit in with her classmates.",
+    "p": "سازگار شدن با گروه و پذیرفته شدن توسط آن‌ها",
+    "syn": [
+     "belong",
+     "integrate",
+     "blend in"
+    ],
+    "ant": [
+     "stand out",
+     "be excluded"
+    ],
+    "prep": [],
+    "ep": "به عنوان دانش‌آموز جدید، او خیلی تلاش کرد تا با هم‌کلاسی‌هایش سازگار شود.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "focus on sth",
+  "ipa": "fəʊks ɒn",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to give special attention to one particular thing",
+    "e": "The report focuses on climate change.",
+    "p": "تمرکز کردن",
+    "syn": [
+     "concentrate on",
+     "center on",
+     "zoom in on"
+    ],
+    "ant": [
+     "ignore",
+     "neglect"
+    ],
+    "prep": [],
+    "ep": "گزارش بر تغييرات اقليمي تمرکز دارد",
+    "sep": "insep"
+   }
+  ]
+ },
+ {
+  "w": "get along sb / get along with sb",
+  "ipa": "/ɡet əˈlɒŋ/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to have a friendly relationship with someone",
+    "e": "I've always managed to get along well with my colleagues.",
+    "p": "ساختن با کسی، کنار آمدن با کسی",
+    "syn": [
+     "get on",
+     "coexist"
+    ],
+    "ant": [
+     "fall out",
+     "quarrel"
+    ],
+    "prep": [
+     "get along with sb"
+    ],
+    "ep": "من همیشه توانسته‌ام با همکارانم به خوبی کنار بیایم.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "get by",
+  "ipa": "/ɡet baɪ/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to have just enough money, food, or knowledge to live or deal with a situation",
+    "e": "It is difficult to get by on such a low salary nowadays.",
+    "p": "گلیم خود را از آب بیرون کشیدن، گذران زندگی کردن",
+    "syn": [
+     "survive",
+     "cope",
+     "manage"
+    ],
+    "ant": [
+     "struggle"
+    ],
+    "prep": [],
+    "ep": "امروزه گذران زندگی با چنین حقوق پایینی دشوار است.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "get up",
+  "ipa": "/ɡet ʌp/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to get out of bed after sleeping",
+    "e": "He gets up at six o'clock every morning to go for a run.",
+    "p": "از خواب بیدار شدن، بلند شدن",
+    "ep": "او هر روز صبح ساعت شش از خواب بیدار می‌شود تا برای دویدن برود.",
+    "syn": [
+     "rise",
+     "awake"
+    ],
+    "ant": [
+     "go to bed",
+     "lie down"
+    ],
+    "prep": [],
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "give away sth / give sth away",
+  "ipa": "/ɡɪv əˈweɪ/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to give something to someone as a gift without asking for payment",
+    "e": "She decided to give away all her old winter clothes to charity.",
+    "p": "رایگان بخشیدن، هدیه دادن",
+    "syn": [
+     "donate",
+     "hand out",
+     "distribute"
+    ],
+    "ant": [
+     "keep",
+     "retain"
+    ],
+    "prep": [],
+    "ep": "او تصمیم گرفت تمام لباس‌های زمستانی قدیمی‌اش را به خیریه ببخشد.",
+    "sep": "sep"
+   }
+  ]
+ },
+ {
+  "w": "give in",
+  "ipa": "/ɡɪv ˈɪn/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to finally agree to do something after refusing for a long time",
+    "e": "After hours of arguing, my parents finally gave in and let me go.",
+    "p": "تسلیم شدن، کوتاه آمدن",
+    "syn": [
+     "surrender",
+     "yield",
+     "concede"
+    ],
+    "ant": [
+     "resist",
+     "hold out"
+    ],
+    "prep": [],
+    "ep": "پس از ساعت‌ها بحث، پدر و مادرم بالاخره کوتاه آمدند و اجازه دادند بروم.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "give up sth / give sth up",
+  "ipa": "/ɡɪv ʌp/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to stop having or doing something, especially a bad habit",
+    "e": "She finally decided to give up smoking for the sake of her health.",
+    "p": "ترک کردن، دست کشیدن از",
+    "syn": [
+     "quit",
+     "stop",
+     "abandon"
+    ],
+    "ant": [
+     "continue",
+     "keep"
+    ],
+    "prep": [],
+    "ep": "او سرانجام تصمیم گرفت بهخاطر سلامتی‌اش سیگار را ترک کند.",
+    "sep": "sep"
+   }
+  ]
+ },
+ {
+  "w": "go along with sth/sb",
+  "ipa": "/ɡəʊ əˈlɒŋ wɪð/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to agree with an idea, plan, or decision made by someone else",
+    "e": "I don't entirely agree with the plan, but I'll go along with it for now.",
+    "p": "همراهی کردن با، موافقت کردن با نظر یا طرح کسی",
+    "syn": [
+     "acquiesce",
+     "cooperate",
+     "assent"
+    ],
+    "ant": [
+     "oppose",
+     "resist"
+    ],
+    "prep": [],
+    "ep": "من کاملاً با این طرح موافق نیستم، اما فعلاً با آن همراهی خواهم کرد.",
+    "sep": "insep"
+   }
+  ]
+ },
+ {
+  "w": "go down",
+  "ipa": "/ɡəʊ ˈdaʊn/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to decrease in price, value, amount, or quality",
+    "e": "Fuel prices finally went down after weeks of continuous public protest.",
+    "p": "پایین آمدن، کاهش یافتن",
+    "syn": [
+     "fall",
+     "decrease",
+     "drop"
+    ],
+    "ant": [
+     "go up",
+     "rise",
+     "increase"
+    ],
+    "prep": [],
+    "ep": "قیمت سوخت پس از هفته‌ها اعتراض مداوم مردمی سرانجام کاهش یافت.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "go out with sb",
+  "ipa": "/ɡəʊ aʊt wɪð/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to have a romantic relationship with someone",
+    "e": "They have been going out with each other for more than two years.",
+    "p": "با کسی قرار گذاشتن، رابطه عاشقانه داشتن",
+    "syn": [
+     "date sb",
+     "see sb"
+    ],
+    "ant": [
+     "break up with sb"
+    ],
+    "prep": [
+     "go out with sb"
+    ],
+    "ep": "آنها بیش از دو سال است که با هم رابطه عاشقانه دارند.",
+    "sep": "insep"
+   }
+  ]
+ },
+ {
+  "w": "go up",
+  "ipa": "/ɡəʊ ˈʌp/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to increase in price, amount, value, or level",
+    "e": "The local supermarket decided to go up on the price of fresh milk.",
+    "p": "بالا رفتن، افزایش یافتن",
+    "syn": [
+     "rise",
+     "increase",
+     "climb"
+    ],
+    "ant": [
+     "go down",
+     "fall",
+     "decrease"
+    ],
+    "prep": [],
+    "ep": "سوپرمارکت محلی تصمیم گرفت قیمت شیر تازه را افزایش دهد.",
+    "sep": "none",
+    "g": "Incorrect structure: prices go up, you cannot use 'go up on'"
+   }
+  ]
+ },
+ {
+  "w": "grow up",
+  "ipa": "/ɡrəʊ ʌp/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to develop from being a child into being an adult",
+    "e": "She grew up in a small village in the mountains.",
+    "p": "بزرگ شدن، رشد کردن",
+    "ep": "او در یک روستای کوچک در کوهستان بزرگ شد.",
+    "syn": [
+     "mature",
+     "develop"
+    ],
+    "ant": [],
+    "prep": [],
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "hack into sth",
+  "ipa": "/ˈhæk ˌɪntuː/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to secretly and illegally get access to someone else's computer system or data",
+    "e": "Cybercriminals tried to hack into the company's secure database.",
+    "p": "هک کردن، نفوذ غیرقانونی به سیستم کامپیوتری",
+    "syn": [
+     "break into",
+     "access illegally"
+    ],
+    "ant": [],
+    "prep": [],
+    "ep": "مجرمان سایبری تلاش کردند به پایگاه داده امن شرکت نفوذ کنند.",
+    "sep": "insep"
+   }
+  ]
+ },
+ {
+  "w": "hand in sth / hand sth in",
+  "ipa": "/hænd ɪn/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to give something such as homework or a document to a person in authority",
+    "e": "Students must hand in their essays by Friday morning.",
+    "p": "تحویل دادن (تکلیف، مدارک و غیره)",
+    "syn": [
+     "submit",
+     "turn in",
+     "give in"
+    ],
+    "ant": [],
+    "prep": [],
+    "ep": "دانش‌آموزان باید مقاله‌های خود را تا صبح جمعه تحویل دهند.",
+    "sep": "sep"
+   }
+  ]
+ },
+ {
+  "w": "hang on",
+  "ipa": "/hæŋ ɒn/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to wait for a short time, especially on the telephone",
+    "e": "Hang on a moment while I check the details for you.",
+    "p": "کمی صبر کردن، گوشی را نگه داشتن",
+    "syn": [
+     "hold on",
+     "wait"
+    ],
+    "ant": [],
+    "prep": [],
+    "ep": "لحظه‌ای صبر کنید تا جزئیات را برای شما بررسی کنم.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "hang out",
+  "ipa": "/hæŋ aʊt/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to spend a lot of time in a place or with someone, relaxing or enjoying yourself",
+    "e": "The teenagers like to hang out at the local shopping mall after school.",
+    "p": "وقت گذراندن، پرسه زدن",
+    "syn": [
+     "spend time",
+     "socialize",
+     "loiter"
+    ],
+    "ant": [],
+    "prep": [],
+    "ep": "نوجوان‌ها دوست دارند بعد از مدرسه در مرکز خرید محلی وقت بگذرانند.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "impact on sth",
+  "ipa": "/ˈɪmpækt ɒn/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to have a strong and noticeable effect on someone or something",
+    "e": "Rising consumer prices have had a huge impact on family budgets.",
+    "p": "تأثیر گذاردن روی",
+    "syn": [
+     "affect",
+     "influence",
+     "have an effect on"
+    ],
+    "ant": [],
+    "prep": [
+     "impact on sth"
+    ],
+    "ep": "افزایش قیمت مصرف‌کننده تأثیر بسیار زیادی بر بودجه خانواده‌ها داشته است.",
+    "sep": "insep"
+   }
+  ]
+ },
+ {
+  "w": "insist on sth/doing sth",
+  "ipa": "inˈsɪst ɒn",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to demand that something must happen or be done",
+    "e": "She insisted on paying for the meal.",
+    "p": "اصرار کردن",
+    "syn": [
+     "demand",
+     "require",
+     "press for"
+    ],
+    "ant": [],
+    "prep": [],
+    "ep": "او بر پرداخت غذا اصرار کرد",
+    "sep": "insep",
+    "g": "Followed by a noun or V-ing form"
+   }
+  ]
+ },
+ {
+  "w": "iron out sth / iron sth out",
+  "ipa": "/ˈaɪən aʊt/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to solve or get rid of small problems or difficulties, especially by talking about them",
+    "e": "The two companies met to iron out their differences.",
+    "p": "برطرف کردن، حل و فصل کردن مشکلات کوچک",
+    "syn": [
+     "resolve",
+     "settle",
+     "smooth out"
+    ],
+    "ant": [],
+    "prep": [],
+    "ep": "دو شرکت برای حل و فصل اختلافات خود با یکدیگر ملاقات کردند.",
+    "sep": "sep"
+   }
+  ]
+ },
+ {
+  "w": "keep up",
+  "ipa": "/kiːp ˈʌp/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to move or progress at the same rate as someone or something else",
+    "e": "Walk a bit slower, please; I cannot keep up with you!",
+    "p": "همگام پیش رفتن، عقب نماندن",
+    "syn": [
+     "maintain pace",
+     "keep pace"
+    ],
+    "ant": [
+     "fall behind"
+    ],
+    "prep": [],
+    "ep": "لطفاً کمی آهسته‌تر راه برو، من نمی‌توانم با تو همگام شوم!",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "lead to sth",
+  "ipa": "/liːd tuː/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to cause something to happen or result in a particular situation",
+    "e": "Smoking can lead to serious health problems like heart disease.",
+    "p": "منتهی شدن به، باعث چیزی شدن",
+    "syn": [
+     "result in",
+     "cause",
+     "bring about"
+    ],
+    "ant": [
+     "prevent",
+     "avert"
+    ],
+    "prep": [
+     "lead to sth"
+    ],
+    "ep": "سیگار کشیدن می‌تواند به مشکلات جدی سلامتی مانند بیماری قلبی منجر شود.",
+    "sep": "insep"
+   }
+  ]
+ },
+ {
+  "w": "let down sb / let sb down",
+  "ipa": "/let daʊn/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to disappoint someone by failing to do what you agreed or were expected to do",
+    "e": "I promised to help her, and I am determined not to let her down.",
+    "p": "ناامید کردن، کُلاه‌گذاشتن سر کسی (خلاف قول عمل کردن)",
+    "syn": [
+     "disappoint sb",
+     "fail sb"
+    ],
+    "ant": [
+     "support sb"
+    ],
+    "prep": [],
+    "ep": "من قول دادم به او کمک کنم و مصمم هستم که ناامیدش نکنم.",
+    "sep": "sep",
+    "g": "Pronoun object must go between verb and particle"
+   }
+  ]
+ },
+ {
+  "w": "level off / level out",
+  "ipa": "/ˈlevəl ˈɒf/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to stop increasing or decreasing and remain steady at a particular level",
+    "e": "House prices are expected to level off after years of rapid growth.",
+    "p": "ثابت شدن، متوقف شدن روند صعودی یا نزولی",
+    "syn": [
+     "stabilize",
+     "plateau",
+     "flatten out"
+    ],
+    "ant": [
+     "rise",
+     "fall"
+    ],
+    "prep": [],
+    "ep": "انتظار می‌رود قیمت مسکن پس از سال‌ها رشد سریع، به ثبات برسد.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "log in",
+  "ipa": "/lɒɡ ɪn/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to perform the actions that allow you to start using a computer system or website",
+    "e": "You must log in with your username and password to view your account.",
+    "p": "وارد شدن به سیستم (رایانه یا وب‌سایت)",
+    "syn": [
+     "sign in",
+     "log on"
+    ],
+    "ant": [
+     "log out",
+     "sign out"
+    ],
+    "prep": [],
+    "ep": "برای مشاهده حساب کاربری خود باید با نام کاربری و رمز عبور وارد شوید.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "log out",
+  "ipa": "/lɒɡ aʊt/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to perform the actions that stop you from using a computer system or website",
+    "e": "Always remember to log out when you finish using a public computer.",
+    "p": "خارج شدن از سیستم (رایانه یا وب‌سایت)",
+    "syn": [
+     "sign out",
+     "log off"
+    ],
+    "ant": [
+     "log in",
+     "sign in"
+    ],
+    "prep": [],
+    "ep": "همیشه به یاد داشته باشید که هنگام پایان کار با رایانه عمومی، خارج شوید.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "look after sb/sth",
+  "ipa": "/lʊk ˈɑːftə(r)/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to take care of someone or something by keeping them healthy or safe",
+    "e": "Can you look after my cat while I am on vacation?",
+    "p": "مراقبت کردن از، نگهداری کردن از",
+    "ep": "می‌شود وقتی من در تعطیلات هستم از گربه‌ام مراقبت کنید؟",
+    "syn": [
+     "take care of",
+     "tend",
+     "attend to"
+    ],
+    "ant": [
+     "neglect",
+     "abandon"
+    ],
+    "prep": [],
+    "sep": "insep"
+   }
+  ]
+ },
+ {
+  "w": "look down on sb/sth",
+  "ipa": "/ˌlʊk ˈdaʊn ɒn ˈsʌmbədi/ˈsʌmθɪŋ/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to think that you are better than someone else or that something is not good enough",
+    "e": "She tends to look down on people who do not share her taste in art.",
+    "p": "کسی یا چیزی را حقیر شمردن، به دیده تحقیر نگاه کردن",
+    "syn": [
+     "despise",
+     "scorn"
+    ],
+    "ant": [
+     "look up to"
+    ],
+    "prep": [],
+    "ep": "او معمولاً به افرادی که سلیقه‌اشان در هنر با او متفاوت است با دیده تحقیر نگاه می‌کند.",
+    "sep": "insep"
+   }
+  ]
+ },
+ {
+  "w": "look forward to sth/doing sth",
+  "ipa": "/lʊk ˈfɔːwəd tuː/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to feel happy and excited about something that is going to happen in the future",
+    "e": "I am really looking forward to visiting my family this weekend.",
+    "p": "لحظه‌شماری کردن، منتظر چیزی بودن",
+    "syn": [
+     "anticipate",
+     "await"
+    ],
+    "ant": [
+     "dread"
+    ],
+    "prep": [
+     "look forward to sth/doing sth"
+    ],
+    "ep": "من واقعاً منتظر این هستم که آخر هفته به دیدن خانواده‌ام بروم.",
+    "sep": "insep",
+    "g": "After look forward to use V-ing, not infinitive"
+   }
+  ]
+ },
+ {
+  "w": "look into sth",
+  "ipa": "/ˈlʊk ˈɪntuː/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to try to discover the facts about a problem, crime, or complaint",
+    "e": "The police are looking into the recent spate of burglaries in the neighborhood.",
+    "p": "تحقیق کردن درباره، بررسی کردن موضوعی",
+    "syn": [
+     "investigate",
+     "examine",
+     "explore"
+    ],
+    "ant": [
+     "ignore",
+     "overlook"
+    ],
+    "prep": [],
+    "ep": "پلیس در حال تحقیق درباره موج اخیر سرقت‌ها در محله است.",
+    "sep": "insep"
+   }
+  ]
+ },
+ {
+  "w": "look up sth / look sth up",
+  "ipa": "/lʊk ˈʌp/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to search for information in a book, on a computer, or in a list",
+    "e": "If you do not know the exact meaning, look the word up in a dictionary.",
+    "p": "پیدا کردن اطلاعات (در کتاب، لغت‌نامه یا اینترنت)، جستجو کردن",
+    "syn": [
+     "check",
+     "search for",
+     "find"
+    ],
+    "ant": [],
+    "prep": [],
+    "ep": "اگر معنای دقیق را نمی‌دانید، کلمه را در یک لغت‌نامه جستجو کنید.",
+    "sep": "sep",
+    "g": "Pronoun object must go between verb and particle"
+   }
+  ]
+ },
+ {
+  "w": "look up to sb",
+  "ipa": "/ˌlʊk ˈʌp tuː ˈsʌmbədi/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to admire and respect someone, especially someone older or more experienced",
+    "e": "Younger players always look up to the team captain for guidance.",
+    "p": "کسی را تحسین کردن، به کسی احترام گذاشتن",
+    "syn": [
+     "admire",
+     "respect",
+     "look to"
+    ],
+    "ant": [
+     "look down on"
+    ],
+    "prep": [],
+    "ep": "بازیکنان جوان همیشه برای راهنمایی، کاپیتان تیم را الگو قرار داده و تحسین می‌کنند.",
+    "sep": "insep"
+   }
+  ]
+ },
+ {
+  "w": "make up",
+  "ipa": "/meɪk ʌp/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to become friends with someone again after an argument or disagreement",
+    "e": "They often argue, but they always manage to make up quickly.",
+    "p": "آشتی کردن، کدورت را برطرف کردن",
+    "syn": [
+     "reconcile",
+     "patch things up"
+    ],
+    "ant": [
+     "fall out",
+     "quarrel"
+    ],
+    "prep": [],
+    "ep": "آن‌ها اغلب با هم بحث می‌کنند، اما همیشه موفق می‌شوند به سرعت آشتی کنند.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "make up for sth",
+  "ipa": "/meɪk ʌp fɔːr/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to provide something good to balance or reduce the bad effect of damage, loss, or mistake",
+    "e": "Hard work can often make up for a lack of natural talent.",
+    "p": "جبران کردن",
+    "syn": [
+     "compensate for",
+     "offset"
+    ],
+    "ant": [],
+    "prep": [],
+    "ep": "کار سخت اغلب می‌تواند کمبود استعداد ذاتی را جبران کند.",
+    "sep": "insep"
+   }
+  ]
+ },
+ {
+  "w": "make up your mind",
+  "ipa": "meɪk ʌp jɔːr maɪnd",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to decide something or choose something",
+    "e": "Have you made up your mind about the new job?",
+    "p": "تصميم کردن",
+    "syn": [
+     "decide",
+     "resolve",
+     "determine"
+    ],
+    "ant": [
+     "hesitate",
+     "waver"
+    ],
+    "prep": [],
+    "ep": "آيا تصميم گرفتي؟",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "miss out",
+  "ipa": "/mɪs aʊt/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to not get the benefit, enjoyment, or opportunity of something that other people are experiencing",
+    "e": "If you do not attend the workshop, you will miss out on a lot of useful tips.",
+    "p": "از دست دادن فرصت، محروم شدن از لذت یا منفعت",
+    "syn": [
+     "lose out",
+     "forfeit",
+     "skip"
+    ],
+    "ant": [],
+    "prep": [
+     "miss out on sth"
+    ],
+    "ep": "اگر در کارگاه شرکت نکنید، نکات مفید زیادی را از دست خواهید داد.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "move in",
+  "ipa": "/muːv ɪn/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to start living in a new house or apartment",
+    "e": "We bought a new apartment and plan to move in next weekend.",
+    "p": "اسباب‌کشی کردن به خانه جدید، نقل مکان کردن داخل",
+    "syn": [
+     "settle in"
+    ],
+    "ant": [
+     "move out"
+    ],
+    "prep": [],
+    "ep": "ما یک آپارتمان جدید خریده‌ایم و قصد داریم آخر هفته آینده اسباب‌کشی کنیم.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "move on",
+  "ipa": "/muːv ɒn/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to leave a place or start doing a new activity after finishing something else",
+    "e": "After working at the firm for five years, she decided it was time to move on.",
+    "p": "گذشتن (از موضوعی)، ادامه دادن به کار یا زندگی جدید",
+    "syn": [
+     "progress",
+     "advance"
+    ],
+    "ant": [
+     "stay",
+     "remain"
+    ],
+    "prep": [],
+    "ep": "او پس از پنج سال کار در شرکت، تصمیم گرفت به مرحله بعدی زندگی‌اش برود.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "move out",
+  "ipa": "/muːv aʊt/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to stop living in a particular house or apartment",
+    "e": "He finally moved out of his parents' house when he turned twenty-five.",
+    "p": "نقل مکان کردن به بیرون، اسباب‌کشی کردن و ترک خانه",
+    "syn": [
+     "vacate"
+    ],
+    "ant": [
+     "move in"
+    ],
+    "prep": [],
+    "ep": "او وقتی ۲۵ ساله شد بالاخره از خانه پدر و مادرش نقل مکان کرد.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "object to sb/sth/doing sth",
+  "ipa": "əbˈdʒɛkt tu",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to say that you disagree with or oppose something",
+    "e": "I object to being spoken to like that.",
+    "p": "اعتراض کردن",
+    "syn": [
+     "oppose",
+     "disapprove of",
+     "protest against"
+    ],
+    "ant": [
+     "approve",
+     "support"
+    ],
+    "prep": [],
+    "ep": "من با اينکه به من اينطور حرف زدند اعتراض دارم",
+    "sep": "insep",
+    "g": "Followed by a noun or V-ing form"
+   }
+  ]
+ },
+ {
+  "w": "opt out",
+  "ipa": "/ˌɒpt ˈaʊt/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to choose not to take part in something or to stop being involved in an activity",
+    "e": "Employees can choose to opt out of the company pension scheme.",
+    "p": "کناره‌گیری کردن، انصراف دادن",
+    "syn": [
+     "withdraw",
+     "pull out"
+    ],
+    "ant": [
+     "opt in",
+     "participate"
+    ],
+    "prep": [],
+    "ep": "کارمندان می‌توانند تصمیم بگیرند که از طرح بازنشستگی شرکت انصراف دهند.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "pass away",
+  "ipa": "/ˌpɑːs əˈweɪ/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to die; a polite and less direct way of saying that someone has died",
+    "e": "Her beloved grandfather passed away peacefully in his sleep last night.",
+    "p": "درگذشتن، فوت کردن",
+    "syn": [
+     "die",
+     "pass on",
+     "expire"
+    ],
+    "ant": [
+     "live",
+     "survive"
+    ],
+    "prep": [],
+    "ep": "پدربزرگ عزیزش دیشب در آرامش در خواب درگذشت.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "pay off sth / pay sth off",
+  "ipa": "/peɪ ɒf/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to finish paying money that you owe for something",
+    "e": "It took them five years to pay off the bank loan.",
+    "p": "تسویه کردن، پرداخت کردن کامل بدهی",
+    "syn": [
+     "settle",
+     "clear"
+    ],
+    "ant": [],
+    "prep": [],
+    "ep": "پنج سال طول کشید تا آن‌ها وام بانکی‌شان را تسویه کنند.",
+    "sep": "sep"
+   }
+  ]
+ },
+ {
+  "w": "phase out sth / phase sth out",
+  "ipa": "/feɪz aʊt/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to gradually stop using or providing something over a period of time",
+    "e": "The government plans to phase out older diesel cars by next year.",
+    "p": "به تدریج متوقف کردن، به تدریج کنار گذاشتن",
+    "syn": [
+     "eliminate",
+     "discontinue",
+     "wind down"
+    ],
+    "ant": [
+     "phase in"
+    ],
+    "prep": [],
+    "ep": "دولت قصد دارد خودروهای دیزلی قدیمی را تا سال آینده به تدریج از رده خارج کند.",
+    "sep": "sep"
+   }
+  ]
+ },
+ {
+  "w": "pick up",
+  "ipa": "/pɪk ˈʌp/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to start to improve, increase, or become successful again after a difficult period",
+    "e": "Consumer spending usually tends to pick up during the holiday shopping season.",
+    "p": "رونق گرفتن، بهبود یافتن",
+    "syn": [
+     "improve",
+     "recover",
+     "rally"
+    ],
+    "ant": [
+     "decline",
+     "worsen"
+    ],
+    "prep": [],
+    "ep": "هزینه‌های مصرف‌کننده معمولاً در طول فصل خرید تعطیلات رونق می‌گیرد.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "pick up sth / pick sth up",
+  "ipa": "/pɪk ʌp/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to learn a new skill or language naturally without formal teaching",
+    "e": "She picked up a few words of Spanish while travelling in Madrid.",
+    "p": "یاد گرفتن به طور طبیعی، به گوش خوردن و یاد گرفتن",
+    "syn": [
+     "learn",
+     "acquire"
+    ],
+    "ant": [],
+    "prep": [],
+    "ep": "او هنگام سفر در مادرید چند کلمه اسپانیایی یاد گرفت.",
+    "sep": "sep"
+   }
+  ]
+ },
+ {
+  "w": "point out sth / point sth out",
+  "ipa": "/pɔɪnt aʊt/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to draw someone's attention to something or tell them important information",
+    "e": "The teacher pointed out several spelling mistakes in my essay.",
+    "p": "اشاره کردن به، متوجه ساختن، گوشزد کردن",
+    "syn": [
+     "indicate",
+     "mention",
+     "draw attention to"
+    ],
+    "ant": [],
+    "prep": [],
+    "ep": "معلم چندین غلط املایی را در انشای من گوشزد کرد.",
+    "sep": "sep"
+   }
+  ]
+ },
+ {
+  "w": "print out sth / print sth out",
+  "ipa": "/prɪnt aʊt/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to produce a paper copy of a document from a computer",
+    "e": "Could you print out this report for me before the meeting?",
+    "p": "پرینت گرفتن، چاپ کردن",
+    "syn": [
+     "run off",
+     "produce"
+    ],
+    "ant": [],
+    "prep": [],
+    "ep": "میشه لطفاً قبل از جلسه این گزارش را برای من پرینت بگیرید؟",
+    "sep": "sep"
+   }
+  ]
+ },
+ {
+  "w": "put forward sth / put sth forward",
+  "ipa": "/pʊt ˈfɔːwəd/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to offer an idea, plan, or proposal for other people to consider",
+    "e": "Several members put forward interesting proposals for the new marketing strategy.",
+    "p": "پیشنهاد دادن، مطرح کردن (ایده یا طرح)",
+    "syn": [
+     "propose",
+     "suggest",
+     "submit"
+    ],
+    "ant": [
+     "withdraw",
+     "retract"
+    ],
+    "prep": [],
+    "ep": "چند تن از اعضا پیشنهادهای جالبی را برای استراتژی بازاریابی جدید مطرح کردند.",
+    "sep": "sep"
+   }
+  ]
+ },
+ {
+  "w": "put off sth / put sth off",
+  "ipa": "pʊt ɒˈf",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to delay doing something or dealing with something",
+    "e": "Don't put off until tomorrow what you can do today.",
+    "p": "به تعويق انداختن",
+    "syn": [
+     "postpone",
+     "delay",
+     "defer"
+    ],
+    "ant": [
+     "do immediately",
+     "advance"
+    ],
+    "prep": [],
+    "ep": "تا فردا به تعويق نندازيد",
+    "sep": "sep"
+   }
+  ]
+ },
+ {
+  "w": "put sth down to sth",
+  "ipa": "/pʊt daʊn tuː/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to think that something is caused by a particular thing",
+    "e": "I put his sudden bad mood down to extreme tiredness.",
+    "p": "نسبت دادن به، پای چیزی گذاشتن",
+    "syn": [
+     "attribute to",
+     "ascribe to"
+    ],
+    "ant": [],
+    "prep": [
+     "put sth down to sth"
+    ],
+    "ep": "من بدخلقی ناگهانی او را به خستگی مفرط نسبت می‌دهم.",
+    "sep": "sep"
+   }
+  ]
+ },
+ {
+  "w": "put up with sb/sth",
+  "ipa": "/pʊt ʌp wɪð/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to accept an unpleasant person or situation without complaining, even though you do not like it",
+    "e": "I can no longer put up with this constant noise from next door.",
+    "p": "تحمل کردن، ساختن با",
+    "syn": [
+     "tolerate",
+     "endure",
+     "bear"
+    ],
+    "ant": [
+     "reject"
+    ],
+    "prep": [],
+    "ep": "من دیگر نمی‌توانم این سر و صدای مداوم خانهٔ مجاور را تحمل کنم.",
+    "sep": "insep"
+   }
+  ]
+ },
+ {
+  "w": "read up on sth",
+  "ipa": "/riːd ˈʌp ɒn/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to read a lot of information about a subject in order to learn about it",
+    "e": "It is wise to read up on local customs before traveling abroad.",
+    "p": "مطالعه کردن درباره موضوعی برای کسب اطلاعات",
+    "syn": [
+     "research",
+     "study",
+     "learn about"
+    ],
+    "ant": [],
+    "prep": [
+     "read up on sth"
+    ],
+    "ep": "عاقلانه است که قبل از سفر به خارج، درباره آداب و رسوم محلی مطالعه کنید.",
+    "sep": "insep"
+   }
+  ]
+ },
+ {
+  "w": "refer to sb/sth",
+  "ipa": "rɪˈfər tu",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to mention or speak about someone or something",
+    "e": "The professor often refers to her own research.",
+    "p": "اشاره کردن",
+    "syn": [
+     "mention",
+     "allude to",
+     "cite"
+    ],
+    "ant": [],
+    "prep": [],
+    "ep": "استاد به تحقيقات خودش اشاره ميکند",
+    "sep": "insep"
+   }
+  ]
+ },
+ {
+  "w": "relate to sth",
+  "ipa": "rɪˈleɪt tu",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to be connected with something",
+    "e": "The course relates to modern marketing methods.",
+    "p": "مرتبط بودن",
+    "syn": [
+     "be connected with",
+     "concern",
+     "have to do with"
+    ],
+    "ant": [],
+    "prep": [],
+    "ep": "دوره با روش‌هاي بازاریابي مدرن مرتبط است",
+    "sep": "insep"
+   }
+  ]
+ },
+ {
+  "w": "rely on sb/sth",
+  "ipa": "rɪlɑɪ ɒn",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to trust or depend on someone or something",
+    "e": "You can't rely on the buses in this city.",
+    "p": "توکل کردن",
+    "syn": [
+     "depend on",
+     "count on",
+     "bank on"
+    ],
+    "ant": [],
+    "prep": [],
+    "ep": "نميتوانيد به اتوبوس‌ها در اين شهر توکل کنيد",
+    "sep": "insep"
+   }
+  ]
+ },
+ {
+  "w": "resort to sth / resort to doing sth",
+  "ipa": "/rɪˈzɔːt tuː/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to do something bad or extreme because you cannot find any other way to achieve something",
+    "e": "They had to resort to borrowing money from friends to pay the rent.",
+    "p": "متوسل شدن به (معمولاً کار ناخوشایند)",
+    "syn": [
+     "fall back on",
+     "turn to"
+    ],
+    "ant": [],
+    "prep": [
+     "resort to sth/doing sth"
+    ],
+    "ep": "آنها مجبور شدند برای پرداخت اجاره‌خانه به قرض گرفتن پول از دوستان متوسل شوند.",
+    "sep": "insep",
+    "g": "After resort to, use a noun or V-ing form"
+   }
+  ]
+ },
+ {
+  "w": "result in sth",
+  "ipa": "/rɪˈzʌlt ɪn/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to make something happen as a result",
+    "e": "The strike resulted in the cancellation of all international flights.",
+    "p": "منجر شدن به، نتیجه دادن",
+    "syn": [
+     "lead to",
+     "cause",
+     "bring about"
+    ],
+    "ant": [
+     "prevent",
+     "avoid"
+    ],
+    "prep": [
+     "result in sth"
+    ],
+    "ep": "اعتصاب به لغو تمام پروازهای بین‌المللی منجر شد.",
+    "sep": "insep"
+   }
+  ]
+ },
+ {
+  "w": "root out sth/sb / root sth/sb out",
+  "ipa": "/ruːt aʊt/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to find and completely get rid of a bad thing or person causing trouble",
+    "e": "The new manager managed to root out corruption in the department.",
+    "p": "از ریشه درآوردن، پاکسازی کردن",
+    "syn": [
+     "eliminate",
+     "eradicate",
+     "weed out"
+    ],
+    "ant": [],
+    "prep": [],
+    "ep": "مدیر جدید توانست فساد را در بخش خود ریشه‌کن کند.",
+    "sep": "sep"
+   }
+  ]
+ },
+ {
+  "w": "rule out sth/sb / rule sth/sb out",
+  "ipa": "/ruːl aʊt/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to state that something is not possible, suitable, or relevant",
+    "e": "The police have not ruled out theft as a possible motive.",
+    "p": "منتفی دانستن، رد کردن، کنار گذاشتن",
+    "syn": [
+     "exclude",
+     "eliminate",
+     "dismiss"
+    ],
+    "ant": [
+     "consider",
+     "include"
+    ],
+    "prep": [],
+    "ep": "پلیس سرقت را به عنوان یک انگیزه احتمالی منتفی ندانسته است.",
+    "sep": "sep"
+   }
+  ]
+ },
+ {
+  "w": "run out",
+  "ipa": "/ˌrʌn ˈaʊt/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to use up or finish a supply of something so that there is none left",
+    "e": "We ran out of coffee, so I need to go to the shop.",
+    "p": "تمام شدن، ته کشیدن",
+    "ep": "قهوه‌مان تمام شده است، بنابراین باید به مغازه بروم.",
+    "syn": [
+     "be used up",
+     "be exhausted"
+    ],
+    "ant": [],
+    "prep": [
+     "run out of sth"
+    ],
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "save up",
+  "ipa": "/seɪv ʌp/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to keep money instead of spending it so that you can buy something later",
+    "e": "He is saving up to buy a new laptop for university.",
+    "p": "پس‌انداز کردن",
+    "syn": [
+     "put aside",
+     "set aside"
+    ],
+    "ant": [
+     "spend"
+    ],
+    "prep": [],
+    "ep": "او دارد پس‌انداز می‌کند تا یک لپ‌تاپ جدید برای دانشگاه بخرد.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "set about sth / set about doing sth",
+  "ipa": "/set əˈbaʊt/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to start doing something, especially something that takes a lot of time and effort",
+    "e": "She set about cleaning the entire house before the guests arrived.",
+    "p": "دست به کار شدن، شروع کردن",
+    "syn": [
+     "begin",
+     "embark on"
+    ],
+    "ant": [
+     "finish"
+    ],
+    "prep": [
+     "set about sth"
+    ],
+    "ep": "او قبل از رسیدن مهمانان دست به کار شد و تمام خانه را تمیز کرد.",
+    "sep": "insep"
+   }
+  ]
+ },
+ {
+  "w": "set aside sth / set sth aside",
+  "ipa": "/set əˈsaɪd/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to save money or time so that you can use it for a particular purpose later",
+    "e": "Try to set aside an hour every day to read a book.",
+    "p": "کنار گذاشتن (پول یا وقت)",
+    "syn": [
+     "reserve",
+     "allocate"
+    ],
+    "ant": [
+     "spend"
+    ],
+    "prep": [],
+    "ep": "سعی کنید هر روز یک ساعت را برای کتاب خواندن کنار بگذارید.",
+    "sep": "sep"
+   }
+  ]
+ },
+ {
+  "w": "set up sth / set sth up",
+  "ipa": "/set ʌp/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to start a new company, organization, or system",
+    "e": "They want to set up an online business selling handmade crafts.",
+    "p": "تأسیس کردن، راه‌اندازی کردن",
+    "syn": [
+     "establish",
+     "found",
+     "create"
+    ],
+    "ant": [
+     "close down",
+     "dissolve"
+    ],
+    "prep": [],
+    "ep": "آن‌ها می‌خواهند یک کسب‌وکار آنلاین برای فروش صنایع دستی راه‌اندازی کنند.",
+    "sep": "sep"
+   },
+   {
+    "pos": "phrasal verb",
+    "d": "to make a piece of equipment, furniture, or a computer system ready to use",
+    "e": "It took the technician an hour to set up the new office printer.",
+    "p": "راه‌اندازی کردن، برپا کردن",
+    "syn": [
+     "install",
+     "assemble",
+     "configure"
+    ],
+    "ant": [
+     "dismantle",
+     "take apart"
+    ],
+    "prep": [],
+    "ep": "طول کشید تا تکنسین چاپگر جدید دفتر را راه‌اندازی کند.",
+    "sep": "sep"
+   }
+  ]
+ },
+ {
+  "w": "settle down",
+  "ipa": "/ˈsetəl daʊn/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to start living in a quiet, stable way, usually by getting married or buying a home",
+    "e": "After years of traveling abroad, he decided to settle down and buy a house.",
+    "p": "تشکیل خانواده دادن، ساکن شدن و آرام گرفتن",
+    "syn": [
+     "establish oneself",
+     "put down roots"
+    ],
+    "ant": [],
+    "prep": [],
+    "ep": "او پس از سال‌ها سفر در خارج از کشور، تصمیم گرفت ساکن شود و خانه‌ای بخرد.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "settle on sth",
+  "ipa": "/ˈsetl ˌɒn/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to finally choose something after discussing or thinking about various options",
+    "e": "After looking at several models, we finally settled on the cheapest one.",
+    "p": "توافق کردن روی، انتخاب نهایی را انجام دادن",
+    "syn": [
+     "decide on",
+     "choose",
+     "opt for"
+    ],
+    "ant": [],
+    "prep": [],
+    "ep": "پس از دیدن چندین مدل، در نهایت ارزان‌ترین را انتخاب کردیم.",
+    "sep": "insep"
+   }
+  ]
+ },
+ {
+  "w": "shake off sth / shake sth off",
+  "ipa": "/ˌʃeɪk ˈɒf/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to finally get rid of an illness, a bad feeling, or a minor problem",
+    "e": "He is still trying to shake off a stubborn cold he caught last week.",
+    "p": "از شر چیزی خلاص شدن، بهبود یافتن",
+    "syn": [
+     "get rid of",
+     "throw off",
+     "shake"
+    ],
+    "ant": [],
+    "prep": [],
+    "ep": "او هنوز سعی دارد از شر سرماخوردگی سمجی که هفته پیش گرفت خلاص شود.",
+    "sep": "sep"
+   }
+  ]
+ },
+ {
+  "w": "show off",
+  "ipa": "/ʃəʊ ɒf/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to try to impress people by talking about your abilities or possessions in a very annoying way",
+    "e": "He spent the whole evening showing off his new car to our guests.",
+    "p": "خودنمایی کردن، پز دادن",
+    "syn": [
+     "boast",
+     "brag",
+     "flaunt"
+    ],
+    "ant": [
+     "be modest"
+    ],
+    "prep": [],
+    "ep": "او تمام شب داشت ماشین جدیدش را به مهمانانمان پز می‌داد.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "show up",
+  "ipa": "/ʃəʊ ʌp/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to arrive at a place where people are waiting for you",
+    "e": "We waited for over an hour, but he never showed up.",
+    "p": "حاضر شدن، آمدن",
+    "syn": [
+     "turn up",
+     "arrive"
+    ],
+    "ant": [],
+    "prep": [],
+    "ep": "بیش از یک ساعت منتظر ماندیم، اما او اصلا نیامد.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "shut down sth / shut sth down",
+  "ipa": "/ˈʃʌt daʊn/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to stop a machine, computer, or factory from working, or to close a business permanently or temporarily",
+    "e": "The factory had to shut down its oldest assembly line due to falling sales.",
+    "p": "متوقف کردن، تعطیل کردن",
+    "syn": [
+     "close down",
+     "turn off",
+     "halt"
+    ],
+    "ant": [
+     "start up",
+     "open"
+    ],
+    "prep": [],
+    "ep": "کارخانه مجبور شد خط مونتاژ قدیمی خود را به دلیل کاهش فروش تعطیل کند.",
+    "sep": "sep"
+   }
+  ]
+ },
+ {
+  "w": "sign up",
+  "ipa": "/saɪn ˈʌp/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to put your name on a list to join an organization, course, or activity",
+    "e": "Many students sign up for the photography club every semester.",
+    "p": "ثبت‌نام کردن، عضو شدن",
+    "syn": [
+     "enroll",
+     "register",
+     "join"
+    ],
+    "ant": [
+     "cancel",
+     "withdraw"
+    ],
+    "prep": [],
+    "ep": "هر ترم بسیاری از دانشجویان در باشگاه عکاسی ثبت‌نام می‌کنند.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "sleep in",
+  "ipa": "/sliːp ɪn/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to sleep until later in the morning than you usually do",
+    "e": "I love to sleep in on Saturday mornings when I don't work.",
+    "p": "بیشتر خوابیدن، تا دیروقت خوابیدن",
+    "ep": "من عاشق این هستم که صبح‌های شنبه که کار نمی‌کنم، بیشتر بخوابم.",
+    "syn": [
+     "lie in",
+     "sleep late"
+    ],
+    "ant": [
+     "get up early",
+     "rise early"
+    ],
+    "prep": [],
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "sleep on sth",
+  "ipa": "/ˈsliːp ˌɒn/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to delay making a decision about something until the next day so you have time to think",
+    "e": "Don't sign the contract today; sleep on it and let me know tomorrow.",
+    "p": "تصمیم‌گیری را به روز بعد موکول کردن",
+    "syn": [
+     "delay",
+     "postpone"
+    ],
+    "ant": [],
+    "prep": [],
+    "ep": "امروز قرارداد را امضا نکن؛ روی آن فکر کن و فردا به من خبر بده.",
+    "sep": "insep"
+   }
+  ]
+ },
+ {
+  "w": "slow down / slow sth down",
+  "ipa": "/ˌsləʊ ˈdaʊn/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to start moving or happening more slowly, or to make something do this",
+    "e": "You need to slow your car down before you reach the sharp corner.",
+    "p": "آهسته شدن یا کردن، سرعت را کم کردن",
+    "ep": "باید پیش از رسیدن به پیچ تند، سرعت ماشین را کم کنید.",
+    "syn": [
+     "decelerate",
+     "slack off"
+    ],
+    "ant": [
+     "speed up",
+     "hurry"
+    ],
+    "prep": [],
+    "sep": "both"
+   }
+  ]
+ },
+ {
+  "w": "sort out sth / sort sth out",
+  "ipa": "/ˌsɔːt ˈaʊt/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to successfully deal with a problem, disagreement, or a confused situation",
+    "e": "We need to sort out the schedule before booking the flights.",
+    "p": "مرتب کردن، حل و فصل کردن، سر و سامان دادن",
+    "ep": "ما باید قبل از رزرو پروازها، برنامه زمانی را سر و سامان دهیم.",
+    "syn": [
+     "resolve",
+     "solve",
+     "fix"
+    ],
+    "ant": [
+     "ignore",
+     "confuse"
+    ],
+    "prep": [],
+    "sep": "sep"
+   }
+  ]
+ },
+ {
+  "w": "speak out",
+  "ipa": "/ˈspiːk aʊt/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to state your opinion publicly and strongly, especially in order to protest",
+    "e": "Several employees spoke out against the unfair working conditions.",
+    "p": "آزادانه و شجاعانه ابراز عقیده کردن، اعتراض کردن",
+    "syn": [
+     "protest",
+     "object",
+     "express oneself"
+    ],
+    "ant": [
+     "keep silent",
+     "remain silent"
+    ],
+    "prep": [],
+    "ep": "چندین تن از کارکنان علیه شرایط ناعادلانه کاری اعتراض کردند.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "speak up",
+  "ipa": "/ˈspiːk ʌp/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to speak louder so that people can hear you clearly",
+    "e": "Could you please speak up? The connection on this call is very poor.",
+    "p": "بلندتر صحبت کردن، صدای خود را بالاتر بردن",
+    "syn": [
+     "speak out",
+     "project"
+    ],
+    "ant": [
+     "whisper",
+     "mumble"
+    ],
+    "prep": [],
+    "ep": "ممکن است لطفاً بلندتر صحبت کنید؟ کیفیت اتصال در این تماس بسیار ضعیف است.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "split up",
+  "ipa": "/splɪt ʌp/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to end a marriage or romantic relationship",
+    "e": "After five years of marriage, the couple decided to split up.",
+    "p": "جدا شدن، به پایان رساندن رابطه عاطفی یا ازدواج",
+    "syn": [
+     "break up",
+     "separate",
+     "divorce"
+    ],
+    "ant": [
+     "get together",
+     "reconcile"
+    ],
+    "prep": [],
+    "ep": "پس از پنج سال زندگی مشترک، این زوج تصمیم گرفتند از هم جدا شوند.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "stamp out sth / stamp sth out",
+  "ipa": "/stæmp aʊt/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to completely stop something bad, unpleasant, or harmful from continuing",
+    "e": "The new campaign aims to stamp out corruption in public offices.",
+    "p": "ریشه‌کن کردن، نابود کردن",
+    "syn": [
+     "eliminate",
+     "eradicate",
+     "wipe out"
+    ],
+    "ant": [
+     "encourage",
+     "promote"
+    ],
+    "prep": [],
+    "ep": "کمپین جدید با هدف ریشه‌کن کردن فساد در ادارات دولتی شکل گرفته است.",
+    "sep": "sep"
+   }
+  ]
+ },
+ {
+  "w": "stand for sth",
+  "ipa": "/ˈstænd fɔː(r)/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to be an abbreviation or symbol for a word, phrase, or idea",
+    "e": "What do the letters NATO stand for in international politics?",
+    "p": " مخفف چیزی بودن، نماد یا نشانه چیزی بودن",
+    "syn": [
+     "represent",
+     "symbolize",
+     "mean"
+    ],
+    "ant": [],
+    "prep": [],
+    "ep": "حروف ناتو در سیاست بین‌الملل مخفف چه چیزی هستند؟",
+    "sep": "insep"
+   }
+  ]
+ },
+ {
+  "w": "stand out",
+  "ipa": "/stænd aʊt/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to be very noticeable or much better than other similar things or people",
+    "e": "Her bright yellow dress made her stand out in the crowded room.",
+    "p": "بسیار برجسته یا متمایز بودن",
+    "syn": [
+     "be prominent",
+     "be conspicuous",
+     "excel"
+    ],
+    "ant": [
+     "blend in",
+     "fit in"
+    ],
+    "prep": [],
+    "ep": "لباس زرد روشن‌اش باعث شد در اتاق شلوغ کاملاً به چشم بیاید.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "stand up for sth/sb",
+  "ipa": "/ˈstænd ˈʌp fɔː(r)/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to support or defend a person or an idea that is being attacked",
+    "e": "You must always stand up for your beliefs, no matter what others say.",
+    "p": "دفاع کردن از، پشتیبانی کردن از شخص یا عقیده‌ای",
+    "syn": [
+     "defend",
+     "support",
+     "champion"
+    ],
+    "ant": [
+     "abandon",
+     "betray"
+    ],
+    "prep": [],
+    "ep": "شما همیشه باید از باورهای خود دفاع کنید، مهم نیست دیگران چه می‌گویند.",
+    "sep": "insep"
+   }
+  ]
+ },
+ {
+  "w": "stay up",
+  "ipa": "/steɪ ʌp/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to remain awake and not go to bed until later than usual",
+    "e": "We stayed up late to watch the exciting movie on TV.",
+    "p": "بیدار ماندن، دیر خوابیدن",
+    "ep": "ما تا دیر وقت بیدار ماندیم تا فیلم هیجان‌انگیز تلویزیون را تماشا کنیم.",
+    "syn": [
+     "stay awake",
+     "remain up"
+    ],
+    "ant": [
+     "go to bed early"
+    ],
+    "prep": [],
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "stem from sth",
+  "ipa": "/stem frɒm/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to start or develop as the result of something else",
+    "e": "Her intense fear of dogs stems from a childhood incident.",
+    "p": "ناشی شدن از، سرچشمه گرفتن از",
+    "syn": [
+     "arise from",
+     "originate from",
+     "derive from"
+    ],
+    "ant": [],
+    "prep": [
+     "stem from sth"
+    ],
+    "ep": "ترس شدید او از سگ‌ها ناشی از یک اتفاق در دوران کودکی است.",
+    "sep": "insep"
+   }
+  ]
+ },
+ {
+  "w": "step down",
+  "ipa": "/step daʊn/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to leave an important job or official position so that someone else can take over",
+    "e": "The chief executive decided to step down after ten years in office.",
+    "p": "کناره‌گیری کردن از مقام یا شغل مهم",
+    "syn": [
+     "resign",
+     "stand down",
+     "retire"
+    ],
+    "ant": [
+     "take up",
+     "assume"
+    ],
+    "prep": [],
+    "ep": "مدیرعامل تصمیم گرفت پس از ده سال خدمت از مقام خود کناره‌گیری کید.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "sum up",
+  "ipa": "/sʌm ʌp/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to summarize the main points or features of something briefly",
+    "e": "To sum up, we need to cut costs and increase our online advertising.",
+    "p": "خلاصه کردن، جمع‌بندی کردن",
+    "syn": [
+     "summarize",
+     "recap",
+     "outline"
+    ],
+    "ant": [],
+    "prep": [],
+    "ep": "به عنوان جمع‌بندی، ما باید هزینه‌ها را کاهش دهیم و تبلیغات آنلاین خود را افزایش دهیم.",
+    "sep": "both"
+   }
+  ]
+ },
+ {
+  "w": "switch off sth / switch sth off",
+  "ipa": "/swɪtʃ ɒf/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to turn off a light, machine, or electronic device by pressing a switch",
+    "e": "Please switch off your mobile phones before the exam starts.",
+    "p": "خاموش کردن (دستگاه یا چراغ)",
+    "syn": [
+     "turn off",
+     "deactivate"
+    ],
+    "ant": [
+     "switch on",
+     "turn on"
+    ],
+    "prep": [],
+    "ep": "لطفاً پیش از شروع امتحان تلفن‌های همراه خود را خاموش کنید.",
+    "sep": "sep"
+   }
+  ]
+ },
+ {
+  "w": "switch on sth / switch sth on",
+  "ipa": "/swɪtʃ ɒn/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to turn on a light, machine, or electronic device by pressing a switch",
+    "e": "He switched on the kettle and made a fresh cup of tea.",
+    "p": "روشن کردن (دستگاه یا چراغ)",
+    "syn": [
+     "turn on",
+     "activate"
+    ],
+    "ant": [
+     "switch off",
+     "turn off"
+    ],
+    "prep": [],
+    "ep": "او کتری را روشن کرد و یک فنجان چای تازه دم کرد.",
+    "sep": "sep"
+   }
+  ]
+ },
+ {
+  "w": "tail off",
+  "ipa": "/teɪl ˈɒf/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to become gradually smaller, fewer, or quieter before stopping completely",
+    "e": "Public interest in the controversial project began to tail off after several months.",
+    "p": "رو به کاهش گذاشتن، فروکش کردن",
+    "syn": [
+     "diminish",
+     "dwindle",
+     "fall away"
+    ],
+    "ant": [
+     "increase",
+     "grow"
+    ],
+    "prep": [],
+    "ep": "علاقه عمومی به این پروژه جنجالی پس از چند ماه شروع به فروکش کردن کرد.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "take on sth / take sth on",
+  "ipa": "/teɪk ɒn/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to agree to do some work or take responsibility for something",
+    "e": "She took on too many projects and became very stressed.",
+    "p": "به عهده گرفتن کار یا مسئولیت جدید",
+    "syn": [
+     "undertake",
+     "accept",
+     "assume"
+    ],
+    "ant": [
+     "refuse",
+     "decline"
+    ],
+    "prep": [],
+    "ep": "او پروژه‌های زیادی را به عهده گرفت و بسیار دچار استرس شد.",
+    "sep": "sep"
+   }
+  ]
+ },
+ {
+  "w": "take over sb/sth / take sb/sth over",
+  "ipa": "/teɪk ˈəʊvə(r)/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to take control of a company, place, or situation",
+    "e": "A larger corporation took over the small tech startup last month.",
+    "p": "کنترل یا مدیریت چیزی را به دست گرفتن",
+    "syn": [
+     "assume control of",
+     "take charge of"
+    ],
+    "ant": [
+     "relinquish",
+     "surrender"
+    ],
+    "prep": [],
+    "ep": "یک شرکت بزرگ‌تر ماه گذشته کنترل استارتاپ کوچک فناوری را به دست گرفت.",
+    "sep": "sep"
+   }
+  ]
+ },
+ {
+  "w": "take up sth / take sth up",
+  "ipa": "/teɪk ʌp/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to start doing a new hobby, sport, or job",
+    "e": "He decided to take up photography in his free time.",
+    "p": "شروع کردن یک سرگرمی، ورزش یا شغل جدید",
+    "syn": [
+     "begin",
+     "start",
+     "pursue"
+    ],
+    "ant": [
+     "give up",
+     "quit"
+    ],
+    "prep": [],
+    "ep": "او تصمیم گرفت در وقت آزاد خود عکاسی را شروع کند.",
+    "sep": "sep"
+   }
+  ]
+ },
+ {
+  "w": "think over sth / think sth over",
+  "ipa": "/ˌθɪŋk ˈəʊvə(r)/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to consider something carefully before making a final decision",
+    "e": "I need some time to think the proposal over before giving you an answer.",
+    "p": "در فکر چیزی بودن، جوانب چیزی را سنجیدن",
+    "syn": [
+     "consider",
+     "ponder",
+     "deliberate"
+    ],
+    "ant": [],
+    "prep": [],
+    "ep": "به مقداری زمان نیاز دارم تا قبل از پاسخ دادن به شما، پیشنهاد را خوب بررسی کنم.",
+    "sep": "sep"
+   }
+  ]
+ },
+ {
+  "w": "think through sth / think sth through",
+  "ipa": "/θɪŋk θruː/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to consider carefully all the possible results or effects of something before doing it",
+    "e": "You need to think the plan through before investing your money.",
+    "p": "جوانب چیزی را سنجیدن، خوب فکر کردن",
+    "syn": [
+     "consider",
+     "ponder",
+     "evaluate"
+    ],
+    "ant": [
+     "ignore",
+     "overlook"
+    ],
+    "prep": [],
+    "ep": "باید قبل از سرمایه‌گذاری پولتان، جوانب طرح را خوب بسنجید.",
+    "sep": "sep"
+   }
+  ]
+ },
+ {
+  "w": "touch on sth",
+  "ipa": "/ˈtʌtʃ ɒn/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to mention a subject briefly while talking or writing about something else",
+    "e": "The professor touched on the history of modern art in her lecture.",
+    "p": "به طور brief یا کوتاه اشاره کردن به چیزی، به میان کشیدن بحثی",
+    "syn": [
+     "mention",
+     "touch upon",
+     "refer to"
+    ],
+    "ant": [
+     "elaborate",
+     "expand on"
+    ],
+    "prep": [],
+    "ep": "استاد در سخنرانی خود به تاریخچه هنر مدرن اشاره کوتاهی کرد.",
+    "sep": "insep"
+   }
+  ]
+ },
+ {
+  "w": "turn off sth / turn sth off",
+  "ipa": "/ˈtɜːn ɒf/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to stop a machine, light, or water supply from working by pressing a switch or turning a tap",
+    "e": "Please turn off the lights when you leave the office.",
+    "p": "خاموش کردن، بستن (شیر آب و غیره)",
+    "syn": [
+     "switch off",
+     "shut off"
+    ],
+    "ant": [
+     "turn on",
+     "switch on"
+    ],
+    "prep": [],
+    "ep": "لطفاً وقتی از دفتر خارج می‌شوید چراغ‌ها را خاموش کنید.",
+    "sep": "sep"
+   }
+  ]
+ },
+ {
+  "w": "turn up",
+  "ipa": "/tɜːn ʌp/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to arrive at a place, often unexpectedly or later than planned",
+    "e": "Only a few people turned up for the meeting due to the heavy rain.",
+    "p": "سر و کله‌اش پیدا شدن، رسیدن",
+    "syn": [
+     "arrive",
+     "show up"
+    ],
+    "ant": [],
+    "prep": [],
+    "ep": "به خاطر بارندگی شدید، فقط چند نفر در جلسه حاضر شدند.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "use up sth / use sth up",
+  "ipa": "/ˌjuːz ˈʌp/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to use all of something so that none is left",
+    "e": "He used up all the hot water, leaving none for anyone else.",
+    "p": "تمام کردن، به مصرف رساندن (به طور کامل)",
+    "ep": "او تمام آب گرم را مصرف کرد و چیزی برای دیگران نگذاشت.",
+    "syn": [
+     "consume",
+     "exhaust",
+     "deplete"
+    ],
+    "ant": [
+     "save",
+     "conserve"
+    ],
+    "prep": [],
+    "sep": "sep"
+   }
+  ]
+ },
+ {
+  "w": "weigh up sth / weigh sth up",
+  "ipa": "/weɪ ˈʌp/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to carefully consider the good and bad points of something before making a decision",
+    "e": "You need to weigh up the costs and benefits before accepting the job offer.",
+    "p": "سنجیدن، جوانب کاری را بررسی کردن",
+    "syn": [
+     "evaluate",
+     "consider",
+     "assess"
+    ],
+    "ant": [],
+    "prep": [],
+    "ep": "باید قبل از پذیرش پیشنهاد شغلی، هزینه‌ها و مزایا را با هم بسنجید.",
+    "sep": "sep"
+   }
+  ]
+ },
+ {
+  "w": "wipe out sth / wipe sth out",
+  "ipa": "/waɪp aʊt/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to completely destroy, eliminate, or get rid of something",
+    "e": "The severe disease almost wiped out the island's entire population.",
+    "p": "نابود کردن، از بین بردن کلی",
+    "syn": [
+     "destroy",
+     "eradicate",
+     "annihilate"
+    ],
+    "ant": [
+     "create",
+     "preserve"
+    ],
+    "prep": [],
+    "ep": "بیماری شدید تقریبا تمام جمعیت جزیره را نابود کرد.",
+    "sep": "sep"
+   }
+  ]
+ },
+ {
+  "w": "work out",
+  "ipa": "/ˈwɜːk aʊt/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to do physical exercises, especially in a gym, in order to make your body strong and healthy",
+    "e": "She works out with weights at the local gym three times a week.",
+    "p": "ورزش کردن (به‌ویژه بدنسازی)",
+    "syn": [
+     "exercise",
+     "train"
+    ],
+    "ant": [
+     "rest",
+     "relax"
+    ],
+    "prep": [],
+    "ep": "او هفته‌ای سه بار در باشگاه محلی با وزنه ورزش می‌کند.",
+    "sep": "none"
+   }
+  ]
+ },
+ {
+  "w": "work out sth / work sth out",
+  "ipa": "/wɜːk aʊt/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to think carefully about something in order to understand it or find a solution",
+    "e": "I couldn't work out how to open the file.",
+    "p": "درآوردن، فهمیدن، حل کردن",
+    "syn": [
+     "figure out",
+     "solve",
+     "understand"
+    ],
+    "ant": [],
+    "prep": [],
+    "ep": "نتوانستم بفهمم چطور فایل را باز کنم.",
+    "sep": "sep"
+   }
+  ]
+ },
+ {
+  "w": "work towards sth",
+  "ipa": "/wɜːk təˈwɔːdz/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to make an effort to achieve something over a period of time",
+    "e": "All the team members are working towards a common goal.",
+    "p": "تلاش کردن برای رسیدن به چیزی",
+    "syn": [
+     "strive for",
+     "aim for"
+    ],
+    "ant": [
+     "give up"
+    ],
+    "prep": [
+     "work towards sth"
+    ],
+    "ep": "تمام اعضای تیم برای رسیدن به یک هدف مشترک تلاش می‌کنند.",
+    "sep": "insep"
+   }
+  ]
+ },
+ {
+  "w": "write up sth / write sth up",
+  "ipa": "/ˈraɪt ʌp/",
+  "senses": [
+   {
+    "pos": "phrasal verb",
+    "d": "to write a full report, article, or document about something using rough notes",
+    "e": "She spent the morning writing up her experiment notes for the report.",
+    "p": "نوشتن کامل گزارش یا شرح مفصل",
+    "syn": [
+     "draft",
+     "document",
+     "record"
+    ],
+    "ant": [],
+    "prep": [],
+    "ep": "او صبح را صرف نوشتن یادداشت‌های آزمایش خود برای گزارش کرد.",
+    "sep": "sep"
+   }
+  ]
+ }
+]

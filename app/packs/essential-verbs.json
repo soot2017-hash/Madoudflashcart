@@ -1,1 +1,353 @@
-[{"w": "improve", "ipa": "/ɪmˈpruːv/", "senses": [{"pos": "verb", "d": "to make something better, or to become better", "e": "Her English improved a lot last year.", "p": "بهبود بخشیدن، بهتر شدن", "syn": ["enhance", "upgrade", "advance", "ameliorate"], "ant": ["worsen", "decline"], "prep": ["improve on/upon sth"]}], "fam": [{"w": "improvement", "pos": "noun"}, {"w": "improved", "pos": "adjective"}]}, {"w": "decide", "ipa": "/dɪˈsaɪd/", "senses": [{"pos": "verb", "d": "to make a choice or judgment about something", "e": "We decided to stay at home.", "p": "تصمیم گرفتن", "syn": ["determine", "choose", "resolve", "settle"], "ant": [], "prep": ["decide on/against sth", "decide to do sth"]}], "fam": [{"w": "decision", "pos": "noun"}, {"w": "decisive", "pos": "adjective"}]}, {"w": "achieve", "ipa": "/əˈtʃiːv/", "senses": [{"pos": "verb", "d": "to successfully reach a goal, especially after effort", "e": "She achieved her goal of becoming a doctor.", "p": "به دست آوردن، محقق کردن", "syn": ["accomplish", "attain", "reach"], "ant": ["fail"], "prep": ["achieve sth by/through sth"]}], "fam": [{"w": "achievement", "pos": "noun"}, {"w": "achiever", "pos": "noun"}]}, {"w": "explain", "ipa": "/ɪkˈspleɪn/", "senses": [{"pos": "verb", "d": "to tell someone about something in a way that is clear or easy to understand", "e": "Can you explain how this machine works?", "p": "توضیح دادن", "syn": ["clarify", "describe", "illustrate", "explicate"], "ant": ["retail"], "prep": ["explain sth to sb"]}], "fam": [{"w": "explanation", "pos": "noun"}, {"w": "explanatory", "pos": "adjective"}]}, {"w": "prefer", "ipa": "/prɪˈfɜː/", "senses": [{"pos": "verb", "d": "to like one thing more than another", "e": "I prefer tea to coffee.", "p": "ترجیح دادن", "syn": ["favor", "choose", "favour", "opt for"], "ant": ["disprefer"], "prep": ["prefer sth to sth", "prefer to do sth"]}], "fam": [{"w": "preference", "pos": "noun"}, {"w": "preferable", "pos": "adjective"}]}, {"w": "avoid", "ipa": "/əˈvɔɪd/", "senses": [{"pos": "verb", "d": "to stay away from someone or something, or not do something", "e": "Try to avoid eating late at night.", "p": "اجتناب کردن، دوری کردن", "syn": ["evade", "shun", "void", "obviate"], "ant": ["face", "confront"], "prep": ["avoid doing sth"]}], "fam": [{"w": "avoidance", "pos": "noun"}, {"w": "avoidable", "pos": "adjective"}]}, {"w": "suggest", "ipa": "/səˈdʒest/", "senses": [{"pos": "verb", "d": "to tell someone your ideas about what they should do", "e": "He suggested going for a walk.", "p": "پیشنهاد کردن", "syn": ["propose", "recommend", "advise", "intimate"], "ant": ["contraindicate"], "prep": ["suggest doing sth", "suggest sth to sb"]}], "fam": [{"w": "suggestion", "pos": "noun"}, {"w": "suggestive", "pos": "adjective"}]}, {"w": "compare", "ipa": "/kəmˈpeə/", "senses": [{"pos": "verb", "d": "to examine two or more things to see how they are similar or different", "e": "Compare the two answers carefully.", "p": "مقایسه کردن", "syn": ["contrast", "liken", "equivalence", "equate"], "ant": [], "prep": ["compare sth to/with sth"]}], "fam": [{"w": "comparison", "pos": "noun"}, {"w": "comparable", "pos": "adjective"}]}, {"w": "increase", "ipa": "/ɪnˈkriːs/", "senses": [{"pos": "verb", "d": "to become larger in amount or number, or to make something do this", "e": "Prices increased by 10% this year.", "p": "افزایش دادن، زیاد شدن", "syn": ["rise", "grow", "expand", "increment"], "ant": ["decrease", "reduce"], "prep": ["increase by/from/to sth"]}], "fam": [{"w": "increase", "pos": "noun"}, {"w": "increasing", "pos": "adjective"}]}, {"w": "replace", "ipa": "/rɪˈpleɪs/", "senses": [{"pos": "verb", "d": "to start using something instead of another thing, or to take someone's place", "e": "Computers have replaced typewriters.", "p": "جایگزین کردن", "syn": ["substitute", "swap", "supersede", "supplant"], "ant": ["keep"], "prep": ["replace sth with sth"]}], "fam": [{"w": "replacement", "pos": "noun"}, {"w": "replaceable", "pos": "adjective"}]}]
+[
+ {
+  "w": "improve",
+  "ipa": "/ɪmˈpruːv/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to make something better, or to become better",
+    "e": "Her English improved a lot last year.",
+    "p": "بهبود بخشیدن، بهتر شدن",
+    "syn": [
+     "enhance",
+     "upgrade",
+     "advance",
+     "ameliorate"
+    ],
+    "ant": [
+     "worsen",
+     "decline"
+    ],
+    "prep": [
+     "improve on/upon sth"
+    ],
+    "ep": "انگلیسی او سال گذشته خیلی بهتر شد."
+   }
+  ],
+  "fam": [
+   {
+    "w": "improvement",
+    "pos": "noun"
+   },
+   {
+    "w": "improved",
+    "pos": "adjective"
+   }
+  ]
+ },
+ {
+  "w": "decide",
+  "ipa": "/dɪˈsaɪd/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to make a choice or judgment about something",
+    "e": "We decided to stay at home.",
+    "p": "تصمیم گرفتن",
+    "syn": [
+     "determine",
+     "choose",
+     "resolve",
+     "settle"
+    ],
+    "ant": [],
+    "prep": [
+     "decide on/against sth",
+     "decide to do sth"
+    ],
+    "ep": "تصمیم گرفتیم در خانه بمانیم."
+   }
+  ],
+  "fam": [
+   {
+    "w": "decision",
+    "pos": "noun"
+   },
+   {
+    "w": "decisive",
+    "pos": "adjective"
+   }
+  ]
+ },
+ {
+  "w": "achieve",
+  "ipa": "/əˈtʃiːv/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to successfully reach a goal, especially after effort",
+    "e": "She achieved her goal of becoming a doctor.",
+    "p": "به دست آوردن، محقق کردن",
+    "syn": [
+     "accomplish",
+     "attain",
+     "reach"
+    ],
+    "ant": [
+     "fail"
+    ],
+    "prep": [
+     "achieve sth by/through sth"
+    ],
+    "ep": "او به هدفش برای پزشک شدن رسید."
+   }
+  ],
+  "fam": [
+   {
+    "w": "achievement",
+    "pos": "noun"
+   },
+   {
+    "w": "achiever",
+    "pos": "noun"
+   }
+  ]
+ },
+ {
+  "w": "explain",
+  "ipa": "/ɪkˈspleɪn/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to tell someone about something in a way that is clear or easy to understand",
+    "e": "Can you explain how this machine works?",
+    "p": "توضیح دادن",
+    "syn": [
+     "clarify",
+     "describe",
+     "illustrate",
+     "explicate"
+    ],
+    "ant": [
+     "retail"
+    ],
+    "prep": [
+     "explain sth to sb"
+    ],
+    "ep": "می‌توانی توضیح بدهی این دستگاه چطور کار می‌کند؟"
+   }
+  ],
+  "fam": [
+   {
+    "w": "explanation",
+    "pos": "noun"
+   },
+   {
+    "w": "explanatory",
+    "pos": "adjective"
+   }
+  ]
+ },
+ {
+  "w": "prefer",
+  "ipa": "/prɪˈfɜː/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to like one thing more than another",
+    "e": "I prefer tea to coffee.",
+    "p": "ترجیح دادن",
+    "syn": [
+     "favor",
+     "choose",
+     "favour",
+     "opt for"
+    ],
+    "ant": [
+     "disprefer"
+    ],
+    "prep": [
+     "prefer sth to sth",
+     "prefer to do sth"
+    ],
+    "ep": "چای را به قهوه ترجیح می‌دهم."
+   }
+  ],
+  "fam": [
+   {
+    "w": "preference",
+    "pos": "noun"
+   },
+   {
+    "w": "preferable",
+    "pos": "adjective"
+   }
+  ]
+ },
+ {
+  "w": "avoid",
+  "ipa": "/əˈvɔɪd/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to stay away from someone or something, or not do something",
+    "e": "Try to avoid eating late at night.",
+    "p": "اجتناب کردن، دوری کردن",
+    "syn": [
+     "evade",
+     "shun",
+     "void",
+     "obviate"
+    ],
+    "ant": [
+     "face",
+     "confront"
+    ],
+    "prep": [
+     "avoid doing sth"
+    ],
+    "ep": "سعی کن غذای دیرهنگام نخوری."
+   }
+  ],
+  "fam": [
+   {
+    "w": "avoidance",
+    "pos": "noun"
+   },
+   {
+    "w": "avoidable",
+    "pos": "adjective"
+   }
+  ]
+ },
+ {
+  "w": "suggest",
+  "ipa": "/səˈdʒest/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to tell someone your ideas about what they should do",
+    "e": "He suggested going for a walk.",
+    "p": "پیشنهاد کردن",
+    "syn": [
+     "propose",
+     "recommend",
+     "advise",
+     "intimate"
+    ],
+    "ant": [
+     "contraindicate"
+    ],
+    "prep": [
+     "suggest doing sth",
+     "suggest sth to sb"
+    ],
+    "ep": "او پیشنهاد کرد پیاده‌روی برویم."
+   }
+  ],
+  "fam": [
+   {
+    "w": "suggestion",
+    "pos": "noun"
+   },
+   {
+    "w": "suggestive",
+    "pos": "adjective"
+   }
+  ]
+ },
+ {
+  "w": "compare",
+  "ipa": "/kəmˈpeə/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to examine two or more things to see how they are similar or different",
+    "e": "Compare the two answers carefully.",
+    "p": "مقایسه کردن",
+    "syn": [
+     "contrast",
+     "liken",
+     "equivalence",
+     "equate"
+    ],
+    "ant": [],
+    "prep": [
+     "compare sth to/with sth"
+    ],
+    "ep": "دو جواب را با دقت مقایسه کن."
+   }
+  ],
+  "fam": [
+   {
+    "w": "comparison",
+    "pos": "noun"
+   },
+   {
+    "w": "comparable",
+    "pos": "adjective"
+   }
+  ]
+ },
+ {
+  "w": "increase",
+  "ipa": "/ɪnˈkriːs/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to become larger in amount or number, or to make something do this",
+    "e": "Prices increased by 10% this year.",
+    "p": "افزایش دادن، زیاد شدن",
+    "syn": [
+     "rise",
+     "grow",
+     "expand",
+     "increment"
+    ],
+    "ant": [
+     "decrease",
+     "reduce"
+    ],
+    "prep": [
+     "increase by/from/to sth"
+    ],
+    "ep": "قیمت‌ها ۱۰٪ افزایش یافت."
+   }
+  ],
+  "fam": [
+   {
+    "w": "increase",
+    "pos": "noun"
+   },
+   {
+    "w": "increasing",
+    "pos": "adjective"
+   }
+  ]
+ },
+ {
+  "w": "replace",
+  "ipa": "/rɪˈpleɪs/",
+  "senses": [
+   {
+    "pos": "verb",
+    "d": "to start using something instead of another thing, or to take someone's place",
+    "e": "Computers have replaced typewriters.",
+    "p": "جایگزین کردن",
+    "syn": [
+     "substitute",
+     "swap",
+     "supersede",
+     "supplant"
+    ],
+    "ant": [
+     "keep"
+    ],
+    "prep": [
+     "replace sth with sth"
+    ],
+    "ep": "رایانه‌ها جای ماشین‌نویس‌ها را گرفتند."
+   }
+  ],
+  "fam": [
+   {
+    "w": "replacement",
+    "pos": "noun"
+   },
+   {
+    "w": "replaceable",
+    "pos": "adjective"
+   }
+  ]
+ }
+]

@@ -1,1 +1,350 @@
-[{"w": "important", "ipa": "/ɪmˈpɔːtnt/", "senses": [{"pos": "adjective", "d": "having a big effect or value; something that matters a lot", "e": "It is important to check your work.", "p": "مهم، بااهمیت", "syn": ["significant", "crucial", "vital", "eminent"], "ant": ["unimportant", "trivial"], "prep": ["important to/for sb"]}], "fam": [{"w": "importance", "pos": "noun"}, {"w": "importantly", "pos": "adverb"}]}, {"w": "difficult", "ipa": "/ˈdɪfɪkəlt/", "senses": [{"pos": "adjective", "d": "not easy to do, understand, or answer", "e": "This question is very difficult.", "p": "دشوار، سخت", "syn": ["hard", "tough", "challenging", "arduous"], "ant": ["easy", "simple"], "prep": ["difficult for sb to do sth"]}], "fam": [{"w": "difficulty", "pos": "noun"}]}, {"w": "happy", "ipa": "/ˈhæpi/", "senses": [{"pos": "adjective", "d": "feeling or showing pleasure", "e": "She is happy with her new job.", "p": "خوشحال، راضی", "syn": ["glad", "pleased", "cheerful", "halcyon"], "ant": ["sad", "unhappy", "miserable"], "prep": ["happy about/with sth"]}], "fam": [{"w": "happiness", "pos": "noun"}, {"w": "unhappy", "pos": "adjective"}]}, {"w": "careful", "ipa": "/ˈkeəfl/", "senses": [{"pos": "adjective", "d": "giving a lot of attention to what you do so that you make no mistakes", "e": "Be careful with the glass.", "p": "مواظب، دقیق", "syn": ["cautious", "attentive", "deliberate", "close"], "ant": ["careless"], "prep": ["careful with/about sth"]}], "fam": [{"w": "carefully", "pos": "adverb"}, {"w": "careless", "pos": "adjective"}]}, {"w": "useful", "ipa": "/ˈjuːsfl/", "senses": [{"pos": "adjective", "d": "able to help you do or get what you want", "e": "This book is useful for beginners.", "p": "مفید، سودمند", "syn": ["helpful", "handy", "practical", "important"], "ant": ["useless"], "prep": ["useful for/to sb"]}], "fam": [{"w": "usefully", "pos": "adverb"}, {"w": "useless", "pos": "adjective"}]}, {"w": "famous", "ipa": "/ˈfeɪməs/", "senses": [{"pos": "adjective", "d": "known by very many people", "e": "Paris is famous for its museums.", "p": "مشهور، معروف", "syn": ["well-known", "renowned", "noted", "illustrious"], "ant": ["unknown"], "prep": ["famous for sth"]}], "fam": [{"w": "fame", "pos": "noun"}]}, {"w": "dangerous", "ipa": "/ˈdeɪndʒərəs/", "senses": [{"pos": "adjective", "d": "likely to cause harm or injury", "e": "It is dangerous to swim here.", "p": "خطرناک", "syn": ["risky", "hazardous", "unsafe", "insidious"], "ant": ["safe"], "prep": ["dangerous for/to sb"]}], "fam": [{"w": "danger", "pos": "noun"}, {"w": "endanger", "pos": "verb"}]}, {"w": "similar", "ipa": "/ˈsɪmələ/", "senses": [{"pos": "adjective", "d": "almost the same in some way but not exactly the same", "e": "Our opinions are similar.", "p": "مشابه، شبیه", "syn": ["alike", "comparable", "equivalent", "analogous"], "ant": ["different"], "prep": ["similar to sth/sb"]}], "fam": [{"w": "similarity", "pos": "noun"}, {"w": "similarly", "pos": "adverb"}]}, {"w": "necessary", "ipa": "/ˈnesəsəri/", "senses": [{"pos": "adjective", "d": "needed; something you must do or have", "e": "Water is necessary for life.", "p": "ضروری، لازم", "syn": ["essential", "required", "vital", "indispensable"], "ant": ["unnecessary", "optional"], "prep": ["necessary for sth"]}], "fam": [{"w": "necessity", "pos": "noun"}, {"w": "necessarily", "pos": "adverb"}]}, {"w": "quiet", "ipa": "/ˈkwaɪət/", "senses": [{"pos": "adjective", "d": "making little or no noise", "e": "The library is very quiet.", "p": "آرام، ساکت", "syn": ["silent", "calm", "peaceful", "subdued"], "ant": ["noisy", "loud"], "prep": ["quiet about sth"]}], "fam": [{"w": "quietly", "pos": "adverb"}, {"w": "quietness", "pos": "noun"}]}]
+[
+ {
+  "w": "important",
+  "ipa": "/ɪmˈpɔːtnt/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "having a big effect or value; something that matters a lot",
+    "e": "It is important to check your work.",
+    "p": "مهم، بااهمیت",
+    "syn": [
+     "significant",
+     "crucial",
+     "vital",
+     "eminent"
+    ],
+    "ant": [
+     "unimportant",
+     "trivial"
+    ],
+    "prep": [
+     "important to/for sb"
+    ],
+    "ep": "بررسی کارهایت مهم است."
+   }
+  ],
+  "fam": [
+   {
+    "w": "importance",
+    "pos": "noun"
+   },
+   {
+    "w": "importantly",
+    "pos": "adverb"
+   }
+  ]
+ },
+ {
+  "w": "difficult",
+  "ipa": "/ˈdɪfɪkəlt/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "not easy to do, understand, or answer",
+    "e": "This question is very difficult.",
+    "p": "دشوار، سخت",
+    "syn": [
+     "hard",
+     "tough",
+     "challenging",
+     "arduous"
+    ],
+    "ant": [
+     "easy",
+     "simple"
+    ],
+    "prep": [
+     "difficult for sb to do sth"
+    ],
+    "ep": "این سؤال خیلی سخت است."
+   }
+  ],
+  "fam": [
+   {
+    "w": "difficulty",
+    "pos": "noun"
+   }
+  ]
+ },
+ {
+  "w": "happy",
+  "ipa": "/ˈhæpi/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "feeling or showing pleasure",
+    "e": "She is happy with her new job.",
+    "p": "خوشحال، راضی",
+    "syn": [
+     "glad",
+     "pleased",
+     "cheerful",
+     "halcyon"
+    ],
+    "ant": [
+     "sad",
+     "unhappy",
+     "miserable"
+    ],
+    "prep": [
+     "happy about/with sth"
+    ],
+    "ep": "او از شغل جدیدش راضی است."
+   }
+  ],
+  "fam": [
+   {
+    "w": "happiness",
+    "pos": "noun"
+   },
+   {
+    "w": "unhappy",
+    "pos": "adjective"
+   }
+  ]
+ },
+ {
+  "w": "careful",
+  "ipa": "/ˈkeəfl/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "giving a lot of attention to what you do so that you make no mistakes",
+    "e": "Be careful with the glass.",
+    "p": "مواظب، دقیق",
+    "syn": [
+     "cautious",
+     "attentive",
+     "deliberate",
+     "close"
+    ],
+    "ant": [
+     "careless"
+    ],
+    "prep": [
+     "careful with/about sth"
+    ],
+    "ep": "مراقب لیوان باش."
+   }
+  ],
+  "fam": [
+   {
+    "w": "carefully",
+    "pos": "adverb"
+   },
+   {
+    "w": "careless",
+    "pos": "adjective"
+   }
+  ]
+ },
+ {
+  "w": "useful",
+  "ipa": "/ˈjuːsfl/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "able to help you do or get what you want",
+    "e": "This book is useful for beginners.",
+    "p": "مفید، سودمند",
+    "syn": [
+     "helpful",
+     "handy",
+     "practical",
+     "important"
+    ],
+    "ant": [
+     "useless"
+    ],
+    "prep": [
+     "useful for/to sb"
+    ],
+    "ep": "این کتاب برای مبتدیان مفید است."
+   }
+  ],
+  "fam": [
+   {
+    "w": "usefully",
+    "pos": "adverb"
+   },
+   {
+    "w": "useless",
+    "pos": "adjective"
+   }
+  ]
+ },
+ {
+  "w": "famous",
+  "ipa": "/ˈfeɪməs/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "known by very many people",
+    "e": "Paris is famous for its museums.",
+    "p": "مشهور، معروف",
+    "syn": [
+     "well-known",
+     "renowned",
+     "noted",
+     "illustrious"
+    ],
+    "ant": [
+     "unknown"
+    ],
+    "prep": [
+     "famous for sth"
+    ],
+    "ep": "پاریس به موزه‌هایش معروف است."
+   }
+  ],
+  "fam": [
+   {
+    "w": "fame",
+    "pos": "noun"
+   }
+  ]
+ },
+ {
+  "w": "dangerous",
+  "ipa": "/ˈdeɪndʒərəs/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "likely to cause harm or injury",
+    "e": "It is dangerous to swim here.",
+    "p": "خطرناک",
+    "syn": [
+     "risky",
+     "hazardous",
+     "unsafe",
+     "insidious"
+    ],
+    "ant": [
+     "safe"
+    ],
+    "prep": [
+     "dangerous for/to sb"
+    ],
+    "ep": "اینجا شنا کردن خطرناک است."
+   }
+  ],
+  "fam": [
+   {
+    "w": "danger",
+    "pos": "noun"
+   },
+   {
+    "w": "endanger",
+    "pos": "verb"
+   }
+  ]
+ },
+ {
+  "w": "similar",
+  "ipa": "/ˈsɪmələ/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "almost the same in some way but not exactly the same",
+    "e": "Our opinions are similar.",
+    "p": "مشابه، شبیه",
+    "syn": [
+     "alike",
+     "comparable",
+     "equivalent",
+     "analogous"
+    ],
+    "ant": [
+     "different"
+    ],
+    "prep": [
+     "similar to sth/sb"
+    ],
+    "ep": "نظرات ما شبیه هم است."
+   }
+  ],
+  "fam": [
+   {
+    "w": "similarity",
+    "pos": "noun"
+   },
+   {
+    "w": "similarly",
+    "pos": "adverb"
+   }
+  ]
+ },
+ {
+  "w": "necessary",
+  "ipa": "/ˈnesəsəri/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "needed; something you must do or have",
+    "e": "Water is necessary for life.",
+    "p": "ضروری، لازم",
+    "syn": [
+     "essential",
+     "required",
+     "vital",
+     "indispensable"
+    ],
+    "ant": [
+     "unnecessary",
+     "optional"
+    ],
+    "prep": [
+     "necessary for sth"
+    ],
+    "ep": "آب برای زندگی ضروری است."
+   }
+  ],
+  "fam": [
+   {
+    "w": "necessity",
+    "pos": "noun"
+   },
+   {
+    "w": "necessarily",
+    "pos": "adverb"
+   }
+  ]
+ },
+ {
+  "w": "quiet",
+  "ipa": "/ˈkwaɪət/",
+  "senses": [
+   {
+    "pos": "adjective",
+    "d": "making little or no noise",
+    "e": "The library is very quiet.",
+    "p": "آرام، ساکت",
+    "syn": [
+     "silent",
+     "calm",
+     "peaceful",
+     "subdued"
+    ],
+    "ant": [
+     "noisy",
+     "loud"
+    ],
+    "prep": [
+     "quiet about sth"
+    ],
+    "ep": "کتابخانه خیلی ساکت است."
+   }
+  ],
+  "fam": [
+   {
+    "w": "quietly",
+    "pos": "adverb"
+   },
+   {
+    "w": "quietness",
+    "pos": "noun"
+   }
+  ]
+ }
+]
