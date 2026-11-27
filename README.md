@@ -2,12 +2,12 @@
 
 ## 📦 نصب روی گوشی اندروید
 
-1. فایل [**FlashCards-v1.31.apk**](https://raw.githubusercontent.com/soot2017-hash/Madoudflashcart/main/releases/FlashCards-v1.31.apk) را روی گوشی دانلود کنید (۳۶۹ کیلوبایت)
+1. فایل [**FlashCards-v1.32.apk**](https://raw.githubusercontent.com/soot2017-hash/Madoudflashcart/main/releases/FlashCards-v1.32.apk) را روی گوشی دانلود کنید (۶۴۱ کیلوبایت)
 > 🌐 اگر لینک بالا باز نشد (فیلتر raw.githubusercontent)، از این آینه‌ها استفاده کنید:
-> - `https://cdn.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.31.apk`
-> - `https://fastly.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.31.apk`
-> - `https://testingcf.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.31.apk`
-> - `https://gcore.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.31.apk`
+> - `https://cdn.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.32.apk`
+> - `https://fastly.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.32.apk`
+> - `https://testingcf.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.32.apk`
+> - `https://gcore.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.32.apk`
 
 2. روی فایل بزنید؛ اگر پرسید، اجازهٔ «نصب از منابع ناشناس» را بدهید
 3. تمام! اپ با آیکون اختصاصی نصب می‌شود
@@ -35,6 +35,19 @@
 3. تمام! اپ مثل یک برنامهٔ واقعی تمام‌صفحه باز می‌شود و بعد از اولین بار، آفلاین هم کار می‌کند
 
 داده‌ها کاملاً محلی‌اند: فلش‌کارت‌ها فقط در حافظهٔ همان دستگاه ذخیره می‌شوند (localStorage مرورگر) و روی هیچ سروری ارسال نمی‌شوند — هر کاربر دنیای خودش را دارد و دادهٔ هیچ‌کس با کسی اشتراکی نیست. ثبت‌نام هم لازم نیست.
+
+## 🏗 در نسخهٔ ۱٫۳۲ — فاز ۳: بازسازی کامل کیفیت گرامر (قالب جدید آموزشی)
+
+محتوای ۴۳ مبحث گرامر از پایه بازنویسی شد؛ مبنای محتوا: کتاب‌های **Grammar in Use** (سه سطح) + جستجوی وب در منابع معتبر آموزشی (British Council و مانند آن):
+
+- **🧩 چیپ فرمول:** ابتدای هر بخش، فرمول ساختار (مثل `Subject + will/won't + base verb`) با ترجمهٔ فارسی
+- **📊 جدول صرف:** در هر نکته، جدول مقایسه‌ای با ستون‌های **مثبت (+) / منفی (−) / سؤال (?)** به سبک British Council، با جمله‌های واقعی و متضاد
+- **⚠️ خط BUT:** استثناها و هشدارهای رایج زیر هر جدول (مثل «هرگز به can برای he/she/it اضافه نکنید»)
+- **🔍 نکتهٔ عمق:** نکات غیربدیهی (مثل نامنظمی won't در انقباض‌ها)
+- **✨ کارت نکات طلایی:** پایان هر بخش، ۳-۴ قاعدهٔ ارزشمند برای حفظ
+- **خط تولید ۵+۱ عاملی:** استخراج کتاب (Gemini) → جستجوی وب (۴۳ مبحث) → تجمیع (free-ai) → بازبینی عمق (Gemini + Zen/opencode) → تمرین هدفمند از دل استثناها (free-ai)
+- **آمار:** ۴۳ مبحث، ۱۶۱ بخش، ۷۱۳ تمرین نوشتاری با کلید و توضیح
+- همهٔ بلوک‌های جدید toggle فارسی دارند؛ آفلاین کامل (Service Worker `fc-v31`)
 
 ## 🎓 در نسخهٔ ۱٫۳۱ — فاز ۲: پوشش کامل گرامر (۴۳ مبحث، ۱۶۱ درس، ۷۰۷ تمرین)
 
