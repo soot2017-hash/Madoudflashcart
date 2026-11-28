@@ -1,0 +1,67 @@
+WORD: load
+SOURCE: Oxford Learner's Dictionary (dictionary-crawler)
+
+IDIOM: get a load of somebody/something
+HEADWORD: load
+PART OF SPEECH: noun
+PRONUNCIATION: /ləʊd/ | /ləʊd/
+SENSE — something that is being carried (usually in large amounts) by a person, vehicle, etc. [cefr: B2] [grammar: countable]
+collocation: adjective — heavy, light, full, …
+collocation: verb + load — bear, carry, shoulder, …
+collocation: preposition — under its, etc. load
+example: The trucks waited at the warehouse to pick up their loads.
+example: The women came down the hill with their loads of firewood.
+example: These backpacks are designed to carry a heavy load.
+SENSE — the total amount of something that something can carry or contain [cefr: B2] [grammar: countable]
+collocation: adjective — heavy, light, full, …
+collocation: verb + load — bear, carry, shoulder, …
+collocation: preposition — under its, etc. load
+example: a busload of tourists
+example: They ordered three truckloads of sand.
+example: He put half a load of washing in the machine.
+SENSE — the amount of weight that is pressing down on something [grammar: countable] [grammar: usually singular]
+collocation: adjective — heavy, light, full, …
+collocation: verb + load — bear, carry, shoulder, …
+collocation: preposition — under its, etc. load
+example: a load-bearing wall
+example: Modern backpacks spread the load over a wider area.
+example: The table creaked under its heavy load.
+SENSE — a large number or amount of people or things; plenty [cefr: B2] [grammar: singular]
+example: She's got loads of friends.
+example: He wrote loads and loads of letters to people.
+example: Uncle Jim brought a whole load of presents for the kids.
+SENSE — used to emphasize that something is wrong, stupid, bad, etc. [grammar: singular] [label: load of rubbish, garbage, nonsense, etc.]
+example: You're talking a load of rubbish.
+SENSE — an amount of work that a person or machine has to do [grammar: countable]
+example: Teaching loads have increased in all types of school.
+example: Extra warmth from sunlight can put an additional load on the air-conditioning system.
+example: We're trying to spread the load by employing more staff.
+SENSE — a feeling of responsibility or worry that is difficult to deal with [grammar: countable] [grammar: usually singular]
+synonym: burden
+example: She thought she would not be able to bear the load of bringing up her family alone.
+example: Knowing that they had arrived safely took a load off my mind.
+SENSE — the amount of electrical power that is being supplied at a particular time [grammar: countable]
+CEFR (entry): B2
+
+PHRASAL VERB: load down
+PHRASAL VERB: load up on
+IDIOM: load the dice (against/in favour of somebody)
+HEADWORD: load
+PART OF SPEECH: verb
+PRONUNCIATION: /ləʊd/ | /ləʊd/
+SENSE — to put a large quantity of things or people onto or into something [cefr: B2] [grammar: transitive] [grammar: intransitive]
+example: We loaded the car in ten minutes.
+example: Can you help me load the dishwasher?
+example: They loaded up the lorry.
+SENSE — to receive a load [grammar: intransitive]
+example: The ship was still loading.
+SENSE — to give somebody a lot of things, especially things they have to carry [grammar: transitive] [label: load somebody with something]
+example: They loaded her with gifts.
+SENSE — to put something into a weapon, camera or other piece of equipment so that it can be used [grammar: transitive] [grammar: intransitive]
+example: She loaded a new cartridge into the printer.
+example: She loaded the printer with a new cartridge.
+example: He carefully loaded the gun.
+SENSE — to put data or a program into the memory of a computer, usually from local disk storage [grammar: transitive] [grammar: intransitive] [label: load (something)]
+example: The program automatically loads the file.
+example: This page won't load on my laptop.
+CEFR (entry): B2

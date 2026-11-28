@@ -1,0 +1,7 @@
+WORD: achieve
+SOURCE: Oxford Learner's Dictionary (dictionary-crawler)
+
+HEADWORD: achieve
+PART OF SPEECH: verb
+PRONUNCIATION: /əˈtʃiːv/ | /əˈtʃiːv/
+CEFR (entry): A2

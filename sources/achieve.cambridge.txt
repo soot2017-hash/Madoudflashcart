@@ -1,0 +1,48 @@
+WORD: achieve
+SOURCE: Cambridge Dictionary (dictionary-crawler)
+
+HEADWORD: achieve
+PART OF SPEECH: verb
+PRONUNCIATION: [uk] /əˈtʃiːv/ | [us] /əˈtʃiːv/
+SENSE — to succeed in finishing something or reaching an aim, especially after a lot of work or effort
+example: The government's training policy, he claimed, was achieving its objectives.
+example: She recently achieved her goal of completing a marathon.
+example: She finally achieved her ambition to visit South America.
+
+HEADWORD: achieve
+PART OF SPEECH: verb
+PRONUNCIATION: [uk] /əˈtʃiːv/ | [us] /əˈtʃiːv/
+SENSE — to succeed in finishing something or reaching an aim, especially after a lot of work or effort
+example: The government's training policy, he claimed, was achieving its objectives.
+example: She recently achieved her goal of completing a marathon.
+example: She finally achieved her ambition to visit South America.
+
+HEADWORD: achieve
+PART OF SPEECH: verb
+PRONUNCIATION: [us] /əˈtʃiv/ | [us] /əˈtʃi·və·bəl/
+SENSE — to do or obtain something that you wanted after planning and working to make it happen
+example: She achieved her objective of qualifying for the US Olympic team.
+example: I am hopeful that we can achieve peace eventually, but it is not going to be easy.
+
+HEADWORD: achieve
+PART OF SPEECH: verb
+PRONUNCIATION: [us] /əˈtʃiv/ | [us] /əˈtʃi·və·bəl/
+SENSE — to do or obtain something that you wanted after planning and working to make it happen
+example: She achieved her objective of qualifying for the US Olympic team.
+example: I am hopeful that we can achieve peace eventually, but it is not going to be easy.
+
+HEADWORD: achieve
+PART OF SPEECH: verb
+PRONUNCIATION: [uk] /əˈtʃiːv/
+SENSE — to successfully finish or do something you wanted to do, especially after a lot of effort
+example: Salespersons strived to achieve maximum sales.
+example: The division has achieved its objective of being a major force in home entertainment.
+example: It is hard to see how these projects can achieve their potential .
+
+HEADWORD: achieve
+PART OF SPEECH: verb
+PRONUNCIATION: [uk] /əˈtʃiːv/
+SENSE — to successfully finish or do something you wanted to do, especially after a lot of effort
+example: Salespersons strived to achieve maximum sales.
+example: The division has achieved its objective of being a major force in home entertainment.
+example: It is hard to see how these projects can achieve their potential .

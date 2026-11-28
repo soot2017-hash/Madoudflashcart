@@ -1,0 +1,209 @@
+WORD: load
+SOURCE: Cambridge Dictionary (dictionary-crawler)
+
+HEADWORD: load
+PART OF SPEECH: noun
+PRONUNCIATION: [uk] /ləʊd/ | [us] /loʊd/ | [uk] /ləʊd/ | [us] /loʊd/ | [uk] / -ləʊd/ | [us] / -loʊd/
+SENSE — the amount of weight carried, especially by a vehicle, a structure such as a bridge, or an animal
+example: The maximum load for this elevator is eight persons.
+example: They delivered two loads of wood to the site.
+example: One truck involved in the accident was carrying a heavy load of coal.
+SENSE — a lot
+example: I've got a load of work to get through before tomorrow.
+example: There were a load of people there.
+example: Have some more food - there's loads.
+SENSE — the amount of electrical power that is supplied
+SENSE — the amount of work to be done by a person
+example: If we share the organization of the party, that will help spread the load.
+example: I've got a heavy teaching load this term.
+example: She has had to drop one course, so she’s taking a slightly lighter course load.
+SENSE — a painful, difficult, or tiring situation to deal with
+example: Living with a terminal diagnosis is a heavy load to carry.
+example: I wish I could do something to lighten your load (= make your situation easier).
+SENSE — an amount of clothing, etc. that is put in a washing machine to be washed, or that has been taken out of a washing machine after being washed
+example: I always put a load in before I go to bed and hang it out to dry in the morning.
+example: You sort the washing and put a load on, and when you go back to hang it out the clothes appear to have multiplied.
+example: I've already done three loads of laundry this morning.
+SENSE — to put a lot of things into a vehicle or machine
+example: How long will it take to load this sand onto the lorry?
+example: Let's load up the car and then we can go.
+example: to load the dishwasher/washing machine
+SENSE — to have too much to carry, or too much work to do
+example: I was loaded down with shopping.
+SENSE — to contain a lot of something
+example: Most fast foods are loaded with fat.
+SENSE — to fill or cover something with a lot of food
+example: Guests loaded up their plates at the restaurant buffet.
+example: On the day of the party the table was loaded with food.
+example: a buttermilk biscuit loaded with bacon, egg and cheese
+SENSE — to put film in a camera or bullets in a gun
+example: Do not load the film (= put it into the camera) in bright light.
+SENSE — to put information or a program onto a computer
+example: You need to load this program onto your computer.
+example: The software is easy to load.
+SENSE — If a web page or an application loads or is loaded, it appears on a screen
+example: My browser wouldn't load the page.
+example: Some of the apps on my smart TV are quite slow to load.
+example: What happens if the user clicks on a link before the web page has finished loading?
+SENSE — in baseball, to have runners at each of the bases (= positions that a player must reach to score a point)
+example: The Tigers loaded the bases with one man out in the fourth inning.
+SENSE — all the people or goods in the stated type of vehicle or container
+example: A coachload of football fans had a 20-minute delay getting .
+example: Busloads of tourists pour into this place in the summer.
+example: Truckloads of food and medical supplies arrived in the refugee camp.
+
+HEADWORD: load
+PART OF SPEECH: noun
+PRONUNCIATION: [uk] /ləʊd/ | [us] /loʊd/
+SENSE — the amount of weight carried, especially by a vehicle, a structure such as a bridge, or an animal
+example: The maximum load for this elevator is eight persons.
+example: They delivered two loads of wood to the site.
+example: One truck involved in the accident was carrying a heavy load of coal.
+SENSE — a lot
+example: I've got a load of work to get through before tomorrow.
+example: There were a load of people there.
+example: Have some more food - there's loads.
+SENSE — the amount of electrical power that is supplied
+SENSE — the amount of work to be done by a person
+example: If we share the organization of the party, that will help spread the load.
+example: I've got a heavy teaching load this term.
+example: She has had to drop one course, so she’s taking a slightly lighter course load.
+SENSE — a painful, difficult, or tiring situation to deal with
+example: Living with a terminal diagnosis is a heavy load to carry.
+example: I wish I could do something to lighten your load (= make your situation easier).
+SENSE — an amount of clothing, etc. that is put in a washing machine to be washed, or that has been taken out of a washing machine after being washed
+example: I always put a load in before I go to bed and hang it out to dry in the morning.
+example: You sort the washing and put a load on, and when you go back to hang it out the clothes appear to have multiplied.
+example: I've already done three loads of laundry this morning.
+
+HEADWORD: load
+PART OF SPEECH: verb
+PRONUNCIATION: [uk] /ləʊd/ | [us] /loʊd/
+SENSE — to put a lot of things into a vehicle or machine
+example: How long will it take to load this sand onto the lorry?
+example: Let's load up the car and then we can go.
+example: to load the dishwasher/washing machine
+SENSE — to have too much to carry, or too much work to do
+example: I was loaded down with shopping.
+SENSE — to contain a lot of something
+example: Most fast foods are loaded with fat.
+SENSE — to fill or cover something with a lot of food
+example: Guests loaded up their plates at the restaurant buffet.
+example: On the day of the party the table was loaded with food.
+example: a buttermilk biscuit loaded with bacon, egg and cheese
+SENSE — to put film in a camera or bullets in a gun
+example: Do not load the film (= put it into the camera) in bright light.
+SENSE — to put information or a program onto a computer
+example: You need to load this program onto your computer.
+example: The software is easy to load.
+SENSE — If a web page or an application loads or is loaded, it appears on a screen
+example: My browser wouldn't load the page.
+example: Some of the apps on my smart TV are quite slow to load.
+example: What happens if the user clicks on a link before the web page has finished loading?
+SENSE — in baseball, to have runners at each of the bases (= positions that a player must reach to score a point)
+example: The Tigers loaded the bases with one man out in the fourth inning.
+
+HEADWORD: -load
+PART OF SPEECH: suffix
+PRONUNCIATION: [uk] / -ləʊd/ | [us] / -loʊd/
+SENSE — all the people or goods in the stated type of vehicle or container
+example: A coachload of football fans had a 20-minute delay getting .
+example: Busloads of tourists pour into this place in the summer.
+example: Truckloads of food and medical supplies arrived in the refugee camp.
+
+HEADWORD: load
+PART OF SPEECH: noun
+PRONUNCIATION: [us] /loʊd/ | [us] /loʊd/
+SENSE — the amount or weight of something carried by a vehicle, a structure such as a bridge, or a person or animal
+example: The truck had a load of bricks.
+example: The maximum load for this elevator is eight persons.
+SENSE — Load is also the weight being moved by a lever.
+SENSE — the amount of work to be done by a person
+example: The normal teaching load at this university is three courses each semester.
+SENSE — to put into a piece of equipment something it uses to make it work
+example: Bill loaded and aimed his crossbow.
+example: The technician loaded a sample into the device.
+example: You need to load the new software before you can use the computer.
+SENSE — to put something in or on a vehicle
+example: He could load more hay into the wagon.
+
+HEADWORD: load
+PART OF SPEECH: noun
+PRONUNCIATION: [us] /loʊd/
+SENSE — the amount or weight of something carried by a vehicle, a structure such as a bridge, or a person or animal
+example: The truck had a load of bricks.
+example: The maximum load for this elevator is eight persons.
+SENSE — Load is also the weight being moved by a lever.
+SENSE — the amount of work to be done by a person
+example: The normal teaching load at this university is three courses each semester.
+
+HEADWORD: load
+PART OF SPEECH: verb
+PRONUNCIATION: [us] /loʊd/
+SENSE — to put into a piece of equipment something it uses to make it work
+example: Bill loaded and aimed his crossbow.
+example: The technician loaded a sample into the device.
+example: You need to load the new software before you can use the computer.
+SENSE — to put something in or on a vehicle
+example: He could load more hay into the wagon.
+
+HEADWORD: load
+PART OF SPEECH: noun
+PRONUNCIATION: [uk] /ləʊd/ | [uk] /ləʊd/
+SENSE — an amount of goods or people transported by road, railway, or air
+example: The total maximum load is four hundred kilograms.
+example: Heavy passenger loads put stress on the nation's aviation system.
+example: carry/deliver/transport a load
+SENSE — the amount of work to be done by a person, an organization, or a machine
+example: Workers have asked whether the bank intends to lighten their load by hiring more staff.
+example: British manufacturing is looking to other sectors to help share the load of investing in infrastructure.
+example: heavy/light/increased load
+SENSE — a charge that you pay when you buy or sell shares in an investment company
+SENSE — an amount of money, usually a large amount, that a person, company, or country has to pay
+example: A ruling by the European Union lightened the tax load on investors buying gold.
+SENSE — to put goods onto a vehicle to transport them
+example: A surge in trade has seen up to 90 vessels a week at the port waiting to load their cargoes.
+example: Trucks were loading and unloading at the warehouse.
+example: The tanker was loaded with four million gallons of diesel oil.
+SENSE — to put a program or data onto a computer or website
+example: The software is very easy to load.
+example: The updates don't take long to load.
+SENSE — to include charges in an investment, loan, etc.
+example: The card is designed to attract customers with poor credit and comes loaded with lots of fees and a very low credit limit.
+SENSE — used with other nouns to refer to a vehicle, large container, etc. that is completely full
+example: Planeloads of aid sent to the disaster region remain undistributed.
+example: The auditors have requested boxloads of documents.
+
+HEADWORD: load
+PART OF SPEECH: noun
+PRONUNCIATION: [uk] /ləʊd/
+SENSE — an amount of goods or people transported by road, railway, or air
+example: The total maximum load is four hundred kilograms.
+example: Heavy passenger loads put stress on the nation's aviation system.
+example: carry/deliver/transport a load
+SENSE — the amount of work to be done by a person, an organization, or a machine
+example: Workers have asked whether the bank intends to lighten their load by hiring more staff.
+example: British manufacturing is looking to other sectors to help share the load of investing in infrastructure.
+example: heavy/light/increased load
+SENSE — a charge that you pay when you buy or sell shares in an investment company
+SENSE — an amount of money, usually a large amount, that a person, company, or country has to pay
+example: A ruling by the European Union lightened the tax load on investors buying gold.
+
+HEADWORD: load
+PART OF SPEECH: verb
+PRONUNCIATION: [uk] /ləʊd/
+SENSE — to put goods onto a vehicle to transport them
+example: A surge in trade has seen up to 90 vessels a week at the port waiting to load their cargoes.
+example: Trucks were loading and unloading at the warehouse.
+example: The tanker was loaded with four million gallons of diesel oil.
+SENSE — to put a program or data onto a computer or website
+example: The software is very easy to load.
+example: The updates don't take long to load.
+SENSE — to include charges in an investment, loan, etc.
+example: The card is designed to attract customers with poor credit and comes loaded with lots of fees and a very low credit limit.
+
+HEADWORD: -load
+PART OF SPEECH: suffix
+SENSE — used with other nouns to refer to a vehicle, large container, etc. that is completely full
+example: Planeloads of aid sent to the disaster region remain undistributed.
+example: The auditors have requested boxloads of documents.
