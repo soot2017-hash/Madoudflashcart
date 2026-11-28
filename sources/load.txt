@@ -1,0 +1,40 @@
+WORD: load
+SOURCE: Longman Dictionary of Contemporary English (ldoceonline.com)
+
+HEADWORD: load
+PRONUNCIATION BrE: /ləʊd/  AmE: /loʊd/
+GRAMMAR (headword): [ countable ]
+PART OF SPEECH: noun
+SIGNPOST: amount of something
+
+SENSE 1 — a large quantity of something that is carried by a vehicle, person etc — example: a load of wood — example: The lorry had shed its load (= the load had fallen off ). — example: The plane was carrying a full load of fuel.
+SENSE 5 — the amount of work that a person or machine has to do — collocation: a light/heavy load — example: The computer couldn’t handle the load and crashed. — example: Hans has a heavy teaching load this semester. — example: My work load has doubled since Henry left. — example: They hired more staff in order to spread the load.
+SENSE 6 — a problem or worry that is difficult to deal with — example: When someone is depressed, the extra load of having financial problems can make the situation worse. — example: Knowing he was safe was a load off my mind (= I felt less worried ). — example: Coping with ill health was a heavy load to bear.
+SENSE 7 — a quantity of clothes that are washed together in a washing machine — example: I’ve already done three loads of laundry this morning.
+SENSE 9 — the amount of weight that something is supporting — example: a load-bearing wall — example: It increased the load on the wheels.
+SENSE 10 — an amount of electrical power that is being produced
+
+HEADWORD: load
+PART OF SPEECH: verb
+
+SENSE 1 — to put a large quantity of something into a vehicle or container — [grammar: [ intransitive, transitive ]] — example: Emma loaded all the groceries into the car. — example: She loaded up the car with camping gear. — example: Have you finished loading up? — example: It took an hour to load the van. — example: Will you help me load the dishwasher? — example: He loaded the cups onto a tray.
+SENSE 2 — to put a necessary part into something in order to make it work, for example bullets into a gun or film into a camera — [grammar: [ transitive ]] — example: Did you load it with 200 or 400 film? — example: Can you load the CD into the player, please?
+SENSE 3 — to put a program into a computer — [grammar: [ intransitive, transitive ]] — example: The program takes a while to load. — example: To load the file, press the ‘return’ key.
+SENSE 4 — if a ship, aircraft etc loads, goods are put onto it — [grammar: [ intransitive ]] — example: The boat called at Lerwick to load up with fresh vegetables. — example: The first ship to load at the new port was the ‘Secil Angola’.
+
+HEADWORD: load
+PRONUNCIATION BrE: /ləʊdloʊd/
+GRAMMAR (headword): [ countable ]
+PART OF SPEECH: noun
+
+SENSE 1 — an amount of goods or people transported on a road vehicle, train, or plane — example: The lorry returned with a load of Spanish apricots. — example: Rail cars are used to move the bigger loads. — example: The plane was carrying a full load of passengers. — example: a lorry-load of gravel
+SENSE 2 — the amount of something that a person or organization has to do — example: The firm’s computers are struggling to cope with the increased load. — example: The network has to deal with a heavy load of telephone traffic.
+SENSE 3 — an amount of money charged for managing an INVESTMENT FUND — example: Because of the 5% load, only $950 of the $1,000 actually gets invested in your name. — example: The new fund carries a front-end load (= an amount paid when the fund is first started ) of 5.5% — example: a no-load fund
+
+HEADWORD: load
+GRAMMAR (headword): [ transitive ]
+PART OF SPEECH: verb
+
+SENSE 1 — to put goods into a road vehicle, train, boat, or plane to be transported — example: The tankers set off as soon as they have been loaded.
+SENSE 2 — to copy a computer program or file onto a computer — example: The new software can be loaded easily onto most machines.
+SENSE 3 — to include most or all of the charges at a particular period during the time that an insurance policy or INVESTMENT FUND is in use — example: A lot of personal pension funds are front-end loaded (= make most of their charges when the fund is first started ).
