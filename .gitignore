@@ -1,0 +1,26 @@
+# ---- secrets / signing keys (never commit) ----
+keys/
+*.keystore
+*.jks
+*.p12
+*.pem
+
+# ---- Flutter / Dart ----
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+*.iml
+
+# ---- Python ----
+__pycache__/
+*.pyc
+.venv/
+
+# ---- OS / editor ----
+.DS_Store
+Thumbs.db
+*.log
+.idea/
+.vscode/

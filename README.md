@@ -2,12 +2,12 @@
 
 ## 📦 نصب روی گوشی اندروید
 
-1. فایل [**FlashCards-v1.37.apk**](https://raw.githubusercontent.com/soot2017-hash/Madoudflashcart/main/releases/FlashCards-v1.37.apk) را روی گوشی دانلود کنید (۷۴۶ کیلوبایت)
+1. فایل [**FlashCards-v1.38.apk**](https://raw.githubusercontent.com/soot2017-hash/Madoudflashcart/main/releases/FlashCards-v1.38.apk) را روی گوشی دانلود کنید (۷۴۰ کیلوبایت)
 > 🌐 اگر لینک بالا باز نشد (فیلتر raw.githubusercontent)، از این آینه‌ها استفاده کنید:
-> - `https://cdn.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.37.apk`
-> - `https://fastly.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.37.apk`
-> - `https://testingcf.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.37.apk`
-> - `https://gcore.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.37.apk`
+> - `https://cdn.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.38.apk`
+> - `https://fastly.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.38.apk`
+> - `https://testingcf.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.38.apk`
+> - `https://gcore.jsdelivr.net/gh/soot2017-hash/Madoudflashcart@main/releases/FlashCards-v1.38.apk`
 
 2. روی فایل بزنید؛ اگر پرسید، اجازهٔ «نصب از منابع ناشناس» را بدهید
 3. تمام! اپ با آیکون اختصاصی نصب می‌شود
@@ -357,8 +357,8 @@
 برای ساختن نسخهٔ جدید با همین امضا (تا آپدیت روی نسخهٔ قبلی نصب شود):
 
 ```bash
-keytool -genkeypair  # لازم نیست؛ فایل keys/fc.keystore موجود است
-# پسورد keystore و کلید:  fcfc-2025-sign   (alias: flashcards)
+keytool -genkeypair  # لازم نیست؛ فایل fc.keystore را نزد خودتان (خارج از ریپو) نگه دارید
+# پسورد keystore دیگر در این مخزن نگهداری نمیشود — نسخه ایمن آن نزد شماست
 ```
 
 امضای فعلی: SHA-256 `3d0d3774c942f32d992f8febf25a057645f11b6f33c31c21d31d89224cdeaa81`
@@ -369,5 +369,5 @@ keytool -genkeypair  # لازم نیست؛ فایل keys/fc.keystore موجود 
 app/                 نسخهٔ وب آفلاین (PWA کامل با manifest و service worker)
 app/packs/           بسته‌های کلمات (2 بسته عمومی + 4 مخزن English in Use با حدود ١۰۰ لغت)
 releases/            خروجی APK امضاشده
-keys/fc.keystore     کلید امضای APK
-```
+data-src/            دادهٔ منبع قدیمی (فرمت اولیهٔ بستهٔ افعال عبارتی)
+tools/               اسکریپت‌های اعتبارسنجی (validate_packs) و نرمال‌سازی (normalize_fa)
